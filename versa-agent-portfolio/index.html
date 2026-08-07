@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Okeito — Making an Agent Better</title>
-  <meta name="description" content="A conversational AI systems portfolio page showing Okeito's live Hermes Agent improvement work: skills, memory, tool discipline, subagents, recovery, and verification." />
+  <meta name="description" content="A conversational AI systems portfolio page showing Okeito's live Hermes Agent improvement work: skills, Obsidian-backed memory, tool discipline, subagents, recovery, and verification." />
   <meta property="og:title" content="Okeito — Making an Agent Better" />
-  <meta property="og:description" content="Hermes Agent improvement work translated into conversational AI design architecture." />
+  <meta property="og:description" content="Hermes Agent improvement work translated into conversational AI design architecture, including Obsidian-backed memory and source-grounded recall." />
   <meta name="theme-color" content="#f7f7f8" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,14 +35,14 @@
   </style>
 </head>
 <body>
-  <nav class="nav"><div class="wrap nav-inner"><div class="brand">okeito<span>Hermes Agent Work</span></div><div class="links"><a href="#skills">Skills</a><a href="#memory">Memory</a><a href="#subagents">Subagents</a><a href="#verification">Verification</a></div></div></nav>
+  <nav class="nav"><div class="wrap nav-inner"><div class="brand">okeito<span>Hermes Agent Work</span></div><div class="links"><a href="#skills">Skills</a><a href="#memory">Memory</a><a href="#obsidian">Obsidian</a><a href="#subagents">Subagents</a><a href="#verification">Verification</a></div></div></nav>
 
   <header class="hero wrap">
     <div class="hero-grid">
       <div>
         <div class="eyebrow"><span class="grad">VERSA AI</span> · Conversational AI systems portfolio</div>
         <h1>Making an agent better</h1>
-        <p class="lede">A portfolio supplement based on my live Hermes Agent work: turning corrections, tool use, memory, delegation, and verification into reusable behavior architecture.</p>
+        <p class="lede">A portfolio supplement based on my live Hermes Agent work: turning corrections, tool use, Obsidian-backed memory, delegation, and verification into reusable behavior architecture.</p>
         <p class="sublede">The work is not a static prompt-writing sample. It shows how I shape an AI agent’s operating model: what it remembers, when it uses tools, how it recovers from failure, how it delegates, and how it proves the result before presenting it.</p>
       </div>
       <aside class="hero-card" aria-label="source note">
@@ -57,7 +57,7 @@
         ╭────────▼─────────╮
         │ better next run  │
         ╰──────────────────╯</pre>
-        <div class="chips"><span class="chip">Skills</span><span class="chip">Tool discipline</span><span class="chip">Memory hygiene</span><span class="chip">Self-improvement</span></div>
+        <div class="chips"><span class="chip">Skills</span><span class="chip">Tool discipline</span><span class="chip">Obsidian memory</span><span class="chip">Self-improvement</span></div>
         <p class="source-note"><strong>Where these cases came from:</strong> my working sessions with Hermes Agent — especially moments where I corrected behavior, demanded verification, or turned a solved workflow into a reusable agent pattern.</p>
       </aside>
     </div>
@@ -76,26 +76,32 @@
       <div class="ledger"><div class="fact"><strong>Problem</strong><span>Agents get worse when temporary task state, durable preferences, and old transcripts are treated as the same thing.</span></div><div class="fact"><strong>Choice</strong><span>Save stable facts, retrieve old sessions only when needed, and convert repeatable procedures into skills.</span></div><div class="fact"><strong>VERSA fit</strong><span>Call state, customer facts, policy context, and handoff notes need different lifetimes.</span></div></div>
     </article></section>
 
+    <section class="section wrap" id="obsidian"><article class="case">
+      <div class="case-head"><div><div class="kicker">03 · Obsidian memory layer</div><h2>Obsidian turns memory into a source-grounded workspace.</h2><p>I upgraded the agent’s memory workflow by using Obsidian as a human-readable knowledge base: notes, research dossiers, corrections, decisions, and source links stay inspectable instead of disappearing inside the model.</p></div>
+      <div class="diagram"><div class="stack"><div class="row"><b>Obsidian vault</b><span>durable notes</span></div><div class="row"><b>Source dossiers</b><span>evidence + links</span></div><div class="row"><b>Agent recall</b><span>retrieve when relevant</span></div><div class="row"><b>Better next answer</b><span>grounded context</span></div></div></div></div>
+      <div class="ledger"><div class="fact"><strong>Problem</strong><span>Model memory alone is too opaque: it can be stale, hard to inspect, and weak at preserving long research trails.</span></div><div class="fact"><strong>Choice</strong><span>Use Obsidian as the durable memory surface for structured notes, evidence, backlinks, and reusable operating context.</span></div><div class="fact"><strong>VERSA fit</strong><span>Enterprise agents need auditable memory: why the system knows something, where it came from, and when to trust it.</span></div></div>
+    </article></section>
+
     <section class="section wrap" id="subagents"><article class="case">
-      <div class="case-head"><div><div class="kicker">03 · Delegation model</div><h2>Subagents protect focus and context.</h2><p>For complex work, Hermes can split research, extraction, QA, and synthesis into isolated agents. That keeps the main conversation cleaner and makes verification easier.</p></div>
+      <div class="case-head"><div><div class="kicker">04 · Delegation model</div><h2>Subagents protect focus and context.</h2><p>For complex work, Hermes can split research, extraction, QA, and synthesis into isolated agents. That keeps the main conversation cleaner and makes verification easier.</p></div>
       <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Orchestrator</b><span>owns outcome</span></div><div class="arrow">→</div><div class="node"><b>Research</b><span>isolated context</span></div><div class="arrow">→</div><div class="node"><b>QA</b><span>checks output</span></div><div class="arrow">→</div><div class="node"><b>Summary</b><span>verified handle</span></div></div></div></div>
       <div class="ledger"><div class="fact"><strong>Problem</strong><span>One agent doing every subtask in one context creates noise, missed details, and weak verification.</span></div><div class="fact"><strong>Choice</strong><span>Use bounded specialist agents with explicit context packets and verifiable return handles.</span></div><div class="fact"><strong>VERSA fit</strong><span>Voice flows can route identity, policy, billing, booking, and escalation as separate capabilities.</span></div></div>
     </article></section>
 
     <section class="section wrap" id="recovery"><article class="case">
-      <div class="case-head"><div><div class="kicker">04 · Recovery design</div><h2>The agent must know how to fail safely.</h2><p>A better agent is not just more confident. It detects ambiguity, failed tools, missing evidence, and risky actions — then retries, clarifies, or escalates instead of fabricating.</p></div>
+      <div class="case-head"><div><div class="kicker">05 · Recovery design</div><h2>The agent must know how to fail safely.</h2><p>A better agent is not just more confident. It detects ambiguity, failed tools, missing evidence, and risky actions — then retries, clarifies, or escalates instead of fabricating.</p></div>
       <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Request</b><span>unknowns</span></div><div class="arrow">→</div><div class="node"><b>Evidence check</b><span>tool / source</span></div><div class="arrow">→</div><div class="node"><b>Recovery branch</b><span>retry / clarify</span></div><div class="arrow">→</div><div class="node"><b>Safe answer</b><span>or handoff</span></div></div></div></div>
       <div class="ledger"><div class="fact"><strong>Problem</strong><span>The dangerous failure mode is confident language when the evidence path broke.</span></div><div class="fact"><strong>Choice</strong><span>Make recovery states explicit: retry, alternate source, narrow clarification, honest blocker, or human handoff.</span></div><div class="fact"><strong>VERSA fit</strong><span>Conversational AI reliability depends on safe failure more than fluent wrongness.</span></div></div>
     </article></section>
 
     <section class="section wrap" id="verification"><article class="case">
-      <div class="case-head"><div><div class="kicker">05 · Verification loop</div><h2>Verification is designed into the loop.</h2><p>I use a real execution loop: inspect files, run tools, render outputs, screenshot pages, test claims, patch what fails, and only then deliver.</p></div>
+      <div class="case-head"><div><div class="kicker">06 · Verification loop</div><h2>Verification is designed into the loop.</h2><p>I use a real execution loop: inspect files, run tools, render outputs, screenshot pages, test claims, patch what fails, and only then deliver.</p></div>
       <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Build</b><span>artifact</span></div><div class="arrow">→</div><div class="node"><b>Inspect</b><span>pixels / tests</span></div><div class="arrow">→</div><div class="node"><b>Patch</b><span>fix issues</span></div><div class="arrow">→</div><div class="node"><b>Verify</b><span>report proof</span></div></div></div></div>
       <div class="ledger"><div class="fact"><strong>Problem</strong><span>Agent improvements are only real if they survive execution, screenshots, tests, and edge cases.</span></div><div class="fact"><strong>Choice</strong><span>Build, render, inspect pixels, patch, re-render, verify, then report evidence.</span></div><div class="fact"><strong>VERSA fit</strong><span>This becomes an eval loop for resolution quality, unsafe claims, repair behavior, and handoff clarity.</span></div></div>
     </article></section>
 
     <section class="section wrap" id="voice"><article class="case">
-      <div class="case-head"><div><div class="kicker">06 · Conversational AI translation</div><h2>What this teaches for voice agents.</h2><p>The agent-improvement work translates directly into voice systems: route intent, scope memory, ground tool actions, repair failures, and hand off with a clean context packet.</p></div>
+      <div class="case-head"><div><div class="kicker">07 · Conversational AI translation</div><h2>What this teaches for voice agents.</h2><p>The agent-improvement work translates directly into voice systems: route intent, scope memory, ground tool actions, repair failures, and hand off with a clean context packet.</p></div>
       <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Understand</b><span>intent</span></div><div class="arrow">→</div><div class="node"><b>Verify</b><span>confidence + policy</span></div><div class="arrow">→</div><div class="node"><b>Act</b><span>grounded tool</span></div><div class="arrow">→</div><div class="node"><b>Handoff</b><span>context packet</span></div></div></div></div>
       <div class="ledger"><div class="fact"><strong>Problem</strong><span>Voice has no visual interface; the agent’s behavior architecture becomes the product experience.</span></div><div class="fact"><strong>Choice</strong><span>Use the same control loop: understand, verify, retrieve, act, summarize or escalate.</span></div><div class="fact"><strong>VERSA fit</strong><span>A reusable platform pattern for enterprise conversations, not a one-off script.</span></div></div>
     </article></section>
@@ -107,6 +113,6 @@
     </article></section>
   </main>
 
-  <footer class="footer"><div class="wrap"><div>Okeito · Conversational AI systems design portfolio supplement</div><div class="marker">live-html-v1 · github-pages</div></div></footer>
+  <footer class="footer"><div class="wrap"><div>Okeito · Conversational AI systems design portfolio supplement</div><div class="marker">live-html-v2-obsidian · github-pages</div></div></footer>
 </body>
 </html>
