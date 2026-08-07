@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Okeito — Making an Agent Better</title>
+  <meta name="description" content="A conversational AI systems portfolio page showing Okeito's live Hermes Agent improvement work: skills, memory, tool discipline, subagents, recovery, and verification." />
+  <meta property="og:title" content="Okeito — Making an Agent Better" />
+  <meta property="og:description" content="Hermes Agent improvement work translated into conversational AI design architecture." />
+  <meta name="theme-color" content="#f7f7f8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7f7f8; --paper:#fff; --ink:#202227; --muted:#686d77; --hair:#dedfe4;
+      --soft:#f0f1f4; --violet:#9d43ff; --coral:#ff6a62; --gold:#f1a343; --green:#0f6f57;
+      --shadow:0 24px 80px rgba(18,20,28,.08); --radius:28px; --max:1180px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
+    body:before{content:"";position:fixed;inset:auto -20vw -28vh -20vw;height:46vh;pointer-events:none;background:radial-gradient(circle at 16% 24%, rgba(157,67,255,.10), transparent 36%),radial-gradient(circle at 62% 34%, rgba(255,106,98,.10), transparent 34%),radial-gradient(circle at 84% 44%, rgba(241,163,67,.12), transparent 32%);filter:blur(.2px);z-index:-1}
+    a{color:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin-inline:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(247,247,248,.82);backdrop-filter:blur(20px);border-bottom:1px solid rgba(222,223,228,.72)}
+    .nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-weight:900;letter-spacing:-.055em;font-size:24px}.brand span{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-left:10px}.links{display:flex;gap:18px;align-items:center;font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:#555b65}.links a{text-decoration:none}.links a:hover{color:#111}
+    .hero{padding:92px 0 72px}.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) 410px;gap:56px;align-items:end}.eyebrow{font-family:"JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:700;color:#626874;margin-bottom:28px}.grad{background:linear-gradient(90deg,var(--violet),var(--coral),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}.hero h1{font-size:clamp(58px,9.4vw,132px);line-height:.88;letter-spacing:-.025em;word-spacing:.08em;margin:0 0 30px;font-weight:900}.lede{font-size:clamp(20px,2.4vw,31px);line-height:1.22;letter-spacing:-.01em;word-spacing:.04em;font-weight:800;max-width:850px;margin:0;color:#2b2e35}.sublede{margin:22px 0 0;max-width:760px;color:var(--muted);font-size:18px;line-height:1.55}.hero-card{background:rgba(255,255,255,.72);border:1px solid var(--hair);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+    .ascii{font-family:"JetBrains Mono",monospace;white-space:pre;line-height:1.03;font-size:10px;color:#2e3138;margin:0 0 22px;letter-spacing:-.035em;overflow:hidden}.chips{display:flex;flex-wrap:wrap;gap:9px}.chip{border:1px solid var(--hair);background:#fff;border-radius:999px;padding:9px 12px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:#535965}.source-note{margin-top:18px;border-top:1px solid var(--hair);padding-top:16px;font-size:13px;color:var(--muted);line-height:1.55}.source-note strong{color:var(--ink)}
+    .section{padding:42px 0}.case{position:relative;background:rgba(255,255,255,.76);border:1px solid var(--hair);border-radius:34px;padding:38px;box-shadow:0 18px 70px rgba(18,20,28,.055);overflow:hidden}.case:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--violet),var(--coral),var(--gold));opacity:.86}.case-head{display:grid;grid-template-columns:minmax(0,.92fr) minmax(360px,1.08fr);gap:38px;align-items:start}.kicker{font-family:"JetBrains Mono",monospace;color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:12px;margin-bottom:16px}.case h2{font-size:clamp(36px,5vw,70px);line-height:.96;letter-spacing:-.02em;word-spacing:.08em;margin:0 0 20px;font-weight:900}.case p{font-size:17px;line-height:1.52;color:#4d535d;margin:0}.diagram{border:1px solid var(--hair);background:linear-gradient(180deg,#fff,#f7f8fa);border-radius:24px;padding:18px;min-height:236px}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;align-items:center}.node{min-height:118px;border:1px solid #dcdde3;background:#fff;border-radius:18px;padding:15px 13px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 8px 28px rgba(21,24,32,.045)}.node b{font-size:15px;line-height:1.05;letter-spacing:-.025em}.node span{font-family:"JetBrains Mono",monospace;font-size:10px;line-height:1.28;text-transform:uppercase;color:#717782;letter-spacing:.07em}.arrow{text-align:center;font-family:"JetBrains Mono",monospace;color:#8a909b;font-weight:800;align-self:center}.flow.with-arrows{grid-template-columns:1fr 20px 1fr 20px 1fr 20px 1fr}.ledger{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:28px;border:1px solid var(--hair);border-radius:22px;overflow:hidden;background:var(--hair)}.fact{background:#fff;padding:20px;min-height:142px}.fact strong{display:block;font-family:"JetBrains Mono",monospace;font-size:11px;color:#626874;text-transform:uppercase;letter-spacing:.14em;margin-bottom:12px}.fact span{display:block;font-size:15px;line-height:1.42;color:#30343b;font-weight:650;letter-spacing:-.015em}.stack{display:grid;gap:10px}.row{display:flex;justify-content:space-between;gap:16px;align-items:center;background:#fff;border:1px solid #e4e5e9;border-radius:16px;padding:14px 16px}.row b{font-size:14px}.row span{font-family:"JetBrains Mono",monospace;font-size:11px;color:#747a84;text-transform:uppercase;letter-spacing:.08em}.quote{margin:70px 0 48px;padding:48px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);font-size:clamp(32px,5.4vw,76px);line-height:1.04;letter-spacing:-.018em;word-spacing:.1em;font-weight:900;max-width:1020px}.footer{padding:56px 0 72px;color:var(--muted);font-size:14px}.footer .wrap{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--hair);padding-top:24px}.marker{font-family:"JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px}.screen-only{position:absolute;left:-9999px}
+    @media(max-width:900px){.nav-inner{height:auto;padding:17px 0;align-items:flex-start}.links{display:none}.hero{padding:62px 0 42px}.hero-grid,.case-head{grid-template-columns:1fr;gap:28px}.case{padding:26px 22px;border-radius:26px}.flow,.flow.with-arrows{grid-template-columns:1fr}.arrow{transform:rotate(90deg);height:12px}.ledger{grid-template-columns:1fr}.fact{min-height:auto}.footer .wrap{display:block}.footer .marker{margin-top:12px}.ascii{font-size:8.2px}.wrap{width:min(100% - 28px,var(--max))}}
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="wrap nav-inner"><div class="brand">okeito<span>Hermes Agent Work</span></div><div class="links"><a href="#skills">Skills</a><a href="#memory">Memory</a><a href="#subagents">Subagents</a><a href="#verification">Verification</a></div></div></nav>
+
+  <header class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow"><span class="grad">VERSA AI</span> · Conversational AI systems portfolio</div>
+        <h1>Making an agent better</h1>
+        <p class="lede">A portfolio supplement based on my live Hermes Agent work: turning corrections, tool use, memory, delegation, and verification into reusable behavior architecture.</p>
+        <p class="sublede">The work is not a static prompt-writing sample. It shows how I shape an AI agent’s operating model: what it remembers, when it uses tools, how it recovers from failure, how it delegates, and how it proves the result before presenting it.</p>
+      </div>
+      <aside class="hero-card" aria-label="source note">
+<pre class="ascii">        ╭──────────────────╮
+        │  user correction │
+        ╰────────┬─────────╯
+                 │
+        ╭────────▼─────────╮
+        │ reusable pattern │
+        ╰────────┬─────────╯
+                 │
+        ╭────────▼─────────╮
+        │ better next run  │
+        ╰──────────────────╯</pre>
+        <div class="chips"><span class="chip">Skills</span><span class="chip">Tool discipline</span><span class="chip">Memory hygiene</span><span class="chip">Self-improvement</span></div>
+        <p class="source-note"><strong>Where these cases came from:</strong> my working sessions with Hermes Agent — especially moments where I corrected behavior, demanded verification, or turned a solved workflow into a reusable agent pattern.</p>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="section wrap" id="skills"><article class="case">
+      <div class="case-head"><div><div class="kicker">01 · Learned behavior</div><h2>Skills turn corrections into reusable behavior.</h2><p>In my Hermes work, repeatable procedures become skills: compact playbooks that load when relevant, preserve user preferences, and make the agent better after each hard task.</p></div>
+      <div class="diagram"><div class="flow with-arrows"><div class="node"><b>User request</b><span>goal + constraints</span></div><div class="arrow">→</div><div class="node"><b>Skill loading</b><span>loads learned workflow</span></div><div class="arrow">→</div><div class="node"><b>Tool execution</b><span>real artifact</span></div><div class="arrow">→</div><div class="node"><b>Better next run</b><span>patch / save</span></div></div></div></div>
+      <div class="ledger"><div class="fact"><strong>Problem</strong><span>A single long prompt cannot capture every correction, domain workflow, and operating standard without becoming brittle.</span></div><div class="fact"><strong>Choice</strong><span>Keep base behavior stable; move learned workflows into modular skills that can be loaded, patched, and reused.</span></div><div class="fact"><strong>VERSA fit</strong><span>Reusable behavior modules for conversational AI teams instead of one-off prompt fixes.</span></div></div>
+    </article></section>
+
+    <section class="section wrap" id="memory"><article class="case">
+      <div class="case-head"><div><div class="kicker">02 · Context architecture</div><h2>Memory is governed, not hoarded.</h2><p>I designed a clear split between active context, durable user memory, retrievable session history, and skills — so the agent improves without carrying stale noise.</p></div>
+      <div class="diagram"><div class="stack"><div class="row"><b>Active context</b><span>now</span></div><div class="row"><b>User memory</b><span>stable facts</span></div><div class="row"><b>Session search</b><span>retrieve</span></div><div class="row"><b>Skills</b><span>procedure</span></div></div></div></div>
+      <div class="ledger"><div class="fact"><strong>Problem</strong><span>Agents get worse when temporary task state, durable preferences, and old transcripts are treated as the same thing.</span></div><div class="fact"><strong>Choice</strong><span>Save stable facts, retrieve old sessions only when needed, and convert repeatable procedures into skills.</span></div><div class="fact"><strong>VERSA fit</strong><span>Call state, customer facts, policy context, and handoff notes need different lifetimes.</span></div></div>
+    </article></section>
+
+    <section class="section wrap" id="subagents"><article class="case">
+      <div class="case-head"><div><div class="kicker">03 · Delegation model</div><h2>Subagents protect focus and context.</h2><p>For complex work, Hermes can split research, extraction, QA, and synthesis into isolated agents. That keeps the main conversation cleaner and makes verification easier.</p></div>
+      <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Orchestrator</b><span>owns outcome</span></div><div class="arrow">→</div><div class="node"><b>Research</b><span>isolated context</span></div><div class="arrow">→</div><div class="node"><b>QA</b><span>checks output</span></div><div class="arrow">→</div><div class="node"><b>Summary</b><span>verified handle</span></div></div></div></div>
+      <div class="ledger"><div class="fact"><strong>Problem</strong><span>One agent doing every subtask in one context creates noise, missed details, and weak verification.</span></div><div class="fact"><strong>Choice</strong><span>Use bounded specialist agents with explicit context packets and verifiable return handles.</span></div><div class="fact"><strong>VERSA fit</strong><span>Voice flows can route identity, policy, billing, booking, and escalation as separate capabilities.</span></div></div>
+    </article></section>
+
+    <section class="section wrap" id="recovery"><article class="case">
+      <div class="case-head"><div><div class="kicker">04 · Recovery design</div><h2>The agent must know how to fail safely.</h2><p>A better agent is not just more confident. It detects ambiguity, failed tools, missing evidence, and risky actions — then retries, clarifies, or escalates instead of fabricating.</p></div>
+      <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Request</b><span>unknowns</span></div><div class="arrow">→</div><div class="node"><b>Evidence check</b><span>tool / source</span></div><div class="arrow">→</div><div class="node"><b>Recovery branch</b><span>retry / clarify</span></div><div class="arrow">→</div><div class="node"><b>Safe answer</b><span>or handoff</span></div></div></div></div>
+      <div class="ledger"><div class="fact"><strong>Problem</strong><span>The dangerous failure mode is confident language when the evidence path broke.</span></div><div class="fact"><strong>Choice</strong><span>Make recovery states explicit: retry, alternate source, narrow clarification, honest blocker, or human handoff.</span></div><div class="fact"><strong>VERSA fit</strong><span>Conversational AI reliability depends on safe failure more than fluent wrongness.</span></div></div>
+    </article></section>
+
+    <section class="section wrap" id="verification"><article class="case">
+      <div class="case-head"><div><div class="kicker">05 · Verification loop</div><h2>Verification is designed into the loop.</h2><p>I use a real execution loop: inspect files, run tools, render outputs, screenshot pages, test claims, patch what fails, and only then deliver.</p></div>
+      <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Build</b><span>artifact</span></div><div class="arrow">→</div><div class="node"><b>Inspect</b><span>pixels / tests</span></div><div class="arrow">→</div><div class="node"><b>Patch</b><span>fix issues</span></div><div class="arrow">→</div><div class="node"><b>Verify</b><span>report proof</span></div></div></div></div>
+      <div class="ledger"><div class="fact"><strong>Problem</strong><span>Agent improvements are only real if they survive execution, screenshots, tests, and edge cases.</span></div><div class="fact"><strong>Choice</strong><span>Build, render, inspect pixels, patch, re-render, verify, then report evidence.</span></div><div class="fact"><strong>VERSA fit</strong><span>This becomes an eval loop for resolution quality, unsafe claims, repair behavior, and handoff clarity.</span></div></div>
+    </article></section>
+
+    <section class="section wrap" id="voice"><article class="case">
+      <div class="case-head"><div><div class="kicker">06 · Conversational AI translation</div><h2>What this teaches for voice agents.</h2><p>The agent-improvement work translates directly into voice systems: route intent, scope memory, ground tool actions, repair failures, and hand off with a clean context packet.</p></div>
+      <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Understand</b><span>intent</span></div><div class="arrow">→</div><div class="node"><b>Verify</b><span>confidence + policy</span></div><div class="arrow">→</div><div class="node"><b>Act</b><span>grounded tool</span></div><div class="arrow">→</div><div class="node"><b>Handoff</b><span>context packet</span></div></div></div></div>
+      <div class="ledger"><div class="fact"><strong>Problem</strong><span>Voice has no visual interface; the agent’s behavior architecture becomes the product experience.</span></div><div class="fact"><strong>Choice</strong><span>Use the same control loop: understand, verify, retrieve, act, summarize or escalate.</span></div><div class="fact"><strong>VERSA fit</strong><span>A reusable platform pattern for enterprise conversations, not a one-off script.</span></div></div>
+    </article></section>
+
+    <section class="section wrap"><div class="quote">“A better agent is built from captured corrections, reusable procedures, and proof that the behavior works.”</div></section>
+
+    <section class="section wrap"><article class="case">
+      <div class="case-head"><div><div class="kicker">Design thesis</div><h2>I improve the agent by designing its operating system.</h2></div><div><p>The work is about making the agent more reliable over time: skills from corrections, scoped memory, tool discipline, safe recovery, and screenshot/test-backed verification.</p><p style="margin-top:18px">This is the design lens I would bring to VERSA: not just prompts, but reusable agent behavior that teams can inspect, test, improve, and deploy across conversations.</p></div></div>
+    </article></section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><div>Okeito · Conversational AI systems design portfolio supplement</div><div class="marker">live-html-v1 · github-pages</div></div></footer>
+</body>
+</html>
