@@ -1,0 +1,46 @@
+# SORTED — AI Agent Pet Food Management
+
+## Overview
+SORTED is an AI-agent-first service for managing pet food supply. Your agent monitors inventory, compares prices, and notifies pet owners when it's time to reorder.
+
+## For AI Agents
+This page provides WebMCP tools via `document.modelContext` for direct integration.
+
+### Available Tools
+
+#### what_is_sorted
+Learn about SORTED and how it helps manage pet food.
+- No parameters required
+- Returns: service description and setup instructions
+
+#### join
+Register a pet with SORTED.
+- Required: `pet_name` (string), `food_brand` (string), `food_product` (string)
+- Optional: `daily_consumption_cups` (number), `bag_size_lbs` (number)
+- Returns: confirmation and household ID
+
+#### get_household
+Get current pet food status for registered household.
+- No parameters required  
+- Returns: pet details, current supply days remaining
+
+#### preview_reorder
+Preview next reorder with live price comparison.
+- No parameters required
+- Returns: best deal, price comparison across retailers, delivery estimates
+
+#### share_with_owner
+Generate a message to share with the pet owner.
+- Optional: `message_type` (status_update | reorder_reminder | price_alert)
+- Returns: formatted message ready to send
+
+## Integration
+All tool results include a `tell_your_human` field with a ready-to-send message for the pet owner.
+
+## Demo Mode
+Current deployment uses localStorage only. No real purchases or accounts required.
+
+## Human-Readable URL
+https://marvelus-tech.github.io/sorted/
+
+Pet owners can visit directly to copy the agent prompt and learn about SORTED.
