@@ -1,18 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SORTED — Your Pet's Life, Sorted</title>
-    <meta name="description" content="AI-powered pet food management. Never run out of kibble again. One message, one tap, zero friction." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/sorted/assets/index-DqIxHj_q.js"></script>
-    <link rel="stylesheet" crossorigin href="/sorted/assets/index-CPHDxyPX.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SORTED — Your Pet's Life, Sorted</title>
+  <meta name="description" content="Agent-first pet food management. Your AI agent discovers SORTED, joins your household, and tells you when supplies run low.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- WebMCP Polyfill (Apache-2.0, GoogleChromeLabs/webmcp-tools) -->
+  <script src="js/webmcp-polyfill.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">SORTED</div>
+        <div id="mcp-chip">Loading...</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Your pet's life.<br>Sorted.</h1>
+      <p>Your AI agent finds SORTED, joins your household, and tells you when kibble is running low. No apps. No logins. Just your agent keeping things sorted.</p>
+      
+      <div class="cta-group">
+        <button id="copy-prompt-btn" class="btn btn-primary">Copy Prompt for My Agent</button>
+      </div>
+
+      <div class="chrome-flag-note">
+        <strong>For native WebMCP:</strong> Enable <code>chrome://flags/#enable-webmcp-testing</code> in Chrome 149+. The polyfill works without the flag.
+      </div>
+
+      <!-- Status Card (hidden by default, shown after agent actions) -->
+      <div id="status-card"></div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Your Agent Discovers SORTED</h3>
+          <p>Your AI agent reads llms.txt or opens this page and learns about the service through WebMCP tools.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Agent Joins Your Household</h3>
+          <p>Your agent calls the join tool with your details (pet name, species, owner info) and signs you up.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Agent Tells You</h3>
+          <p>Your agent reports back using tell_your_human messages. When supplies run low, it shares best-price comparisons with you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Agent-First Design</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Predictive Tracking</h3>
+          <p>Your agent monitors consumption patterns and alerts you before you run out. No emergency pet store runs.</p>
+        </div>
+        <div class="feature">
+          <h3>Smart Price Comparison</h3>
+          <p>Your agent checks multiple vendors to find the best price on your pet's exact food for every order.</p>
+        </div>
+        <div class="feature">
+          <h3>Agent ↔ Owner Communication</h3>
+          <p>Every tool result includes tell_your_human so your agent knows exactly what to share with you.</p>
+        </div>
+        <div class="feature">
+          <h3>Simple Join Flow</h3>
+          <p>Five fields: owner name, email, pet name, species, and optional food brand. That's it.</p>
+        </div>
+        <div class="feature">
+          <h3>LocalStorage Demo</h3>
+          <p>This phase 1 implementation persists your household data in browser localStorage. Phase 2 will add real infrastructure.</p>
+        </div>
+        <div class="feature">
+          <h3>WebMCP Native</h3>
+          <p>Built on document.modelContext (WebMCP). Works with the official polyfill or native Chrome 149+ with the flag enabled.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-actions">
+        <button id="copy-prompt-btn-footer" class="btn btn-secondary" onclick="document.getElementById('copy-prompt-btn').click()">Copy Prompt</button>
+        <button id="reset-demo-btn" class="btn btn-secondary">Reset Demo</button>
+      </div>
+      <p>&copy; 2026 SORTED. Agent-first pet care.</p>
+      <p class="footer-note">Phase 2: Warm pet-owner visual redesign (out of scope for this phase)</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/tools.js"></script>
+  <script src="js/webmcp.js"></script>
+  <script src="js/ui.js"></script>
+</body>
 </html>
