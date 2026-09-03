@@ -1,180 +1,642 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Okeito — Making an Agent Better</title>
-  <meta name="description" content="A conversational AI systems portfolio page showing Okeito's live Hermes Agent improvement work: skills, Obsidian-backed memory, tool discipline, subagents, recovery, and verification." />
-  <meta property="og:title" content="Okeito — Making an Agent Better" />
-  <meta property="og:description" content="Hermes Agent improvement work translated into conversational AI design architecture, including Obsidian-backed memory and source-grounded recall." />
-  <meta name="theme-color" content="#f7f7f8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O'keito S. — Agent Operating Systems</title>
+  <meta name="description" content="I design the agent's operating system: what it remembers, when it uses tools, how it recovers, how it proves work before it speaks.">
+  <meta property="og:title" content="O'keito S. — Agent Operating Systems">
+  <meta property="og:description" content="Senior UX / Product Designer specializing in agent product design, generative AI, and data storytelling.">
+  <meta name="theme-color" content="#0c0b0a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#f7f7f8; --paper:#fff; --ink:#202227; --muted:#686d77; --hair:#dedfe4;
-      --soft:#f0f1f4; --violet:#9d43ff; --coral:#ff6a62; --gold:#f1a343; --green:#0f6f57;
-      --shadow:0 24px 80px rgba(18,20,28,.08); --radius:28px; --max:1180px;
+    :root {
+      --ground: #0c0b0a;
+      --paper: #161412;
+      --ink: #f3efe6;
+      --muted: #9a9388;
+      --hair: #2a2724;
+      --accent: #c8f54a;
+      --radius: 6px;
+      --max: 1080px;
     }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
-    body:before{content:"";position:fixed;inset:auto -20vw -28vh -20vw;height:46vh;pointer-events:none;background:radial-gradient(circle at 16% 24%, rgba(157,67,255,.10), transparent 36%),radial-gradient(circle at 62% 34%, rgba(255,106,98,.10), transparent 34%),radial-gradient(circle at 84% 44%, rgba(241,163,67,.12), transparent 32%);filter:blur(.2px);z-index:-1}
-    a{color:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin-inline:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(247,247,248,.82);backdrop-filter:blur(20px);border-bottom:1px solid rgba(222,223,228,.72)}
-    .nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-weight:900;letter-spacing:-.055em;font-size:24px}.brand span{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-left:10px}.links{display:flex;gap:18px;align-items:center;font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:#555b65}.links a{text-decoration:none}.links a:hover{color:#111}
-    .hero{padding:92px 0 72px}.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) 410px;gap:56px;align-items:end}.eyebrow{font-family:"JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:700;color:#626874;margin-bottom:28px}.grad{background:linear-gradient(90deg,var(--violet),var(--coral),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}.hero h1{font-size:clamp(58px,9.4vw,132px);line-height:.88;letter-spacing:-.025em;word-spacing:.08em;margin:0 0 30px;font-weight:900}.lede{font-size:clamp(20px,2.4vw,31px);line-height:1.22;letter-spacing:-.01em;word-spacing:.04em;font-weight:800;max-width:850px;margin:0;color:#2b2e35}.sublede{margin:22px 0 0;max-width:760px;color:var(--muted);font-size:18px;line-height:1.55}.hero-card{background:rgba(255,255,255,.72);border:1px solid var(--hair);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
-    .ascii{font-family:"JetBrains Mono",monospace;white-space:pre;line-height:1.03;font-size:10px;color:#2e3138;margin:0 0 22px;letter-spacing:-.035em;overflow:hidden}.chips{display:flex;flex-wrap:wrap;gap:9px}.chip{border:1px solid var(--hair);background:#fff;border-radius:999px;padding:9px 12px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:#535965}.source-note{margin-top:18px;border-top:1px solid var(--hair);padding-top:16px;font-size:13px;color:var(--muted);line-height:1.55}.source-note strong{color:var(--ink)}
-    .section{padding:42px 0}.case{position:relative;background:rgba(255,255,255,.76);border:1px solid var(--hair);border-radius:34px;padding:38px;box-shadow:0 18px 70px rgba(18,20,28,.055);overflow:hidden}.case:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--violet),var(--coral),var(--gold));opacity:.86}.case-head{display:grid;grid-template-columns:minmax(0,.92fr) minmax(360px,1.08fr);gap:38px;align-items:start}.kicker{font-family:"JetBrains Mono",monospace;color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:12px;margin-bottom:16px}.case h2{font-size:clamp(36px,5vw,70px);line-height:.96;letter-spacing:-.02em;word-spacing:.08em;margin:0 0 20px;font-weight:900}.case p{font-size:17px;line-height:1.52;color:#4d535d;margin:0}.diagram{border:1px solid var(--hair);background:linear-gradient(180deg,#fff,#f7f8fa);border-radius:24px;padding:18px;min-height:236px}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;align-items:center}.node{min-height:118px;border:1px solid #dcdde3;background:#fff;border-radius:18px;padding:15px 13px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 8px 28px rgba(21,24,32,.045)}.node b{font-size:15px;line-height:1.05;letter-spacing:-.025em}.node span{font-family:"JetBrains Mono",monospace;font-size:10px;line-height:1.28;text-transform:uppercase;color:#717782;letter-spacing:.07em}.arrow{text-align:center;font-family:"JetBrains Mono",monospace;color:#8a909b;font-weight:800;align-self:center}.flow.with-arrows{grid-template-columns:1fr 20px 1fr 20px 1fr 20px 1fr}.ledger{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:28px;border:1px solid var(--hair);border-radius:22px;overflow:hidden;background:var(--hair)}.fact{background:#fff;padding:20px;min-height:142px}.fact strong{display:block;font-family:"JetBrains Mono",monospace;font-size:11px;color:#626874;text-transform:uppercase;letter-spacing:.14em;margin-bottom:12px}.fact span{display:block;font-size:15px;line-height:1.42;color:#30343b;font-weight:650;letter-spacing:-.015em}.stack{display:grid;gap:10px}.row{display:flex;justify-content:space-between;gap:16px;align-items:center;background:#fff;border:1px solid #e4e5e9;border-radius:16px;padding:14px 16px}.row b{font-size:14px}.row span{font-family:"JetBrains Mono",monospace;font-size:11px;color:#747a84;text-transform:uppercase;letter-spacing:.08em}.quote{margin:70px 0 48px;padding:48px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);font-size:clamp(32px,5.4vw,76px);line-height:1.04;letter-spacing:-.018em;word-spacing:.1em;font-weight:900;max-width:1020px}.footer{padding:56px 0 72px;color:var(--muted);font-size:14px}.footer .wrap{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--hair);padding-top:24px}.marker{font-family:"JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px}.screen-only{position:absolute;left:-9999px}
 
-    .protocol{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:1px;border:1px solid var(--hair);border-radius:26px;overflow:hidden;background:var(--hair);box-shadow:0 18px 70px rgba(18,20,28,.045)}.protocol-panel{background:#fff;padding:26px}.protocol-panel h3{margin:0 0 16px;font-size:28px;letter-spacing:-.03em}.protocol-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}.protocol-list li{display:grid;grid-template-columns:24px 1fr;gap:10px;color:#424852;font-size:16px;line-height:1.38}.protocol-list b{color:#17191f}.protocol-num{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--green);font-weight:800;padding-top:4px}.benefit .protocol-num{color:var(--gold)}
-    @media(max-width:900px){
-      .wrap{width:min(100% - 28px,var(--max))}
-      .nav-inner{height:auto;min-height:58px;padding:14px 0;align-items:center}.brand{font-size:23px;letter-spacing:-.04em}.brand span{font-size:10px;letter-spacing:.16em;margin-left:8px}.links{display:none}
-      .hero{padding:40px 0 30px}.hero-grid,.case-head{grid-template-columns:1fr;gap:22px}.eyebrow{font-size:11px;line-height:1.35;letter-spacing:.17em;margin-bottom:22px;max-width:330px}.hero h1{font-size:clamp(48px,14vw,54px);line-height:.91;letter-spacing:-.035em;word-spacing:.04em;margin-bottom:24px}.lede{font-size:20px;line-height:1.18;letter-spacing:-.02em;word-spacing:.02em}.sublede{font-size:17px;line-height:1.5;margin-top:22px;color:#69707b}.hero-card{padding:20px 26px 22px;border-radius:24px;box-shadow:0 18px 54px rgba(18,20,28,.055)}
-      .ascii{display:none}.hero-card:before{content:"correction → pattern → better next run";display:block;font-family:"JetBrains Mono",monospace;font-size:11px;line-height:1.4;letter-spacing:.03em;color:#30343b;border:1px solid #dfe1e6;border-radius:12px;padding:12px 14px;margin-bottom:16px;background:#fff}.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}.chip{border-radius:12px;padding:10px 9px;text-align:center;font-size:11px;letter-spacing:.09em}.source-note{font-size:13px;line-height:1.5;margin-top:16px;padding-top:16px}
-      .section{padding:22px 0}.case{padding:26px 22px;border-radius:24px;box-shadow:0 14px 48px rgba(18,20,28,.045)}.case h2{font-size:clamp(32px,9.8vw,38px);line-height:1;letter-spacing:-.025em;word-spacing:.04em;margin-bottom:18px}.case p{font-size:16px;line-height:1.48}.kicker{font-size:11px;letter-spacing:.16em;margin-bottom:14px}
-      .protocol{grid-template-columns:1fr;margin-top:24px;border-radius:20px}.protocol-panel{padding:20px 18px}.protocol-panel h3{font-size:23px;margin-bottom:14px}.protocol-list{gap:11px}.protocol-list li{font-size:15px;line-height:1.42;grid-template-columns:22px 1fr}
-      .diagram{border:0;background:transparent;border-radius:0;padding:0;min-height:0;margin-top:2px}.flow,.flow.with-arrows{grid-template-columns:1fr;gap:8px}.arrow{transform:none;height:auto;line-height:1;color:#9aa0aa;font-size:13px}.node{min-height:0;border-radius:14px;padding:15px 14px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:baseline;box-shadow:none}.node b{font-size:16px;line-height:1.15}.node span{font-size:9px;text-align:right;max-width:126px}.stack{gap:8px}.row{border-radius:14px;padding:14px}.row b{font-size:15px}.row span{font-size:9px;text-align:right}.ledger{grid-template-columns:1fr;margin-top:22px;border-radius:18px}.fact{min-height:0;padding:18px 19px}.fact strong{font-size:10px;margin-bottom:10px}.fact span{font-size:15px;line-height:1.4}.quote{margin:28px 0 18px;padding:28px 0;font-size:34px;line-height:1.05;letter-spacing:-.02em;word-spacing:.05em}.footer{padding:34px 0 48px}.footer .wrap{display:block}.footer .marker{margin-top:12px}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--ground);
+      color: var(--ink);
+      font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    /* Typography */
+    h1, h2, h3 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 92px);
+      font-optical-sizing: auto;
+      margin-bottom: 24px;
+      letter-spacing: -0.035em;
+    }
+
+    h2 {
+      font-size: clamp(36px, 5.5vw, 68px);
+      margin-bottom: 24px;
+      letter-spacing: -0.032em;
+    }
+
+    h3 {
+      font-size: clamp(24px, 3.5vw, 42px);
+      margin-bottom: 16px;
+      letter-spacing: -0.028em;
+    }
+
+    .label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    p {
+      max-width: 680px;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--hair);
+      transition: border-color 160ms ease-out;
+    }
+
+    a:hover {
+      border-color: var(--accent);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+      border-color: var(--accent);
+    }
+
+    /* Sections */
+    section {
+      padding: 96px 0;
+      opacity: 0;
+      transform: translateY(24px);
+      animation: reveal 320ms ease-out forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      section {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @keyframes reveal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section:nth-child(1) { animation-delay: 0ms; }
+    section:nth-child(2) { animation-delay: 80ms; }
+    section:nth-child(3) { animation-delay: 160ms; }
+    section:nth-child(4) { animation-delay: 240ms; }
+    section:nth-child(5) { animation-delay: 320ms; }
+    section:nth-child(6) { animation-delay: 400ms; }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--hair);
+      border-radius: var(--radius);
+      padding: 40px;
+    }
+
+    /* Hero */
+    .hero {
+      padding-top: 64px;
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      max-width: 920px;
+      position: relative;
+    }
+
+    .hero-sub {
+      font-size: clamp(18px, 2.2vw, 24px);
+      color: var(--muted);
+      max-width: 760px;
+      margin-top: 24px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+
+    /* The Loop */
+    .loop-visual {
+      margin-top: 64px;
+      position: relative;
+    }
+
+    .loop-track {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+
+    .loop-track::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      right: 24px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent) 33%, var(--accent) 66%, var(--accent) 100%);
+      opacity: 0.3;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .loop-node {
+      background: var(--paper);
+      border: 2px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      position: relative;
+      z-index: 1;
+      transition: border-color 180ms ease-out, transform 180ms ease-out, box-shadow 180ms ease-out;
+      background: linear-gradient(135deg, var(--paper) 0%, rgba(200, 245, 74, 0.05) 100%);
+    }
+
+    .loop-node:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(200, 245, 74, 0.15);
+    }
+
+    .loop-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      color: var(--accent);
+      margin-bottom: 16px;
+      display: block;
+      font-weight: 500;
+    }
+
+    .loop-title {
+      font-family: 'Fraunces', serif;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      letter-spacing: -0.025em;
+    }
+
+    .loop-desc {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .loop-arrow {
+      position: absolute;
+      top: 50%;
+      right: -12px;
+      transform: translateY(-50%);
+      color: var(--accent);
+      font-size: 20px;
+      z-index: 1;
+    }
+
+    /* Obsidian Section */
+    .obsidian {
+      background: var(--paper);
+      border: 1px solid var(--hair);
+      border-radius: var(--radius);
+      padding: 64px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .obsidian::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--accent);
+      opacity: 1;
+    }
+
+    .obsidian-intro {
+      margin-bottom: 56px;
+    }
+
+    .obsidian-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .benefit-card {
+      background: var(--ground);
+      border: 1px solid var(--hair);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: border-color 180ms ease-out;
+    }
+
+    .benefit-card:hover {
+      border-color: rgba(200, 245, 74, 0.6);
+    }
+
+    .benefit-title {
+      font-family: 'Fraunces', serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .benefit-text {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* Methods Section */
+    .methods-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .method-chip {
+      background: var(--paper);
+      border: 1px solid var(--hair);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      font-size: 15px;
+      line-height: 1.5;
+      transition: border-color 180ms ease-out, transform 180ms ease-out;
+    }
+
+    .method-chip:hover {
+      border-color: var(--muted);
+      transform: translateX(2px);
+    }
+
+    .method-label {
+      font-weight: 600;
+      color: var(--ink);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* Start Section */
+    .start-card {
+      background: var(--paper);
+      border: 1px solid var(--hair);
+      border-radius: var(--radius);
+      padding: 48px 40px;
+      margin-top: 40px;
+      max-width: 820px;
+    }
+
+    .start-text {
+      font-size: 19px;
+      line-height: 1.65;
+      color: var(--ink);
+    }
+
+    /* Close Section */
+    .close {
+      text-align: center;
+      padding: 120px 0 96px;
+    }
+
+    .close-thesis {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 800;
+      line-height: 1.3;
+      letter-spacing: -0.028em;
+      margin-bottom: 48px;
+      max-width: 820px;
+      margin-inline: auto;
+    }
+
+    .close-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .close-link {
+      font-size: 17px;
+      font-weight: 500;
+      padding: 16px 32px;
+      background: var(--paper);
+      border: 1px solid var(--hair);
+      border-radius: var(--radius);
+      transition: background 160ms ease-out, border-color 160ms ease-out;
+      display: inline-block;
+    }
+
+    .close-link:hover {
+      background: var(--accent);
+      color: var(--ground);
+      border-color: var(--accent);
+    }
+
+    .close-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .back-link {
+      margin-top: 40px;
+      display: inline-block;
+      font-size: 15px;
+      color: var(--muted);
+      border-bottom: 1px solid transparent;
+    }
+
+    .back-link:hover {
+      color: var(--ink);
+      border-bottom-color: var(--hair);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .wrap {
+        width: calc(100% - 32px);
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .hero {
+        padding-top: 40px;
+        min-height: auto;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      .card {
+        padding: 32px 24px;
+      }
+
+      .loop-track {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .loop-arrow {
+        display: none;
+      }
+
+      .obsidian {
+        padding: 48px 24px;
+      }
+
+      .obsidian-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .methods-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .start-card {
+        padding: 32px 24px;
+      }
+
+      .close {
+        padding: 80px 0 64px;
+      }
+
+      .close-links {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .close-link {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
-  <nav class="nav"><div class="wrap nav-inner"><div class="brand">okeito<span>Hermes Agent Work</span></div><div class="links"><a href="#protocol">Protocol</a><a href="#onboarding">Onboarding</a><a href="#assessment">Assessment</a><a href="#skills">Skills</a><a href="#memory">Memory</a><a href="#verification">Verification</a></div></div></nav>
 
-  <header class="hero wrap">
-    <div class="hero-grid">
-      <div>
-        <div class="eyebrow"><span class="grad">Conversational AI</span> · Agent systems portfolio</div>
-        <h1>Making an agent better</h1>
-        <p class="lede">A portfolio supplement based on my live Hermes Agent work: turning corrections, tool use, Obsidian-backed memory, delegation, and verification into reusable behavior architecture.</p>
-        <p class="sublede">The work is not a static prompt-writing sample. It shows how I shape an AI agent’s operating model: what it remembers, when it uses tools, how it recovers from failure, how it delegates, and how it proves the result before presenting it.</p>
+  <!-- 1. Hero -->
+  <section class="hero wrap">
+    <h1>I design the agent's operating system</h1>
+    <p class="hero-sub">What it remembers. When it uses tools. How it recovers. How it proves work before it speaks. I do not write prompts — I design the system underneath.</p>
+  </section>
+
+  <!-- 2. The Loop -->
+  <section class="wrap">
+    <div class="label">The one motion</div>
+    <h2>Correction → skill → better next run</h2>
+    <p>Every fix becomes reusable behavior. This is how the agent improves over time instead of forgetting after each thread.</p>
+    
+    <div class="loop-visual">
+      <div class="loop-track">
+        <div class="loop-node active">
+          <span class="loop-num">01</span>
+          <div class="loop-title">Correction</div>
+          <p class="loop-desc">User spots a gap or failure in the agent's behavior</p>
+          <div class="loop-arrow">→</div>
+        </div>
+        <div class="loop-node active">
+          <span class="loop-num">02</span>
+          <div class="loop-title">Reusable skill</div>
+          <p class="loop-desc">The fix is captured as a procedure the agent can load</p>
+          <div class="loop-arrow">→</div>
+        </div>
+        <div class="loop-node active">
+          <span class="loop-num">03</span>
+          <div class="loop-title">Better next run</div>
+          <p class="loop-desc">Next time, the agent starts with the learned behavior</p>
+        </div>
       </div>
-      <aside class="hero-card" aria-label="source note">
-<pre class="ascii">        ╭──────────────────╮
-        │  user correction │
-        ╰────────┬─────────╯
-                 │
-        ╭────────▼─────────╮
-        │ reusable pattern │
-        ╰────────┬─────────╯
-                 │
-        ╭────────▼─────────╮
-        │ better next run  │
-        ╰──────────────────╯</pre>
-        <div class="chips"><span class="chip">Skills</span><span class="chip">Tool discipline</span><span class="chip">Obsidian memory</span><span class="chip">Self-improvement</span></div>
-        <p class="source-note"><strong>Where these cases came from:</strong> my working sessions with Hermes Agent — especially moments where I corrected behavior, demanded verification, or turned a solved workflow into a reusable agent pattern.</p>
-      </aside>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="section wrap" id="protocol"><article class="case">
-      <div class="case-head"><div><div class="kicker">00 · Agent setup protocol</div><h2>What I do.</h2><p>I turn a raw AI agent into a working operating system: clear rules, useful memory, repeatable workflows, real tools, and proof-backed delivery.</p></div><div><p>Instead of relying on one giant prompt, I set up the agent like a product: what it should remember, what it should verify, when it should ask, when it should act, and how it should recover when something breaks.</p></div></div>
-      <div class="protocol" aria-label="Agent setup protocol breakdown">
-        <div class="protocol-panel"><h3>The setup</h3><ul class="protocol-list">
-          <li><span class="protocol-num">01</span><span><b>Define the agent’s job.</b> What outcomes it owns, what it should never guess, and what needs human approval.</span></li>
-          <li><span class="protocol-num">02</span><span><b>Separate memory types.</b> Stable user preferences, active context, old sessions, and reusable procedures each get their own lane.</span></li>
-          <li><span class="protocol-num">03</span><span><b>Build reusable skills.</b> Corrections and solved workflows become playbooks the agent can load next time.</span></li>
-          <li><span class="protocol-num">04</span><span><b>Attach real tools.</b> The agent reads files, searches, runs tests, checks screenshots, and verifies before answering.</span></li>
-          <li><span class="protocol-num">05</span><span><b>Design failure paths.</b> If evidence is missing, it retries, narrows scope, asks, escalates, or reports the blocker clearly.</span></li>
-        </ul></div>
-        <div class="protocol-panel benefit"><h3>The benefits</h3><ul class="protocol-list">
-          <li><span class="protocol-num">01</span><span><b>More reliable output.</b> The agent acts from evidence instead of fluent guessing.</span></li>
-          <li><span class="protocol-num">02</span><span><b>Less repeated training.</b> Hard-won corrections become reusable behavior.</span></li>
-          <li><span class="protocol-num">03</span><span><b>Cleaner handoffs.</b> Work is packaged with context, proof, files, and next actions.</span></li>
-          <li><span class="protocol-num">04</span><span><b>Safer automation.</b> Risky actions, stale memory, and broken tool paths are handled deliberately.</span></li>
-          <li><span class="protocol-num">05</span><span><b>Better over time.</b> Every serious task can improve the next run instead of disappearing after one chat.</span></li>
-        </ul></div>
+  <!-- 3. Obsidian is the brain -->
+  <section class="wrap">
+    <div class="obsidian">
+      <div class="obsidian-intro">
+        <div class="label">Memory architecture</div>
+        <h2>Obsidian is the brain</h2>
+        <p>I use Obsidian as the agent's memory store. Not a black-box embedding blob — a human-readable workspace where facts keep their source, related decisions find each other, and stale knowledge gets edited or killed.</p>
       </div>
-    </article></section>
 
-    <section class="section wrap" id="onboarding"><article class="case">
-      <div class="case-head"><div><div class="kicker">00B · Client onboarding form</div><h2>The form turns a client need into an agent blueprint.</h2><p>For new clients who need agents, the intake form captures the business context before anything is built: goals, customers, workflows, systems, rules, and success criteria.</p></div><div><p>The benefit is speed with fewer assumptions. The form gives the agent project a clean starting map, so discovery is sharper, proposals are clearer, and the build starts from real client operations instead of generic AI ideas.</p></div></div>
-      <div class="protocol" aria-label="Client onboarding form breakdown">
-        <div class="protocol-panel"><h3>What the form captures</h3><ul class="protocol-list">
-          <li><span class="protocol-num">01</span><span><b>Business goal.</b> What the client wants the agent to improve: leads, support, booking, sales, follow-up, or internal operations.</span></li>
-          <li><span class="protocol-num">02</span><span><b>Customer journey.</b> Who the agent talks to, why they reach out, and what a successful conversation should accomplish.</span></li>
-          <li><span class="protocol-num">03</span><span><b>Knowledge and tools.</b> FAQs, policies, documents, CRM, calendar, forms, payment links, and other systems the agent may need.</span></li>
-          <li><span class="protocol-num">04</span><span><b>Rules and handoff.</b> What the agent can say, what it should never promise, and when a human should take over.</span></li>
-          <li><span class="protocol-num">05</span><span><b>Success metrics.</b> The outcomes that prove the agent is working: booked calls, solved tickets, faster response, cleaner lead data, or fewer missed follow-ups.</span></li>
-        </ul></div>
-        <div class="protocol-panel benefit"><h3>Why it helps</h3><ul class="protocol-list">
-          <li><span class="protocol-num">01</span><span><b>Faster discovery.</b> The client’s needs are organized before the first build conversation.</span></li>
-          <li><span class="protocol-num">02</span><span><b>Better agent design.</b> The build is shaped around the client’s actual workflow, not a generic chatbot template.</span></li>
-          <li><span class="protocol-num">03</span><span><b>Clearer scope.</b> Everyone can see what the agent handles, what it escalates, and what integrations matter.</span></li>
-          <li><span class="protocol-num">04</span><span><b>Safer launch.</b> Guardrails, approvals, and human handoff rules are defined before the agent talks to customers.</span></li>
-          <li><span class="protocol-num">05</span><span><b>Stronger ROI story.</b> The form connects the agent to business results, not just automation for its own sake.</span></li>
-        </ul></div>
+      <div class="obsidian-grid">
+        <div class="benefit-card">
+          <div class="benefit-title">Inspectable</div>
+          <p class="benefit-text">Open the note and see why the agent "knows" something. No mystery weights.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-title">Source-grounded</div>
+          <p class="benefit-text">Facts keep a dossier and a link, not a vibe. Evidence stays attached.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-title">Backlinks</div>
+          <p class="benefit-text">Related decisions find each other automatically. Memory has structure.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-title">File bus</div>
+          <p class="benefit-text">Agents do not share chats. They share notes. Memory survives a thread.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-title">No black box</div>
+          <p class="benefit-text">Stale facts get edited or killed. Nothing is hoarded into one opaque blob.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-title">Portable</div>
+          <p class="benefit-text">Markdown, not a vendor memory product. You own the knowledge base.</p>
+        </div>
       </div>
-    </article></section>
+    </div>
+  </section>
 
-    <section class="section wrap" id="assessment"><article class="case">
-      <div class="case-head"><div><div class="kicker">00C · AI readiness assessment</div><h2>The assessment diagnoses where AI can actually create value.</h2><p>I built a business assessment question bank that works like a diagnostic call: it maps the company’s revenue engine, customer flow, fulfillment, back office, financial baseline, and industry-specific bottlenecks.</p></div><div><p>The strength of the approach is that it does not lead with tools. It leads with business leakage: time, dollars, frequency, error rates, missed follow-up, manual work, customer friction, and growth constraints.</p></div></div>
-      <div class="protocol" aria-label="Business AI assessment breakdown">
-        <div class="protocol-panel"><h3>What is inside</h3><ul class="protocol-list">
-          <li><span class="protocol-num">01</span><span><b>Business DNA.</b> Role, business model, maturity, team structure, and the weekly actions that create revenue.</span></li>
-          <li><span class="protocol-num">02</span><span><b>Operational X-ray.</b> Lead flow, speed-to-lead, CRM/nurture gaps, fulfillment steps, delivery delays, and customer complaints.</span></li>
-          <li><span class="protocol-num">03</span><span><b>Time-vampire math.</b> Email back-and-forth, data entry, chasing documents, repeated proposals, rework, and other non-revenue labor.</span></li>
-          <li><span class="protocol-num">04</span><span><b>ROI baseline.</b> Hourly value, software budget, tried-before history, and what the client would do if 10 hours were bought back.</span></li>
-          <li><span class="protocol-num">05</span><span><b>Industry probes.</b> Short paths for service businesses, e-commerce, real estate, healthcare, SaaS, and local brick-and-mortar businesses.</span></li>
-        </ul></div>
-        <div class="protocol-panel benefit"><h3>Benefits of this approach</h3><ul class="protocol-list">
-          <li><span class="protocol-num">01</span><span><b>Consultative, not salesy.</b> The call feels like a business diagnostic, not an AI pitch.</span></li>
-          <li><span class="protocol-num">02</span><span><b>Quantified pain.</b> Problems become hours, dollars, error rates, and monthly hidden labor cost.</span></li>
-          <li><span class="protocol-num">03</span><span><b>Better recommendations.</b> The final report can map answers into current-state analysis, financial impact, effort-vs-impact, and recommended solutions.</span></li>
-          <li><span class="protocol-num">04</span><span><b>Clear upsell signals.</b> Spreadsheet work, custom proposals, unknown numbers, and 10+ admin hours show where implementation value exists.</span></li>
-          <li><span class="protocol-num">05</span><span><b>Objective readiness score.</b> The score framework turns messy discovery into a clear AI readiness picture and recovery plan.</span></li>
-        </ul></div>
+  <!-- 4. Reliable outcomes -->
+  <section class="wrap">
+    <div class="label">Methods</div>
+    <h2>Reliable outcomes</h2>
+    <p>Compact practices that make the agent trustworthy. Not theory — these are the methods I use in live work.</p>
+
+    <div class="methods-grid">
+      <div class="method-chip">
+        <span class="method-label">Plan then work</span>
+        <span>Do not start building from a fuzzy ask. Map the job first.</span>
       </div>
-    </article></section>
-    <section class="section wrap" id="skills"><article class="case">
-      <div class="case-head"><div><div class="kicker">01 · Learned behavior</div><h2>Skills turn corrections into reusable behavior.</h2><p>In my Hermes work, repeatable procedures become skills: compact playbooks that load when relevant, preserve user preferences, and make the agent better after each hard task.</p></div>
-      <div class="diagram"><div class="flow with-arrows"><div class="node"><b>User request</b><span>goal + constraints</span></div><div class="arrow">→</div><div class="node"><b>Skill loading</b><span>loads learned workflow</span></div><div class="arrow">→</div><div class="node"><b>Tool execution</b><span>real artifact</span></div><div class="arrow">→</div><div class="node"><b>Better next run</b><span>patch / save</span></div></div></div></div>
-      <div class="ledger"><div class="fact"><strong>Problem</strong><span>A single long prompt cannot capture every correction, domain workflow, and operating standard without becoming brittle.</span></div><div class="fact"><strong>Choice</strong><span>Keep base behavior stable; move learned workflows into modular skills that can be loaded, patched, and reused.</span></div><div class="fact"><strong>Voice agent fit</strong><span>Reusable behavior modules for conversational AI teams instead of one-off prompt fixes.</span></div></div>
-    </article></section>
 
-    <section class="section wrap" id="memory"><article class="case">
-      <div class="case-head"><div><div class="kicker">02 · Context architecture</div><h2>Memory is governed, not hoarded.</h2><p>I designed a clear split between active context, durable user memory, retrievable session history, and skills — so the agent improves without carrying stale noise.</p></div>
-      <div class="diagram"><div class="stack"><div class="row"><b>Active context</b><span>now</span></div><div class="row"><b>User memory</b><span>stable facts</span></div><div class="row"><b>Session search</b><span>retrieve</span></div><div class="row"><b>Skills</b><span>procedure</span></div></div></div></div>
-      <div class="ledger"><div class="fact"><strong>Problem</strong><span>Agents get worse when temporary task state, durable preferences, and old transcripts are treated as the same thing.</span></div><div class="fact"><strong>Choice</strong><span>Save stable facts, retrieve old sessions only when needed, and convert repeatable procedures into skills.</span></div><div class="fact"><strong>Voice agent fit</strong><span>Call state, customer facts, policy context, and handoff notes need different lifetimes.</span></div></div>
-    </article></section>
+      <div class="method-chip">
+        <span class="method-label">Scoped memory</span>
+        <span>Stable facts, session noise, and procedures stay in separate lanes.</span>
+      </div>
 
-    <section class="section wrap" id="obsidian"><article class="case">
-      <div class="case-head"><div><div class="kicker">03 · Obsidian memory layer</div><h2>Obsidian turns memory into a source-grounded workspace.</h2><p>I upgraded the agent’s memory workflow by using Obsidian as a human-readable knowledge base: notes, research dossiers, corrections, decisions, and source links stay inspectable instead of disappearing inside the model.</p></div>
-      <div class="diagram"><div class="stack"><div class="row"><b>Obsidian vault</b><span>durable notes</span></div><div class="row"><b>Source dossiers</b><span>evidence + links</span></div><div class="row"><b>Agent recall</b><span>retrieve when relevant</span></div><div class="row"><b>Better next answer</b><span>grounded context</span></div></div></div></div>
-      <div class="ledger"><div class="fact"><strong>Problem</strong><span>Model memory alone is too opaque: it can be stale, hard to inspect, and weak at preserving long research trails.</span></div><div class="fact"><strong>Choice</strong><span>Use Obsidian as the durable memory surface for structured notes, evidence, backlinks, and reusable operating context.</span></div><div class="fact"><strong>Voice agent fit</strong><span>Enterprise agents need auditable memory: why the system knows something, where it came from, and when to trust it.</span></div></div>
-    </article></section>
+      <div class="method-chip">
+        <span class="method-label">Skills over prompts</span>
+        <span>Repeatable workflows live as playbooks, not one giant instruction blob.</span>
+      </div>
 
-    <section class="section wrap" id="subagents"><article class="case">
-      <div class="case-head"><div><div class="kicker">04 · Delegation model</div><h2>Subagents protect focus and context.</h2><p>For complex work, Hermes can split research, extraction, QA, and synthesis into isolated agents. That keeps the main conversation cleaner and makes verification easier.</p></div>
-      <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Orchestrator</b><span>owns outcome</span></div><div class="arrow">→</div><div class="node"><b>Research</b><span>isolated context</span></div><div class="arrow">→</div><div class="node"><b>QA</b><span>checks output</span></div><div class="arrow">→</div><div class="node"><b>Summary</b><span>verified handle</span></div></div></div></div>
-      <div class="ledger"><div class="fact"><strong>Problem</strong><span>One agent doing every subtask in one context creates noise, missed details, and weak verification.</span></div><div class="fact"><strong>Choice</strong><span>Use bounded specialist agents with explicit context packets and verifiable return handles.</span></div><div class="fact"><strong>Voice agent fit</strong><span>Voice flows can route identity, policy, billing, booking, and escalation as separate capabilities.</span></div></div>
-    </article></section>
+      <div class="method-chip">
+        <span class="method-label">Tools before claims</span>
+        <span>Read files, run tests, screenshot pages. Verify, then speak.</span>
+      </div>
 
-    <section class="section wrap" id="recovery"><article class="case">
-      <div class="case-head"><div><div class="kicker">05 · Recovery design</div><h2>The agent must know how to fail safely.</h2><p>A better agent is not just more confident. It detects ambiguity, failed tools, missing evidence, and risky actions — then retries, clarifies, or escalates instead of fabricating.</p></div>
-      <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Request</b><span>unknowns</span></div><div class="arrow">→</div><div class="node"><b>Evidence check</b><span>tool / source</span></div><div class="arrow">→</div><div class="node"><b>Recovery branch</b><span>retry / clarify</span></div><div class="arrow">→</div><div class="node"><b>Safe answer</b><span>or handoff</span></div></div></div></div>
-      <div class="ledger"><div class="fact"><strong>Problem</strong><span>The dangerous failure mode is confident language when the evidence path broke.</span></div><div class="fact"><strong>Choice</strong><span>Make recovery states explicit: retry, alternate source, narrow clarification, honest blocker, or human handoff.</span></div><div class="fact"><strong>Voice agent fit</strong><span>Conversational AI reliability depends on safe failure more than fluent wrongness.</span></div></div>
-    </article></section>
+      <div class="method-chip">
+        <span class="method-label">Proof loop</span>
+        <span>Run it. Screenshot. Test. Patch. Then deliver. Never skip evidence.</span>
+      </div>
 
-    <section class="section wrap" id="verification"><article class="case">
-      <div class="case-head"><div><div class="kicker">06 · Verification loop</div><h2>Verification is designed into the loop.</h2><p>I use a real execution loop: inspect files, run tools, render outputs, screenshot pages, test claims, patch what fails, and only then deliver.</p></div>
-      <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Build</b><span>artifact</span></div><div class="arrow">→</div><div class="node"><b>Inspect</b><span>pixels / tests</span></div><div class="arrow">→</div><div class="node"><b>Patch</b><span>fix issues</span></div><div class="arrow">→</div><div class="node"><b>Verify</b><span>report proof</span></div></div></div></div>
-      <div class="ledger"><div class="fact"><strong>Problem</strong><span>Agent improvements are only real if they survive execution, screenshots, tests, and edge cases.</span></div><div class="fact"><strong>Choice</strong><span>Build, render, inspect pixels, patch, re-render, verify, then report evidence.</span></div><div class="fact"><strong>Voice agent fit</strong><span>This becomes an eval loop for resolution quality, unsafe claims, repair behavior, and handoff clarity.</span></div></div>
-    </article></section>
+      <div class="method-chip">
+        <span class="method-label">Fail safe</span>
+        <span>Retry, narrow, ask, or hand off. Never fluent guess when evidence broke.</span>
+      </div>
 
-    <section class="section wrap" id="voice"><article class="case">
-      <div class="case-head"><div><div class="kicker">07 · Conversational AI translation</div><h2>What this teaches for voice agents.</h2><p>The agent-improvement work translates directly into voice systems: route intent, scope memory, ground tool actions, repair failures, and hand off with a clean context packet.</p></div>
-      <div class="diagram"><div class="flow with-arrows"><div class="node"><b>Understand</b><span>intent</span></div><div class="arrow">→</div><div class="node"><b>Verify</b><span>confidence + policy</span></div><div class="arrow">→</div><div class="node"><b>Act</b><span>grounded tool</span></div><div class="arrow">→</div><div class="node"><b>Handoff</b><span>context packet</span></div></div></div></div>
-      <div class="ledger"><div class="fact"><strong>Problem</strong><span>Voice has no visual interface; the agent’s behavior architecture becomes the product experience.</span></div><div class="fact"><strong>Choice</strong><span>Use the same control loop: understand, verify, retrieve, act, summarize or escalate.</span></div><div class="fact"><strong>Voice agent fit</strong><span>A reusable platform pattern for enterprise conversations, not a one-off script.</span></div></div>
-    </article></section>
+      <div class="method-chip">
+        <span class="method-label">Isolated subagents</span>
+        <span>Research and QA run in separate contexts so the main thread stays clean.</span>
+      </div>
+    </div>
+  </section>
 
-    <section class="section wrap"><div class="quote">“A better agent is built from captured corrections, reusable procedures, and proof that the behavior works.”</div></section>
+  <!-- 5. How I start -->
+  <section class="wrap">
+    <div class="label">Intake</div>
+    <h2>How I start</h2>
+    <p>I map the real operation before anything is built.</p>
 
-    <section class="section wrap"><article class="case">
-      <div class="case-head"><div><div class="kicker">Design thesis</div><h2>I improve the agent by designing its operating system.</h2></div><div><p>The work is about making the agent more reliable over time: skills from corrections, scoped memory, tool discipline, safe recovery, and screenshot/test-backed verification.</p><p style="margin-top:18px">This is the design lens behind the work: not just prompts, but reusable agent behavior that teams can inspect, test, improve, and deploy across conversations.</p></div></div>
-    </article></section>
-  </main>
+    <div class="start-card">
+      <p class="start-text">
+        Goal. Customer journey. Existing systems. Business rules. Success metric. I capture the operation in its current state — no AI yet — so the agent design starts from how the work actually happens, not from generic chatbot ideas.
+      </p>
+    </div>
+  </section>
 
-  <footer class="footer"><div class="wrap"><div>Okeito · Conversational AI systems design portfolio supplement</div><div class="marker">live-html-v5-business-assessment · github-pages</div></div></footer>
+  <!-- 6. Close -->
+  <section class="close wrap">
+    <p class="close-thesis">
+      A better agent is captured corrections, reusable procedures, and proof.
+    </p>
+
+    <div class="close-links">
+      <a href="https://okeito.com/" class="close-link" target="_blank" rel="noopener">okeito.com</a>
+      <a href="https://www.linkedin.com/in/okeito-s/" class="close-link" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <a href="https://marvelus-tech.github.io/" class="back-link">← Back to portfolio</a>
+  </section>
+
 </body>
 </html>
