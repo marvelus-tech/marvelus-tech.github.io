@@ -530,7 +530,7 @@
       <div class="obsidian-intro">
         <div class="label">Memory architecture</div>
         <h2>Obsidian is the brain</h2>
-        <p>I use Obsidian as the agent's memory store. Not a black-box embedding blob — a human-readable workspace where facts keep their source, related decisions find each other, and stale knowledge gets edited or killed.</p>
+        <p>Markdown files in a project folder are the system of record. Obsidian is the human viewer. Chat memory is not the brain — agents share notes, not threads. I point the agent at one project folder, not a whole vault. Agent facts and personal notes stay in separate files.</p>
       </div>
 
       <div class="obsidian-grid">
@@ -541,7 +541,7 @@
 
         <div class="benefit-card">
           <div class="benefit-title">Source-grounded</div>
-          <p class="benefit-text">Facts keep a dossier and a link, not a vibe. Evidence stays attached.</p>
+          <p class="benefit-text">Facts keep a dossier and a link. Evidence stays attached to the file, not the chat.</p>
         </div>
 
         <div class="benefit-card">
@@ -551,7 +551,7 @@
 
         <div class="benefit-card">
           <div class="benefit-title">File bus</div>
-          <p class="benefit-text">Agents do not share chats. They share notes. Memory survives a thread.</p>
+          <p class="benefit-text">Agents share notes, not threads. Memory survives after the conversation ends.</p>
         </div>
 
         <div class="benefit-card">
@@ -580,33 +580,28 @@
       </div>
 
       <div class="method-chip">
-        <span class="method-label">Scoped memory</span>
-        <span>Stable facts, session noise, and procedures stay in separate lanes.</span>
+        <span class="method-label">File memory over chat</span>
+        <span>Chat is not the source of truth. Notes are. Agents read and write files.</span>
       </div>
 
       <div class="method-chip">
-        <span class="method-label">Skills over prompts</span>
-        <span>Repeatable workflows live as playbooks, not one giant instruction blob.</span>
-      </div>
-
-      <div class="method-chip">
-        <span class="method-label">Tools before claims</span>
-        <span>Read files, run tests, screenshot pages. Verify, then speak.</span>
+        <span class="method-label">Eval the failure, then write the skill</span>
+        <span>Skills close measured gaps. They are not a prompt dump.</span>
       </div>
 
       <div class="method-chip">
         <span class="method-label">Proof loop</span>
-        <span>Run it. Screenshot. Test. Patch. Then deliver. Never skip evidence.</span>
+        <span>Produce the artifact, then grade it against the environment. Tests, screenshot, schema.</span>
       </div>
 
       <div class="method-chip">
-        <span class="method-label">Fail safe</span>
-        <span>Retry, narrow, ask, or hand off. Never fluent guess when evidence broke.</span>
+        <span class="method-label">Split on context, not job title</span>
+        <span>Use a second agent only when a subtask would flood the parent context.</span>
       </div>
 
       <div class="method-chip">
-        <span class="method-label">Isolated subagents</span>
-        <span>Research and QA run in separate contexts so the main thread stays clean.</span>
+        <span class="method-label">Human gate on irreversible acts</span>
+        <span>Risky actions need approval. If it cannot be undone, ask first.</span>
       </div>
     </div>
   </section>
