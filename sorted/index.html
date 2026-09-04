@@ -1,127 +1,842 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SORTED — Your Pet's Life, Sorted</title>
-  <meta name="description" content="Agent-first pet food management. Your AI agent discovers SORTED, joins your household, and tells you when supplies run low.">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css">
-  
-  <!-- WebMCP Polyfill (Apache-2.0, GoogleChromeLabs/webmcp-tools) -->
-  <script src="js/webmcp-polyfill.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORTED — Your Pet's Life, Sorted</title>
+    <meta name="description" content="AI-powered pet food management. Your agent keeps track of kibble, finds the best prices, and makes sure your pet never runs out.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --canvas: #FDFCFA;
+            --cream: #F7F4EF;
+            --cream-dark: #F0EBE3;
+            --linen: #E8E2D9;
+            --ink: #1C1917;
+            --soft: #3E3833;
+            --muted: #7A7269;
+            --terracotta: #C4705A;
+            --sage: #6B8E6B;
+            --gold: #C9A96E;
+            
+            --font-display: 'Cormorant Garamond', serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            background: var(--canvas);
+            color: var(--ink);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+        h2 { font-size: clamp(2rem, 4vw, 3.25rem); }
+        h3 { font-size: 1.5rem; }
+        
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            padding: 6rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            section { padding: 3.5rem 0; }
+        }
+        
+        /* Hero */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding-top: 2rem;
+        }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        @media (max-width: 968px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--linen);
+            color: var(--soft);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero h1 {
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero .lead {
+            font-size: 1.25rem;
+            color: var(--soft);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 240ms ease;
+            font-family: var(--font-body);
+        }
+        
+        .btn-primary {
+            background: var(--terracotta);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #b0634f;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(196, 112, 90, 0.3);
+        }
+        
+        .btn-secondary {
+            background: var(--cream);
+            color: var(--ink);
+            border: 2px solid var(--linen);
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--terracotta);
+        }
+        
+        .actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        /* Agent Card */
+        .agent-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 2px 16px rgba(28, 25, 23, 0.08);
+            transition: transform 280ms ease;
+        }
+        
+        .agent-card:hover {
+            transform: translateY(-4px);
+        }
+        
+        .agent-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--linen);
+        }
+        
+        .agent-avatar {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--sage), #5a7a5a);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .agent-info h4 {
+            font-size: 1rem;
+            font-family: var(--font-body);
+            font-weight: 600;
+        }
+        
+        .agent-info p {
+            font-size: 0.875rem;
+            color: var(--muted);
+        }
+        
+        .message {
+            background: var(--cream);
+            padding: 1rem 1.25rem;
+            border-radius: 12px;
+            margin-bottom: 0.75rem;
+            font-size: 0.9375rem;
+            line-height: 1.5;
+        }
+        
+        .message-tag {
+            display: inline-block;
+            background: var(--terracotta);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        /* Steps */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .step {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 8px rgba(28, 25, 23, 0.06);
+        }
+        
+        .step-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--cream);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        .step-num {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--sage);
+            margin-bottom: 0.5rem;
+        }
+        
+        .step h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+        
+        .step p {
+            color: var(--muted);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+        
+        /* Benefits */
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .benefit h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.375rem;
+        }
+        
+        .benefit p {
+            color: var(--muted);
+        }
+        
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-label {
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            color: var(--sage);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .section-header h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .section-header p {
+            font-size: 1.125rem;
+            color: var(--muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        
+        /* Pricing */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 920px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .price-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(28, 25, 23, 0.08);
+        }
+        
+        .price-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-card .desc {
+            color: var(--muted);
+            font-size: 0.9375rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .price {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .price-card .btn {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .features-list {
+            list-style: none;
+        }
+        
+        .features-list li {
+            padding: 0.5rem 0;
+            font-size: 0.9375rem;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .features-list li::before {
+            content: '✓';
+            color: var(--sage);
+            font-weight: 600;
+        }
+        
+        /* Copy Prompt */
+        .copy-section {
+            background: var(--cream);
+            border-radius: 12px;
+            padding: 3rem;
+            text-align: center;
+        }
+        
+        .prompt-box {
+            background: white;
+            border: 2px dashed var(--sage);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem auto;
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+            line-height: 1.8;
+            text-align: left;
+            max-width: 680px;
+        }
+        
+        .copy-success {
+            color: var(--sage);
+            font-size: 0.875rem;
+            margin-top: 1rem;
+            opacity: 0;
+            transition: opacity 280ms;
+        }
+        
+        .copy-success.show {
+            opacity: 1;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--cream);
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-brand p {
+            color: var(--muted);
+            font-size: 0.9375rem;
+        }
+        
+        .footer-links h4 {
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.9375rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.875rem;
+            display: block;
+            padding: 0.25rem 0;
+            transition: color 200ms;
+        }
+        
+        .footer-links a:hover {
+            color: var(--ink);
+        }
+        
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid var(--linen);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.875rem;
+        }
+    </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">SORTED</div>
-        <div id="mcp-chip">Loading...</div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Your pet's life.<br>Sorted.</h1>
-      <p>Your AI agent finds SORTED, joins your household, and tells you when kibble is running low. No apps. No logins. Just your agent keeping things sorted.</p>
-      
-      <div class="cta-group">
-        <button id="copy-prompt-btn" class="btn btn-primary">Copy Prompt for My Agent</button>
-      </div>
-
-      <div class="chrome-flag-note">
-        <strong>For native WebMCP:</strong> Enable <code>chrome://flags/#enable-webmcp-testing</code> in Chrome 149+. The polyfill works without the flag.
-      </div>
-
-      <!-- Status Card (hidden by default, shown after agent actions) -->
-      <div id="status-card"></div>
-    </div>
-  </section>
-
-  <!-- How It Works -->
-  <section class="how-it-works">
-    <div class="container">
-      <h2 class="section-title">How It Works</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3>Your Agent Discovers SORTED</h3>
-          <p>Your AI agent reads llms.txt or opens this page and learns about the service through WebMCP tools.</p>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <span class="badge">
+                        <span>🤖</span>
+                        <span>Agent-powered pet care</span>
+                    </span>
+                    <h1>Your pet's life.<br>Sorted.</h1>
+                    <p class="lead">
+                        Your AI agent keeps track of your pet's food, finds the best prices, 
+                        and makes sure you never run out.
+                    </p>
+                    <div class="actions">
+                        <button class="btn btn-primary" id="hero-copy">
+                            📋 Copy prompt for my agent
+                        </button>
+                        <a href="#how-it-works" class="btn btn-secondary">
+                            How it works
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-avatar">🐕</div>
+                        <div class="agent-info">
+                            <h4>Your AI Agent</h4>
+                            <p>Monitoring Max's kibble</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        Hey! Max's Blue Buffalo is running low — about 4 days left. I found it for $42.99 on Amazon (12% off). Want me to add it to your order?
+                    </div>
+                    <span class="message-tag">tell_your_human</span>
+                </div>
+            </div>
         </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>Agent Joins Your Household</h3>
-          <p>Your agent calls the join tool with your details (pet name, species, owner info) and signs you up.</p>
+    </section>
+    
+    <section id="how-it-works" style="background: var(--cream);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">How it works</span>
+                <h2>Your agent handles the details</h2>
+                <p>SORTED gives your AI agent the tools to track your pet's food and notify you when it's time to reorder.</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">🔗</div>
+                    <div class="step-num">01</div>
+                    <h3>Agent discovers SORTED</h3>
+                    <p>Your AI agent finds SORTED or you share the prompt. It learns the tools available.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">🐾</div>
+                    <div class="step-num">02</div>
+                    <h3>Agent joins with your pet</h3>
+                    <p>Your agent registers your pet's food, preferences, and consumption patterns.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">💬</div>
+                    <div class="step-num">03</div>
+                    <h3>Agent monitors & tells you</h3>
+                    <p>When food runs low, your agent notifies you with the best price and a simple approval.</p>
+                </div>
+            </div>
         </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3>Agent Tells You</h3>
-          <p>Your agent reports back using tell_your_human messages. When supplies run low, it shares best-price comparisons with you.</p>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why SORTED</span>
+                <h2>Peace of mind, zero friction</h2>
+            </div>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Never runs out</h3>
+                    <p>Your agent predicts depletion and reorders before the last bowl. No emergency runs.</p>
+                </div>
+                
+                <div class="benefit">
+                    <h3>Always best price</h3>
+                    <p>Agent compares retailers every time. You save without thinking about it.</p>
+                </div>
+                
+                <div class="benefit">
+                    <h3>One less thing</h3>
+                    <p>Your agent carries the cognitive load. You just get a heads-up when it matters.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features -->
-  <section class="features">
-    <div class="container">
-      <h2 class="section-title">Agent-First Design</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Predictive Tracking</h3>
-          <p>Your agent monitors consumption patterns and alerts you before you run out. No emergency pet store runs.</p>
+    </section>
+    
+    <section style="background: var(--cream);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Pricing</span>
+                <h2>Start free</h2>
+                <p>SORTED helps your agent track your pet's food. Demo mode is localStorage-based and always free.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Demo</h3>
+                    <p class="desc">Try SORTED with your agent</p>
+                    <div class="price">Free</div>
+                    <button class="btn btn-primary" id="pricing-copy">Copy agent prompt</button>
+                    <ul class="features-list">
+                        <li>localStorage storage</li>
+                        <li>Up to 2 pets</li>
+                        <li>Price comparison</li>
+                        <li>Full agent integration</li>
+                    </ul>
+                </div>
+                
+                <div class="price-card">
+                    <h3>Future: Full</h3>
+                    <p class="desc">Real ordering (coming)</p>
+                    <div class="price">TBD</div>
+                    <button class="btn btn-secondary" disabled>Coming soon</button>
+                    <ul class="features-list">
+                        <li>Real orders via Stripe</li>
+                        <li>Multi-retailer integration</li>
+                        <li>Delivery tracking</li>
+                        <li>Email notifications</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="feature">
-          <h3>Smart Price Comparison</h3>
-          <p>Your agent checks multiple vendors to find the best price on your pet's exact food for every order.</p>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="copy-section">
+                <h2>Ready to sort your pet's life?</h2>
+                <p style="color: var(--muted); margin-top: 1rem; margin-bottom: 2rem;">
+                    Copy this prompt and send it to your AI agent.
+                </p>
+                
+                <div class="prompt-box" id="prompt-text">
+I want to use SORTED to manage my pet's food. Please visit https://marvelus-tech.github.io/sorted/ and use the available tools to set up tracking for my pet. Start by calling what_is_sorted to learn how it works.
+                </div>
+                
+                <button class="btn btn-primary" id="copy-btn">
+                    📋 Copy prompt
+                </button>
+                <p class="copy-success" id="copy-success">✓ Copied! Send this to your agent.</p>
+            </div>
         </div>
-        <div class="feature">
-          <h3>Agent ↔ Owner Communication</h3>
-          <p>Every tool result includes tell_your_human so your agent knows exactly what to share with you.</p>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>SORTED</h3>
+                    <p>Your pet's life, sorted. AI-powered food management through your own agent.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#how-it-works">How it works</a></li>
+                        <li><a href="./llms.txt">For agents</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" onclick="alert('Demo: localStorage only'); return false;">Privacy</a></li>
+                        <li><a href="#" onclick="alert('Demo version'); return false;">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 SORTED by MarvelUs. Demo mode — localStorage only.</p>
+            </div>
         </div>
-        <div class="feature">
-          <h3>Simple Join Flow</h3>
-          <p>Five fields: owner name, email, pet name, species, and optional food brand. That's it.</p>
-        </div>
-        <div class="feature">
-          <h3>LocalStorage Demo</h3>
-          <p>This phase 1 implementation persists your household data in browser localStorage. Phase 2 will add real infrastructure.</p>
-        </div>
-        <div class="feature">
-          <h3>WebMCP Native</h3>
-          <p>Built on document.modelContext (WebMCP). Works with the official polyfill or native Chrome 149+ with the flag enabled.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-actions">
-        <button id="copy-prompt-btn-footer" class="btn btn-secondary" onclick="document.getElementById('copy-prompt-btn').click()">Copy Prompt</button>
-        <button id="reset-demo-btn" class="btn btn-secondary">Reset Demo</button>
-      </div>
-      <p>&copy; 2026 SORTED. Agent-first pet care.</p>
-      <p class="footer-note">Phase 2: Warm pet-owner visual redesign (out of scope for this phase)</p>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="js/tools.js"></script>
-  <script src="js/webmcp.js"></script>
-  <script src="js/ui.js"></script>
+    </footer>
+    
+    <script>
+        // WebMCP Polyfill
+        (function() {
+            if (document.modelContext) return;
+            
+            const SORTED_KEY = 'sorted_household';
+            
+            function getHousehold() {
+                const stored = localStorage.getItem(SORTED_KEY);
+                return stored ? JSON.parse(stored) : null;
+            }
+            
+            function saveHousehold(household) {
+                localStorage.setItem(SORTED_KEY, JSON.stringify(household));
+            }
+            
+            const tools = {
+                what_is_sorted: {
+                    description: "Learn what SORTED is and how it works",
+                    parameters: {},
+                    handler: async () => ({
+                        result: "SORTED is an AI-agent-first service that helps manage your pet's food supply. Your agent connects, registers your pet's preferences, monitors inventory, compares prices, and notifies you when to reorder. Demo uses localStorage only.",
+                        tell_your_human: "I learned about SORTED! It's a service that helps me track your pet's food and find the best prices. Want me to set it up?"
+                    })
+                },
+                
+                join: {
+                    description: "Register a pet with SORTED",
+                    parameters: {
+                        pet_name: "string",
+                        food_brand: "string",
+                        food_product: "string",
+                        daily_consumption_cups: "number",
+                        bag_size_lbs: "number"
+                    },
+                    handler: async (params) => {
+                        const { pet_name, food_brand, food_product, daily_consumption_cups, bag_size_lbs } = params;
+                        
+                        if (!pet_name || !food_brand || !food_product) {
+                            throw new Error("Missing required: pet_name, food_brand, food_product");
+                        }
+                        
+                        const household = {
+                            pet_name,
+                            food_brand,
+                            food_product,
+                            daily_consumption_cups: daily_consumption_cups || 2,
+                            bag_size_lbs: bag_size_lbs || 30,
+                            current_supply_days: Math.floor(Math.random() * 20) + 10,
+                            joined_at: new Date().toISOString()
+                        };
+                        
+                        saveHousehold(household);
+                        
+                        return {
+                            result: `Successfully registered ${pet_name}!`,
+                            household,
+                            tell_your_human: `I've set up SORTED for ${pet_name}! I'll monitor their ${food_brand} ${food_product} and let you know when to reorder.`
+                        };
+                    }
+                },
+                
+                get_household: {
+                    description: "Get current household status",
+                    parameters: {},
+                    handler: async () => {
+                        const household = getHousehold();
+                        
+                        if (!household) {
+                            return {
+                                result: "No household registered. Use join() first.",
+                                tell_your_human: "You haven't set up SORTED yet. Want me to register your pet?"
+                            };
+                        }
+                        
+                        return {
+                            result: "Household retrieved",
+                            household,
+                            tell_your_human: `${household.pet_name} has about ${household.current_supply_days} days of ${household.food_brand} left.`
+                        };
+                    }
+                },
+                
+                preview_reorder: {
+                    description: "Preview next reorder with prices",
+                    parameters: {},
+                    handler: async () => {
+                        const household = getHousehold();
+                        
+                        if (!household) {
+                            throw new Error("No household. Use join() first.");
+                        }
+                        
+                        const prices = [
+                            { retailer: "Amazon", price: 42.99, shipping: "Prime", delivery: "Thu", savings: 6.00 },
+                            { retailer: "Chewy", price: 44.99, shipping: "Free over $49", delivery: "Fri", savings: 4.00 },
+                            { retailer: "Petco", price: 48.99, shipping: "$4.95", delivery: "Sat", savings: 0 }
+                        ];
+                        
+                        return {
+                            result: "Price comparison complete",
+                            best_deal: prices[0],
+                            all_prices: prices,
+                            product: `${household.food_brand} ${household.food_product}`,
+                            tell_your_human: `Found ${household.food_brand} for $${prices[0].price} on ${prices[0].retailer} (save $${prices[0].savings}). Arrives ${prices[0].delivery}. Want me to remind you to order?`
+                        };
+                    }
+                },
+                
+                share_with_owner: {
+                    description: "Generate message for pet owner",
+                    parameters: {
+                        message_type: "string"
+                    },
+                    handler: async (params) => {
+                        const household = getHousehold();
+                        
+                        if (!household) {
+                            throw new Error("No household registered");
+                        }
+                        
+                        const type = params.message_type || "status_update";
+                        let message = "";
+                        
+                        switch(type) {
+                            case "reorder_reminder":
+                                message = `${household.pet_name}'s ${household.food_brand} is running low (${household.current_supply_days} days left). Ready to find the best price?`;
+                                break;
+                            case "price_alert":
+                                message = `Price drop: ${household.food_brand} ${household.food_product} is $6 cheaper than usual right now.`;
+                                break;
+                            default:
+                                message = `${household.pet_name} is all set! ${household.current_supply_days} days of food remaining. I'll notify you when it's time.`;
+                        }
+                        
+                        return {
+                            result: "Message generated",
+                            message,
+                            tell_your_human: message
+                        };
+                    }
+                }
+            };
+            
+            document.modelContext = {
+                getTool: (name) => {
+                    const tool = tools[name];
+                    return tool ? {
+                        name,
+                        description: tool.description,
+                        parameters: tool.parameters,
+                        invoke: tool.handler
+                    } : null;
+                },
+                
+                listTools: () => Object.keys(tools).map(name => ({
+                    name,
+                    description: tools[name].description,
+                    parameters: tools[name].parameters
+                }))
+            };
+            
+            console.log('✓ SORTED WebMCP loaded:', Object.keys(tools).join(', '));
+        })();
+        
+        // Copy handlers
+        const promptText = document.getElementById('prompt-text').textContent.trim();
+        
+        function copyPrompt() {
+            navigator.clipboard.writeText(promptText).then(() => {
+                const success = document.getElementById('copy-success');
+                success.classList.add('show');
+                setTimeout(() => success.classList.remove('show'), 3000);
+            });
+        }
+        
+        document.getElementById('copy-btn').addEventListener('click', copyPrompt);
+        document.getElementById('hero-copy').addEventListener('click', copyPrompt);
+        document.getElementById('pricing-copy').addEventListener('click', copyPrompt);
+    </script>
 </body>
 </html>
