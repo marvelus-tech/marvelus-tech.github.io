@@ -6,13 +6,11 @@
     <title>SORTED — Your Pet's Life, Sorted</title>
     <meta name="description" content="AI-powered pet food management. Your agent keeps track of kibble, finds the best prices, and makes sure your pet never runs out.">
     
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     
     <style>
-        /* Reset & Base */
         * {
             margin: 0;
             padding: 0;
@@ -20,23 +18,20 @@
         }
         
         :root {
-            /* Colors - Light & Warm */
-            --ground: #FBF7F0;
-            --wash: #F3EDE3;
-            --card: #FFFFFF;
+            --canvas: #FDFCFA;
+            --cream: #F7F4EF;
+            --cream-dark: #F0EBE3;
+            --linen: #E8E2D9;
             --ink: #1C1917;
-            --muted: #78716C;
-            --accent: #E85D4C;
-            --sage: #A8B5A0;
+            --soft: #3E3833;
+            --muted: #7A7269;
+            --terracotta: #C4705A;
+            --sage: #6B8E6B;
+            --gold: #C9A96E;
             
-            /* Typography */
-            --font-display: 'Fraunces', serif;
-            --font-body: 'DM Sans', sans-serif;
+            --font-display: 'Cormorant Garamond', serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
             --font-mono: 'JetBrains Mono', monospace;
-            
-            /* Spacing */
-            --radius: 16px;
-            --max-width: 1120px;
         }
         
         html {
@@ -45,35 +40,24 @@
         
         body {
             font-family: var(--font-body);
-            background: var(--ground);
+            background: var(--canvas);
             color: var(--ink);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
         
-        /* Typography */
         h1, h2, h3 {
             font-family: var(--font-display);
-            font-weight: 700;
-            line-height: 1.1;
+            font-weight: 600;
+            line-height: 1.2;
         }
         
-        h1 {
-            font-size: clamp(2.5rem, 6vw, 4.5rem);
-        }
+        h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+        h2 { font-size: clamp(2rem, 4vw, 3.25rem); }
+        h3 { font-size: 1.5rem; }
         
-        h2 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-        }
-        
-        /* Layout */
         .container {
-            max-width: var(--max-width);
+            max-width: 1120px;
             margin: 0 auto;
             padding: 0 2rem;
         }
@@ -83,40 +67,37 @@
         }
         
         @media (max-width: 768px) {
-            section {
-                padding: 4rem 0;
-            }
+            section { padding: 3.5rem 0; }
         }
         
         /* Hero */
         .hero {
-            min-height: 90vh;
+            min-height: 85vh;
             display: flex;
             align-items: center;
-            position: relative;
-            overflow: hidden;
+            padding-top: 2rem;
         }
         
-        .hero-content {
+        .hero-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.1fr 1fr;
             gap: 4rem;
             align-items: center;
         }
         
         @media (max-width: 968px) {
-            .hero-content {
+            .hero-grid {
                 grid-template-columns: 1fr;
                 gap: 3rem;
             }
         }
         
-        .hero-text .badge {
+        .badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: var(--wash);
-            color: var(--muted);
+            background: var(--linen);
+            color: var(--soft);
             padding: 0.5rem 1rem;
             border-radius: 100px;
             font-size: 0.875rem;
@@ -124,16 +105,16 @@
             margin-bottom: 1.5rem;
         }
         
-        .hero-text h1 {
+        .hero h1 {
             margin-bottom: 1.5rem;
-            color: var(--ink);
+            letter-spacing: -0.02em;
         }
         
-        .hero-text .intro {
+        .hero .lead {
             font-size: 1.25rem;
-            color: var(--muted);
+            color: var(--soft);
             margin-bottom: 2rem;
-            max-width: 540px;
+            line-height: 1.6;
         }
         
         /* Buttons */
@@ -142,55 +123,53 @@
             align-items: center;
             gap: 0.5rem;
             padding: 1rem 2rem;
-            border-radius: var(--radius);
+            border-radius: 12px;
             font-weight: 600;
             font-size: 1rem;
             text-decoration: none;
             border: none;
             cursor: pointer;
-            transition: all 280ms ease-out;
+            transition: all 240ms ease;
             font-family: var(--font-body);
         }
         
         .btn-primary {
-            background: var(--accent);
+            background: var(--terracotta);
             color: white;
         }
         
         .btn-primary:hover {
-            background: #d54d3c;
+            background: #b0634f;
             transform: translateY(-2px);
-            box-shadow: 0 12px 24px rgba(232, 93, 76, 0.25);
+            box-shadow: 0 8px 20px rgba(196, 112, 90, 0.3);
         }
         
         .btn-secondary {
-            background: var(--card);
+            background: var(--cream);
             color: var(--ink);
-            border: 2px solid var(--wash);
+            border: 2px solid var(--linen);
         }
         
         .btn-secondary:hover {
-            border-color: var(--muted);
-            transform: translateY(-2px);
+            border-color: var(--terracotta);
         }
         
-        .hero-actions {
+        .actions {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
         }
         
-        /* Agent Message Card */
-        .agent-message {
-            background: var(--card);
-            border-radius: var(--radius);
+        /* Agent Card */
+        .agent-card {
+            background: white;
+            border-radius: 16px;
             padding: 2rem;
-            box-shadow: 0 4px 24px rgba(28, 25, 23, 0.08);
-            position: relative;
-            transition: transform 320ms ease-out;
+            box-shadow: 0 2px 16px rgba(28, 25, 23, 0.08);
+            transition: transform 280ms ease;
         }
         
-        .agent-message:hover {
+        .agent-card:hover {
             transform: translateY(-4px);
         }
         
@@ -200,13 +179,13 @@
             gap: 1rem;
             margin-bottom: 1.5rem;
             padding-bottom: 1rem;
-            border-bottom: 1px solid var(--wash);
+            border-bottom: 1px solid var(--linen);
         }
         
         .agent-avatar {
             width: 48px;
             height: 48px;
-            background: linear-gradient(135deg, var(--sage), #8fa585);
+            background: linear-gradient(135deg, var(--sage), #5a7a5a);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -216,8 +195,8 @@
         
         .agent-info h4 {
             font-size: 1rem;
-            margin-bottom: 0.25rem;
             font-family: var(--font-body);
+            font-weight: 600;
         }
         
         .agent-info p {
@@ -225,59 +204,53 @@
             color: var(--muted);
         }
         
-        .message-bubble {
-            background: var(--wash);
+        .message {
+            background: var(--cream);
             padding: 1rem 1.25rem;
             border-radius: 12px;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
             font-size: 0.9375rem;
             line-height: 1.5;
         }
         
-        .message-badge {
+        .message-tag {
             display: inline-block;
-            background: var(--accent);
+            background: var(--terracotta);
             color: white;
             padding: 0.25rem 0.75rem;
             border-radius: 6px;
             font-size: 0.75rem;
             font-weight: 600;
-            margin-top: 0.5rem;
         }
         
-        /* How It Works */
+        /* Steps */
         .steps {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
-            margin-top: 4rem;
+            margin-top: 3rem;
         }
         
         .step {
-            background: var(--card);
+            background: white;
             padding: 2rem;
-            border-radius: var(--radius);
-            box-shadow: 0 2px 12px rgba(28, 25, 23, 0.06);
-            transition: transform 280ms ease-out;
-        }
-        
-        .step:hover {
-            transform: translateY(-4px);
+            border-radius: 12px;
+            box-shadow: 0 1px 8px rgba(28, 25, 23, 0.06);
         }
         
         .step-icon {
             width: 56px;
             height: 56px;
-            background: var(--wash);
+            background: var(--cream);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.75rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.25rem;
         }
         
-        .step-number {
+        .step-num {
             font-family: var(--font-mono);
             font-size: 0.75rem;
             color: var(--sage);
@@ -299,17 +272,8 @@
         .benefits {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-        
-        .benefit {
-            padding: 2rem;
-        }
-        
-        .benefit-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+            gap: 3rem;
+            margin-top: 3rem;
         }
         
         .benefit h3 {
@@ -319,10 +283,9 @@
         
         .benefit p {
             color: var(--muted);
-            font-size: 1rem;
         }
         
-        /* Section Headers */
+        /* Section Header */
         .section-header {
             text-align: center;
             margin-bottom: 3rem;
@@ -330,9 +293,10 @@
         
         .section-label {
             font-family: var(--font-mono);
-            font-size: 0.875rem;
+            font-size: 0.8125rem;
             color: var(--sage);
-            letter-spacing: 0.05em;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
             margin-bottom: 1rem;
             display: block;
         }
@@ -351,21 +315,19 @@
         /* Pricing */
         .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 4rem;
-            max-width: 960px;
+            margin-top: 3rem;
+            max-width: 920px;
             margin-left: auto;
             margin-right: auto;
         }
         
         .price-card {
-            background: var(--card);
+            background: white;
             padding: 2.5rem;
-            border-radius: var(--radius);
-            box-shadow: 0 2px 16px rgba(28, 25, 23, 0.08);
-            display: flex;
-            flex-direction: column;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(28, 25, 23, 0.08);
         }
         
         .price-card h3 {
@@ -382,11 +344,13 @@
         .price {
             font-family: var(--font-display);
             font-size: 3rem;
-            font-weight: 700;
+            font-weight: 600;
             margin-bottom: 1.5rem;
         }
         
         .price-card .btn {
+            width: 100%;
+            justify-content: center;
             margin-bottom: 2rem;
         }
         
@@ -409,32 +373,25 @@
             font-weight: 600;
         }
         
-        /* Copy Prompt Section */
-        .copy-prompt-section {
-            background: var(--wash);
-            border-radius: var(--radius);
+        /* Copy Prompt */
+        .copy-section {
+            background: var(--cream);
+            border-radius: 12px;
             padding: 3rem;
             text-align: center;
         }
         
         .prompt-box {
-            background: var(--card);
+            background: white;
             border: 2px dashed var(--sage);
             border-radius: 12px;
             padding: 2rem;
-            margin: 2rem 0;
+            margin: 2rem auto;
             font-family: var(--font-mono);
             font-size: 0.875rem;
             line-height: 1.8;
             text-align: left;
             max-width: 680px;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-        }
-        
-        #copy-button {
-            margin-top: 1.5rem;
         }
         
         .copy-success {
@@ -451,40 +408,39 @@
         
         /* Footer */
         footer {
-            background: var(--wash);
-            padding: 4rem 0 2rem;
-            margin-top: 6rem;
+            background: var(--cream);
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
         }
         
-        .footer-content {
+        .footer-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-template-columns: 2fr 1fr 1fr;
             gap: 3rem;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
         
         @media (max-width: 768px) {
-            .footer-content {
+            .footer-grid {
                 grid-template-columns: 1fr;
             }
         }
         
         .footer-brand h3 {
             font-size: 1.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
         
         .footer-brand p {
             color: var(--muted);
             font-size: 0.9375rem;
-            line-height: 1.6;
         }
         
         .footer-links h4 {
             font-family: var(--font-body);
             font-weight: 600;
             font-size: 0.9375rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
         
         .footer-links ul {
@@ -506,64 +462,29 @@
         
         .footer-bottom {
             padding-top: 2rem;
-            border-top: 1px solid var(--ground);
+            border-top: 1px solid var(--linen);
             text-align: center;
             color: var(--muted);
             font-size: 0.875rem;
         }
-        
-        /* Animations */
-        @media (prefers-reduced-motion: no-preference) {
-            .fade-in {
-                animation: fadeIn 360ms ease-out;
-            }
-            
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                    transform: translateY(20px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-        }
-        
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation: none !important;
-                transition: none !important;
-            }
-        }
-        
-        /* Utility */
-        .text-center {
-            text-align: center;
-        }
-        
-        .mt-4 {
-            margin-top: 2rem;
-        }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text fade-in">
+            <div class="hero-grid">
+                <div>
                     <span class="badge">
                         <span>🤖</span>
                         <span>Agent-powered pet care</span>
                     </span>
                     <h1>Your pet's life.<br>Sorted.</h1>
-                    <p class="intro">
+                    <p class="lead">
                         Your AI agent keeps track of your pet's food, finds the best prices, 
-                        and makes sure you never run out — all while you focus on what matters.
+                        and makes sure you never run out.
                     </p>
-                    <div class="hero-actions">
-                        <button class="btn btn-primary" id="hero-copy-btn">
+                    <div class="actions">
+                        <button class="btn btn-primary" id="hero-copy">
                             📋 Copy prompt for my agent
                         </button>
                         <a href="#how-it-works" class="btn btn-secondary">
@@ -572,7 +493,7 @@
                     </div>
                 </div>
                 
-                <div class="agent-message fade-in">
+                <div class="agent-card">
                     <div class="agent-header">
                         <div class="agent-avatar">🐕</div>
                         <div class="agent-info">
@@ -580,92 +501,79 @@
                             <p>Monitoring Max's kibble</p>
                         </div>
                     </div>
-                    <div class="message-bubble">
-                        Hey! Max's Blue Buffalo kibble is running low — about 4 days left based on his eating pattern. I found it for $42.99 on Amazon (save 12% vs. usual). Want me to add it to your next order?
+                    <div class="message">
+                        Hey! Max's Blue Buffalo is running low — about 4 days left. I found it for $42.99 on Amazon (12% off). Want me to add it to your order?
                     </div>
-                    <div class="message-badge">tell_your_human sent you this update</div>
+                    <span class="message-tag">tell_your_human</span>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- How It Works -->
-    <section id="how-it-works">
+    <section id="how-it-works" style="background: var(--cream);">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">HOW IT WORKS</span>
+                <span class="section-label">How it works</span>
                 <h2>Your agent handles the details</h2>
-                <p>SORTED integrates with your AI agent. Once connected, your agent manages your pet's food automatically.</p>
+                <p>SORTED gives your AI agent the tools to track your pet's food and notify you when it's time to reorder.</p>
             </div>
             
             <div class="steps">
                 <div class="step">
                     <div class="step-icon">🔗</div>
-                    <div class="step-number">01</div>
-                    <h3>Your agent discovers SORTED</h3>
-                    <p>Your AI agent finds SORTED through natural conversation or you share the prompt below.</p>
+                    <div class="step-num">01</div>
+                    <h3>Agent discovers SORTED</h3>
+                    <p>Your AI agent finds SORTED or you share the prompt. It learns the tools available.</p>
                 </div>
                 
                 <div class="step">
                     <div class="step-icon">🐾</div>
-                    <div class="step-number">02</div>
+                    <div class="step-num">02</div>
                     <h3>Agent joins with your pet</h3>
-                    <p>Your agent tells SORTED about your pet's food, preferences, and consumption patterns.</p>
+                    <p>Your agent registers your pet's food, preferences, and consumption patterns.</p>
                 </div>
                 
                 <div class="step">
                     <div class="step-icon">💬</div>
-                    <div class="step-number">03</div>
+                    <div class="step-num">03</div>
                     <h3>Agent monitors & tells you</h3>
-                    <p>When food is running low, your agent notifies you with the best deal and a simple approval option.</p>
+                    <p>When food runs low, your agent notifies you with the best price and a simple approval.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Why It Feels Good -->
-    <section style="background: var(--card);">
+    <section>
         <div class="container">
             <div class="section-header">
-                <span class="section-label">BENEFITS</span>
+                <span class="section-label">Why SORTED</span>
                 <h2>Peace of mind, zero friction</h2>
-                <p>Let your agent handle the mental load while you enjoy time with your pet.</p>
             </div>
             
             <div class="benefits">
                 <div class="benefit">
-                    <div class="benefit-icon">🧠</div>
                     <h3>Never runs out</h3>
-                    <p>Your agent predicts depletion and reorders before the last bowl. No emergency pet store runs.</p>
+                    <p>Your agent predicts depletion and reorders before the last bowl. No emergency runs.</p>
                 </div>
                 
                 <div class="benefit">
-                    <div class="benefit-icon">💰</div>
                     <h3>Always best price</h3>
-                    <p>Agent compares retailers every time — Amazon, Chewy, Petco. You save without thinking about it.</p>
+                    <p>Agent compares retailers every time. You save without thinking about it.</p>
                 </div>
                 
                 <div class="benefit">
-                    <div class="benefit-icon">✨</div>
-                    <h3>One less thing to track</h3>
-                    <p>Your agent carries the cognitive load. You get a heads-up when it matters, approval when it's ready.</p>
-                </div>
-                
-                <div class="benefit">
-                    <div class="benefit-icon">🤝</div>
-                    <h3>Your agent, your control</h3>
-                    <p>You work with your own AI agent. SORTED just gives it the tools to help with pet care.</p>
+                    <h3>One less thing</h3>
+                    <p>Your agent carries the cognitive load. You just get a heads-up when it matters.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Pricing Sketch -->
-    <section>
+    <section style="background: var(--cream);">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">PRICING</span>
-                <h2>Start free, forever</h2>
+                <span class="section-label">Pricing</span>
+                <h2>Start free</h2>
                 <p>SORTED helps your agent track your pet's food. Demo mode is localStorage-based and always free.</p>
             </div>
             
@@ -674,18 +582,18 @@
                     <h3>Demo</h3>
                     <p class="desc">Try SORTED with your agent</p>
                     <div class="price">Free</div>
-                    <button class="btn btn-primary" id="pricing-copy-btn">Copy agent prompt</button>
+                    <button class="btn btn-primary" id="pricing-copy">Copy agent prompt</button>
                     <ul class="features-list">
                         <li>localStorage storage</li>
                         <li>Up to 2 pets</li>
-                        <li>Price comparison preview</li>
+                        <li>Price comparison</li>
                         <li>Full agent integration</li>
                     </ul>
                 </div>
                 
                 <div class="price-card">
-                    <h3>Future: Full Service</h3>
-                    <p class="desc">Real ordering (when available)</p>
+                    <h3>Future: Full</h3>
+                    <p class="desc">Real ordering (coming)</p>
                     <div class="price">TBD</div>
                     <button class="btn btn-secondary" disabled>Coming soon</button>
                     <ul class="features-list">
@@ -699,20 +607,19 @@
         </div>
     </section>
     
-    <!-- Copy Prompt Section -->
     <section>
         <div class="container">
-            <div class="copy-prompt-section">
+            <div class="copy-section">
                 <h2>Ready to sort your pet's life?</h2>
                 <p style="color: var(--muted); margin-top: 1rem; margin-bottom: 2rem;">
-                    Copy this prompt and send it to your AI agent. They'll take care of the rest.
+                    Copy this prompt and send it to your AI agent.
                 </p>
                 
-                <div class="prompt-box" id="agent-prompt">
+                <div class="prompt-box" id="prompt-text">
 I want to use SORTED to manage my pet's food. Please visit https://marvelus-tech.github.io/sorted/ and use the available tools to set up tracking for my pet. Start by calling what_is_sorted to learn how it works.
                 </div>
                 
-                <button class="btn btn-primary" id="copy-button">
+                <button class="btn btn-primary" id="copy-btn">
                     📋 Copy prompt
                 </button>
                 <p class="copy-success" id="copy-success">✓ Copied! Send this to your agent.</p>
@@ -720,86 +627,68 @@ I want to use SORTED to manage my pet's food. Please visit https://marvelus-tech
         </div>
     </section>
     
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>SORTED</h3>
                     <p>Your pet's life, sorted. AI-powered food management through your own agent.</p>
-                    <p style="margin-top: 1rem; font-size: 0.875rem;">
-                        <a href="/" style="color: var(--muted); text-decoration: none;">← Back to MarvelUs</a>
-                    </p>
                 </div>
                 
                 <div class="footer-links">
                     <h4>Product</h4>
                     <ul>
                         <li><a href="#how-it-works">How it works</a></li>
-                        <li><a href="./llms.txt">For agents (llms.txt)</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#" onclick="alert('Demo mode — localStorage only'); return false;">Demo mode</a></li>
-                        <li><a href="https://github.com/marvelus-tech" target="_blank">GitHub</a></li>
+                        <li><a href="./llms.txt">For agents</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="#" onclick="alert('Privacy: Demo stores data in your browser only'); return false;">Privacy</a></li>
-                        <li><a href="#" onclick="alert('Terms: Demo version, no warranties'); return false;">Terms</a></li>
+                        <li><a href="#" onclick="alert('Demo: localStorage only'); return false;">Privacy</a></li>
+                        <li><a href="#" onclick="alert('Demo version'); return false;">Terms</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>© 2026 SORTED by MarvelUs. Demo mode — localStorage only, no real orders.</p>
+                <p>© 2026 SORTED by MarvelUs. Demo mode — localStorage only.</p>
             </div>
         </div>
     </footer>
     
-    <!-- WebMCP Polyfill & Tools -->
     <script>
-        // WebMCP Polyfill - adds document.modelContext for AI agents
+        // WebMCP Polyfill
         (function() {
             if (document.modelContext) return;
             
-            const SORTED_STORAGE_KEY = 'sorted_household';
+            const SORTED_KEY = 'sorted_household';
             
-            // Helper: get household from localStorage
             function getHousehold() {
-                const stored = localStorage.getItem(SORTED_STORAGE_KEY);
+                const stored = localStorage.getItem(SORTED_KEY);
                 return stored ? JSON.parse(stored) : null;
             }
             
-            // Helper: save household to localStorage
             function saveHousehold(household) {
-                localStorage.setItem(SORTED_STORAGE_KEY, JSON.stringify(household));
+                localStorage.setItem(SORTED_KEY, JSON.stringify(household));
             }
             
-            // Tool implementations
             const tools = {
                 what_is_sorted: {
-                    description: "Learn what SORTED is and how it works with AI agents to manage pet food",
+                    description: "Learn what SORTED is and how it works",
                     parameters: {},
-                    handler: async () => {
-                        return {
-                            result: "SORTED is an AI-agent-first service that helps manage your pet's food supply. Your agent connects to SORTED, registers your pet's food preferences and consumption patterns, monitors inventory, compares prices across retailers, and notifies you when it's time to reorder. This demo uses localStorage only — no real purchases. Use join() to register your pet.",
-                            tell_your_human: "I learned about SORTED! It's a service that helps me track your pet's food and find the best prices. Want me to set it up for your pet?"
-                        };
-                    }
+                    handler: async () => ({
+                        result: "SORTED is an AI-agent-first service that helps manage your pet's food supply. Your agent connects, registers your pet's preferences, monitors inventory, compares prices, and notifies you when to reorder. Demo uses localStorage only.",
+                        tell_your_human: "I learned about SORTED! It's a service that helps me track your pet's food and find the best prices. Want me to set it up?"
+                    })
                 },
                 
                 join: {
-                    description: "Register a pet with SORTED by providing their food details",
+                    description: "Register a pet with SORTED",
                     parameters: {
                         pet_name: "string",
-                        food_brand: "string", 
+                        food_brand: "string",
                         food_product: "string",
                         daily_consumption_cups: "number",
                         bag_size_lbs: "number"
@@ -808,7 +697,7 @@ I want to use SORTED to manage my pet's food. Please visit https://marvelus-tech
                         const { pet_name, food_brand, food_product, daily_consumption_cups, bag_size_lbs } = params;
                         
                         if (!pet_name || !food_brand || !food_product) {
-                            throw new Error("Missing required fields: pet_name, food_brand, food_product");
+                            throw new Error("Missing required: pet_name, food_brand, food_product");
                         }
                         
                         const household = {
@@ -824,67 +713,64 @@ I want to use SORTED to manage my pet's food. Please visit https://marvelus-tech
                         saveHousehold(household);
                         
                         return {
-                            result: `Successfully registered ${pet_name} with SORTED! Monitoring ${food_brand} ${food_product}.`,
+                            result: `Successfully registered ${pet_name}!`,
                             household,
-                            tell_your_human: `I've set up SORTED for ${pet_name}! I'll monitor their ${food_brand} ${food_product} and let you know when it's time to reorder.`
+                            tell_your_human: `I've set up SORTED for ${pet_name}! I'll monitor their ${food_brand} ${food_product} and let you know when to reorder.`
                         };
                     }
                 },
                 
                 get_household: {
-                    description: "Get current household pet food status",
+                    description: "Get current household status",
                     parameters: {},
                     handler: async () => {
                         const household = getHousehold();
                         
                         if (!household) {
                             return {
-                                result: "No household registered yet. Use join() to set up your pet.",
+                                result: "No household registered. Use join() first.",
                                 tell_your_human: "You haven't set up SORTED yet. Want me to register your pet?"
                             };
                         }
                         
                         return {
-                            result: "Household status retrieved",
+                            result: "Household retrieved",
                             household,
-                            tell_your_human: `${household.pet_name} has about ${household.current_supply_days} days of ${household.food_brand} ${household.food_product} left.`
+                            tell_your_human: `${household.pet_name} has about ${household.current_supply_days} days of ${household.food_brand} left.`
                         };
                     }
                 },
                 
                 preview_reorder: {
-                    description: "Preview the next food reorder with price comparison",
+                    description: "Preview next reorder with prices",
                     parameters: {},
                     handler: async () => {
                         const household = getHousehold();
                         
                         if (!household) {
-                            throw new Error("No household registered. Use join() first.");
+                            throw new Error("No household. Use join() first.");
                         }
                         
-                        // Simulated price comparison
                         const prices = [
-                            { retailer: "Amazon", price: 42.99, shipping: "Prime - Free", delivery: "Thu", savings: 6.00 },
+                            { retailer: "Amazon", price: 42.99, shipping: "Prime", delivery: "Thu", savings: 6.00 },
                             { retailer: "Chewy", price: 44.99, shipping: "Free over $49", delivery: "Fri", savings: 4.00 },
                             { retailer: "Petco", price: 48.99, shipping: "$4.95", delivery: "Sat", savings: 0 }
                         ];
                         
-                        const best = prices[0];
-                        
                         return {
                             result: "Price comparison complete",
-                            best_deal: best,
+                            best_deal: prices[0],
                             all_prices: prices,
-                            product: `${household.food_brand} ${household.food_product} (${household.bag_size_lbs} lbs)`,
-                            tell_your_human: `I found ${household.food_brand} ${household.food_product} for $${best.price} on ${best.retailer} (save $${best.savings}). Arrives ${best.delivery}. Want me to remind you to order?`
+                            product: `${household.food_brand} ${household.food_product}`,
+                            tell_your_human: `Found ${household.food_brand} for $${prices[0].price} on ${prices[0].retailer} (save $${prices[0].savings}). Arrives ${prices[0].delivery}. Want me to remind you to order?`
                         };
                     }
                 },
                 
                 share_with_owner: {
-                    description: "Generate a summary message to share with the pet owner",
+                    description: "Generate message for pet owner",
                     parameters: {
-                        message_type: "string (status_update | reorder_reminder | price_alert)"
+                        message_type: "string"
                     },
                     handler: async (params) => {
                         const household = getHousehold();
@@ -898,13 +784,13 @@ I want to use SORTED to manage my pet's food. Please visit https://marvelus-tech
                         
                         switch(type) {
                             case "reorder_reminder":
-                                message = `Hey! ${household.pet_name}'s ${household.food_brand} is running low (${household.current_supply_days} days left). I can find the best price when you're ready.`;
+                                message = `${household.pet_name}'s ${household.food_brand} is running low (${household.current_supply_days} days left). Ready to find the best price?`;
                                 break;
                             case "price_alert":
-                                message = `Price drop alert: ${household.food_brand} ${household.food_product} is $6 cheaper than usual on Amazon right now.`;
+                                message = `Price drop: ${household.food_brand} ${household.food_product} is $6 cheaper than usual right now.`;
                                 break;
                             default:
-                                message = `${household.pet_name} is all set! Currently ${household.current_supply_days} days of food remaining. I'll let you know when it's time to reorder.`;
+                                message = `${household.pet_name} is all set! ${household.current_supply_days} days of food remaining. I'll notify you when it's time.`;
                         }
                         
                         return {
@@ -916,46 +802,41 @@ I want to use SORTED to manage my pet's food. Please visit https://marvelus-tech
                 }
             };
             
-            // Expose tools to agents
             document.modelContext = {
                 getTool: (name) => {
                     const tool = tools[name];
-                    if (!tool) return null;
-                    
-                    return {
+                    return tool ? {
                         name,
                         description: tool.description,
                         parameters: tool.parameters,
                         invoke: tool.handler
-                    };
+                    } : null;
                 },
                 
-                listTools: () => {
-                    return Object.keys(tools).map(name => ({
-                        name,
-                        description: tools[name].description,
-                        parameters: tools[name].parameters
-                    }));
-                }
+                listTools: () => Object.keys(tools).map(name => ({
+                    name,
+                    description: tools[name].description,
+                    parameters: tools[name].parameters
+                }))
             };
             
-            console.log('✓ SORTED WebMCP tools loaded:', Object.keys(tools).join(', '));
+            console.log('✓ SORTED WebMCP loaded:', Object.keys(tools).join(', '));
         })();
         
-        // Copy button handlers
-        const agentPrompt = document.getElementById('agent-prompt').textContent.trim();
+        // Copy handlers
+        const promptText = document.getElementById('prompt-text').textContent.trim();
         
         function copyPrompt() {
-            navigator.clipboard.writeText(agentPrompt).then(() => {
+            navigator.clipboard.writeText(promptText).then(() => {
                 const success = document.getElementById('copy-success');
                 success.classList.add('show');
                 setTimeout(() => success.classList.remove('show'), 3000);
             });
         }
         
-        document.getElementById('copy-button').addEventListener('click', copyPrompt);
-        document.getElementById('hero-copy-btn').addEventListener('click', copyPrompt);
-        document.getElementById('pricing-copy-btn').addEventListener('click', copyPrompt);
+        document.getElementById('copy-btn').addEventListener('click', copyPrompt);
+        document.getElementById('hero-copy').addEventListener('click', copyPrompt);
+        document.getElementById('pricing-copy').addEventListener('click', copyPrompt);
     </script>
 </body>
 </html>
