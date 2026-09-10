@@ -3,25 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MarvelUs public project directory — explore our collection of AI, audio, and web experiences.">
-  <title>MarvelUs — Project Directory</title>
+  <meta name="description" content="MarvelUs public project directory: explore our collection of AI, audio, and web experiences.">
+  <meta name="theme-color" content="#faf8f3">
+  <link rel="canonical" href="https://marvelus-tech.github.io/">
+  <title>MarvelUs | Project Directory</title>
   <style>
     :root {
-      --surface-primary: #ffffff;
-      --surface-secondary: #f5f5f7;
-      --surface-elevated: rgba(255, 255, 255, 0.72);
-      --text-primary: #1d1d1f;
-      --text-secondary: #6e6e73;
-      --text-tertiary: #86868b;
-      --accent: #0071e3;
-      --accent-hover: #0077ed;
-      --border-subtle: rgba(0, 0, 0, 0.06);
-      --border-hover: rgba(0, 0, 0, 0.12);
-      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
-      --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.02);
-      --shadow-pressed: 0 1px 2px rgba(0, 0, 0, 0.06);
-      --spring-fast: cubic-bezier(0.4, 0.0, 0.2, 1);
-      --spring-bounce: cubic-bezier(0.34, 1.45, 0.64, 1);
+      --pearl: #fbf9f4;
+      --pearl-deep: #f3eee3;
+      --ivory-glass: rgba(255, 255, 255, 0.62);
+      --text-primary: #1c1a17;
+      --text-secondary: #6b6459;
+      --text-tertiary: #948b7d;
+      --gold: #c9a24a;
+      --gold-light: #ead7a3;
+      --gold-deep: #a8822b;
+      --gold-line: rgba(201, 162, 74, 0.45);
+      --gold-line-soft: rgba(201, 162, 74, 0.22);
+      --cyan: #4cc9f0;
+      --cyan-glow: rgba(76, 201, 240, 0.38);
+      --cyan-ring: #0e7fa6;
+      --shadow-panel: 0 24px 60px -28px rgba(120, 96, 40, 0.28), 0 2px 8px rgba(120, 96, 40, 0.06);
+      --shadow-row: 0 1px 2px rgba(120, 96, 40, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      --shadow-row-hover: 0 10px 24px -12px rgba(120, 96, 40, 0.28), 0 0 0 1px var(--cyan-glow), 0 0 22px var(--cyan-glow), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+      --ease: cubic-bezier(0.4, 0, 0.2, 1);
+      --ease-bounce: cubic-bezier(0.34, 1.45, 0.64, 1);
+      --serif: 'Cormorant Garamond', 'Didot', 'Bodoni 72', 'Playfair Display', 'Times New Roman', Georgia, serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -37,18 +45,40 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
-      background: linear-gradient(to bottom, #fafafa 0%, #f5f5f7 100%);
+      font-family: var(--sans);
       color: var(--text-primary);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 3rem 2rem;
+      padding: 2.5rem 1.5rem;
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      isolation: isolate;
+      background:
+        radial-gradient(ellipse 70% 45% at 50% -5%, rgba(234, 215, 163, 0.45), transparent 70%),
+        radial-gradient(ellipse 45% 35% at 92% 100%, rgba(76, 201, 240, 0.16), transparent 70%),
+        radial-gradient(ellipse 40% 30% at 5% 90%, rgba(234, 215, 163, 0.28), transparent 70%),
+        linear-gradient(180deg, var(--pearl) 0%, var(--pearl-deep) 100%);
+      background-attachment: fixed;
+    }
+
+    /* Subtle gold "mesh": two crossed hairline grids, faded at the edges. Static, no animation. */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background:
+        repeating-linear-gradient(115deg, var(--gold-line-soft) 0 1px, transparent 1px 34px),
+        repeating-linear-gradient(-115deg, var(--gold-line-soft) 0 1px, transparent 1px 34px);
+      opacity: 0.35;
+      -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 20%, transparent 100%);
+      mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 20%, transparent 100%);
     }
 
     .container {
@@ -57,20 +87,24 @@
     }
 
     header {
-      margin-bottom: 3.5rem;
+      margin-bottom: 1.75rem;
       text-align: center;
     }
 
     h1 {
-      font-size: clamp(2.5rem, 5vw, 3.5rem);
-      font-weight: 590;
-      letter-spacing: -0.025em;
-      margin-bottom: 0.75rem;
-      color: var(--text-primary);
-      background: linear-gradient(135deg, #1d1d1f 0%, #424245 100%);
+      font-family: var(--serif);
+      font-size: clamp(2.75rem, 7vw, 4.25rem);
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1.05;
+      margin-bottom: 0.5rem;
+      color: var(--gold-deep);
+      background: linear-gradient(180deg, #dcc07a 0%, #b8923a 52%, #e6cf95 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
     }
 
     .subtitle {
@@ -84,79 +118,115 @@
     .projects {
       display: flex;
       flex-direction: column;
-      gap: 0.625rem;
-      backdrop-filter: blur(20px);
-      background: var(--surface-elevated);
-      border-radius: 18px;
-      padding: 1rem;
-      box-shadow: var(--shadow-md);
-      border: 1px solid var(--border-subtle);
+      gap: 0.5rem;
+      padding: 0.875rem;
+      border-radius: 20px;
+      background: var(--ivory-glass);
+      -webkit-backdrop-filter: blur(18px) saturate(1.2);
+      backdrop-filter: blur(18px) saturate(1.2);
+      border: 1px solid var(--gold-line);
+      box-shadow: var(--shadow-panel), inset 0 1px 0 rgba(255, 255, 255, 0.9);
     }
 
     .project-link {
       position: relative;
       display: flex;
       align-items: center;
-      padding: 1.125rem 1.375rem;
-      background: var(--surface-primary);
-      border: 1px solid var(--border-subtle);
+      gap: 0.75rem;
+      min-height: 3.25rem;
+      padding: 0.875rem 1.125rem 0.875rem 2.75rem;
+      border: 1px solid var(--gold-line-soft);
       border-radius: 12px;
       color: var(--text-primary);
       text-decoration: none;
-      font-size: 0.9375rem;
-      font-weight: 510;
-      letter-spacing: 0.007em;
-      transition: all 180ms var(--spring-fast);
-      box-shadow: var(--shadow-sm);
+      font-size: 0.9875rem;
+      font-weight: 560;
+      letter-spacing: 0.006em;
+      box-shadow: var(--shadow-row);
       overflow: hidden;
+      /* Layers, top to bottom: hover shimmer sweep, left gold hairline, luminous glass gradient. */
+      background:
+        linear-gradient(105deg, transparent 38%, rgba(255, 255, 255, 0.85) 50%, transparent 62%) no-repeat -160% 0 / 60% 100%,
+        linear-gradient(var(--gold), var(--gold)) no-repeat 0.75rem 50% / 2px 52%,
+        linear-gradient(135deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 251, 242, 0.82) 55%, rgba(236, 248, 252, 0.86) 100%);
+      transition:
+        transform 180ms var(--ease),
+        box-shadow 220ms var(--ease),
+        border-color 220ms var(--ease),
+        background-position 700ms var(--ease);
     }
 
+    /* Gold glyph sits just right of the hairline; a uniform mark keeps rows text-first without an icon set. */
     .project-link::before {
-      content: '';
+      content: '\2726';
       position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, transparent 0%, rgba(0, 113, 227, 0.02) 100%);
-      opacity: 0;
-      transition: opacity 200ms var(--spring-fast);
+      left: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.85rem;
+      line-height: 1;
+      color: var(--gold);
+      transition: color 220ms var(--ease), text-shadow 220ms var(--ease);
     }
 
+    /* Chevron drawn with borders so it inherits color and needs no font glyph. */
     .project-link::after {
-      content: '→';
+      content: '';
       margin-left: auto;
-      font-size: 1.125rem;
-      color: var(--text-tertiary);
-      transition: all 200ms var(--spring-bounce);
-      transform: translateX(-4px);
-      opacity: 0;
+      flex: 0 0 auto;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-top: 1.5px solid var(--gold);
+      border-right: 1.5px solid var(--gold);
+      transform: translateX(-2px) rotate(45deg);
+      opacity: 0.75;
+      transition: transform 220ms var(--ease-bounce), border-color 220ms var(--ease), opacity 220ms var(--ease);
     }
 
-    .project-link:hover {
-      transform: translateY(-1px) scale(1.0025);
-      box-shadow: var(--shadow-md);
-      border-color: var(--border-hover);
-      background: var(--surface-primary);
+    .project-link:hover,
+    .project-link:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(76, 201, 240, 0.7);
+      box-shadow: var(--shadow-row-hover);
+      background-position: 220% 0, 0.75rem 50%, 0 0;
     }
 
-    .project-link:hover::before {
+    .project-link:hover::before,
+    .project-link:focus-visible::before {
+      color: var(--cyan-ring);
+      text-shadow: 0 0 10px var(--cyan-glow);
+    }
+
+    .project-link:hover::after,
+    .project-link:focus-visible::after {
+      transform: translateX(2px) rotate(45deg);
+      border-color: var(--cyan-ring);
       opacity: 1;
-    }
-
-    .project-link:hover::after {
-      transform: translateX(0);
-      opacity: 1;
-      color: var(--accent);
     }
 
     .project-link:active {
-      transform: scale(0.9925);
-      box-shadow: var(--shadow-pressed);
+      transform: translateY(0) scale(0.995);
       transition-duration: 80ms;
     }
 
     .project-link:focus-visible {
-      outline: 2px solid var(--accent);
+      outline: 2px solid var(--cyan-ring);
       outline-offset: 2px;
-      border-color: var(--accent);
+    }
+
+    footer {
+      margin-top: 1.25rem;
+      text-align: center;
+      font-size: 0.6875rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      opacity: 0.85;
+    }
+
+    footer::before {
+      content: '\2726\00a0';
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -164,41 +234,47 @@
         animation-duration: 0.01ms !important;
         transition-duration: 0.01ms !important;
       }
-      
-      .project-link:hover {
-        transform: none;
-      }
-      
+
+      .project-link:hover,
+      .project-link:focus-visible,
       .project-link:active {
         transform: none;
+        /* Keep the shimmer stripe parked off-canvas so nothing sweeps. */
+        background-position: -160% 0, 0.75rem 50%, 0 0;
       }
-      
-      .project-link::after {
-        transform: none;
-      }
-      
-      .project-link:hover::after {
-        transform: none;
+
+      .project-link::after,
+      .project-link:hover::after,
+      .project-link:focus-visible::after {
+        transform: rotate(45deg);
       }
     }
 
     @media (max-width: 640px) {
       body {
-        padding: 2rem 1.25rem;
+        padding: 1.75rem 1rem;
       }
 
       header {
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      h1 {
+        letter-spacing: 0.1em;
       }
 
       .projects {
-        padding: 0.75rem;
+        padding: 0.625rem;
         border-radius: 16px;
       }
 
       .project-link {
-        padding: 1rem 1.125rem;
-        font-size: 0.875rem;
+        padding: 0.8125rem 1rem 0.8125rem 2.5rem;
+        font-size: 0.9rem;
+      }
+
+      .project-link::before {
+        left: 1.125rem;
       }
     }
 
@@ -215,7 +291,7 @@
       <h1>MarvelUs</h1>
       <p class="subtitle">Explore our collection of AI, audio, and web experiences</p>
     </header>
-    
+
     <nav class="projects" role="navigation" aria-label="Project directory">
       <a href="/readiness/" class="project-link">AI Readiness Assessment</a>
       <a href="/heist-escape-mcp/" class="project-link">Heist Escape</a>
@@ -231,6 +307,8 @@
       <a href="https://marvelus-tech.github.io/rr-dashboard/" class="project-link">Rank &amp; Rent</a>
       <a href="/marvelus-seo-presentation/" class="project-link">SEO presentation</a>
     </nav>
+
+    <footer>Built by MarvelUs &middot; Public project directory</footer>
   </div>
 </body>
 </html>
