@@ -1,4 +1,16 @@
-# React + TypeScript + Vite
+# marvelus-tech.github.io
+
+GitHub Pages project directory. Static HTML projects (including slide decks) live at the repo root and deploy from `main` without a build step.
+
+## CNSTRCT investor deck
+
+- **Local:** open `decks/cnstrct-investor/index.html` in a browser, or serve the repo root and visit `/decks/cnstrct-investor/`.
+- **Live (after merge):** https://marvelus-tech.github.io/decks/cnstrct-investor/
+- **Controls:** arrow keys, space, swipe on mobile; slide 15 lists cited sources.
+
+---
+
+# React + TypeScript + Vite (sorted app)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

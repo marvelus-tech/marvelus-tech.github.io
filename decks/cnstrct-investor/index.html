@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNSTRCT | Investor deck</title>
+  <meta name="description" content="CNSTRCT is the AI co-founder platform that triages founders, recommends low-capital businesses, and deploys a generated site plus proactive agent teammates.">
+  <link rel="canonical" href="https://marvelus-tech.github.io/decks/cnstrct-investor/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marvelus-tech.github.io/decks/cnstrct-investor/">
+  <meta property="og:title" content="CNSTRCT | AI co-founder for low-capital businesses">
+  <meta property="og:description" content="Triage, opportunity selection, generated site, and approval-gated founding agents in one flow.">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --bg-elevated: #ffffff;
+      --bg-dark: #0a0a0a;
+      --text: #1d1d1f;
+      --text-muted: #6e6e73;
+      --text-on-dark: #f5f5f7;
+      --muted-on-dark: rgba(245, 245, 247, 0.72);
+      --accent: #0071e3;
+      --accent-soft: rgba(0, 113, 227, 0.12);
+      --border: rgba(0, 0, 0, 0.08);
+      --sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+      --mono: "SF Mono", ui-monospace, Menlo, monospace;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: var(--sans);
+      background: var(--bg-dark);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .deck { width: 100vw; height: 100vh; position: relative; }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 48px 28px 72px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.45s ease;
+      overflow-y: auto;
+      text-align: center;
+    }
+
+    .slide.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .slide-light { background: var(--bg); color: var(--text); }
+    .slide-white { background: var(--bg-elevated); color: var(--text); }
+    .slide-dark {
+      background: var(--bg-dark);
+      color: var(--text-on-dark);
+    }
+
+    .slide-inner {
+      max-width: 880px;
+      width: 100%;
+    }
+
+    .kicker {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .slide-dark .kicker { color: #2997ff; }
+
+    h1, h2 {
+      font-size: clamp(1.75rem, 5vw, 3.25rem);
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      line-height: 1.12;
+      margin-bottom: 1.25rem;
+    }
+
+    .lede {
+      font-size: clamp(1rem, 2.4vw, 1.25rem);
+      line-height: 1.55;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .slide-dark .lede { color: var(--muted-on-dark); }
+
+    .stat-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .stat {
+      flex: 1 1 200px;
+      max-width: 260px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 18px;
+      text-align: left;
+    }
+
+    .slide-dark .stat {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .stat b {
+      display: block;
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .stat span {
+      font-size: 0.875rem;
+      line-height: 1.45;
+      color: var(--text-muted);
+    }
+
+    .slide-dark .stat span { color: var(--muted-on-dark); }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    .flow-step {
+      padding: 16px;
+      border-radius: 14px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(0, 113, 227, 0.2);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .flow-step strong {
+      display: block;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    ul.plain {
+      list-style: none;
+      text-align: left;
+      max-width: 620px;
+      margin: 1.5rem auto 0;
+    }
+
+    ul.plain li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--text-muted);
+    }
+
+    ul.plain li:last-child { border-bottom: none; }
+
+    ul.plain li strong { color: var(--text); font-weight: 600; }
+
+    .slide-dark ul.plain li {
+      border-color: rgba(255, 255, 255, 0.12);
+      color: var(--muted-on-dark);
+    }
+
+    .slide-dark ul.plain li strong { color: var(--text-on-dark); }
+
+    .logo-mark {
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 1.5rem;
+      text-align: left;
+      width: 100%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+    }
+
+    .slide-dark th, .slide-dark td {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .slide-dark th { color: var(--muted-on-dark); }
+
+  .sources {
+      font-size: 0.8rem;
+      line-height: 1.55;
+      text-align: left;
+      max-width: 720px;
+      margin: 1.5rem auto 0;
+      color: var(--text-muted);
+    }
+
+    .sources a {
+      color: var(--accent);
+      word-break: break-all;
+    }
+
+    .slide-dark .sources { color: var(--muted-on-dark); }
+    .slide-dark .sources a { color: #2997ff; }
+
+    .nav-hint {
+      position: fixed;
+      bottom: 44px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.45);
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    .slide-counter {
+      position: fixed;
+      bottom: 16px;
+      right: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.5);
+      font-variant-numeric: tabular-nums;
+      z-index: 20;
+    }
+
+    .progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--accent);
+      transition: width 0.35s ease;
+      z-index: 30;
+    }
+
+    .touch-nav {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    .touch-nav button {
+      flex: 1;
+      border: none;
+      background: transparent;
+      pointer-events: all;
+      cursor: default;
+    }
+
+    @media (max-width: 640px) {
+      .slide { padding: 32px 20px 64px; }
+      .stat-row { flex-direction: column; align-items: stretch; }
+      .stat { max-width: none; }
+      .nav-hint { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .slide { transition: none; }
+      .progress { transition: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="progress" id="progress" style="width: 6.67%;"></div>
+<div class="deck" id="deck">
+
+  <!-- 1 Title -->
+  <section class="slide slide-dark active" data-slide="1">
+    <div class="slide-inner">
+      <p class="kicker">Investor overview · Nov 2026</p>
+      <p class="logo-mark">CNSTRCT</p>
+      <h1>Your AI co-founder for businesses you can start with almost no capital</h1>
+      <p class="lede">We triage founders, surface three vetted opportunities, spin up a customized site and operating system, and deploy proactive agents as founding teammates.</p>
+    </div>
+  </section>
+
+  <!-- 2 Problem -->
+  <section class="slide slide-light" data-slide="2">
+    <div class="slide-inner">
+      <p class="kicker">Problem</p>
+      <h2>Americans file millions of business applications, then stall before a repeatable customer motion</h2>
+      <p class="lede">Formation is cheap; operating is not. Solo founders still need positioning, a credible web presence, lead capture, partner outreach, and daily execution without hiring a team on day one.</p>
+      <div class="stat-row">
+        <div class="stat">
+          <b>5.7M</b>
+          <span>U.S. business applications in calendar 2025 (seasonally adjusted monthly series, Census BFS).</span>
+        </div>
+        <div class="stat">
+          <b>~524K</b>
+          <span>Monthly pace in the first ten months of 2026, still above pre-2020 norms.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 Why Now -->
+  <section class="slide slide-white" data-slide="3">
+    <div class="slide-inner">
+      <p class="kicker">Why now</p>
+      <h2>Solopreneurs try AI before they hire, and agent platforms are crossing into production budgets</h2>
+      <p class="lede">The cultural shift is "co-founder in software," not another chatbot. Enterprise agent spend is forecast to scale fast, while the smallest businesses already route capacity to AI first.</p>
+      <div class="stat-row">
+        <div class="stat">
+          <b>86%</b>
+          <span>Solopreneurs and microbusiness owners who try AI before hiring for tasks they cannot handle alone (FreshBooks / Wakefield, 2026).</span>
+        </div>
+        <div class="stat">
+          <b>+26.8%</b>
+          <span>Rise in no-early-hire business applications in AI-exposed industries, Q1 2024 to Q1 2026 (Mercatus / CNBC analysis).</span>
+        </div>
+        <div class="stat">
+          <b>Forecast</b>
+          <span>Enterprise agentic AI software spend from ~$1.5B (2025) toward ~$41.8B (2030), Omdia; ranges vary by definition.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Solution -->
+  <section class="slide slide-dark" data-slide="4">
+    <div class="slide-inner">
+      <p class="kicker">Solution</p>
+      <h2>CNSTRCT turns intent into an operating business in one guided session</h2>
+      <div class="flow">
+        <div class="flow-step"><strong>1 · Triage</strong>5-8 conversational questions on skills, capital, location, and appetite for trades/home services.</div>
+        <div class="flow-step"><strong>2 · Choose</strong>Three opportunity cards: two marked coming soon, one live path personalized to the profile.</div>
+        <div class="flow-step"><strong>3 · Launch</strong>Generated marketing site plus owner dashboard: agents, approvals, and computer/sandbox view.</div>
+      </div>
+      <p class="lede" style="margin-top: 1.5rem;">Output is a working micro-business, not a blank repo. Former internal codename: Kindling. Product name everywhere: <strong>CNSTRCT</strong>.</p>
+    </div>
+  </section>
+
+  <!-- 5 Demo -->
+  <section class="slide slide-light" data-slide="5">
+    <div class="slide-inner">
+      <p class="kicker">Demo</p>
+      <h2>Home-services lead arbitrage is our live MVP: site, agents, and human-in-the-loop outreach</h2>
+      <ul class="plain">
+        <li><strong>Generated site</strong> at a shareable path: hero, how-it-works, homeowner lead form, about, contact, dashboard link.</li>
+        <li><strong>Agent A</strong> finds local tradies and drafts partnership outreach (search and directories).</li>
+        <li><strong>Agent B</strong> captures or matches homeowner leads; second agent may ship as coming-soon if schedule is tight.</li>
+        <li><strong>Approval gate</strong> on every external send, post, or spend; demo runs with mocked sends when API keys are absent.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6 Market -->
+  <section class="slide slide-white" data-slide="6">
+    <div class="slide-inner">
+      <p class="kicker">Market</p>
+      <h2>Our wedge is the solo and micro-business formation wave, not generic enterprise automation</h2>
+      <p class="lede">Top of funnel: U.S. business applications at record levels. SAM: capital-constrained founders who want a packaged playbook plus agents, starting with local services arbitrage and adjacent low-CAPEX models.</p>
+      <div class="stat-row">
+        <div class="stat">
+          <b>TAM (forecast)</b>
+          <span>AI agents market estimates from ~$7.8B (2025) toward ~$52B (2030), 46% CAGR, MarketsandMarkets. Treat as third-party forecast.</span>
+        </div>
+        <div class="stat">
+          <b>58%</b>
+          <span>Small businesses using generative AI in 2025 vs 23% two years prior (U.S. Chamber survey, cited in trade press).</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 Business model -->
+  <section class="slide slide-light" data-slide="7">
+    <div class="slide-inner">
+      <p class="kicker">Business model</p>
+      <h2>Subscription for the business OS, plus metered agent compute and LLM usage</h2>
+      <ul class="plain">
+        <li><strong>Core plan</strong> includes triage, one active business template, hosted site path, dashboard, and starter agent routines.</li>
+        <li><strong>Usage</strong> for proactive agent hours, computer/sandbox time, and outbound actions once approvals are enabled.</li>
+        <li><strong>Expansion</strong> as we unlock additional opportunity cards (same OS, new vertical playbooks).</li>
+        <li><strong>Status</strong> pricing and packaging in design; not yet in market.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 8 Traction -->
+  <section class="slide slide-white" data-slide="8">
+    <div class="slide-inner">
+      <p class="kicker">Traction</p>
+      <h2>MVP is built and demoable end-to-end without production API keys</h2>
+      <ul class="plain">
+        <li><strong>Product</strong> conversational triage, three-card selector, home-services template, generated site, agent chat, sandbox/computer view, approval UX.</li>
+        <li><strong>Revenue</strong> none to date; no invented user or MRR figures.</li>
+        <li><strong>Pilots</strong> internal demos; seeking design partners among first-time founders and micro-agency operators.</li>
+        <li><strong>Stack</strong> Next.js, TypeScript, Tailwind, multi-tenant shape, optional Supabase auth, Orgo or local sandbox for agent computers.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 9 GTM -->
+  <section class="slide slide-light" data-slide="9">
+    <div class="slide-inner">
+      <p class="kicker">Go-to-market</p>
+      <h2>We meet founders where ambition outruns capital: content, communities, and local arbitrage stories</h2>
+      <ul class="plain">
+        <li><strong>Founder-led narrative</strong> documenting "zero to first lead" builds with CNSTRCT (proof over promises).</li>
+        <li><strong>Vertical landing pages</strong> per opportunity card; home services first, next templates from the same engine.</li>
+        <li><strong>Partners</strong> formation-adjacent educators and local trade networks for supply-side liquidity.</li>
+        <li><strong>Product-led loop</strong> shareable generated sites as organic distribution for homeowner demand.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 10 Competition -->
+  <section class="slide slide-dark" data-slide="10">
+    <div class="slide-inner">
+      <p class="kicker">Competition</p>
+      <h2>App builders ship software; formation services stop at paperwork; CNSTRCT ships revenue motions with agents</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Examples</th>
+              <th>Gap CNSTRCT fills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AI app builders</td>
+              <td>Lovable, Replit-style builders</td>
+              <td>Full-stack apps and sites, not a chosen business model, operating playbooks, or proactive outreach agents.</td>
+            </tr>
+            <tr>
+              <td>Formation and legal</td>
+              <td>Stripe Atlas, Clerky, LegalZoom</td>
+              <td>Entity setup, not customer acquisition, partner sourcing, or day-to-day agent operations.</td>
+            </tr>
+            <tr>
+              <td>Horizontal AI agents</td>
+              <td>Copilots, workflow agents</td>
+              <td>General task help, not tenant-scoped founding teammates tied to a generated GTM surface.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 Team -->
+  <section class="slide slide-light" data-slide="11">
+    <div class="slide-inner">
+      <p class="kicker">Team</p>
+      <h2>Built by MarvelUs; full bios and roles to be published</h2>
+      <ul class="plain">
+        <li><strong>Founding team</strong> MarvelUs Tech (<a href="https://github.com/marvelus-tech" style="color: var(--accent);">github.com/marvelus-tech</a>).</li>
+        <li><strong>Lead (TBD)</strong> O. Surname, product and agent systems.</li>
+        <li><strong>Engineering (TBD)</strong> full-stack and agent runtime integration.</li>
+        <li><strong>Advisors (TBD)</strong> go-to-market and local services operators.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 12 Ask -->
+  <section class="slide slide-dark" data-slide="12">
+    <div class="slide-inner">
+      <p class="kicker">The ask</p>
+      <h2>Raising a pre-seed round to harden GTM, second vertical, and production agent safety</h2>
+      <ul class="plain">
+        <li><strong>Use of proceeds</strong> design partners, second opportunity card, billing and usage metering, security review on approval flows.</li>
+        <li><strong>Round terms</strong> amount and valuation: TBD with lead investor conversations.</li>
+        <li><strong>Contact</strong> marvelus-tech · investor inquiries via GitHub org contacts (TBD dedicated alias).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 13 Risks -->
+  <section class="slide slide-white" data-slide="13">
+    <div class="slide-inner">
+      <p class="kicker">Risks</p>
+      <h2>We design for agent cost, trust, and vertical liquidity up front</h2>
+      <ul class="plain">
+        <li><strong>Unit economics</strong> proactive agents can incur meaningful compute; usage pricing and routine efficiency matter.</li>
+        <li><strong>Trust</strong> outbound actions require approvals, audit logs, and clear mock-vs-live behavior in demos.</li>
+        <li><strong>Vertical risk</strong> home services needs both homeowner demand and tradie supply in each geo.</li>
+        <li><strong>Platform dependency</strong> LLM, sandbox, and email providers; we keep a no-key demo path for evaluation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 14 Appendix product -->
+  <section class="slide slide-light" data-slide="14">
+    <div class="slide-inner">
+      <p class="kicker">Appendix</p>
+      <h2>Product map: from triage to approved outbound in one tenant</h2>
+      <div class="flow">
+        <div class="flow-step"><strong>Landing</strong>Position CNSTRCT; start triage.</div>
+        <div class="flow-step"><strong>Profile</strong>Persist answers; personalize cards.</div>
+        <div class="flow-step"><strong>/b/slug</strong>Owner-branded public site and lead form.</div>
+        <div class="flow-step"><strong>Dashboard</strong>Agent threads, computer view, approvals queue.</div>
+      </div>
+      <p class="lede" style="margin-top: 1.25rem;">Private product repo and demo environment: separate from this static deck. Deck URL: <span style="font-family: var(--mono); font-size: 0.85rem;">marvelus-tech.github.io/decks/cnstrct-investor/</span></p>
+    </div>
+  </section>
+
+  <!-- 15 Sources -->
+  <section class="slide slide-white" data-slide="15">
+    <div class="slide-inner">
+      <p class="kicker">Sources</p>
+      <h2>Claims in this deck trace to the links below (forecasts labeled as forecasts)</h2>
+      <div class="sources">
+        <p><strong>U.S. business applications (2025-2026):</strong> U.S. Census Bureau Business Formation Statistics and FRED series BABATOTALSAUS. <a href="https://www.census.gov/econ/bfs/index.html">census.gov/econ/bfs</a> · <a href="https://fred.stlouisfed.org/series/BABATOTALSAUS">fred.stlouisfed.org/series/BABATOTALSAUS</a></p>
+        <p><strong>Solopreneurs and AI before hiring (86%):</strong> FreshBooks press release, Wakefield Research survey, June-July 2026. <a href="https://www.freshbooks.com/press/releases/eraofthesoloprener">freshbooks.com/press/releases/eraofthesoloprener</a></p>
+        <p><strong>AI-exposed non-employer applications (+26.8%):</strong> Mercatus Center research cited by CNBC, Nov 2026. <a href="https://www.cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html">cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html</a></p>
+        <p><strong>Small business gen AI adoption (58%):</strong> U.S. Chamber of Commerce survey, cited in Forbes and trade coverage. <a href="https://www.forbes.com/sites/rahuldogra/2026/10/14/solopreneur-ai-tools-how-solo-founders-run-businesses-without-staff/">forbes.com (solopreneur AI tools overview)</a></p>
+        <p><strong>Agentic AI market (forecasts):</strong> Omdia enterprise agentic AI software. <a href="https://omdia.tech.informa.com/pr/2025/sep/new-omdia-analysis-shows-agentic-ai-outpacing-growth-rates-of-traditional-generative-ai">omdia.tech.informa.com PR</a> · MarketsandMarkets AI agents market. <a href="https://www.marketsandmarkets.com/Market-Reports/ai-agents-market-15761548.html">marketsandmarkets.com</a> · Gartner agentic AI spending. <a href="https://emt.gartnerweb.com/ngw/globalassets/en/insights/documents/forecast-analysis-agentic-ai-spending-in-software-markets.pdf">Gartner PDF</a></p>
+        <p><strong>Competition (Lovable):</strong> Lovable documentation and product positioning. <a href="https://docs.lovable.dev/introduction/welcome">docs.lovable.dev</a></p>
+        <p><strong>Solopreneur formation and AI (Stripe Economics):</strong> <a href="https://www.stripeeconomics.com/p/the-age-of-the-solopreneur">stripeeconomics.com/p/the-age-of-the-solopreneur</a></p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="touch-nav" aria-hidden="true">
+  <button type="button" id="prevZone" aria-label="Previous slide"></button>
+  <button type="button" id="nextZone" aria-label="Next slide"></button>
+</div>
+<div class="nav-hint" aria-hidden="true">← → · space · Home / End</div>
+<div class="slide-counter" aria-live="polite"><span id="current">1</span> / 15</div>
+
+<script>
+  let currentSlide = 1;
+  const totalSlides = 15;
+
+  function showSlide(n) {
+    if (n < 1 || n > totalSlides) return;
+    document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
+    const slide = document.querySelector('[data-slide="' + n + '"]');
+    if (slide) slide.classList.add('active');
+    document.getElementById('current').textContent = String(n);
+    currentSlide = n;
+    document.getElementById('progress').style.width = ((n / totalSlides) * 100) + '%';
+  }
+
+  function nextSlide() {
+    if (currentSlide < totalSlides) showSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    if (currentSlide > 1) showSlide(currentSlide - 1);
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+      e.preventDefault();
+      nextSlide();
+    } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+      e.preventDefault();
+      prevSlide();
+    } else if (e.key === 'Home') {
+      showSlide(1);
+    } else if (e.key === 'End') {
+      showSlide(totalSlides);
+    }
+  });
+
+  let touchStartX = 0;
+  document.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+  document.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].screenX;
+    if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide();
+  }, { passive: true });
+
+  document.getElementById('prevZone').addEventListener('click', () => { if (window.innerWidth <= 768) prevSlide(); });
+  document.getElementById('nextZone').addEventListener('click', () => { if (window.innerWidth <= 768) nextSlide(); });
+
+  showSlide(1);
+</script>
+</body>
+</html>
