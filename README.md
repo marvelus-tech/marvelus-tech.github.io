@@ -2,10 +2,14 @@
 
 GitHub Pages project directory. Static HTML projects (including slide decks) live at the repo root and deploy from `main` without a build step.
 
-## CNSTRCT investor deck
+## CNSTRCT
 
-- **Local:** open `decks/cnstrct-investor/index.html` in a browser, or serve the repo root and visit `/decks/cnstrct-investor/`.
-- **Live (after merge):** https://marvelus-tech.github.io/decks/cnstrct-investor/
+- **App (live demo):** https://quick-antimony-3cxuov1.tmp.now/
+- **Investor deck:** https://marvelus-tech.github.io/decks/cnstrct-investor/
+
+### Investor deck (local)
+
+- Open `decks/cnstrct-investor/index.html` in a browser, or serve the repo root and visit `/decks/cnstrct-investor/`.
 - **Controls:** arrow keys, space, swipe on mobile; slide 15 lists cited sources.
 
 ---
