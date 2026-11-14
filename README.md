@@ -4,7 +4,7 @@ GitHub Pages project directory. Static HTML projects (including slide decks) liv
 
 ## CNSTRCT
 
-- **App (live demo):** https://quick-antimony-3cxuov1.tmp.now/
+- **App (Vercel):** https://cnstrct-app.vercel.app/ (one-time import from [CNSTRCT docs/DEPLOY.md](https://github.com/marvelus-tech/CNSTRCT/blob/main/docs/DEPLOY.md))
 - **Investor deck:** https://marvelus-tech.github.io/decks/cnstrct-investor/
 
 ### Investor deck (local)
