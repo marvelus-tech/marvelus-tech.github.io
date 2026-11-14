@@ -492,10 +492,60 @@
       .slide { transition: none; }
       .progress { transition: none; }
     }
+
+    .chart-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .chart-caption {
+      font-size: 0.72rem;
+      line-height: 1.45;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    .slide-dark .chart-caption { color: var(--muted-on-dark); }
+
+    .cite-fn {
+      font-size: 0.65em;
+      vertical-align: super;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .slide-dark .cite-fn { color: #2997ff; }
+
+    .moat-grid {
+      display: grid;
+      gap: 10px;
+      margin-top: 1.25rem;
+    }
+
+    .moat-item {
+      padding: 14px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(0, 113, 227, 0.06);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .slide-dark .moat-item {
+      border-color: rgba(255, 255, 255, 0.12);
+      background: rgba(41, 151, 255, 0.08);
+    }
+
+    .position-map {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
-<div class="progress" id="progress" style="width: 6.67%;"></div>
+<div class="progress" id="progress" style="width: 6.25%;"></div>
 <div class="deck" id="deck">
 
   <!-- 1 Title -->
@@ -505,18 +555,30 @@
         <p class="kicker">Investor overview · Nov 2026</p>
         <p class="logo-mark">CNSTRCT</p>
         <h1>Your AI co-founder for businesses you can start with almost no capital</h1>
-        <p class="lede">We triage founders, surface three vetted opportunities, spin up a customized site and operating system, and deploy proactive agents as founding teammates.</p>
+        <p class="lede">We triage founders, recommend a low-CAPEX playbook, generate the customer-facing site, and deploy approval-gated agents that run outreach while you stay in control.</p>
       </div>
       <aside class="slide-visual" aria-hidden="true">
         <div class="visual-card">
-          <p class="visual-label">Founding flow</p>
-          <div class="icon-slot-row">
-            <div class="icon-slot" title="Triage">◆</div>
-            <div class="icon-slot" title="Choose">◇</div>
-            <div class="icon-slot" title="Launch">▣</div>
-          </div>
+          <p class="visual-label">One session · three outcomes</p>
+          <svg class="chart-svg" viewBox="0 0 320 200" role="img" aria-label="Triage, launch, operate flow">
+            <rect x="8" y="24" width="92" height="72" rx="14" fill="rgba(0,113,227,0.12)" stroke="rgba(0,113,227,0.35)"/>
+            <text x="54" y="54" text-anchor="middle" fill="#f5f5f7" font-size="11" font-weight="600">Triage</text>
+            <text x="54" y="72" text-anchor="middle" fill="rgba(245,245,247,0.72)" font-size="9">Fit + capital</text>
+            <path d="M108 60 H132" stroke="#2997ff" stroke-width="2"/>
+            <polygon points="132,60 126,56 126,64" fill="#2997ff"/>
+            <rect x="136" y="24" width="92" height="72" rx="14" fill="rgba(0,113,227,0.18)" stroke="rgba(0,113,227,0.45)"/>
+            <text x="182" y="54" text-anchor="middle" fill="#f5f5f7" font-size="11" font-weight="600">Launch</text>
+            <text x="182" y="72" text-anchor="middle" fill="rgba(245,245,247,0.72)" font-size="9">Site + OS</text>
+            <path d="M236 60 H260" stroke="#2997ff" stroke-width="2"/>
+            <polygon points="260,60 254,56 254,64" fill="#2997ff"/>
+            <rect x="220" y="24" width="92" height="72" rx="14" fill="rgba(0,113,227,0.24)" stroke="rgba(0,113,227,0.55)"/>
+            <text x="266" y="54" text-anchor="middle" fill="#f5f5f7" font-size="11" font-weight="600">Operate</text>
+            <text x="266" y="72" text-anchor="middle" fill="rgba(245,245,247,0.72)" font-size="9">Agents</text>
+            <text x="12" y="128" fill="rgba(245,245,247,0.55)" font-size="9">MVP wedge: home-services lead arbitrage</text>
+            <rect x="12" y="142" width="296" height="44" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+            <text x="24" y="168" fill="#f5f5f7" font-size="10">Demo: marvelus-tech.github.io · App: cnstrct-app.vercel.app</text>
+          </svg>
         </div>
-        <div class="visual-rail">Visual slot · hero product imagery</div>
       </aside>
     </div>
   </section>
@@ -526,76 +588,140 @@
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Problem</p>
-        <h2>Americans file millions of business applications, then stall before a repeatable customer motion</h2>
-        <p class="lede">Formation is cheap; operating is not. Solo founders still need positioning, a credible web presence, lead capture, partner outreach, and daily execution without hiring a team on day one.</p>
+        <h2>A record 5.67M U.S. business applications in 2025, then most founders stall before the first paying customer</h2>
+        <p class="lede">Filing is cheap. Operating is not. Solo founders still need positioning, a credible site, lead capture, partner outreach, and daily execution without hiring on day one.</p>
         <div class="stat-row">
           <div class="stat">
-            <b>5.7M</b>
-            <span>U.S. business applications in calendar 2025 (seasonally adjusted monthly series, Census BFS).</span>
+            <b>5.67M</b>
+            <span>Sum of seasonally adjusted monthly applications, calendar 2025 (Census BFS via FRED <code style="font-size:0.8em">BABATOTALSAUS</code>).<span class="cite-fn">1</span></span>
           </div>
           <div class="stat">
-            <b>~524K</b>
-            <span>Monthly pace in the first ten months of 2026, still above pre-2020 norms.</span>
+            <b>~523K</b>
+            <span>Monthly average, Jan–Oct 2026 (same series); Oct 2026: 501.6K.<span class="cite-fn">1</span></span>
           </div>
         </div>
       </div>
       <aside class="slide-visual" aria-hidden="true">
         <div class="visual-card">
-          <p class="visual-label">Business applications (illustrative)</p>
-          <div class="chart-bars">
-            <span style="height: 45%;"></span>
-            <span style="height: 58%;"></span>
-            <span style="height: 72%;"></span>
-            <span style="height: 88%;"></span>
-            <span style="height: 100%;"></span>
-          </div>
-          <div class="chart-legend"><span>'22</span><span>'24</span><span>'26</span></div>
+          <p class="visual-label">U.S. business applications (annual, SA)</p>
+          <svg class="chart-svg" viewBox="0 0 320 168" role="img" aria-label="Bar chart of annual business applications 2020 through 2025">
+            <line x1="36" y1="8" x2="36" y2="132" stroke="rgba(0,0,0,0.12)"/>
+            <line x1="36" y1="132" x2="304" y2="132" stroke="rgba(0,0,0,0.12)"/>
+            <rect x="48" y="48" width="32" height="84" rx="4" fill="url(#barGrad)"/>
+            <rect x="92" y="22" width="32" height="110" rx="4" fill="url(#barGrad)"/>
+            <rect x="136" y="35" width="32" height="97" rx="4" fill="url(#barGrad)"/>
+            <rect x="180" y="27" width="32" height="105" rx="4" fill="url(#barGrad)"/>
+            <rect x="224" y="41" width="32" height="91" rx="4" fill="url(#barGrad)"/>
+            <rect x="268" y="14" width="32" height="118" rx="4" fill="url(#barGrad)"/>
+            <text x="64" y="150" text-anchor="middle" font-size="9" fill="#6e6e73">20</text>
+            <text x="108" y="150" text-anchor="middle" font-size="9" fill="#6e6e73">21</text>
+            <text x="152" y="150" text-anchor="middle" font-size="9" fill="#6e6e73">22</text>
+            <text x="196" y="150" text-anchor="middle" font-size="9" fill="#6e6e73">23</text>
+            <text x="240" y="150" text-anchor="middle" font-size="9" fill="#6e6e73">24</text>
+            <text x="284" y="150" text-anchor="middle" font-size="9" fill="#6e6e73">25</text>
+            <text x="284" y="26" text-anchor="middle" font-size="8" fill="#0071e3" font-weight="600">5.67M</text>
+            <defs>
+              <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#0071e3"/>
+                <stop offset="100%" stop-color="rgba(0,113,227,0.35)"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <p class="chart-caption">2020: 4.38M → 2025: 5.67M. Source: FRED BABATOTALSAUS, summed by calendar year (Nov 2026 pull).</p>
         </div>
-        <div class="visual-rail">Chart / Census BFS export slot</div>
       </aside>
     </div>
   </section>
 
-  <!-- 3 Why Now -->
-  <section class="slide slide-white" data-slide="3">
+  <!-- 3 Insight -->
+  <section class="slide slide-dark" data-slide="3">
+    <div class="slide-layout">
+      <div class="slide-content">
+        <p class="kicker">Insight</p>
+        <h2>Founders get paperwork and code, not a chosen business with customers on day one</h2>
+        <p class="lede">AI app builders ship repositories. Formation services ship entities. Neither recommends a capital-efficient model, stands up local go-to-market, or runs proactive outreach with human approvals.</p>
+        <div class="stat-row">
+          <div class="stat">
+            <b>$600M+</b>
+            <span>Run-rate revenue at leading AI app builder Lovable (company-reported, Sep 2026): product output, not packaged revenue playbooks.<span class="cite-fn">8</span></span>
+          </div>
+          <div class="stat">
+            <b>90%</b>
+            <span>Solopreneurs who say AI makes it easier for one person to start and run a business (FreshBooks / Wakefield, 2026).<span class="cite-fn">2</span></span>
+          </div>
+        </div>
+      </div>
+      <aside class="slide-visual" aria-hidden="true">
+        <div class="visual-card">
+          <p class="visual-label">Stack gap</p>
+          <svg class="chart-svg" viewBox="0 0 320 190" role="img" aria-label="Comparison of formation, builders, and CNSTRCT">
+            <text x="12" y="20" fill="rgba(245,245,247,0.72)" font-size="10">What founders buy today</text>
+            <rect x="12" y="30" width="88" height="56" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+            <text x="56" y="54" text-anchor="middle" fill="#f5f5f7" font-size="10" font-weight="600">Formation</text>
+            <text x="56" y="72" text-anchor="middle" fill="rgba(245,245,247,0.65)" font-size="8">Entity only</text>
+            <rect x="116" y="30" width="88" height="56" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+            <text x="160" y="54" text-anchor="middle" fill="#f5f5f7" font-size="10" font-weight="600">AI builder</text>
+            <text x="160" y="72" text-anchor="middle" fill="rgba(245,245,247,0.65)" font-size="8">App / site</text>
+            <rect x="220" y="22" width="88" height="72" rx="10" fill="rgba(41,151,255,0.22)" stroke="rgba(41,151,255,0.55)"/>
+            <text x="264" y="50" text-anchor="middle" fill="#f5f5f7" font-size="10" font-weight="600">CNSTRCT</text>
+            <text x="264" y="68" text-anchor="middle" fill="rgba(245,245,247,0.85)" font-size="8">Model + GTM</text>
+            <text x="264" y="82" text-anchor="middle" fill="rgba(245,245,247,0.85)" font-size="8">+ agents</text>
+            <text x="12" y="118" fill="#2997ff" font-size="10" font-weight="600">We own the operating loop</text>
+            <text x="12" y="136" fill="rgba(245,245,247,0.72)" font-size="9">Triage → playbook → site → proactive teammates</text>
+            <rect x="12" y="148" width="296" height="32" rx="8" fill="rgba(255,255,255,0.05)"/>
+            <text x="24" y="168" fill="rgba(245,245,247,0.8)" font-size="9">Approvals on every external action by default</text>
+          </svg>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 4 Why Now -->
+  <section class="slide slide-white" data-slide="4">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Why now</p>
-        <h2>Solopreneurs try AI before they hire, and agent platforms are crossing into production budgets</h2>
-        <p class="lede">The cultural shift is "co-founder in software," not another chatbot. Enterprise agent spend is forecast to scale fast, while the smallest businesses already route capacity to AI first.</p>
+        <h2>Solopreneurs try AI before they hire, and enterprise budgets are shifting to agentic software</h2>
+        <p class="lede">The buyer is not shopping for a chatbot. They want capacity: marketing, outreach, and ops without a day-one team. Meanwhile agentic AI is moving from pilots to line items.</p>
         <div class="stat-row">
           <div class="stat">
             <b>86%</b>
-            <span>Solopreneurs and microbusiness owners who try AI before hiring for tasks they cannot handle alone (FreshBooks / Wakefield, 2026).</span>
+            <span>Try AI before hiring for tasks they cannot handle alone (FreshBooks / Wakefield, n=500, Jun–Jul 2026).<span class="cite-fn">2</span></span>
+          </div>
+          <div class="stat">
+            <b>58%</b>
+            <span>U.S. small businesses using generative AI in 2025, up from 23% in 2023 (U.S. Chamber, n=3,870).<span class="cite-fn">4</span></span>
           </div>
           <div class="stat">
             <b>+26.8%</b>
-            <span>Rise in no-early-hire business applications in AI-exposed industries, Q1 2024 to Q1 2026 (Mercatus / CNBC analysis).</span>
+            <span>Non-employer-style applications in AI-exposed industries, Q1 2024 → Q1 2026 (Mercatus via CNBC).<span class="cite-fn">3</span></span>
           </div>
         </div>
       </div>
       <aside class="slide-visual" aria-hidden="true">
         <div class="visual-card">
-          <p class="visual-label">Agent spend (forecast sketch)</p>
-          <div class="chart-bars">
-            <span style="height: 12%;"></span>
-            <span style="height: 28%;"></span>
-            <span style="height: 48%;"></span>
-            <span style="height: 72%;"></span>
-            <span style="height: 100%;"></span>
-          </div>
-          <h3 style="font-size: 0.85rem; font-weight: 600; margin-top: 12px; color: var(--text-muted);">Enterprise agentic AI · Omdia (forecast)</h3>
+          <p class="visual-label">Enterprise agentic AI software (forecast)</p>
+          <svg class="chart-svg" viewBox="0 0 320 150" role="img" aria-label="Omdia forecast from 1.5 billion in 2025 to 41.8 billion in 2030">
+            <rect x="48" y="88" width="72" height="44" rx="6" fill="url(#barGrad)"/>
+            <rect x="200" y="12" width="72" height="120" rx="6" fill="url(#barGrad)"/>
+            <text x="84" y="82" text-anchor="middle" font-size="10" fill="#0071e3" font-weight="600">$1.5B</text>
+            <text x="84" y="146" text-anchor="middle" font-size="9" fill="#6e6e73">2025</text>
+            <text x="236" y="8" text-anchor="middle" font-size="10" fill="#0071e3" font-weight="600">$41.8B</text>
+            <text x="236" y="146" text-anchor="middle" font-size="9" fill="#6e6e73">2030</text>
+            <text x="160" y="78" text-anchor="middle" font-size="9" fill="#6e6e73">175% 5-yr CAGR (Omdia)</text>
+          </svg>
+          <p class="chart-caption">Omdia, Enterprise Agentic AI Software Market Forecast, Sep 2025. Third-party forecast.<span class="cite-fn">5</span></p>
         </div>
         <div class="stat" style="margin-top: 0; max-width: none;">
-          <b>Forecast</b>
-          <span>~$1.5B (2025) toward ~$41.8B (2030); ranges vary by definition.</span>
+          <b>$7.84B → $52.6B</b>
+          <span>Broader AI agents market, 2025–2030 (MarketsandMarkets forecast).<span class="cite-fn">6</span></span>
         </div>
       </aside>
     </div>
   </section>
 
-  <!-- 4 Solution -->
-  <section class="slide slide-dark" data-slide="4">
+  <!-- 5 Solution -->
+  <section class="slide slide-dark" data-slide="5">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Solution</p>
@@ -619,23 +745,33 @@
             </div>
           </div>
         </div>
-        <div class="visual-rail">Product screenshot slot</div>
       </aside>
     </div>
   </section>
 
-  <!-- 5 Demo -->
-  <section class="slide slide-light" data-slide="5">
+  <!-- 6 Demo -->
+  <section class="slide slide-light" data-slide="6">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Demo</p>
         <h2>Home-services lead arbitrage is our live MVP: site, agents, and human-in-the-loop outreach</h2>
+        <p class="lede" style="margin-bottom: 0.5rem;">Hook we show investors: triage → pick home services → live site and dashboard in one sitting, with outreach drafts waiting in the approvals queue.</p>
         <ul class="plain">
           <li><strong>Generated site</strong> at a shareable path: hero, how-it-works, homeowner lead form, about, contact, dashboard link.</li>
           <li><strong>Agent A</strong> finds local tradies and drafts partnership outreach (search and directories).</li>
           <li><strong>Agent B</strong> captures or matches homeowner leads; second agent may ship as coming-soon if schedule is tight.</li>
           <li><strong>Approval gate</strong> on every external send, post, or spend; demo runs with mocked sends when API keys are absent.</li>
         </ul>
+        <div class="stat-row" style="margin-top: 1.25rem;">
+          <div class="stat">
+            <b>~$91</b>
+            <span>Median Google search cost per home-improvement lead (LocaliQ benchmark, 2026).<span class="cite-fn">9</span></span>
+          </div>
+          <div class="stat">
+            <b>$587M</b>
+            <span>Angi U.S. lead revenue in 2025 (public 10-K): proof contractors pay for demand.<span class="cite-fn">10</span></span>
+          </div>
+        </div>
       </div>
       <aside class="slide-visual" aria-hidden="true">
         <div class="mock-ui">
@@ -656,61 +792,79 @@
     </div>
   </section>
 
-  <!-- 6 Market -->
-  <section class="slide slide-white" data-slide="6">
+  <!-- 7 Market -->
+  <section class="slide slide-white" data-slide="7">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Market</p>
-        <h2>Our wedge is the solo and micro-business formation wave, not generic enterprise automation</h2>
-        <p class="lede">Top of funnel: U.S. business applications at record levels. SAM: capital-constrained founders who want a packaged playbook plus agents, starting with local services arbitrage and adjacent low-CAPEX models.</p>
+        <h2>We sit between a record formation wave and trillion-dollar local services spend</h2>
+        <p class="lede">TAM (top of funnel): millions of new applications per year. SAM: founders who want a packaged playbook plus agents. Wedge SAM: U.S. home improvement and contractor lead economics where CNSTRCT already demos end-to-end.</p>
         <div class="stat-row">
           <div class="stat">
-            <b>58%</b>
-            <span>Small businesses using generative AI in 2025 vs 23% two years prior (U.S. Chamber survey, cited in trade press).</span>
+            <b>5.67M</b>
+            <span>2025 U.S. business applications (formation funnel).<span class="cite-fn">1</span></span>
+          </div>
+          <div class="stat">
+            <b>$595B</b>
+            <span>U.S. home improvement market, 2025 estimate (Grand View Research).<span class="cite-fn">11</span></span>
+          </div>
+          <div class="stat">
+            <b>$3–5B</b>
+            <span>Estimated annual U.S. home-services lead-gen transaction volume across platforms (industry estimate).<span class="cite-fn">12</span></span>
           </div>
         </div>
       </div>
       <aside class="slide-visual" aria-hidden="true">
         <div class="visual-card">
-          <p class="visual-label">TAM sketch (forecast)</p>
-          <div class="chart-bars">
-            <span style="height: 18%;"></span>
-            <span style="height: 32%;"></span>
-            <span style="height: 55%;"></span>
-            <span style="height: 78%;"></span>
-            <span style="height: 100%;"></span>
-          </div>
-          <div class="chart-legend"><span>$7.8B '25</span><span>$52B '30</span></div>
-        </div>
-        <div class="stat" style="max-width: none;">
-          <b>TAM (forecast)</b>
-          <span>AI agents market, MarketsandMarkets; treat as third-party forecast.</span>
+          <p class="visual-label">SAM layers (not to scale)</p>
+          <svg class="chart-svg" viewBox="0 0 320 170" role="img" aria-label="Nested market layers">
+            <ellipse cx="160" cy="118" rx="140" ry="42" fill="rgba(0,113,227,0.08)" stroke="rgba(0,113,227,0.25)"/>
+            <text x="160" y="112" text-anchor="middle" font-size="9" fill="#6e6e73">AI agents / founder tools (forecast)</text>
+            <ellipse cx="160" cy="98" rx="108" ry="34" fill="rgba(0,113,227,0.14)" stroke="rgba(0,113,227,0.35)"/>
+            <text x="160" y="96" text-anchor="middle" font-size="9" fill="#1d1d1f">New U.S. formations + AI-ready solopreneurs</text>
+            <ellipse cx="160" cy="78" rx="76" ry="26" fill="rgba(0,113,227,0.22)" stroke="rgba(0,113,227,0.45)"/>
+            <text x="160" y="80" text-anchor="middle" font-size="9" fill="#1d1d1f" font-weight="600">Home services GTM + leads</text>
+            <ellipse cx="160" cy="58" rx="44" ry="18" fill="#0071e3"/>
+            <text x="160" y="62" text-anchor="middle" font-size="9" fill="#fff" font-weight="600">CNSTRCT MVP</text>
+          </svg>
+          <p class="chart-caption">Global AI agents market forecast: $7.84B (2025) → $52.6B (2030), MarketsandMarkets.<span class="cite-fn">6</span></p>
         </div>
       </aside>
     </div>
   </section>
 
-  <!-- 7 Business model -->
-  <section class="slide slide-light" data-slide="7">
+  <!-- 8 Business model -->
+  <section class="slide slide-light" data-slide="8">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Business model</p>
-        <h2>Subscription for the business OS, plus metered agent compute and LLM usage</h2>
+        <h2>SaaS for the operating system, plus usage for agent compute and outbound actions</h2>
         <ul class="plain">
           <li><strong>Core plan</strong> includes triage, one active business template, hosted site path, dashboard, and starter agent routines.</li>
           <li><strong>Usage</strong> for proactive agent hours, computer/sandbox time, and outbound actions once approvals are enabled.</li>
-          <li><strong>Expansion</strong> as we unlock additional opportunity cards (same OS, new vertical playbooks).</li>
-          <li><strong>Status</strong> pricing and packaging in design; not yet in market.</li>
+          <li><strong>Expansion</strong> additional opportunity cards on the same tenant (new vertical playbooks).</li>
+          <li><strong>Benchmark</strong> AI builders (e.g. Lovable) monetize freemium → subscription at scale; we add business-outcome packaging. Pricing not yet public.<span class="cite-fn">8</span></li>
         </ul>
       </div>
       <aside class="slide-visual" aria-hidden="true">
-        <div class="visual-rail">Pricing tier diagram slot</div>
+        <div class="visual-card">
+          <p class="visual-label">Revenue stack (planned)</p>
+          <svg class="chart-svg" viewBox="0 0 320 140" role="img" aria-label="Planned revenue layers">
+            <rect x="16" y="20" width="288" height="36" rx="10" fill="rgba(0,113,227,0.12)" stroke="rgba(0,113,227,0.3)"/>
+            <text x="28" y="42" font-size="10" fill="#1d1d1f" font-weight="600">Base subscription · site + dashboard + templates</text>
+            <rect x="16" y="64" width="220" height="32" rx="10" fill="rgba(0,113,227,0.18)" stroke="rgba(0,113,227,0.35)"/>
+            <text x="28" y="84" font-size="10" fill="#1d1d1f">Metered agent / sandbox usage</text>
+            <rect x="16" y="104" width="160" height="28" rx="10" fill="rgba(0,113,227,0.24)" stroke="rgba(0,113,227,0.45)"/>
+            <text x="28" y="122" font-size="10" fill="#1d1d1f">Vertical playbooks (add-on)</text>
+          </svg>
+          <p class="chart-caption">Unit economics depend on approval-gated outbound volume and LLM cost per routine (modeled, not yet live pricing).</p>
+        </div>
       </aside>
     </div>
   </section>
 
-  <!-- 8 Traction -->
-  <section class="slide slide-white" data-slide="8">
+  <!-- 9 Traction -->
+  <section class="slide slide-white" data-slide="9">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Traction</p>
@@ -723,13 +877,16 @@
         </ul>
       </div>
       <aside class="slide-visual" aria-hidden="true">
-        <div class="visual-rail">Demo capture / GIF slot</div>
+        <div class="visual-card">
+          <p class="visual-label">Live paths</p>
+          <p class="chart-caption" style="margin-top: 0;">App: cnstrct-app.vercel.app · Deck: marvelus-tech.github.io/decks/cnstrct-investor/</p>
+        </div>
       </aside>
     </div>
   </section>
 
-  <!-- 9 GTM -->
-  <section class="slide slide-light" data-slide="9">
+  <!-- 10 GTM -->
+  <section class="slide slide-light" data-slide="10">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Go-to-market</p>
@@ -742,17 +899,35 @@
         </ul>
       </div>
       <aside class="slide-visual" aria-hidden="true">
-        <div class="visual-rail">GTM funnel visual slot</div>
+        <div class="visual-card">
+          <p class="visual-label">PLG loop</p>
+          <svg class="chart-svg" viewBox="0 0 320 150" role="img" aria-label="Go to market funnel">
+            <rect x="110" y="8" width="100" height="28" rx="8" fill="rgba(0,113,227,0.15)"/>
+            <text x="160" y="26" text-anchor="middle" font-size="9">Content / community</text>
+            <path d="M160 36 v16" stroke="#0071e3" stroke-width="1.5"/>
+            <rect x="110" y="52" width="100" height="28" rx="8" fill="rgba(0,113,227,0.22)"/>
+            <text x="160" y="70" text-anchor="middle" font-size="9">Triage session</text>
+            <path d="M160 80 v16" stroke="#0071e3" stroke-width="1.5"/>
+            <rect x="90" y="96" width="140" height="28" rx="8" fill="rgba(0,113,227,0.3)"/>
+            <text x="160" y="114" text-anchor="middle" font-size="9">Public site + referrals</text>
+            <path d="M90 110 H40" stroke="#0071e3" stroke-width="1.5"/>
+            <path d="M230 110 H280" stroke="#0071e3" stroke-width="1.5"/>
+            <text x="40" y="114" text-anchor="middle" font-size="8" fill="#6e6e73">Demand</text>
+            <text x="280" y="114" text-anchor="middle" font-size="8" fill="#6e6e73">Supply partners</text>
+            <path d="M40 118 v20 H280 v-20" stroke="rgba(0,113,227,0.35)" fill="none" stroke-dasharray="4 3"/>
+            <text x="160" y="142" text-anchor="middle" font-size="8" fill="#6e6e73">Generated sites recycle into acquisition</text>
+          </svg>
+        </div>
       </aside>
     </div>
   </section>
 
-  <!-- 10 Competition -->
-  <section class="slide slide-dark" data-slide="10">
+  <!-- 11 Competition -->
+  <section class="slide slide-dark" data-slide="11">
     <div class="slide-layout">
       <div class="slide-content">
-        <p class="kicker">Competition</p>
-        <h2>App builders ship software; formation services stop at paperwork; CNSTRCT ships revenue motions with agents</h2>
+        <p class="kicker">Competition &amp; moat</p>
+        <h2>Builders ship apps; formation shops ship entities; we ship a revenue motion with guardrailed agents</h2>
         <div class="table-wrap">
           <table>
             <thead>
@@ -781,65 +956,92 @@
             </tbody>
           </table>
         </div>
+        <div class="moat-grid">
+          <div class="moat-item"><strong>Playbooks per vertical</strong> Opportunity cards encode GTM, not just prompts.</div>
+          <div class="moat-item"><strong>Tenant-scoped agents</strong> Threads, approvals, and sandbox tied to one generated business surface.</div>
+          <div class="moat-item"><strong>Trust by default</strong> No outbound without explicit owner approval and audit trail.</div>
+        </div>
       </div>
       <aside class="slide-visual" aria-hidden="true">
-        <div class="icon-slot-row">
-          <div class="icon-slot">⬡</div>
-          <div class="icon-slot">◎</div>
-          <div class="icon-slot">▣</div>
+        <div class="visual-card">
+          <p class="visual-label">Positioning map</p>
+          <svg class="position-map chart-svg" viewBox="0 0 320 220" role="img" aria-label="2 by 2 positioning">
+            <line x1="40" y1="180" x2="300" y2="180" stroke="rgba(255,255,255,0.25)"/>
+            <line x1="40" y1="20" x2="40" y2="180" stroke="rgba(255,255,255,0.25)"/>
+            <text x="170" y="198" text-anchor="middle" font-size="9" fill="rgba(245,245,247,0.65)">Business model + GTM depth →</text>
+            <text x="18" y="100" text-anchor="middle" font-size="9" fill="rgba(245,245,247,0.65)" transform="rotate(-90 18 100)">Proactive agents →</text>
+            <circle cx="100" cy="130" r="18" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)"/>
+            <text x="100" y="134" text-anchor="middle" font-size="8" fill="#f5f5f7">Formation</text>
+            <circle cx="120" cy="70" r="20" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)"/>
+            <text x="120" y="74" text-anchor="middle" font-size="8" fill="#f5f5f7">AI builders</text>
+            <circle cx="230" cy="90" r="18" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)"/>
+            <text x="230" y="94" text-anchor="middle" font-size="8" fill="#f5f5f7">Copilots</text>
+            <circle cx="252" cy="48" r="22" fill="rgba(41,151,255,0.35)" stroke="#2997ff" stroke-width="2"/>
+            <text x="252" y="52" text-anchor="middle" font-size="8" fill="#f5f5f7" font-weight="600">CNSTRCT</text>
+          </svg>
         </div>
-        <div class="visual-rail">2×2 positioning map slot</div>
       </aside>
     </div>
   </section>
 
-  <!-- 11 Team -->
-  <section class="slide slide-light" data-slide="11">
+  <!-- 12 Team -->
+  <section class="slide slide-light" data-slide="12">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Team</p>
-        <h2>Built by MarvelUs; full bios and roles to be published</h2>
+        <h2>MarvelUs built the MVP; named bios ship with the data room</h2>
         <ul class="plain">
-          <li><strong>Founding team</strong> MarvelUs Tech (<a href="https://github.com/marvelus-tech" style="color: var(--accent);">github.com/marvelus-tech</a>).</li>
-          <li><strong>Lead (TBD)</strong> O. Surname, product and agent systems.</li>
-          <li><strong>Engineering (TBD)</strong> full-stack and agent runtime integration.</li>
-          <li><strong>Advisors (TBD)</strong> go-to-market and local services operators.</li>
-        </ul>
-      </div>
-      <aside class="slide-visual" aria-hidden="true">
-        <div class="visual-rail">Headshot grid slot</div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- 12 Ask -->
-  <section class="slide slide-dark" data-slide="12">
-    <div class="slide-layout">
-      <div class="slide-content">
-        <p class="kicker">The ask</p>
-        <h2>Raising a pre-seed round to harden GTM, second vertical, and production agent safety</h2>
-        <ul class="plain">
-          <li><strong>Use of proceeds</strong> design partners, second opportunity card, billing and usage metering, security review on approval flows.</li>
-          <li><strong>Round terms</strong> amount and valuation: TBD with lead investor conversations.</li>
-          <li><strong>Contact</strong> marvelus-tech · investor inquiries via GitHub org contacts (TBD dedicated alias).</li>
+          <li><strong>Founding team</strong> MarvelUs Tech: product, full-stack, and agent runtime (<a href="https://github.com/marvelus-tech" style="color: var(--accent);">github.com/marvelus-tech</a>).</li>
+          <li><strong>What we have shown</strong> End-to-end CNSTRCT demo (triage, site generation, agent dashboard, approvals) without fabricated traction metrics.</li>
+          <li><strong>Hiring with round</strong> GTM design-partner lead and agent-safety engineer as first two hires after close.</li>
+          <li><strong>Advisors</strong> In conversations with local-services operators; none signed yet.</li>
         </ul>
       </div>
       <aside class="slide-visual" aria-hidden="true">
         <div class="visual-card">
-          <p class="visual-label">Use of proceeds (placeholder)</p>
-          <div class="chart-bars">
-            <span style="height: 70%;"></span>
-            <span style="height: 50%;"></span>
-            <span style="height: 85%;"></span>
-            <span style="height: 40%;"></span>
-          </div>
+          <p class="visual-label">Shipped artifacts</p>
+          <ul class="plain" style="margin-top: 0.5rem; max-width: none;">
+            <li style="padding: 8px 0; font-size: 0.85rem;"><strong>App</strong> cnstrct-app.vercel.app</li>
+            <li style="padding: 8px 0; font-size: 0.85rem; border-bottom: none;"><strong>Deck</strong> marvelus-tech.github.io/decks/cnstrct-investor/</li>
+          </ul>
         </div>
       </aside>
     </div>
   </section>
 
-  <!-- 13 Risks -->
-  <section class="slide slide-white" data-slide="13">
+  <!-- 13 Ask -->
+  <section class="slide slide-dark" data-slide="13">
+    <div class="slide-layout">
+      <div class="slide-content">
+        <p class="kicker">The ask</p>
+        <h2>Pre-seed to convert the demo into paid design partners and a second vertical</h2>
+        <ul class="plain">
+          <li><strong>Round</strong> Pre-seed; target size and valuation set with lead investor (not fixed in this deck).</li>
+          <li><strong>12-month outcomes</strong> 10+ design partners, production approval flows, billing and usage metering live, second opportunity card shipped.</li>
+          <li><strong>Contact</strong> Investor inquiries via <a href="https://github.com/marvelus-tech" style="color: #2997ff;">github.com/marvelus-tech</a> (dedicated alias pending).</li>
+        </ul>
+      </div>
+      <aside class="slide-visual" aria-hidden="true">
+        <div class="visual-card">
+          <p class="visual-label">Use of proceeds (indicative split)</p>
+          <svg class="chart-svg" viewBox="0 0 320 130" role="img" aria-label="Use of proceeds breakdown">
+            <rect x="16" y="16" width="200" height="22" rx="6" fill="rgba(41,151,255,0.45)"/>
+            <text x="24" y="31" font-size="9" fill="#f5f5f7">GTM + design partners · 40%</text>
+            <rect x="16" y="46" width="150" height="22" rx="6" fill="rgba(41,151,255,0.35)"/>
+            <text x="24" y="61" font-size="9" fill="#f5f5f7">Product + 2nd vertical · 30%</text>
+            <rect x="16" y="76" width="120" height="22" rx="6" fill="rgba(41,151,255,0.28)"/>
+            <text x="24" y="91" font-size="9" fill="#f5f5f7">Agent safety + infra · 20%</text>
+            <rect x="16" y="106" width="60" height="18" rx="6" fill="rgba(41,151,255,0.2)"/>
+            <text x="24" y="119" font-size="9" fill="#f5f5f7">Ops · 10%</text>
+          </svg>
+          <p class="chart-caption">Percentages are planning assumptions, not committed allocations.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 14 Risks -->
+  <section class="slide slide-white" data-slide="14">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Risks</p>
@@ -852,13 +1054,20 @@
         </ul>
       </div>
       <aside class="slide-visual" aria-hidden="true">
-        <div class="visual-rail">Risk matrix slot</div>
+        <div class="visual-card">
+          <p class="visual-label">Mitigations</p>
+          <div class="moat-grid" style="margin-top: 0.5rem;">
+            <div class="moat-item" style="font-size: 0.85rem;">Usage metering + routine caps</div>
+            <div class="moat-item" style="font-size: 0.85rem;">Approval queue + audit log</div>
+            <div class="moat-item" style="font-size: 0.85rem;">Geo-by-geo supply/demand tests</div>
+          </div>
+        </div>
       </aside>
     </div>
   </section>
 
-  <!-- 14 Appendix product -->
-  <section class="slide slide-light" data-slide="14">
+  <!-- 15 Appendix product -->
+  <section class="slide slide-light" data-slide="15">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Appendix</p>
@@ -887,20 +1096,26 @@
     </div>
   </section>
 
-  <!-- 15 Sources -->
-  <section class="slide slide-white" data-slide="15">
+  <!-- 16 Sources -->
+  <section class="slide slide-white" data-slide="16">
     <div class="slide-layout slide-layout--single">
       <div class="slide-content">
         <p class="kicker">Sources</p>
         <h2>Claims in this deck trace to the links below (forecasts labeled as forecasts)</h2>
         <div class="sources">
-        <p><strong>U.S. business applications (2025-2026):</strong> U.S. Census Bureau Business Formation Statistics and FRED series BABATOTALSAUS. <a href="https://www.census.gov/econ/bfs/index.html">census.gov/econ/bfs</a> · <a href="https://fred.stlouisfed.org/series/BABATOTALSAUS">fred.stlouisfed.org/series/BABATOTALSAUS</a></p>
-        <p><strong>Solopreneurs and AI before hiring (86%):</strong> FreshBooks press release, Wakefield Research survey, June-July 2026. <a href="https://www.freshbooks.com/press/releases/eraofthesoloprener">freshbooks.com/press/releases/eraofthesoloprener</a></p>
-        <p><strong>AI-exposed non-employer applications (+26.8%):</strong> Mercatus Center research cited by CNBC, Nov 2026. <a href="https://www.cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html">cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html</a></p>
-        <p><strong>Small business gen AI adoption (58%):</strong> U.S. Chamber of Commerce survey, cited in Forbes and trade coverage. <a href="https://www.forbes.com/sites/rahuldogra/2026/10/14/solopreneur-ai-tools-how-solo-founders-run-businesses-without-staff/">forbes.com (solopreneur AI tools overview)</a></p>
-        <p><strong>Agentic AI market (forecasts):</strong> Omdia enterprise agentic AI software. <a href="https://omdia.tech.informa.com/pr/2025/sep/new-omdia-analysis-shows-agentic-ai-outpacing-growth-rates-of-traditional-generative-ai">omdia.tech.informa.com PR</a> · MarketsandMarkets AI agents market. <a href="https://www.marketsandmarkets.com/Market-Reports/ai-agents-market-15761548.html">marketsandmarkets.com</a> · Gartner agentic AI spending. <a href="https://emt.gartnerweb.com/ngw/globalassets/en/insights/documents/forecast-analysis-agentic-ai-spending-in-software-markets.pdf">Gartner PDF</a></p>
-        <p><strong>Competition (Lovable):</strong> Lovable documentation and product positioning. <a href="https://docs.lovable.dev/introduction/welcome">docs.lovable.dev</a></p>
-        <p><strong>Solopreneur formation and AI (Stripe Economics):</strong> <a href="https://www.stripeeconomics.com/p/the-age-of-the-solopreneur">stripeeconomics.com/p/the-age-of-the-solopreneur</a></p>
+        <p><span class="cite-fn">1</span> <strong>U.S. business applications:</strong> Census BFS via FRED <a href="https://fred.stlouisfed.org/series/BABATOTALSAUS">BABATOTALSAUS</a> (pulled Nov 2026); annual 2025 sum 5,670,201 SA.</p>
+        <p><span class="cite-fn">2</span> <strong>FreshBooks / Wakefield (86%, 90%):</strong> <a href="https://www.freshbooks.com/press/releases/eraofthesoloprener">freshbooks.com/press/releases/eraofthesoloprener</a> (Sep 15, 2026).</p>
+        <p><span class="cite-fn">3</span> <strong>Mercatus / CNBC (+26.8%):</strong> <a href="https://www.cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html">cnbc.com/2026/11/07/...</a> (Nov 7, 2026).</p>
+        <p><span class="cite-fn">4</span> <strong>U.S. Chamber gen AI (58%):</strong> Empowering Small Business Report 2025 PDF <a href="https://www.uschamber.com/assets/documents/Empowering-Small-Business-Report-2025.pdf">uschamber.com/.../2025.pdf</a> (survey Jun 6–26, 2025).</p>
+        <p><span class="cite-fn">5</span> <strong>Omdia enterprise agentic AI (forecast):</strong> <a href="https://omdia.tech.informa.com/pr/2025/sep/new-omdia-analysis-shows-agentic-ai-outpacing-growth-rates-of-traditional-generative-ai">PR Sep 22, 2025</a> ($1.5B 2025 → $41.8B 2030).</p>
+        <p><span class="cite-fn">6</span> <strong>MarketsandMarkets AI agents (forecast):</strong> <a href="https://www.marketsandmarkets.com/Market-Reports/ai-agents-market-15761548.html">marketsandmarkets.com</a> (Apr 2025; $7.84B 2025 → $52.62B 2030).</p>
+        <p><span class="cite-fn">7</span> <strong>Gartner agentic AI spend (forecast):</strong> <a href="https://emt.gartnerweb.com/ngw/globalassets/en/insights/documents/forecast-analysis-agentic-ai-spending-in-software-markets.pdf">Gartner PDF Feb 2026</a> (enterprise scope; not cited on slides).</p>
+        <p><span class="cite-fn">8</span> <strong>Lovable traction (company-reported):</strong> TechCrunch Sep 24, 2026 ARR / run-rate <a href="https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/">techcrunch.com/.../600m</a>.</p>
+        <p><span class="cite-fn">9</span> <strong>Home improvement CPL:</strong> LocaliQ search benchmarks via <a href="https://www.thomastowndigital.com/home-services-marketing-statistics">Thomas Town Digital summary</a> (2026 median $90.92).</p>
+        <p><span class="cite-fn">10</span> <strong>Angi U.S. lead revenue:</strong> Dillard's Digital summary of Angi 2025 10-K <a href="https://dillardsdigital.com/reports/state-of-rented-leads-2026/">state-of-rented-leads-2026</a> ($587.1M).</p>
+        <p><span class="cite-fn">11</span> <strong>U.S. home improvement market:</strong> Grand View Research <a href="https://www.grandviewresearch.com/industry-analysis/us-home-improvement-market-report">$594.5B in 2025</a>.</p>
+        <p><span class="cite-fn">12</span> <strong>Home-services lead-gen TAM estimate:</strong> <a href="https://www.leadgen-economy.com/blog/home-improvement-lead-marketplaces-angi-thumbtack-homeadvisor/">leadgen-economy.com</a> ($3–5B annual range, industry estimate).</p>
+        <p><strong>Context:</strong> Stripe Economics solopreneur formation <a href="https://www.stripeeconomics.com/p/the-age-of-the-solopreneur">stripeeconomics.com</a> · Lovable product docs <a href="https://docs.lovable.dev/introduction/welcome">docs.lovable.dev</a>.</p>
         </div>
       </div>
     </div>
@@ -913,11 +1128,11 @@
   <button type="button" id="nextZone" aria-label="Next slide"></button>
 </div>
 <div class="nav-hint" aria-hidden="true">← → · space · Home / End</div>
-<div class="slide-counter" aria-live="polite"><span id="current">1</span> / 15</div>
+<div class="slide-counter" aria-live="polite"><span id="current">1</span> / 16</div>
 
 <script>
   let currentSlide = 1;
-  const totalSlides = 15;
+  const totalSlides = 16;
 
   function showSlide(n) {
     if (n < 1 || n > totalSlides) return;
