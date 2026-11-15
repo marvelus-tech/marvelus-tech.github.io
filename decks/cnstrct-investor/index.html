@@ -748,6 +748,161 @@
       margin-bottom: 0.35rem;
     }
 
+    .biz-timeline-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(16px, 3vw, 32px);
+      margin-top: 0.5rem;
+      max-width: 72ch;
+    }
+
+    .biz-timeline-col ul.plain {
+      margin-top: 0.35rem;
+    }
+
+    .biz-timeline-col .future-revenue-why {
+      margin-top: 0.5rem;
+      max-width: none;
+    }
+
+    .biz-monetization-timeline {
+      margin-top: clamp(18px, 2.5vw, 28px);
+      max-width: 100%;
+      border: 1px solid var(--border);
+      background: var(--bg-elevated);
+      padding: 16px 18px 14px;
+      border-radius: 0;
+    }
+
+    .biz-timeline-segments {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr 0.9fr 1.1fr;
+      gap: 0;
+      margin-bottom: 12px;
+    }
+
+    .biz-timeline-seg {
+      padding: 10px 10px 9px;
+      border: 1px solid rgba(0, 113, 227, 0.32);
+      background: rgba(0, 113, 227, 0.1);
+      font-size: 0.72rem;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: #1d1d1f;
+      border-radius: 0;
+      margin-left: -1px;
+    }
+
+    .biz-timeline-seg:first-child {
+      margin-left: 0;
+    }
+
+    .biz-timeline-seg--future {
+      border-style: dashed;
+      border-color: rgba(110, 110, 115, 0.45);
+      background: rgba(110, 110, 115, 0.06);
+      color: #6e6e73;
+      font-weight: 600;
+    }
+
+    .biz-timeline-axis-row {
+      display: grid;
+      grid-template-columns: auto 3fr 1fr auto;
+      align-items: center;
+      column-gap: 0;
+      min-height: 28px;
+    }
+
+    .biz-timeline-node {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 0;
+      border: 1px solid var(--accent);
+      color: #fff;
+      background: var(--accent);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .biz-timeline-node--future {
+      background: transparent;
+      color: var(--text-muted);
+      border-color: rgba(110, 110, 115, 0.55);
+    }
+
+    .biz-timeline-rule {
+      height: 0;
+      border-top: 1px solid var(--accent);
+      min-width: 12px;
+    }
+
+    .biz-timeline-rule--dashed {
+      border-top-style: dashed;
+      border-color: rgba(110, 110, 115, 0.5);
+    }
+
+    .biz-timeline-caption {
+      margin-top: 10px;
+      font-size: 0.65rem;
+      line-height: 1.4;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
+
+    .biz-benchmark-strip {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      max-width: 72ch;
+    }
+
+    .biz-benchmark-strip .benchmark-line {
+      margin-top: 0;
+      max-width: none;
+    }
+
+    @media (max-width: 768px) {
+      .biz-timeline-cols {
+        grid-template-columns: 1fr;
+        max-width: none;
+      }
+
+      .biz-timeline-segments {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .biz-timeline-seg:nth-child(3) {
+        grid-column: 1;
+      }
+
+      .biz-timeline-seg:nth-child(4) {
+        grid-column: 2;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .biz-timeline-segments {
+        grid-template-columns: 1fr;
+      }
+
+      .biz-timeline-seg:nth-child(n) {
+        grid-column: 1;
+        margin-left: 0;
+      }
+
+      .biz-timeline-axis-row {
+        grid-template-columns: auto 1fr auto;
+      }
+
+      .biz-timeline-rule--dashed {
+        display: none;
+      }
+    }
+
     .benchmark-line {
       font-size: 0.9rem;
       line-height: 1.5;
@@ -1429,43 +1584,50 @@
 
   <!-- 8 Business model -->
   <section class="slide slide-light" data-slide="9">
-    <div class="slide-layout">
+    <div class="slide-layout slide-layout--single">
       <div class="slide-content">
         <p class="kicker">Business model</p>
         <h2>Hybrid subscription + agent credits</h2>
         <p class="lede">Variable LLM and VM COGS require a base subscription plus metered agent credits, not flat unlimited agents.</p>
         <span class="packaging-badge">Planned packaging · illustrative only</span>
-        <h3 class="future-revenue-subhead biz-block-subhead">Now</h3>
-        <ul class="plain">
-          <li><strong>Base</strong> Site, dashboard, templates, and starter credits in one subscription.</li>
-          <li><strong>Overage</strong> Metered agent compute and approved outbound actions; illustrative planning band $0.10 to $0.50 per action (not live pricing).</li>
-          <li><strong>Controls</strong> Soft caps and in-product usage dashboard before heavy workflows.</li>
-        </ul>
-        <h3 class="future-revenue-subhead">Later <span class="future-revenue-note">(phase 2 · not live)</span></h3>
-        <ul class="plain future-revenue-list">
-          <li><strong>Affiliate</strong> Formation, payments, accounting, and insurance through CNSTRCT flows.</li>
-          <li><strong>Marketplace</strong> Agent skills, templates, and human-reviewed add-ons.</li>
-          <li><strong>Tool rev-share</strong> Email, CRM, and invoicing when agents wire ops tools.</li>
-        </ul>
-        <p class="future-revenue-why">Partner revenue is high margin while subscription volume ramps.</p>
-        <p class="benchmark-line">Lovable proved freemium to subscription at $600M+ run rate; we add business-outcome packaging plus usage.<span class="cite-fn">8</span></p>
-      </div>
-      <aside class="slide-visual" aria-hidden="true">
-        <div class="visual-card">
-          <p class="visual-label">Revenue stack (planned)</p>
-          <svg class="chart-svg" viewBox="0 0 320 132" role="img" aria-label="Planned hybrid revenue stack: equal-width layers for subscription, credits, usage, and future partner tier">
-            <rect class="diagram-node diagram-node--mid" x="16" y="8" width="288" height="26" rx="0"/>
-            <text x="28" y="25" font-size="10" fill="#1d1d1f" font-weight="600">Base subscription</text>
-            <rect class="diagram-node diagram-node--mid" x="16" y="40" width="288" height="26" rx="0"/>
-            <text x="28" y="57" font-size="10" fill="#1d1d1f" font-weight="600">Included credits</text>
-            <rect class="diagram-node" x="16" y="72" width="288" height="26" rx="0"/>
-            <text x="28" y="89" font-size="10" fill="#1d1d1f" font-weight="600">Metered usage</text>
-            <rect x="16" y="104" width="288" height="24" rx="0" fill="rgba(110,110,115,0.08)" stroke="rgba(110,110,115,0.4)" stroke-dasharray="5 4"/>
-            <text x="28" y="120" font-size="9" fill="#6e6e73" font-weight="600">Partner layer (future)</text>
-          </svg>
-          <p class="chart-caption">Hybrid core today; partner tier stacks after wedge PMF.</p>
+        <div class="biz-timeline-cols">
+          <div class="biz-timeline-col">
+            <h3 class="future-revenue-subhead biz-block-subhead">Now</h3>
+            <ul class="plain">
+              <li><strong>Base</strong> Site, dashboard, templates, and starter credits in one subscription.</li>
+              <li><strong>Overage</strong> Metered agent compute and approved outbound actions; illustrative planning band $0.10 to $0.50 per action (not live pricing).</li>
+              <li><strong>Controls</strong> Soft caps and in-product usage dashboard before heavy workflows.</li>
+            </ul>
+          </div>
+          <div class="biz-timeline-col">
+            <h3 class="future-revenue-subhead biz-block-subhead">Later <span class="future-revenue-note">(phase 2 · not live)</span></h3>
+            <ul class="plain future-revenue-list">
+              <li><strong>Affiliate</strong> Formation, payments, accounting, and insurance through CNSTRCT flows.</li>
+              <li><strong>Marketplace</strong> Agent skills, templates, and human-reviewed add-ons.</li>
+              <li><strong>Tool rev-share</strong> Email, CRM, and invoicing when agents wire ops tools.</li>
+            </ul>
+            <p class="future-revenue-why">Partner revenue is high margin while subscription volume ramps.</p>
+          </div>
         </div>
-      </aside>
+        <div class="biz-monetization-timeline" role="img" aria-label="Monetization timeline: subscription and metered usage now, partner layer later">
+          <div class="biz-timeline-segments">
+            <div class="biz-timeline-seg">Base subscription</div>
+            <div class="biz-timeline-seg">Included credits</div>
+            <div class="biz-timeline-seg">Metered usage</div>
+            <div class="biz-timeline-seg biz-timeline-seg--future">Partner layer</div>
+          </div>
+          <div class="biz-timeline-axis-row" aria-hidden="true">
+            <span class="biz-timeline-node">Now</span>
+            <span class="biz-timeline-rule"></span>
+            <span class="biz-timeline-rule biz-timeline-rule--dashed"></span>
+            <span class="biz-timeline-node biz-timeline-node--future">Later</span>
+          </div>
+          <p class="biz-timeline-caption">Illustrative revenue phases left to right; partner tier is structural only, not live.</p>
+        </div>
+        <div class="biz-benchmark-strip">
+          <p class="benchmark-line">Lovable proved freemium to subscription at $600M+ run rate; we add business-outcome packaging plus usage.<span class="cite-fn">8</span></p>
+        </div>
+      </div>
     </div>
     <p class="slide-acronym-footer"><strong>SaaS</strong> software as a service · <strong>LLM</strong> large language model · <strong>COGS</strong> cost of goods sold</p>
   </section>
