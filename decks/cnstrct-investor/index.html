@@ -484,8 +484,116 @@
       .slide { padding: 32px 20px 64px; }
       .stat-row { flex-direction: column; align-items: stretch; }
       .stat { max-width: none; }
-      .nav-hint { display: none; }
       .visual-rail { min-height: 140px; }
+    }
+
+  </style>
+  <style>
+    /* Mobile: vertical document scroll (stacked slides); desktop pager unchanged ≥769px */
+    @media (max-width: 768px) {
+      html,
+      body {
+        height: auto;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      body.deck-scroll-mode {
+        touch-action: pan-y;
+      }
+
+      .deck {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        position: relative;
+      }
+
+      .slide {
+        position: relative;
+        inset: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: auto;
+        opacity: 1;
+        pointer-events: all;
+        overflow-y: visible;
+        transition: none;
+        border-bottom: 1px solid var(--border);
+        scroll-margin-top: 12px;
+      }
+
+      .slide:last-of-type {
+        border-bottom: none;
+      }
+
+      .slide-dark {
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .touch-nav {
+        display: none;
+      }
+
+      .nav-hint {
+        display: block;
+        top: 44px;
+        bottom: auto;
+        color: rgba(255, 255, 255, 0.55);
+        background: rgba(0, 0, 0, 0.35);
+        padding: 6px 12px;
+        border-radius: 999px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+
+      .slide-counter {
+        position: fixed;
+        top: 10px;
+        right: 14px;
+        bottom: auto;
+        z-index: 40;
+        padding: 5px 10px;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.45);
+        color: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+
+      .progress {
+        position: fixed;
+      }
+
+      h1, h2 {
+        font-size: clamp(1.5rem, 6.5vw, 2.25rem);
+      }
+
+      .lede {
+        font-size: 1rem;
+        line-height: 1.55;
+      }
+
+      .table-wrap {
+        -webkit-overflow-scrolling: touch;
+      }
+
+      table {
+        font-size: 0.82rem;
+      }
+
+      th, td {
+        padding: 10px 12px;
+      }
+    }
+
+    @media (min-width: 769px) {
+      body:not(.deck-scroll-mode) .nav-hint {
+        display: block;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -912,32 +1020,99 @@
   <button type="button" id="prevZone" aria-label="Previous slide"></button>
   <button type="button" id="nextZone" aria-label="Next slide"></button>
 </div>
-<div class="nav-hint" aria-hidden="true">← → · space · Home / End</div>
+<div class="nav-hint" id="navHint" aria-hidden="true">← → · space · Home / End</div>
 <div class="slide-counter" aria-live="polite"><span id="current">1</span> / 15</div>
 
 <script>
   let currentSlide = 1;
   const totalSlides = 15;
+  const MOBILE_MQ = window.matchMedia('(max-width: 768px)');
+  let slideObserver = null;
 
-  function showSlide(n) {
+  function isScrollDeckMode() {
+    return MOBILE_MQ.matches;
+  }
+
+  function updateProgressUI(n) {
+    document.getElementById('current').textContent = String(n);
+    document.getElementById('progress').style.width = ((n / totalSlides) * 100) + '%';
+    currentSlide = n;
+  }
+
+  function showSlide(n, options) {
+    const opts = options || {};
     if (n < 1 || n > totalSlides) return;
+
+    if (isScrollDeckMode()) {
+      updateProgressUI(n);
+      if (opts.scrollTo) {
+        const slide = document.querySelector('[data-slide="' + n + '"]');
+        if (slide) slide.scrollIntoView({ behavior: opts.behavior || 'smooth', block: 'start' });
+      }
+      return;
+    }
+
     document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
     const slide = document.querySelector('[data-slide="' + n + '"]');
     if (slide) slide.classList.add('active');
-    document.getElementById('current').textContent = String(n);
-    currentSlide = n;
-    document.getElementById('progress').style.width = ((n / totalSlides) * 100) + '%';
+    updateProgressUI(n);
   }
 
   function nextSlide() {
-    if (currentSlide < totalSlides) showSlide(currentSlide + 1);
+    if (currentSlide < totalSlides) showSlide(currentSlide + 1, { scrollTo: isScrollDeckMode() });
   }
 
   function prevSlide() {
-    if (currentSlide > 1) showSlide(currentSlide - 1);
+    if (currentSlide > 1) showSlide(currentSlide - 1, { scrollTo: isScrollDeckMode() });
+  }
+
+  function teardownMobileScrollSpy() {
+    if (slideObserver) {
+      slideObserver.disconnect();
+      slideObserver = null;
+    }
+  }
+
+  function setupMobileScrollSpy() {
+    teardownMobileScrollSpy();
+    const slides = document.querySelectorAll('.slide');
+    slideObserver = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        const n = parseInt(visible.target.getAttribute('data-slide'), 10);
+        if (!isNaN(n) && n !== currentSlide) updateProgressUI(n);
+      },
+      { root: null, threshold: [0.2, 0.35, 0.5, 0.65] }
+    );
+    slides.forEach((s) => slideObserver.observe(s));
+  }
+
+  function applyDeckMode() {
+    const scrollMode = isScrollDeckMode();
+    document.body.classList.toggle('deck-scroll-mode', scrollMode);
+    const hint = document.getElementById('navHint');
+    if (hint) {
+      hint.textContent = scrollMode
+        ? 'Scroll to read · all slides below'
+        : '← → · space · Home / End';
+    }
+
+    if (scrollMode) {
+      document.querySelectorAll('.slide').forEach((s) => s.classList.add('active'));
+      setupMobileScrollSpy();
+      updateProgressUI(currentSlide);
+    } else {
+      teardownMobileScrollSpy();
+      document.querySelectorAll('.slide').forEach((s) => s.classList.remove('active'));
+      showSlide(currentSlide);
+    }
   }
 
   document.addEventListener('keydown', (e) => {
+    if (isScrollDeckMode()) return;
     if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
       e.preventDefault();
       nextSlide();
@@ -952,16 +1127,25 @@
   });
 
   let touchStartX = 0;
-  document.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
-  document.addEventListener('touchend', e => {
+  document.addEventListener('touchstart', (e) => {
+    if (isScrollDeckMode()) return;
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  document.addEventListener('touchend', (e) => {
+    if (isScrollDeckMode()) return;
     const diff = touchStartX - e.changedTouches[0].screenX;
     if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide();
   }, { passive: true });
 
-  document.getElementById('prevZone').addEventListener('click', () => { if (window.innerWidth <= 768) prevSlide(); });
-  document.getElementById('nextZone').addEventListener('click', () => { if (window.innerWidth <= 768) nextSlide(); });
+  document.getElementById('prevZone').addEventListener('click', () => {
+    if (!isScrollDeckMode()) prevSlide();
+  });
+  document.getElementById('nextZone').addEventListener('click', () => {
+    if (!isScrollDeckMode()) nextSlide();
+  });
 
-  showSlide(1);
+  MOBILE_MQ.addEventListener('change', applyDeckMode);
+  applyDeckMode();
 </script>
 </body>
 </html>
