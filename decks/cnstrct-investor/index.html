@@ -138,7 +138,8 @@
       width: 100%;
       height: auto;
       overflow: visible;
-      min-height: clamp(200px, 30vw, 320px);
+      min-height: clamp(220px, 36vw, 420px);
+      max-height: min(58vh, 440px);
     }
 
     .visual-rail {
@@ -877,7 +878,7 @@
       </div>
       <aside class="slide-visual slide-visual--title-stack" aria-hidden="true">
         <p class="visual-label">Founding stack</p>
-        <svg class="chart-svg chart-svg--founding-stack" viewBox="0 0 372 172" role="img" aria-label="Exploded isometric view of three session layers: Command center fit and capital, SI Employees site and OS, Launch Custom Biz site agents and approvals">
+        <svg class="chart-svg chart-svg--founding-stack" viewBox="0 0 372 168" role="img" aria-label="Exploded isometric view of three session layers: Command center fit and capital, SI Employees site and OS, Launch Custom Biz site agents and approvals">
             <defs>
               <linearGradient id="slabTopA" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stop-color="rgba(255,255,255,0.22)"/>
@@ -898,9 +899,10 @@
                 <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
               </filter>
             </defs>
-            <path d="M 16 6 H 356 V 164 H 16 Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-            <path d="M 16 6 H 32 M 16 6 V 22 M 356 6 H 340 M 356 6 V 22 M 16 164 H 32 M 16 164 V 148 M 356 164 H 340 M 356 164 V 148" stroke="rgba(41,151,255,0.55)" stroke-width="1.25" fill="none"/>
-            <g transform="translate(176 84) scale(1.1) translate(-176 -84)">
+            <path d="M 16 4 H 356 V 160 H 16 Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+            <path d="M 16 4 H 32 M 16 4 V 20 M 356 4 H 340 M 356 4 V 20 M 16 160 H 32 M 16 160 V 144 M 356 160 H 340 M 356 160 V 144" stroke="rgba(41,151,255,0.55)" stroke-width="1.25" fill="none"/>
+            <text x="24" y="18" fill="rgba(245,245,247,0.45)" font-size="8" font-family="ui-monospace, monospace">CNSTRCT · ISO VIEW</text>
+            <g transform="translate(176 82) scale(1.14) translate(-176 -82)">
               <g filter="url(#slabGlow)">
                 <path d="M 116 44 L 176 24 L 236 44 L 176 64 Z" fill="url(#slabTopC)" stroke="rgba(232,93,4,0.5)" stroke-width="1"/>
                 <path d="M 176 64 L 236 44 L 236 58 L 176 78 Z" fill="rgba(41,151,255,0.22)" stroke="rgba(255,255,255,0.12)" stroke-width="0.75"/>
@@ -934,6 +936,7 @@
             <rect x="28" y="118" width="88" height="30" rx="0" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.2)"/>
             <text x="72" y="132" text-anchor="middle" fill="#f5f5f7" font-size="8" font-weight="600">Command center</text>
             <text x="72" y="143" text-anchor="middle" fill="rgba(245,245,247,0.55)" font-size="7.5">Fit + capital</text>
+            <text x="24" y="154" fill="rgba(245,245,247,0.5)" font-size="8">Wedge: home-services lead arbitrage</text>
           </svg>
       </aside>
     </div>
