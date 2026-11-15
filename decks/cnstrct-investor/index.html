@@ -684,6 +684,17 @@
       color: var(--accent);
     }
 
+    .packaging-badge {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 14px;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
     .chart-subordinate {
       opacity: 0.85;
       margin-top: 10px;
@@ -1258,30 +1269,35 @@
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Business model</p>
-        <h2>SaaS for the operating system, plus usage for agent compute and outbound actions</h2>
+        <h2>Hybrid: base subscription + agent credits</h2>
+        <p class="lede">LLM inference and agent VM COGS are variable, so flat unlimited agents would crush margin; we pair a low base subscription with metered credits for compute-heavy work and approved outbound actions.</p>
+        <span class="packaging-badge">Planned packaging · illustrative only</span>
         <ul class="plain">
-          <li><strong>Core plan</strong> includes Command center intake, one active business template, hosted site path, dashboard, and starter agent routines.</li>
-          <li><strong>Usage</strong> for proactive agent hours, computer/sandbox time, and outbound actions once approvals are enabled.</li>
-          <li><strong>Expansion</strong> additional opportunity cards on the same tenant (new vertical playbooks).</li>
-          <li><strong>Benchmark</strong> AI builders (e.g. Lovable) monetize freemium → subscription at scale; we add business-outcome packaging. Pricing not yet public.<span class="cite-fn">8</span></li>
+          <li><strong>Base tier</strong> Low base (or bundled) covers platform, generated site, dashboard, templates, and a limited pool of included credits.</li>
+          <li><strong>Overage</strong> Extra credits or agent hours in packs or on a meter; <strong>illustrative planning range</strong> $0.10 to $0.50 per meaningful action (outreach, match, sandbox block), not live pricing.</li>
+          <li><strong>Trust</strong> Soft caps, usage dashboard, and burn visibility before surprises.</li>
+          <li><strong>Why it works</strong> Revenue tracks COGS; heavy users who win clients buy more capacity; light users stay cheap; credits-per-action is standard on agent platforms (a pattern, not a single clone).</li>
+          <li><strong>Benchmark</strong> AI builders (e.g. Lovable) monetize freemium → subscription at scale; we add business-outcome packaging plus usage for agent work. Pricing not yet public.<span class="cite-fn">8</span></li>
         </ul>
       </div>
       <aside class="slide-visual" aria-hidden="true">
         <div class="visual-card">
           <p class="visual-label">Revenue stack (planned)</p>
-          <svg class="chart-svg" viewBox="0 0 320 140" role="img" aria-label="Planned revenue layers">
-            <rect x="16" y="20" width="288" height="36" rx="0" fill="rgba(0,113,227,0.12)" stroke="rgba(0,113,227,0.3)"/>
-            <text x="28" y="42" font-size="10" fill="#1d1d1f" font-weight="600">Base subscription · site + dashboard + templates</text>
-            <rect x="16" y="64" width="220" height="32" rx="0" fill="rgba(0,113,227,0.18)" stroke="rgba(0,113,227,0.35)"/>
-            <text x="28" y="84" font-size="10" fill="#1d1d1f">Metered agent / sandbox usage</text>
-            <rect x="16" y="104" width="160" height="28" rx="0" fill="rgba(0,113,227,0.24)" stroke="rgba(0,113,227,0.45)"/>
-            <text x="28" y="122" font-size="10" fill="#1d1d1f">Vertical playbooks (add-on)</text>
+          <svg class="chart-svg" viewBox="0 0 320 168" role="img" aria-label="Planned hybrid revenue layers">
+            <rect x="16" y="12" width="288" height="32" rx="0" fill="rgba(0,113,227,0.12)" stroke="rgba(0,113,227,0.3)"/>
+            <text x="28" y="32" font-size="10" fill="#1d1d1f" font-weight="600">Base subscription</text>
+            <rect x="16" y="50" width="248" height="30" rx="0" fill="rgba(0,113,227,0.16)" stroke="rgba(0,113,227,0.32)"/>
+            <text x="28" y="69" font-size="10" fill="#1d1d1f">Included credits</text>
+            <rect x="16" y="86" width="200" height="30" rx="0" fill="rgba(0,113,227,0.22)" stroke="rgba(0,113,227,0.38)"/>
+            <text x="28" y="105" font-size="10" fill="#1d1d1f">Purchased credits / agent hours</text>
+            <rect x="16" y="122" width="288" height="22" rx="0" fill="rgba(0,113,227,0.06)" stroke="rgba(0,113,227,0.2)" stroke-dasharray="4 3"/>
+            <text x="28" y="137" font-size="9" fill="#6e6e73">Usage dashboard · burn visibility</text>
           </svg>
-          <p class="chart-caption">Unit economics depend on approval-gated outbound volume and LLM cost per routine (modeled, not yet live pricing).</p>
+          <p class="chart-caption">Hybrid packaging protects unit economics: recurring base covers platform COGS; usage and credits align revenue as agents scale (modeled, not live pricing).</p>
         </div>
       </aside>
     </div>
-    <p class="slide-acronym-footer"><strong>SaaS</strong> software as a service · <strong>LLM</strong> large language model</p>
+    <p class="slide-acronym-footer"><strong>SaaS</strong> software as a service · <strong>LLM</strong> large language model · <strong>COGS</strong> cost of goods sold · <strong>ARPU</strong> average revenue per user</p>
   </section>
 
   <!-- 9 Traction -->
@@ -1453,7 +1469,7 @@
         <h2>Raising from friends and angels to reach first paying design partners</h2>
         <ul class="plain">
           <li><strong>Raise</strong> Angel round (likely SAFE); amount and cap to align with angels we speak with - not fixed in this deck.</li>
-          <li><strong>Milestones we are aiming for</strong> Handful of design partners on the live product, production approval flows, basic billing path, second opportunity card scoped (not a hiring plan).</li>
+          <li><strong>Milestones we are aiming for</strong> Handful of design partners on the live product, production approval flows, metering plus billing path and owner cost dashboards, second opportunity card scoped (not a hiring plan).</li>
           <li><strong>Contact</strong> Angel and founder inquiries via <a href="https://github.com/marvelus-tech" style="color: #2997ff;">github.com/marvelus-tech</a> (dedicated alias pending).</li>
         </ul>
       </div>
