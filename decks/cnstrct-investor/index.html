@@ -438,6 +438,34 @@
       background: transparent;
       pointer-events: all;
       cursor: default;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .touch-nav button:focus,
+    .touch-nav button:focus-visible {
+      outline: none;
+      box-shadow: none;
+    }
+
+    /* Presentation layer: no focus rings on slides/layout (sources links keep keyboard ring below) */
+    .deck .slide:focus,
+    .deck .slide:focus-visible,
+    .deck .slide-layout:focus,
+    .deck .slide-content:focus,
+    .deck .slide-visual:focus {
+      outline: none;
+    }
+
+    .deck .sources a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    @media (min-width: 769px) {
+      .touch-nav {
+        display: none;
+      }
     }
 
     @media (max-width: 900px) {
@@ -1320,8 +1348,8 @@
 </div>
 
 <div class="touch-nav" aria-hidden="true">
-  <button type="button" id="prevZone" aria-label="Previous slide"></button>
-  <button type="button" id="nextZone" aria-label="Next slide"></button>
+  <button type="button" id="prevZone" aria-label="Previous slide" tabindex="-1"></button>
+  <button type="button" id="nextZone" aria-label="Next slide" tabindex="-1"></button>
 </div>
 <div class="nav-hint" id="navHint" aria-hidden="true">← → · space · Home / End</div>
 <div class="slide-counter" aria-live="polite"><span id="current">1</span> / 16</div>
@@ -1359,6 +1387,8 @@
     const slide = document.querySelector('[data-slide="' + n + '"]');
     if (slide) slide.classList.add('active');
     updateProgressUI(n);
+    const active = document.activeElement;
+    if (active && active.closest('.touch-nav')) active.blur();
   }
 
   function nextSlide() {
