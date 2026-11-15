@@ -549,6 +549,63 @@
 
     .slide-dark .cite-fn { color: #2997ff; }
 
+    .sample-honesty {
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: var(--text-muted);
+      margin: 0.35rem 0 0.85rem;
+      max-width: 42rem;
+    }
+
+    .slide-dark .sample-honesty { color: var(--muted-on-dark); }
+
+    .mv-quote-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 1.25rem;
+    }
+
+    @media (min-width: 720px) {
+      .mv-quote-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .mv-quote-tile {
+      border-radius: 0;
+      border: 1px solid var(--border);
+      background: var(--bg-elevated);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slide-dark .mv-quote-tile {
+      border-color: rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .mv-quote-tile img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .mv-quote-attr {
+      font-size: 0.72rem;
+      line-height: 1.4;
+      color: #888;
+      padding: 8px 10px;
+      border-top: 1px solid var(--border);
+      margin-top: auto;
+    }
+
+    .slide-dark .mv-quote-attr {
+      color: rgba(245, 245, 247, 0.55);
+      border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
     .moat-grid {
       display: grid;
       gap: 10px;
@@ -789,7 +846,7 @@
     </linearGradient>
   </defs>
 </svg>
-<div class="progress" id="progress" style="width: 6.25%;"></div>
+<div class="progress" id="progress" style="width: 5.88%;"></div>
 <div class="deck" id="deck">
 
   <!-- 1 Title -->
@@ -886,6 +943,9 @@
             <span>2026 pace still elevated; Jan–Oct average; Oct: 501.6K (same series).<span class="cite-fn">1</span></span>
           </div>
         </div>
+        <ul class="plain" style="margin-top: 1rem;">
+          <li><strong>Community:</strong> In our tagged sample, most builders describe an 80-90% cliff before a first real user (Market voice slide; methodology footnote).<span class="cite-fn">13</span></li>
+        </ul>
       </div>
       <aside class="slide-visual" aria-hidden="true">
         <div class="visual-card">
@@ -926,8 +986,48 @@
     <p class="slide-acronym-footer"><strong>BFS</strong> Business Formation Statistics (U.S. Census applications data, via FRED)</p>
   </section>
 
-  <!-- 3 Insight -->
-  <section class="slide slide-dark" data-slide="3">
+  <!-- 3 Market voice -->
+  <section class="slide slide-white" data-slide="3">
+    <div class="slide-layout slide-layout--single">
+      <div class="slide-content">
+        <p class="kicker">Market voice</p>
+        <h2>Builders stall after the demo</h2>
+        <p class="sample-honesty">In our sample (n=378 public posts, Sep 2024-Nov 2026; see appendix methodology).<span class="cite-fn">13</span></p>
+        <p class="lede">Forum threads repeat the same story: codegen and demos move fast; production, trust, and first customer motion do not. CNSTRCT sits in that gap.</p>
+        <div class="stat-row">
+          <div class="stat">
+            <b>~83%</b>
+            <span>Last-mile / production cliff (Theme A) in our sample.<span class="cite-fn">13</span></span>
+          </div>
+          <div class="stat">
+            <b>~49%</b>
+            <span>AI dev tooling wall (Theme B) in our sample.<span class="cite-fn">13</span></span>
+          </div>
+          <div class="stat">
+            <b>~31%</b>
+            <span>Tagged items map to CNSTRCT operating-layer pain (<code style="font-size:0.8em">maps_to_cnstrct=Y</code>).<span class="cite-fn">13</span></span>
+          </div>
+        </div>
+        <div class="mv-quote-grid" aria-label="Builder quote tiles from public forums">
+          <figure class="mv-quote-tile">
+            <img src="assets/market-voice/reddit-last-10pct-01.png" width="640" height="360" alt="Quote tile: the last 10% of launching a web app is brutal" loading="lazy" decoding="async">
+            <figcaption class="mv-quote-attr">r/nocode · last 10% of launch</figcaption>
+          </figure>
+          <figure class="mv-quote-tile">
+            <img src="assets/market-voice/reddit-prod-cliff-02.png" width="640" height="360" alt="Quote tile: AI coding worked in dev, broke in production" loading="lazy" decoding="async">
+            <figcaption class="mv-quote-attr">r/AI_Agents · dev vs prod cliff</figcaption>
+          </figure>
+          <figure class="mv-quote-tile">
+            <img src="assets/market-voice/reddit-80-90-wall-03.png" width="640" height="360" alt="Quote tile: vibe-coded project stuck at 80-90 percent" loading="lazy" decoding="async">
+            <figcaption class="mv-quote-attr">r/nocode · stuck at 80-90%</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Insight -->
+  <section class="slide slide-dark" data-slide="4">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Insight</p>
@@ -959,7 +1059,7 @@
   </section>
 
   <!-- 4 Why Now -->
-  <section class="slide slide-white" data-slide="4">
+  <section class="slide slide-white" data-slide="5">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Why now</p>
@@ -1019,7 +1119,7 @@
   </section>
 
   <!-- 5 Solution -->
-  <section class="slide slide-dark" data-slide="5">
+  <section class="slide slide-dark" data-slide="6">
     <div class="slide-layout slide-layout--single">
       <div class="slide-content">
         <p class="kicker">Solution</p>
@@ -1035,7 +1135,7 @@
   </section>
 
   <!-- 6 Demo -->
-  <section class="slide slide-light" data-slide="6">
+  <section class="slide slide-light" data-slide="7">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Demo</p>
@@ -1071,7 +1171,7 @@
   </section>
 
   <!-- 7 Market -->
-  <section class="slide slide-white" data-slide="7">
+  <section class="slide slide-white" data-slide="8">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Market</p>
@@ -1129,7 +1229,7 @@
   </section>
 
   <!-- 8 Business model -->
-  <section class="slide slide-light" data-slide="8">
+  <section class="slide slide-light" data-slide="9">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Business model</p>
@@ -1160,7 +1260,7 @@
   </section>
 
   <!-- 9 Traction -->
-  <section class="slide slide-white" data-slide="9">
+  <section class="slide slide-white" data-slide="10">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Traction</p>
@@ -1183,7 +1283,7 @@
   </section>
 
   <!-- 10 GTM -->
-  <section class="slide slide-light" data-slide="10">
+  <section class="slide slide-light" data-slide="11">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Go-to-market</p>
@@ -1221,7 +1321,7 @@
   </section>
 
   <!-- 11 Competition -->
-  <section class="slide slide-dark" data-slide="11">
+  <section class="slide slide-dark" data-slide="12">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Competition &amp; moat</p>
@@ -1284,7 +1384,7 @@
   </section>
 
   <!-- 12 Team -->
-  <section class="slide slide-light" data-slide="12">
+  <section class="slide slide-light" data-slide="13">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Team</p>
@@ -1321,7 +1421,7 @@
   </section>
 
   <!-- 13 Ask -->
-  <section class="slide slide-dark" data-slide="13">
+  <section class="slide slide-dark" data-slide="14">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">The ask</p>
@@ -1353,7 +1453,7 @@
   </section>
 
   <!-- 14 Risks -->
-  <section class="slide slide-white" data-slide="14">
+  <section class="slide slide-white" data-slide="15">
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Risks</p>
@@ -1380,7 +1480,7 @@
   </section>
 
   <!-- 15 Appendix product -->
-  <section class="slide slide-light" data-slide="15">
+  <section class="slide slide-light" data-slide="16">
     <div class="slide-layout slide-layout--single">
       <div class="slide-content">
         <p class="kicker">Appendix</p>
@@ -1397,7 +1497,7 @@
   </section>
 
   <!-- 16 Sources -->
-  <section class="slide slide-white" data-slide="16">
+  <section class="slide slide-white" data-slide="17">
     <div class="slide-layout slide-layout--single">
       <div class="slide-content">
         <p class="kicker">Sources</p>
@@ -1414,7 +1514,8 @@
         <p><span class="cite-fn">9</span> <strong>Home improvement CPL:</strong> LocaliQ search benchmarks via <a href="https://www.thomastowndigital.com/home-services-marketing-statistics">Thomas Town Digital summary</a> (2026 median $90.92).</p>
         <p><span class="cite-fn">10</span> <strong>Angi U.S. lead revenue:</strong> Dillard's Digital summary of Angi 2025 10-K <a href="https://dillardsdigital.com/reports/state-of-rented-leads-2026/">state-of-rented-leads-2026</a> ($587.1M).</p>
         <p><span class="cite-fn">11</span> <strong>U.S. home improvement market:</strong> Grand View Research <a href="https://www.grandviewresearch.com/industry-analysis/us-home-improvement-market-report">$594.5B in 2025</a>.</p>
-        <p><span class="cite-fn">12</span> <strong>Home-services lead-gen TAM estimate:</strong> <a href="https://www.leadgen-economy.com/blog/home-improvement-lead-marketplaces-angi-thumbtack-homeadvisor/">leadgen-economy.com</a> ($3–5B annual range, industry estimate).</p>
+        <p><span class="cite-fn">12</span> <strong>Home-services lead-gen TAM estimate:</strong> <a href="https://www.leadgen-economy.com/blog/home-improvement-lead-marketplaces-angi-thumbtack-homeadvisor/">leadgen-economy.com</a> ($3-5B annual range, industry estimate).</p>
+        <p><span class="cite-fn">13</span> <strong>Market voice sample:</strong> n=378 public posts and comments (Sep 2024-Nov 2026), keyword-tagged per internal codebook; platform mix ~97% Hacker News plus 9 curated Reddit threads (bulk Reddit JSON blocked on research host). Percentages on slide 3 are shares of this tagged sample only, not population claims. Selection bias toward vocal failures on forums.</p>
         <p><strong>Context:</strong> Stripe Economics solopreneur formation <a href="https://www.stripeeconomics.com/p/the-age-of-the-solopreneur">stripeeconomics.com</a> · Lovable product docs <a href="https://docs.lovable.dev/introduction/welcome">docs.lovable.dev</a>.</p>
         </div>
       </div>
@@ -1429,11 +1530,11 @@
   <button type="button" id="nextZone" aria-label="Next slide" tabindex="-1"></button>
 </div>
 <div class="nav-hint" id="navHint" aria-hidden="true">← → · space · Home / End</div>
-<div class="slide-counter" aria-live="polite"><span id="current">1</span> / 16</div>
+<div class="slide-counter" aria-live="polite"><span id="current">1</span> / 17</div>
 
 <script>
   let currentSlide = 1;
-  const totalSlides = 16;
+  const totalSlides = 17;
   const MOBILE_MQ = window.matchMedia('(max-width: 768px)');
   let slideObserver = null;
 
