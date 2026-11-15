@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CNSTRCT | Investor deck</title>
-  <meta name="description" content="CNSTRCT is the AI co-founder platform that triages founders, recommends low-capital businesses, and deploys a generated site plus proactive agent teammates.">
+  <title>CNSTRCT | Angel investor deck</title>
+  <meta name="description" content="Early-stage angel pitch: CNSTRCT triages founders, recommends low-capital businesses, and ships a generated site plus approval-gated agent teammates. Live MVP at cnstrct-mu.vercel.app.">
   <link rel="canonical" href="https://marvelus-tech.github.io/decks/cnstrct-investor/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://marvelus-tech.github.io/decks/cnstrct-investor/">
-  <meta property="og:title" content="CNSTRCT | AI co-founder for low-capital businesses">
-  <meta property="og:description" content="Triage, opportunity selection, generated site, and approval-gated founding agents in one flow.">
+  <meta property="og:title" content="CNSTRCT | Angel investor deck">
+  <meta property="og:description" content="Early-stage angel pitch: triage, opportunity selection, generated site, and approval-gated founding agents. Live MVP at cnstrct-mu.vercel.app.">
   <style>
     :root {
       --bg: #fafafa;
@@ -601,6 +601,37 @@
       opacity: 0.85;
       margin-top: 10px;
     }
+
+    .founder-cards {
+      display: grid;
+      gap: 12px;
+    }
+
+    .founder-card {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: var(--bg-elevated);
+    }
+
+    .founder-initials {
+      flex: 0 0 44px;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid rgba(0, 113, 227, 0.2);
+    }
   </style>
   <style>
     @media (max-width: 768px) {
@@ -730,6 +761,7 @@
   <section class="slide slide-dark active" data-slide="1">
     <div class="slide-layout">
       <div class="slide-content">
+        <p class="kicker">Angel pitch · early stage</p>
         <p class="logo-mark">CNSTRCT</p>
         <h1>Your AI co-founder for businesses you can start with almost no capital</h1>
         <p class="lede">One guided session: pick a low-CAPEX playbook, launch a real storefront, and run approval-gated agents—not another blank repo.</p>
@@ -968,7 +1000,7 @@
       <div class="slide-content">
         <p class="kicker">Demo</p>
         <h2>Live wedge: home-services lead arbitrage end-to-end in one sitting</h2>
-        <p class="lede" style="margin-bottom: 0.5rem;">Triage → home services → generated site, agent dashboard, and outreach drafts in the approvals queue (mock sends when keys are absent).</p>
+        <p class="lede" style="margin-bottom: 0.5rem;">Live demo at <a href="https://cnstrct-mu.vercel.app/" style="color: var(--accent);">cnstrct-mu.vercel.app</a>: triage → home services → generated site, agent dashboard, and outreach drafts in the approvals queue (mock sends when keys are absent).</p>
         <ul class="plain">
           <li><strong>Site + lead form</strong> shareable owner path with dashboard link.</li>
           <li><strong>Agents A/B</strong> supply outreach and homeowner-side capture (B may ship coming-soon).</li>
@@ -1090,9 +1122,9 @@
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Traction</p>
-        <h2>MVP is built and demoable end-to-end without production API keys</h2>
+        <h2>Live product at <a href="https://cnstrct-mu.vercel.app/" style="color: var(--accent);">cnstrct-mu.vercel.app</a>, demoable end-to-end without production API keys</h2>
         <ul class="plain">
-          <li><strong>Product</strong> conversational triage, three-card selector, home-services template, generated site, agent chat, sandbox/computer view, approval UX.</li>
+          <li><strong>Try it</strong> <a href="https://cnstrct-mu.vercel.app/">cnstrct-mu.vercel.app</a> — conversational triage, three-card selector, home-services template, generated site, agent chat, sandbox/computer view, approval UX.</li>
           <li><strong>Revenue</strong> none to date; no invented user or MRR figures.</li>
           <li><strong>Pilots</strong> internal demos; seeking design partners among first-time founders and micro-agency operators.</li>
           <li><strong>Stack</strong> Next.js, TypeScript, Tailwind, multi-tenant shape, optional Supabase auth, Orgo or local sandbox for agent computers.</li>
@@ -1208,17 +1240,38 @@
 
   <!-- 12 Team -->
   <section class="slide slide-light" data-slide="12">
-    <div class="slide-layout slide-layout--single">
+    <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">Team</p>
-        <h2>MarvelUs built the MVP; named bios ship with the data room</h2>
+        <h2>Two founders; we just started building in public</h2>
         <ul class="plain">
-          <li><strong>Founding team</strong> MarvelUs Tech: product, full-stack, and agent runtime (<a href="https://github.com/marvelus-tech" style="color: var(--accent);">github.com/marvelus-tech</a>).</li>
-          <li><strong>What we have shown</strong> End-to-end CNSTRCT demo (triage, site generation, agent dashboard, approvals) without fabricated traction metrics.</li>
-          <li><strong>Hiring with round</strong> GTM design-partner lead and agent-safety engineer as first two hires after close.</li>
-          <li><strong>Advisors</strong> In conversations with local-services operators; none signed yet.</li>
+          <li><strong>Okeito S</strong> Product and full-stack. Owns triage UX, generated sites, and the owner dashboard that ties the session together.</li>
+          <li><strong>Jason Rivera</strong> Technical and market. Owns agent runtime, approval gates, and the home-services wedge we demo today.</li>
+          <li><strong>Org</strong> MarvelUs Tech (<a href="https://github.com/marvelus-tech" style="color: var(--accent);">github.com/marvelus-tech</a>) — no fabricated traction; ship is the proof.</li>
+          <li><strong>Advisors</strong> Conversations with local-services operators; none signed yet.</li>
         </ul>
       </div>
+      <aside class="slide-visual" aria-hidden="true">
+        <div class="visual-card">
+          <p class="visual-label">Founders</p>
+          <div class="founder-cards">
+            <div class="founder-card">
+              <div class="founder-initials" aria-hidden="true">OS</div>
+              <div>
+                <strong style="display:block;font-size:0.95rem;margin-bottom:4px;">Okeito S</strong>
+                <span style="font-size:0.82rem;line-height:1.45;color:var(--text-muted);">Product · full-stack · triage-to-dashboard flow</span>
+              </div>
+            </div>
+            <div class="founder-card">
+              <div class="founder-initials" aria-hidden="true">JR</div>
+              <div>
+                <strong style="display:block;font-size:0.95rem;margin-bottom:4px;">Jason Rivera</strong>
+                <span style="font-size:0.82rem;line-height:1.45;color:var(--text-muted);">Technical · market · agents and approvals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
   </section>
 
@@ -1227,27 +1280,27 @@
     <div class="slide-layout">
       <div class="slide-content">
         <p class="kicker">The ask</p>
-        <h2>Pre-seed to convert the demo into paid design partners and a second vertical</h2>
+        <h2>Raising from friends and angels to reach first paying design partners</h2>
         <ul class="plain">
-          <li><strong>Round</strong> Pre-seed; target size and valuation set with lead investor (not fixed in this deck).</li>
-          <li><strong>12-month outcomes</strong> 10+ design partners, production approval flows, billing and usage metering live, second opportunity card shipped.</li>
-          <li><strong>Contact</strong> Investor inquiries via <a href="https://github.com/marvelus-tech" style="color: #2997ff;">github.com/marvelus-tech</a> (dedicated alias pending).</li>
+          <li><strong>Raise</strong> Angel round (likely SAFE); amount and cap to align with angels we speak with — not fixed in this deck.</li>
+          <li><strong>Milestones we are aiming for</strong> Handful of design partners on the live product, production approval flows, basic billing path, second opportunity card scoped (not a hiring plan).</li>
+          <li><strong>Contact</strong> Angel and founder inquiries via <a href="https://github.com/marvelus-tech" style="color: #2997ff;">github.com/marvelus-tech</a> (dedicated alias pending).</li>
         </ul>
       </div>
       <aside class="slide-visual" aria-hidden="true">
         <div class="visual-card">
-          <p class="visual-label">Use of proceeds (indicative split)</p>
-          <svg class="chart-svg" viewBox="0 0 320 130" role="img" aria-label="Use of proceeds breakdown">
+          <p class="visual-label">Use of funds (indicative)</p>
+          <svg class="chart-svg" viewBox="0 0 320 130" role="img" aria-label="Use of funds breakdown for angel round">
             <rect x="16" y="16" width="200" height="22" rx="6" fill="rgba(41,151,255,0.45)"/>
-            <text x="24" y="31" font-size="9" fill="#f5f5f7">GTM + design partners · 40%</text>
-            <rect x="16" y="46" width="150" height="22" rx="6" fill="rgba(41,151,255,0.35)"/>
-            <text x="24" y="61" font-size="9" fill="#f5f5f7">Product + 2nd vertical · 30%</text>
-            <rect x="16" y="76" width="120" height="22" rx="6" fill="rgba(41,151,255,0.28)"/>
-            <text x="24" y="91" font-size="9" fill="#f5f5f7">Agent safety + infra · 20%</text>
-            <rect x="16" y="106" width="60" height="18" rx="6" fill="rgba(41,151,255,0.2)"/>
-            <text x="24" y="119" font-size="9" fill="#f5f5f7">Ops · 10%</text>
+            <text x="24" y="31" font-size="9" fill="#f5f5f7">Product + MVP hardening · 40%</text>
+            <rect x="16" y="46" width="170" height="22" rx="6" fill="rgba(41,151,255,0.35)"/>
+            <text x="24" y="61" font-size="9" fill="#f5f5f7">First customers + design partners · 30%</text>
+            <rect x="16" y="76" width="130" height="22" rx="6" fill="rgba(41,151,255,0.28)"/>
+            <text x="24" y="91" font-size="9" fill="#f5f5f7">Compliance basics · 20%</text>
+            <rect x="16" y="106" width="80" height="18" rx="6" fill="rgba(41,151,255,0.2)"/>
+            <text x="24" y="119" font-size="9" fill="#f5f5f7">Runway buffer · 10%</text>
           </svg>
-          <p class="chart-caption">Percentages are planning assumptions, not committed allocations.</p>
+          <p class="chart-caption">Founder-led shop: contractors before headcount. Percentages are planning assumptions only.</p>
         </div>
       </aside>
     </div>
