@@ -695,6 +695,40 @@
       color: var(--text-muted);
     }
 
+    .packaging-badge--future {
+      margin-top: 0;
+      padding: 5px 10px;
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .future-revenue-subhead {
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-top: 1.35rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .future-revenue-note {
+      font-weight: 500;
+      color: var(--text-muted);
+      font-size: 0.88em;
+    }
+
+    .future-revenue-why {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin-top: 0.65rem;
+      max-width: 56ch;
+    }
+
+    ul.plain.future-revenue-list {
+      margin-top: 0.35rem;
+    }
+
     .chart-subordinate {
       opacity: 0.85;
       margin-top: 10px;
@@ -1279,25 +1313,35 @@
           <li><strong>Why it works</strong> Revenue tracks COGS; heavy users who win clients buy more capacity; light users stay cheap; credits-per-action is standard on agent platforms (a pattern, not a single clone).</li>
           <li><strong>Benchmark</strong> AI builders (e.g. Lovable) monetize freemium → subscription at scale; we add business-outcome packaging plus usage for agent work. Pricing not yet public.<span class="cite-fn">8</span></li>
         </ul>
+        <h3 class="future-revenue-subhead">Future revenue layers <span class="future-revenue-note">(not live)</span></h3>
+        <span class="packaging-badge packaging-badge--future">Phase 2+ · illustrative</span>
+        <ul class="plain future-revenue-list">
+          <li><strong>Affiliate / referrals</strong> Formation, payments, accounting, domains, marketing, and insurance when users activate through CNSTRCT flows.</li>
+          <li><strong>Marketplace</strong> Agent skills, templates, and human-reviewed add-ons in-product.</li>
+          <li><strong>Tool rev-share</strong> Email, CRM, and invoicing when agents recommend or integrate ops tools.</li>
+        </ul>
+        <p class="future-revenue-why">Low friction for users, high margin for CNSTRCT; especially useful while subscription volume is still small.</p>
       </div>
       <aside class="slide-visual" aria-hidden="true">
         <div class="visual-card">
           <p class="visual-label">Revenue stack (planned)</p>
-          <svg class="chart-svg" viewBox="0 0 320 168" role="img" aria-label="Planned hybrid revenue layers">
-            <rect x="16" y="12" width="288" height="32" rx="0" fill="rgba(0,113,227,0.12)" stroke="rgba(0,113,227,0.3)"/>
-            <text x="28" y="32" font-size="10" fill="#1d1d1f" font-weight="600">Base subscription</text>
-            <rect x="16" y="50" width="248" height="30" rx="0" fill="rgba(0,113,227,0.16)" stroke="rgba(0,113,227,0.32)"/>
-            <text x="28" y="69" font-size="10" fill="#1d1d1f">Included credits</text>
-            <rect x="16" y="86" width="200" height="30" rx="0" fill="rgba(0,113,227,0.22)" stroke="rgba(0,113,227,0.38)"/>
-            <text x="28" y="105" font-size="10" fill="#1d1d1f">Purchased credits / agent hours</text>
-            <rect x="16" y="122" width="288" height="22" rx="0" fill="rgba(0,113,227,0.06)" stroke="rgba(0,113,227,0.2)" stroke-dasharray="4 3"/>
-            <text x="28" y="137" font-size="9" fill="#6e6e73">Usage dashboard · burn visibility</text>
+          <svg class="chart-svg" viewBox="0 0 320 200" role="img" aria-label="Planned hybrid revenue layers with future partner and marketplace tier">
+            <rect x="16" y="8" width="288" height="30" rx="0" fill="rgba(0,113,227,0.12)" stroke="rgba(0,113,227,0.3)"/>
+            <text x="28" y="27" font-size="10" fill="#1d1d1f" font-weight="600">Base subscription</text>
+            <rect x="16" y="44" width="248" height="28" rx="0" fill="rgba(0,113,227,0.16)" stroke="rgba(0,113,227,0.32)"/>
+            <text x="28" y="62" font-size="10" fill="#1d1d1f">Included credits</text>
+            <rect x="16" y="78" width="200" height="28" rx="0" fill="rgba(0,113,227,0.22)" stroke="rgba(0,113,227,0.38)"/>
+            <text x="28" y="96" font-size="10" fill="#1d1d1f">Purchased credits / agent hours</text>
+            <rect x="16" y="112" width="288" height="22" rx="0" fill="rgba(0,113,227,0.06)" stroke="rgba(0,113,227,0.2)" stroke-dasharray="4 3"/>
+            <text x="28" y="127" font-size="9" fill="#6e6e73">Usage dashboard · burn visibility</text>
+            <rect x="16" y="142" width="288" height="28" rx="0" fill="rgba(110,110,115,0.08)" stroke="rgba(110,110,115,0.35)" stroke-dasharray="5 4"/>
+            <text x="28" y="160" font-size="9" fill="#6e6e73" font-weight="600">Partner + marketplace (future)</text>
           </svg>
-          <p class="chart-caption">Hybrid packaging protects unit economics: recurring base covers platform COGS; usage and credits align revenue as agents scale (modeled, not live pricing).</p>
+          <p class="chart-caption">Hybrid is core; the partner layer stacks on top after wedge PMF (structural only, not live revenue).</p>
         </div>
       </aside>
     </div>
-    <p class="slide-acronym-footer"><strong>SaaS</strong> software as a service · <strong>LLM</strong> large language model · <strong>COGS</strong> cost of goods sold · <strong>ARPU</strong> average revenue per user</p>
+    <p class="slide-acronym-footer"><strong>SaaS</strong> software as a service · <strong>LLM</strong> large language model · <strong>COGS</strong> cost of goods sold · <strong>ARPU</strong> average revenue per user · <strong>CRM</strong> customer relationship management</p>
   </section>
 
   <!-- 9 Traction -->
