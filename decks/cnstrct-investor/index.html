@@ -124,6 +124,21 @@
 
     .slide-dark .visual-label { color: var(--muted-on-dark); }
 
+    .slide-visual--title-stack {
+      gap: 4px;
+      margin-top: -4px;
+    }
+
+    .slide-visual--title-stack .visual-label {
+      margin-bottom: 2px;
+    }
+
+    .chart-svg--founding-stack {
+      width: 100%;
+      height: auto;
+      min-height: clamp(228px, 34vw, 360px);
+    }
+
     .visual-rail {
       min-height: 200px;
       border-radius: 0;
@@ -858,9 +873,9 @@
         <h1>Your AI co-founder for businesses you can start with almost no capital</h1>
         <p class="lede">One guided session: pick a low-CAPEX playbook, launch a real storefront, and run approval-gated agents, not another blank repo.</p>
       </div>
-      <aside class="slide-visual" aria-hidden="true">
+      <aside class="slide-visual slide-visual--title-stack" aria-hidden="true">
         <p class="visual-label">Founding stack</p>
-        <svg class="chart-svg" viewBox="0 0 320 228" role="img" aria-label="Exploded isometric view of three session layers: Command center fit and capital, SI Employees site and OS, Launch Custom Biz site agents and approvals">
+        <svg class="chart-svg chart-svg--founding-stack" viewBox="0 0 320 198" role="img" aria-label="Exploded isometric view of three session layers: Command center fit and capital, SI Employees site and OS, Launch Custom Biz site agents and approvals">
             <defs>
               <linearGradient id="slabTopA" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stop-color="rgba(255,255,255,0.22)"/>
@@ -881,45 +896,43 @@
                 <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
               </filter>
             </defs>
-            <path d="M 18 14 H 302 V 182 H 18 Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-            <path d="M 18 14 H 34 M 18 14 V 30 M 302 14 H 286 M 302 14 V 30 M 18 182 H 34 M 18 182 V 166 M 302 182 H 286 M 302 182 V 166" stroke="rgba(41,151,255,0.55)" stroke-width="1.25" fill="none"/>
-            <text x="24" y="26" fill="rgba(245,245,247,0.45)" font-size="8" font-family="ui-monospace, monospace">CNSTRCT · ISO VIEW</text>
-            <g filter="url(#slabGlow)">
-              <path d="M 92 48 L 152 28 L 212 48 L 152 68 Z" fill="url(#slabTopC)" stroke="rgba(232,93,4,0.5)" stroke-width="1"/>
-              <path d="M 152 68 L 212 48 L 212 62 L 152 82 Z" fill="rgba(41,151,255,0.22)" stroke="rgba(255,255,255,0.12)" stroke-width="0.75"/>
-              <path d="M 92 48 L 152 68 L 152 82 L 92 62 Z" fill="rgba(0,0,0,0.35)" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
-              <text x="152" y="54" text-anchor="middle" fill="#f5f5f7" font-size="10" font-weight="600">03</text>
+            <path d="M 18 14 H 302 V 186 H 18 Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+            <path d="M 18 14 H 34 M 18 14 V 30 M 302 14 H 286 M 302 14 V 30 M 18 186 H 34 M 18 186 V 170 M 302 186 H 286 M 302 186 V 170" stroke="rgba(41,151,255,0.55)" stroke-width="1.25" fill="none"/>
+            <g transform="translate(160 98) scale(1.22) translate(-160 -98)">
+              <g filter="url(#slabGlow)">
+                <path d="M 92 48 L 152 28 L 212 48 L 152 68 Z" fill="url(#slabTopC)" stroke="rgba(232,93,4,0.5)" stroke-width="1"/>
+                <path d="M 152 68 L 212 48 L 212 62 L 152 82 Z" fill="rgba(41,151,255,0.22)" stroke="rgba(255,255,255,0.12)" stroke-width="0.75"/>
+                <path d="M 92 48 L 152 68 L 152 82 L 92 62 Z" fill="rgba(0,0,0,0.35)" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+                <text x="152" y="54" text-anchor="middle" fill="#f5f5f7" font-size="11" font-weight="600">03</text>
+              </g>
+              <g>
+                <path d="M 92 88 L 152 68 L 212 88 L 152 108 Z" fill="url(#slabTopB)" stroke="rgba(41,151,255,0.45)" stroke-width="1"/>
+                <path d="M 152 108 L 212 88 L 212 102 L 152 122 Z" fill="rgba(41,151,255,0.16)" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+                <path d="M 92 88 L 152 108 L 152 122 L 92 102 Z" fill="rgba(0,0,0,0.32)" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+                <text x="152" y="94" text-anchor="middle" fill="#f5f5f7" font-size="11" font-weight="600">02</text>
+              </g>
+              <g>
+                <path d="M 92 128 L 152 108 L 212 128 L 152 148 Z" fill="url(#slabTopA)" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+                <path d="M 152 148 L 212 128 L 212 142 L 152 162 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+                <path d="M 92 128 L 152 148 L 152 162 L 92 142 Z" fill="rgba(0,0,0,0.38)" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+                <text x="152" y="134" text-anchor="middle" fill="#f5f5f7" font-size="11" font-weight="600">01</text>
+              </g>
+              <path d="M 70 78 V 118" stroke="rgba(41,151,255,0.25)" stroke-width="1" stroke-dasharray="3 3"/>
+              <path d="M 70 38 V 78" stroke="rgba(41,151,255,0.25)" stroke-width="1" stroke-dasharray="3 3"/>
+              <text x="52" y="100" text-anchor="middle" fill="rgba(245,245,247,0.35)" font-size="7.5" transform="rotate(-90 52 100)">EXPLODED</text>
+              <path d="M 218 58 H 252" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+              <rect x="228" y="36" width="94" height="36" rx="0" fill="rgba(0,0,0,0.45)" stroke="rgba(232,93,4,0.4)"/>
+              <text x="275" y="53" text-anchor="middle" fill="#f5f5f7" font-size="8" font-weight="600">Launch Custom Biz</text>
+              <text x="275" y="64" text-anchor="middle" fill="rgba(245,245,247,0.55)" font-size="7.5">Site + agents + approvals</text>
+              <path d="M 218 98 H 228" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <rect x="220" y="78" width="78" height="32" rx="0" fill="rgba(0,0,0,0.4)" stroke="rgba(41,151,255,0.35)"/>
+              <text x="259" y="93" text-anchor="middle" fill="#f5f5f7" font-size="8.5" font-weight="600">SI Employees</text>
+              <text x="259" y="105" text-anchor="middle" fill="rgba(245,245,247,0.55)" font-size="7.5">Site + OS</text>
+              <path d="M 86 138 H 36" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <rect x="0" y="118" width="80" height="32" rx="0" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.2)"/>
+              <text x="40" y="133" text-anchor="middle" fill="#f5f5f7" font-size="8.5" font-weight="600">Command center</text>
+              <text x="40" y="145" text-anchor="middle" fill="rgba(245,245,247,0.55)" font-size="7.5">Fit + capital</text>
             </g>
-            <g>
-              <path d="M 92 88 L 152 68 L 212 88 L 152 108 Z" fill="url(#slabTopB)" stroke="rgba(41,151,255,0.45)" stroke-width="1"/>
-              <path d="M 152 108 L 212 88 L 212 102 L 152 122 Z" fill="rgba(41,151,255,0.16)" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
-              <path d="M 92 88 L 152 108 L 152 122 L 92 102 Z" fill="rgba(0,0,0,0.32)" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
-              <text x="152" y="94" text-anchor="middle" fill="#f5f5f7" font-size="10" font-weight="600">02</text>
-            </g>
-            <g>
-              <path d="M 92 128 L 152 108 L 212 128 L 152 148 Z" fill="url(#slabTopA)" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
-              <path d="M 152 148 L 212 128 L 212 142 L 152 162 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
-              <path d="M 92 128 L 152 148 L 152 162 L 92 142 Z" fill="rgba(0,0,0,0.38)" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
-              <text x="152" y="134" text-anchor="middle" fill="#f5f5f7" font-size="10" font-weight="600">01</text>
-            </g>
-            <path d="M 70 78 V 118" stroke="rgba(41,151,255,0.25)" stroke-width="1" stroke-dasharray="3 3"/>
-            <path d="M 70 38 V 78" stroke="rgba(41,151,255,0.25)" stroke-width="1" stroke-dasharray="3 3"/>
-            <text x="52" y="100" text-anchor="middle" fill="rgba(245,245,247,0.35)" font-size="7" transform="rotate(-90 52 100)">EXPLODED</text>
-            <path d="M 218 58 H 252" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
-            <rect x="232" y="40" width="88" height="32" rx="0" fill="rgba(0,0,0,0.45)" stroke="rgba(232,93,4,0.4)"/>
-            <text x="276" y="54" text-anchor="middle" fill="#f5f5f7" font-size="7.5" font-weight="600">Launch Custom Biz</text>
-            <text x="276" y="64" text-anchor="middle" fill="rgba(245,245,247,0.55)" font-size="7">Site + agents + approvals</text>
-            <path d="M 218 98 H 228" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
-            <rect x="224" y="82" width="72" height="28" rx="0" fill="rgba(0,0,0,0.4)" stroke="rgba(41,151,255,0.35)"/>
-            <text x="260" y="94" text-anchor="middle" fill="#f5f5f7" font-size="8" font-weight="600">SI Employees</text>
-            <text x="260" y="104" text-anchor="middle" fill="rgba(245,245,247,0.55)" font-size="7">Site + OS</text>
-            <path d="M 86 138 H 36" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
-            <rect x="0" y="122" width="76" height="28" rx="0" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.2)"/>
-            <text x="38" y="134" text-anchor="middle" fill="#f5f5f7" font-size="8" font-weight="600">Command center</text>
-            <text x="38" y="144" text-anchor="middle" fill="rgba(245,245,247,0.55)" font-size="7">Fit + capital</text>
-            <text x="24" y="178" fill="rgba(245,245,247,0.5)" font-size="8">Wedge: home-services lead arbitrage</text>
-            <rect x="12" y="188" width="296" height="32" rx="0" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
-            <text x="20" y="208" fill="rgba(245,245,247,0.85)" font-size="9" font-family="ui-monospace, monospace">cnstrct-mu.vercel.app</text>
           </svg>
       </aside>
     </div>
