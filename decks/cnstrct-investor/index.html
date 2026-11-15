@@ -439,9 +439,23 @@
       right: 20px;
       font-size: 12px;
       font-weight: 500;
-      color: rgba(255, 255, 255, 0.5);
       font-variant-numeric: tabular-nums;
-      z-index: 20;
+      z-index: 50;
+      opacity: 1;
+      padding: 5px 10px;
+      pointer-events: none;
+    }
+
+    .slide-counter--dark {
+      color: #9aa3b2;
+      background: rgba(10, 10, 10, 0.78);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+    }
+
+    .slide-counter--light {
+      color: #6e6e73;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
 
     .progress {
@@ -850,13 +864,22 @@
         top: 10px;
         right: 14px;
         bottom: auto;
-        z-index: 40;
+        z-index: 50;
         padding: 5px 10px;
         border-radius: 0;
-        background: rgba(0, 0, 0, 0.45);
-        color: rgba(255, 255, 255, 0.92);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
+      }
+
+      .slide-counter.slide-counter--dark {
+        background: rgba(10, 10, 10, 0.78);
+        color: #9aa3b2;
+      }
+
+      .slide-counter.slide-counter--light {
+        background: rgba(255, 255, 255, 0.94);
+        color: #6e6e73;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
       }
 
       .progress {
@@ -1615,7 +1638,7 @@
   <button type="button" id="nextZone" aria-label="Next slide" tabindex="-1"></button>
 </div>
 <div class="nav-hint" id="navHint" aria-hidden="true">← → · space · Home / End</div>
-<div class="slide-counter" aria-live="polite"><span id="current">1</span> / 17</div>
+<div class="slide-counter slide-counter--dark" id="slideCounter" aria-live="polite"><span id="current">1</span> / 17</div>
 
 <script>
   let currentSlide = 1;
@@ -1627,10 +1650,19 @@
     return MOBILE_MQ.matches;
   }
 
+  function syncSlideCounterTheme(slideEl) {
+    const counter = document.getElementById('slideCounter');
+    if (!counter) return;
+    const onDark = slideEl && slideEl.classList.contains('slide-dark');
+    counter.classList.toggle('slide-counter--dark', !!onDark);
+    counter.classList.toggle('slide-counter--light', !onDark);
+  }
+
   function updateProgressUI(n) {
     document.getElementById('current').textContent = String(n);
     document.getElementById('progress').style.width = ((n / totalSlides) * 100) + '%';
     currentSlide = n;
+    syncSlideCounterTheme(document.querySelector('[data-slide="' + n + '"]'));
   }
 
   function showSlide(n, options) {
