@@ -632,6 +632,25 @@
       background: var(--accent-soft);
       border: 1px solid rgba(0, 113, 227, 0.2);
     }
+
+  /* Per-slide jargon: compact footnotes inside slide padding (desktop absolute; mobile in-flow). */
+    .slide-acronym-footer {
+      position: absolute;
+      left: clamp(20px, 4vw, 56px);
+      right: clamp(20px, 4vw, 56px);
+      bottom: 16px;
+      max-width: 1180px;
+      margin: 0 auto;
+      font-size: 11px;
+      line-height: 1.4;
+      color: #888;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .slide-dark .slide-acronym-footer {
+      color: rgba(245, 245, 247, 0.52);
+    }
   </style>
   <style>
     @media (max-width: 768px) {
@@ -732,6 +751,22 @@
       th, td {
         padding: 10px 12px;
       }
+
+      .slide-acronym-footer {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin: 1rem auto 0;
+        max-width: 1180px;
+        width: 100%;
+        padding-top: 0.65rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .slide-dark .slide-acronym-footer {
+        border-top-color: rgba(255, 255, 255, 0.1);
+      }
     }
 
     @media (min-width: 769px) {
@@ -831,6 +866,7 @@
           </svg>
       </aside>
     </div>
+    <p class="slide-acronym-footer"><strong>AI</strong> artificial intelligence · <strong>CAPEX</strong> capital expenditure (upfront spend) · <strong>SI</strong> site intake layer (SI Employees: site + OS in product) · <strong>OS</strong> operating system (owner dashboard layer)</p>
   </section>
 
   <!-- 2 Problem -->
@@ -887,6 +923,7 @@
         </div>
       </aside>
     </div>
+    <p class="slide-acronym-footer"><strong>BFS</strong> Business Formation Statistics (U.S. Census applications data, via FRED)</p>
   </section>
 
   <!-- 3 Insight -->
@@ -918,6 +955,7 @@
         </div>
       </aside>
     </div>
+    <p class="slide-acronym-footer"><strong>GTM</strong> go-to-market (customer acquisition) · <strong>SI</strong> site intake layer (SI Employees in session stack)</p>
   </section>
 
   <!-- 4 Why Now -->
@@ -977,6 +1015,7 @@
         </div>
       </aside>
     </div>
+    <p class="slide-acronym-footer"><strong>SMB</strong> small and medium-sized business</p>
   </section>
 
   <!-- 5 Solution -->
@@ -1086,6 +1125,7 @@
         </div>
       </aside>
     </div>
+    <p class="slide-acronym-footer"><strong>TAM</strong> total addressable market · <strong>SAM</strong> serviceable addressable market · <strong>SOM</strong> serviceable obtainable market · <strong>ICP</strong> ideal customer profile · <strong>ARPU</strong> average revenue per user · <strong>OS</strong> operating system (subscription in scenario math)</p>
   </section>
 
   <!-- 8 Business model -->
@@ -1116,6 +1156,7 @@
         </div>
       </aside>
     </div>
+    <p class="slide-acronym-footer"><strong>SaaS</strong> software as a service · <strong>LLM</strong> large language model</p>
   </section>
 
   <!-- 9 Traction -->
@@ -1138,6 +1179,7 @@
         </div>
       </aside>
     </div>
+    <p class="slide-acronym-footer"><strong>MRR</strong> monthly recurring revenue · <strong>API</strong> application programming interface (production keys for live outbound)</p>
   </section>
 
   <!-- 10 GTM -->
@@ -1175,6 +1217,7 @@
         </div>
       </aside>
     </div>
+    <p class="slide-acronym-footer"><strong>PLG</strong> product-led growth</p>
   </section>
 
   <!-- 11 Competition -->
@@ -1237,6 +1280,7 @@
         </div>
       </aside>
     </div>
+    <p class="slide-acronym-footer"><strong>GTM</strong> go-to-market</p>
   </section>
 
   <!-- 12 Team -->
@@ -1305,6 +1349,7 @@
         </div>
       </aside>
     </div>
+    <p class="slide-acronym-footer"><strong>SAFE</strong> simple agreement for future equity · <strong>MVP</strong> minimum viable product</p>
   </section>
 
   <!-- 14 Risks -->
@@ -1331,6 +1376,7 @@
         </div>
       </aside>
     </div>
+    <p class="slide-acronym-footer"><strong>LLM</strong> large language model</p>
   </section>
 
   <!-- 15 Appendix product -->
@@ -1373,6 +1419,7 @@
         </div>
       </div>
     </div>
+    <p class="slide-acronym-footer"><strong>BFS</strong> Business Formation Statistics · <strong>CPL</strong> cost per lead · <strong>TAM</strong> total addressable market · <strong>ARR</strong> annual recurring revenue</p>
   </section>
 
 </div>
