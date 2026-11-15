@@ -736,24 +736,67 @@
       </div>
       <aside class="slide-visual" aria-hidden="true">
         <div class="visual-card">
-          <p class="visual-label">One session · three outcomes</p>
-          <svg class="chart-svg" viewBox="0 0 320 200" role="img" aria-label="Triage, launch, operate flow">
-            <rect x="8" y="24" width="92" height="72" rx="14" fill="rgba(0,113,227,0.12)" stroke="rgba(0,113,227,0.35)"/>
-            <text x="54" y="54" text-anchor="middle" fill="#f5f5f7" font-size="11" font-weight="600">Triage</text>
-            <text x="54" y="72" text-anchor="middle" fill="rgba(245,245,247,0.72)" font-size="9">Fit + capital</text>
-            <path d="M108 60 H132" stroke="#2997ff" stroke-width="2"/>
-            <polygon points="132,60 126,56 126,64" fill="#2997ff"/>
-            <rect x="136" y="24" width="92" height="72" rx="14" fill="rgba(0,113,227,0.18)" stroke="rgba(0,113,227,0.45)"/>
-            <text x="182" y="54" text-anchor="middle" fill="#f5f5f7" font-size="11" font-weight="600">Launch</text>
-            <text x="182" y="72" text-anchor="middle" fill="rgba(245,245,247,0.72)" font-size="9">Site + OS</text>
-            <path d="M236 60 H260" stroke="#2997ff" stroke-width="2"/>
-            <polygon points="260,60 254,56 254,64" fill="#2997ff"/>
-            <rect x="220" y="24" width="92" height="72" rx="14" fill="rgba(0,113,227,0.24)" stroke="rgba(0,113,227,0.55)"/>
-            <text x="266" y="54" text-anchor="middle" fill="#f5f5f7" font-size="11" font-weight="600">Operate</text>
-            <text x="266" y="72" text-anchor="middle" fill="rgba(245,245,247,0.72)" font-size="9">Agents</text>
-            <text x="12" y="128" fill="rgba(245,245,247,0.55)" font-size="9">MVP wedge: home-services lead arbitrage</text>
-            <rect x="12" y="142" width="296" height="44" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
-            <text x="24" y="168" fill="#f5f5f7" font-size="10">Demo: marvelus-tech.github.io · App: cnstrct-mu.vercel.app</text>
+          <p class="visual-label">Session stack · layer breakdown</p>
+          <svg class="chart-svg" viewBox="0 0 320 228" role="img" aria-label="Exploded isometric view of three session layers: triage fit and capital, launch site and operating system, operate proactive agents">
+            <defs>
+              <linearGradient id="slabTopA" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="rgba(255,255,255,0.22)"/>
+                <stop offset="100%" stop-color="rgba(41,151,255,0.14)"/>
+              </linearGradient>
+              <linearGradient id="slabTopB" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="rgba(255,255,255,0.28)"/>
+                <stop offset="55%" stop-color="rgba(41,151,255,0.2)"/>
+                <stop offset="100%" stop-color="rgba(232,93,4,0.12)"/>
+              </linearGradient>
+              <linearGradient id="slabTopC" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="rgba(41,151,255,0.35)"/>
+                <stop offset="50%" stop-color="rgba(255,255,255,0.18)"/>
+                <stop offset="100%" stop-color="rgba(232,93,4,0.28)"/>
+              </linearGradient>
+              <filter id="slabGlow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path d="M 18 14 H 302 V 182 H 18 Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+            <path d="M 18 14 H 34 M 18 14 V 30 M 302 14 H 286 M 302 14 V 30 M 18 182 H 34 M 18 182 V 166 M 302 182 H 286 M 302 182 V 166" stroke="rgba(41,151,255,0.55)" stroke-width="1.25" fill="none"/>
+            <text x="24" y="26" fill="rgba(245,245,247,0.45)" font-size="8" font-family="ui-monospace, monospace">CNSTRCT · ISO VIEW</text>
+            <g filter="url(#slabGlow)">
+              <path d="M 92 48 L 152 28 L 212 48 L 152 68 Z" fill="url(#slabTopC)" stroke="rgba(232,93,4,0.5)" stroke-width="1"/>
+              <path d="M 152 68 L 212 48 L 212 62 L 152 82 Z" fill="rgba(41,151,255,0.22)" stroke="rgba(255,255,255,0.12)" stroke-width="0.75"/>
+              <path d="M 92 48 L 152 68 L 152 82 L 92 62 Z" fill="rgba(0,0,0,0.35)" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+              <text x="152" y="54" text-anchor="middle" fill="#f5f5f7" font-size="10" font-weight="600">03</text>
+            </g>
+            <g>
+              <path d="M 92 88 L 152 68 L 212 88 L 152 108 Z" fill="url(#slabTopB)" stroke="rgba(41,151,255,0.45)" stroke-width="1"/>
+              <path d="M 152 108 L 212 88 L 212 102 L 152 122 Z" fill="rgba(41,151,255,0.16)" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+              <path d="M 92 88 L 152 108 L 152 122 L 92 102 Z" fill="rgba(0,0,0,0.32)" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+              <text x="152" y="94" text-anchor="middle" fill="#f5f5f7" font-size="10" font-weight="600">02</text>
+            </g>
+            <g>
+              <path d="M 92 128 L 152 108 L 212 128 L 152 148 Z" fill="url(#slabTopA)" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+              <path d="M 152 148 L 212 128 L 212 142 L 152 162 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+              <path d="M 92 128 L 152 148 L 152 162 L 92 142 Z" fill="rgba(0,0,0,0.38)" stroke="rgba(255,255,255,0.08)" stroke-width="0.75"/>
+              <text x="152" y="134" text-anchor="middle" fill="#f5f5f7" font-size="10" font-weight="600">01</text>
+            </g>
+            <path d="M 70 78 V 118" stroke="rgba(41,151,255,0.25)" stroke-width="1" stroke-dasharray="3 3"/>
+            <path d="M 70 38 V 78" stroke="rgba(41,151,255,0.25)" stroke-width="1" stroke-dasharray="3 3"/>
+            <text x="52" y="100" text-anchor="middle" fill="rgba(245,245,247,0.35)" font-size="7" transform="rotate(-90 52 100)">EXPLODED</text>
+            <path d="M 218 58 H 252" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+            <rect x="248" y="44" width="64" height="28" rx="6" fill="rgba(0,0,0,0.45)" stroke="rgba(232,93,4,0.4)"/>
+            <text x="280" y="56" text-anchor="middle" fill="#f5f5f7" font-size="8" font-weight="600">Operate</text>
+            <text x="280" y="66" text-anchor="middle" fill="rgba(245,245,247,0.55)" font-size="7">Agents + approvals</text>
+            <path d="M 218 98 H 240" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+            <rect x="236" y="84" width="64" height="28" rx="6" fill="rgba(0,0,0,0.4)" stroke="rgba(41,151,255,0.35)"/>
+            <text x="268" y="96" text-anchor="middle" fill="#f5f5f7" font-size="8" font-weight="600">Launch</text>
+            <text x="268" y="106" text-anchor="middle" fill="rgba(245,245,247,0.55)" font-size="7">Site + OS</text>
+            <path d="M 86 138 H 36" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+            <rect x="4" y="124" width="64" height="28" rx="6" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.2)"/>
+            <text x="36" y="136" text-anchor="middle" fill="#f5f5f7" font-size="8" font-weight="600">Triage</text>
+            <text x="36" y="146" text-anchor="middle" fill="rgba(245,245,247,0.55)" font-size="7">Fit + capital</text>
+            <text x="24" y="178" fill="rgba(245,245,247,0.5)" font-size="8">Wedge: home-services lead arbitrage</text>
+            <rect x="12" y="188" width="296" height="32" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+            <text x="20" y="208" fill="rgba(245,245,247,0.85)" font-size="9" font-family="ui-monospace, monospace">cnstrct-mu.vercel.app</text>
           </svg>
         </div>
       </aside>
