@@ -124,24 +124,34 @@
 
     .slide-dark .visual-label { color: var(--muted-on-dark); }
 
+    .slide-layout--title {
+      align-items: flex-start;
+    }
+
     .slide-visual--title-stack {
-      gap: 0;
-      margin-top: -6px;
+      gap: 2px;
+      align-self: flex-start;
+      align-items: flex-start;
+      margin-top: 0;
       padding-top: 0;
       overflow: visible;
     }
 
     .slide-visual--title-stack .visual-label {
-      margin-bottom: 0;
+      margin-bottom: 6px;
+      margin-top: 0;
       line-height: 1.15;
     }
 
     .chart-svg--founding-stack {
       width: 100%;
+      max-width: 100%;
       height: auto;
       overflow: visible;
-      min-height: clamp(220px, 36vw, 420px);
-      max-height: min(58vh, 440px);
+      min-height: 0;
+      max-height: none;
+      display: block;
+      vertical-align: top;
     }
 
     .visual-rail {
@@ -871,7 +881,7 @@
 
   <!-- 1 Title -->
   <section class="slide slide-dark active" data-slide="1">
-    <div class="slide-layout">
+    <div class="slide-layout slide-layout--title">
       <div class="slide-content">
         <p class="kicker">Angel pitch · early stage</p>
         <p class="logo-mark">CNSTRCT</p>
@@ -880,7 +890,7 @@
       </div>
       <aside class="slide-visual slide-visual--title-stack" aria-hidden="true">
         <p class="visual-label">Founding stack</p>
-        <svg class="chart-svg chart-svg--founding-stack" viewBox="0 0 372 168" role="img" aria-label="Exploded isometric view of three session layers: Command center fit and capital, SI Employees site and OS, Launch Custom Biz site agents and approvals">
+        <svg class="chart-svg chart-svg--founding-stack" viewBox="0 0 372 168" preserveAspectRatio="xMinYMin meet" role="img" aria-label="Exploded isometric view of three session layers: Command center fit and capital, SI Employees site and OS, Launch Custom Biz site agents and approvals">
             <defs>
               <linearGradient id="slabTopA" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stop-color="rgba(255,255,255,0.22)"/>
