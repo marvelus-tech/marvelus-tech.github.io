@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>CONTXT replay deck</title><style>
+:root{color:#24211d;background:#f7f0e4;font:18px/1.55 system-ui,sans-serif}body{margin:0}
+nav{position:fixed;inset:auto 0 0;display:flex;justify-content:center;gap:1rem;padding:1rem;background:#f7f0e4e8}
+.page{min-height:82vh;padding:8vh max(8vw,2rem);scroll-snap-align:start}.claim{font-size:1.5rem;max-width:50rem}
+.eyebrow,time,.speaker{color:#6d5843}.speaker{margin-top:-.5rem;font-weight:600}.said{color:#4a4038}a{color:#714214}main{scroll-snap-type:y mandatory}
+.timeline{padding:3rem max(8vw,2rem) 7rem}li{margin:.7rem 0}
+</style></head><body><main><section id="page-topic-1" class="page">
+  <p class="eyebrow">Topic 1 of 3</p>
+  <h1>Solar Output Supplied</h1>
+  <p class="claim">Solar output supplied 40 percent of Spain&#39;s electricity at midday.</p>
+  <h2>Claims on this topic</h2>
+  <ol class="claims"><li><time>0:00</time> Solar output supplied 40 percent of Spain&#39;s electricity at midday.</li><li><time>0:05</time> Solar output supplied 40 percent of Spain&#39;s electricity at midday.</li></ol>
+  <h2>Cited facts</h2>
+  <ul><li>Solar power regularly sets daytime generation records in Spain. <a href="https://www.ree.es/en">Source</a></li><li>Spain publishes generation data through its national system operator. <a href="https://www.ree.es/en/datos/generation">Source</a></li><li>Solar generation changes throughout the day with available sunlight. <a href="https://www.iea.org/energy-system/renewables/solar-pv">Source</a></li></ul>
+  <h2>Why it matters</h2>
+  <p>This topic was selected because it contains a concrete claim worth checking.</p>
+</section>
+<section id="page-topic-2" class="page">
+  <p class="eyebrow">Topic 2 of 3</p>
+  <h1>City Council Approved</h1>
+  <p class="claim">The city council approved the harbor resilience bond.</p>
+  <h2>Cited facts</h2>
+  <ul><li>Municipal bonds can finance public infrastructure. <a href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products">Source</a></li><li>Coastal resilience planning can include protection of public assets. <a href="https://oceanservice.noaa.gov/hazards/resilience/">Source</a></li><li>Council records are a primary source for local approvals. <a href="https://www.archives.gov/records-mgmt">Source</a></li></ul>
+  <h2>Why it matters</h2>
+  <p>This topic was selected because it contains a concrete claim worth checking.</p>
+</section>
+<section id="page-topic-3" class="page">
+  <p class="eyebrow">Topic 3 of 3</p>
+  <h1>Mars Sample Return</h1>
+  <p class="claim">The Mars sample return mission is planned for 2033.</p>
+  <h2>Cited facts</h2>
+  <ul><li>Mars Sample Return is intended to bring selected samples to Earth. <a href="https://science.nasa.gov/mission/mars-sample-return/">Source</a></li><li>Returned samples could be studied with instruments unavailable on Mars. <a href="https://science.nasa.gov/mars/">Source</a></li><li>Mission schedules can change as architecture and funding are reviewed. <a href="https://www.gao.gov/products/gao-24-106019">Source</a></li></ul>
+  <h2>Why it matters</h2>
+  <p>This topic was selected because it contains a concrete claim worth checking.</p>
+</section>
+<section class="timeline"><h1>Chronological timeline</h1><ol><li><time>1.2s</time> Created Solar Output Supplied<br><span class="said">Solar output supplied 40 percent of Spain&#39;s electricity at midday.</span></li><li><time>2.9s</time> Created City Council Approved<br><span class="said">The city council approved the harbor resilience bond.</span></li><li><time>4.7s</time> Created Mars Sample Return<br><span class="said">The Mars sample return mission is planned for 2033.</span></li><li><time>6.4s</time> Updated Solar Output Supplied<br><span class="said">Solar output supplied 40 percent of Spain&#39;s electricity at midday.</span></li></ol></section></main>
+<nav><button type="button" onclick="move(-1)">Previous</button><button type="button" onclick="move(1)">Next</button></nav>
+<script>const pages=[...document.querySelectorAll(".page")];let current=0;function move(step){current=Math.max(0,Math.min(pages.length-1,current+step));pages[current]?.scrollIntoView({behavior:"smooth"})}</script>
+</body></html>
