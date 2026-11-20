@@ -1,0 +1,25 @@
+{
+  "id": "debate1992",
+  "ingest": {
+    "id": "debate1992",
+    "kind": "preloaded",
+    "title": "First 1992 presidential debate (Bush, Clinton, Perot), opening segment",
+    "filename": "debate1992.opus",
+    "durationMs": 935400,
+    "speakers": [
+      "Jim Lehrer (moderator)",
+      "Ross Perot",
+      "Bill Clinton",
+      "George H. W. Bush",
+      "Ann Compton (panelist)"
+    ],
+    "license": "Public domain",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+  },
+  "researcher": "fixture",
+  "researcherStatus": "ok",
+  "researchRequests": 0,
+  "pagesCreated": 57,
+  "uniqueClaims": 127,
+  "factsProposed": 127
+}
