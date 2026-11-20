@@ -13,127 +13,563 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="CONTXT">
   <meta name="twitter:description" content="Spoken audio to cited topic pages. Open the 1992 debate demo.">
+  <meta name="theme-color" content="#07080b">
   <style>
     :root {
-      --paper: #f7f0e4;
-      --ink: #24211d;
-      --muted: #6d5843;
-      --accent: #714214;
-      --accent-hover: #8a5318;
-      --line: rgba(113, 66, 20, 0.22);
-      --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --void: #07080b;
+      --plate: #0c0f12;
+      --plate-top: #14181c;
+      --ink: #f6f4ee;
+      --muted: #c7d0d3;
+      --phosphor: #bffff3;
+      --phosphor-deep: #8fd9cf;
+      --amber: #ffe1a8;
+      --line: rgba(176, 220, 212, 0.28);
+      --play: #e7fff8;
+      --play-ink: #071311;
+      --display: "Segoe UI", "Helvetica Neue", "Noto Sans Display", "Liberation Sans", system-ui, sans-serif;
+      --sans: "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", system-ui, sans-serif;
+      --mono: "Cascadia Mono", "Segoe UI Mono", ui-monospace, "Liberation Mono", monospace;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    * { box-sizing: border-box; }
+    html { color-scheme: dark; }
     body {
-      font-family: var(--sans);
-      background: var(--paper);
+      margin: 0;
+      min-height: 100dvh;
+      background: var(--void);
       color: var(--ink);
-      line-height: 1.55;
-      min-height: 100vh;
+      font-family: var(--sans);
+      font-size: 1.0625rem;
+      line-height: 1.5;
+      text-rendering: optimizeLegibility;
     }
-    a { color: var(--accent); }
-    a:hover { color: var(--accent-hover); }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
-    .eyebrow {
-      font-size: 0.75rem;
-      letter-spacing: 0.14em;
+    ::selection { background: #14574f; color: var(--ink); }
+    :focus-visible {
+      outline: 2px solid var(--amber);
+      outline-offset: 3px;
+    }
+    a { color: var(--phosphor); }
+    a:hover { color: #f3fffc; }
+
+    .skip {
+      position: absolute;
+      left: 1rem;
+      top: -4rem;
+      z-index: 4;
+      background: var(--ink);
+      color: var(--play-ink);
+      padding: 0.6rem 0.85rem;
+      text-decoration: none;
+      font-weight: 650;
+    }
+    .skip:focus { top: 1rem; }
+
+    #field {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .veil {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, rgba(7, 8, 11, 0.5) 0%, rgba(7, 8, 11, 0.05) 40%, rgba(7, 8, 11, 0) 58%),
+        radial-gradient(ellipse at 72% 46%, transparent 0%, transparent 42%, rgba(7, 8, 11, 0.62) 100%);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    main {
+      position: relative;
+      z-index: 2;
+      min-height: 100dvh;
+      display: flex;
+      align-items: flex-start;
+      padding: 6vh 0 8vh 5vw;
+    }
+    .plate {
+      width: min(38rem, 46vw);
+      padding: 1.5rem 1.55rem 1.3rem;
+      background: linear-gradient(180deg, var(--plate-top) 0%, var(--plate) 22%);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--phosphor-deep);
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .kicker {
+      margin: 0 0 0.85rem;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 0.75rem;
+      color: var(--phosphor-deep);
     }
     h1 {
-      font-size: clamp(2.25rem, 6vw, 3rem);
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      margin-bottom: 1rem;
+      margin: 0;
+      font-family: var(--display);
+      font-size: clamp(3.4rem, 6.4vw, 6.1rem);
+      font-weight: 640;
+      letter-spacing: -0.055em;
+      line-height: 0.86;
+    }
+    .promise {
+      margin: 0.85rem 0 0;
+      font-size: clamp(1.2rem, 2vw, 1.45rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      max-width: 22ch;
     }
     .lede {
-      font-size: 1.125rem;
+      margin: 0.9rem 0 0;
+      max-width: 38rem;
       color: var(--muted);
-      max-width: 36rem;
-      margin-bottom: 2rem;
+      text-wrap: pretty;
     }
+
     .cta-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 2.75rem;
+      gap: 0.65rem;
+      margin-top: 1.35rem;
     }
-    .btn-primary {
-      display: inline-block;
-      background: var(--ink);
-      color: var(--paper);
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      min-height: 48px;
+      padding: 0.75rem 1rem;
       text-decoration: none;
-      font-weight: 600;
-      padding: 0.85rem 1.35rem;
-      border-radius: 999px;
+      font-weight: 650;
+      letter-spacing: -0.01em;
     }
-    .btn-secondary {
-      display: inline-block;
-      border: 1px solid var(--line);
+    .mark {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+    .btn-play {
+      background: var(--play);
+      color: var(--play-ink);
+    }
+    .btn-play:hover { background: #ffffff; color: var(--play-ink); }
+    .btn-play:focus-visible { outline-color: #08332e; }
+    .btn-mic {
       color: var(--ink);
-      text-decoration: none;
-      font-weight: 600;
-      padding: 0.85rem 1.35rem;
-      border-radius: 999px;
+      border: 1px solid rgba(231, 255, 248, 0.55);
     }
-    .card {
-      border: 1px solid var(--line);
-      border-radius: 1rem;
-      padding: 1.5rem;
-      background: rgba(255, 255, 255, 0.35);
-      margin-bottom: 2rem;
-    }
-    .card h2 { font-size: 1.125rem; margin-bottom: 1rem; }
-    .card ol, .card ul {
-      padding-left: 1.25rem;
+    .btn-mic:hover { background: rgba(231, 255, 248, 0.08); color: var(--ink); }
+    .cta-note {
+      margin: 0.75rem 0 0;
       color: var(--muted);
+      font-size: 0.92rem;
+      max-width: 40rem;
     }
-    .card li { margin-bottom: 0.5rem; }
-    .card li:last-child { margin-bottom: 0; }
-    .footer-note {
-      font-size: 0.9rem;
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 1rem;
+      margin: 0.85rem 0 0;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+    }
+
+    section { margin-top: 1.6rem; }
+    h2 {
+      margin: 0 0 0.75rem;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      font-weight: 650;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--phosphor-deep);
+    }
+    .steps {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.85rem 1rem;
+    }
+    .steps li { margin: 0; }
+    .steps span {
+      display: block;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      color: var(--amber);
+    }
+    .steps h3 {
+      margin: 0.15rem 0 0.2rem;
+      font-size: 1rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+    .steps p, .try, .next, .index {
+      margin: 0;
       color: var(--muted);
-      padding-top: 1.5rem;
+      font-size: 0.95rem;
+    }
+    .try { padding: 0; list-style: none; }
+    .try li { margin: 0 0 0.55rem; }
+    .try li:last-child { margin-bottom: 0; }
+    .try strong { color: var(--ink); font-weight: 650; }
+    code {
+      font-family: var(--mono);
+      font-size: 0.86em;
+      color: var(--phosphor);
+    }
+    .next {
+      margin-top: 1.35rem;
+      padding-top: 0.95rem;
       border-top: 1px solid var(--line);
     }
-    .back { margin-top: 1.5rem; font-size: 0.85rem; }
+    .next strong { color: var(--ink); }
+    .index { margin-top: 0.85rem; font-size: 0.85rem; }
+
+    @media (max-width: 979px) {
+      .veil {
+        background: linear-gradient(180deg, rgba(7, 8, 11, 0.08) 0%, rgba(7, 8, 11, 0.2) 28%, rgba(7, 8, 11, 0.88) 52%, var(--void) 70%);
+      }
+      main {
+        display: block;
+        min-height: 100dvh;
+        padding: 34dvh 0.75rem 1.25rem;
+      }
+      .plate { width: auto; }
+      .steps { grid-template-columns: 1fr; }
+      h1 { font-size: clamp(3.15rem, 18vw, 4.6rem); }
+    }
+
+    @media (max-width: 420px) {
+      .btn { width: 100%; justify-content: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    @media (prefers-contrast: more) {
+      .plate { border-color: var(--ink); }
+      .lede, .steps p, .try, .next, .cta-note { color: var(--ink); }
+    }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <p class="eyebrow">MarvelUs</p>
-    <h1>CONTXT</h1>
-    <p class="lede">
-      A live context companion for anything spoken. Transcription becomes claims, research attaches citations, and you browse topic pages instead of a flat transcript.
-    </p>
-    <div class="cta-row">
-      <a class="btn-primary" href="play/">Play debate demo</a>
-      <a class="btn-secondary" href="demo/deck.html">Open sample deck</a>
-      <a class="btn-secondary" href="https://github.com/marvelus-tech/contxt">Run on GitHub</a>
+  <a class="skip" href="#story">Skip to story</a>
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="veil" aria-hidden="true"></div>
+  <main id="story">
+    <div class="plate">
+      <p class="sr-only">Decorative generated speech signal. The page text carries the product.</p>
+      <p class="kicker">Signal / spoken audio</p>
+      <h1>CONTXT</h1>
+      <p class="promise">Live context for spoken content.</p>
+      <p class="lede">A live context companion for anything spoken. Transcription becomes claims, research attaches citations, and you browse topic pages instead of a flat transcript.</p>
+      <div class="cta-row">
+        <a class="btn btn-play" href="play/"><span class="mark">PLAY</span> Play the debate</a>
+        <a class="btn btn-mic" href="play/#btn-mic"><span class="mark">MIC</span> Microphone<span class="sr-only">. Ingest is stubbed. Opens the preloaded debate session.</span></a>
+      </div>
+      <p class="cta-note">Microphone ingest is stubbed. Play opens the 1992 debate, preloaded as if you had uploaded it.</p>
+      <p class="links">
+        <a href="play/#audio">Debate audio</a>
+        <a href="demo/deck.html">Sample deck</a>
+        <a href="https://github.com/marvelus-tech/contxt" rel="noreferrer">Run on GitHub</a>
+      </p>
+
+      <section aria-labelledby="how">
+        <h2 id="how">How it works</h2>
+        <ol class="steps">
+          <li>
+            <span>01</span>
+            <h3>Transcribe</h3>
+            <p>Local Whisper, AssemblyAI, or Deepgram.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3>Claims</h3>
+            <p>Extract and type claims, then group them into topics.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3>Citations</h3>
+            <p>Research checkable claims and keep facts with real source URLs.</p>
+          </li>
+          <li>
+            <span>04</span>
+            <h3>Topic pages</h3>
+            <p>Scrollable pages and a timeline for replay or live ingestion.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="today">
+        <h2 id="today">What you can try today</h2>
+        <ul class="try">
+          <li><strong>Play demo.</strong> Auto-loads the 1992 debate, shows processing, then a cited topic timeline (<a href="play/">/contxt/play/</a>).</li>
+          <li><strong>Sample deck.</strong> Short solar fixture replay with cited facts (<a href="demo/deck.html">/contxt/demo/deck.html</a>).</li>
+          <li><strong>Your machine.</strong> <code>npm run ci:replay</code> in the repo.</li>
+          <li><strong>Debate bakeoff.</strong> See <a href="https://github.com/marvelus-tech/contxt/blob/main/docs/REPORT.md" rel="noreferrer">transcription results</a> on a 1992 clip.</li>
+        </ul>
+      </section>
+
+      <p class="next"><strong>Coming next:</strong> real file upload and microphone ingest. This demo auto-loads the 1992 debate as if you had uploaded it.</p>
+      <p class="index"><a href="/">Project index</a></p>
     </div>
-    <section class="card">
-      <h2>How it works</h2>
-      <ol>
-        <li>Transcribe audio (local Whisper, AssemblyAI, or Deepgram).</li>
-        <li>Extract and type claims; group them into topics.</li>
-        <li>Research checkable claims and keep facts with real source URLs.</li>
-        <li>Build scrollable topic pages and a timeline you can navigate during replay or live ingestion.</li>
-      </ol>
-    </section>
-    <section class="card">
-      <h2>What you can try today</h2>
-      <ul>
-        <li><strong>Play demo</strong>: auto-loads the 1992 debate, shows processing, then a cited topic timeline (<a href="play/">/contxt/play/</a>).</li>
-        <li><strong>Sample deck</strong>: short solar fixture replay with cited facts (<a href="demo/deck.html">/contxt/demo/deck.html</a>).</li>
-        <li><strong>Your machine</strong>: <code>npm run ci:replay</code> in the repo.</li>
-        <li><strong>Debate bakeoff</strong>: see <a href="https://github.com/marvelus-tech/contxt/blob/main/docs/REPORT.md">transcription results</a> on a 1992 clip.</li>
-      </ul>
-    </section>
-    <p class="footer-note">
-      <strong>Coming next:</strong> real file upload and microphone ingest. This demo auto-loads the 1992 debate as if you had uploaded it.
-    </p>
-    <p class="back"><a href="/">Back to MarvelUs directory</a></p>
   </main>
+  <script type="module">
+    import { createRibbon, sampleRibbon, DEFAULT_SEED } from "./field.js"
+
+    const canvas = document.getElementById("field")
+    const ctx = canvas.getContext("2d", { alpha: false })
+    const params = new URLSearchParams(location.search)
+    const seedParam = params.get("seed")
+    const parsedSeed = seedParam == null || seedParam === "" ? DEFAULT_SEED : Number(seedParam)
+    const seed = Number.isFinite(parsedSeed) ? parsedSeed : DEFAULT_SEED
+    const tParam = params.get("t")
+    const freeze = tParam == null || tParam === "" ? null : Number(tParam)
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)")
+    const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)")
+    const ribbon = createRibbon(seed)
+    const sprites = bakeSprites()
+    const live = { t: 0, focusU: 0 }
+
+    let hold = Number.isFinite(freeze) ? freeze : motion.matches ? 6.4 : null
+    let raf = 0
+    let start = performance.now()
+    const pointer = { x: 0.5, y: 0.5, weight: 0 }
+    const pointerTarget = { x: 0.5, y: 0.5, weight: 0 }
+    let layout = readLayout()
+
+    document.documentElement.dataset.motion = motion.matches ? "reduced" : "full"
+
+    function readLayout() {
+      const narrow = window.innerWidth < 980
+      if (narrow) {
+        return { x0: 0.1, x1: 0.9, cy: 0.15, yGain: 0.16, maxH: window.innerHeight * 0.2 }
+      }
+      return { x0: 0.5, x1: 0.86, cy: 0.5, yGain: 0.7, maxH: window.innerHeight * 0.4 }
+    }
+
+    function resize() {
+      layout = readLayout()
+      const dpr = Math.min(window.devicePixelRatio || 1, 1.5)
+      const viewW = window.innerWidth
+      const viewH = window.innerHeight
+      const pw = Math.max(1, Math.round(viewW * dpr))
+      const ph = Math.max(1, Math.round(viewH * dpr))
+      if (canvas.width !== pw || canvas.height !== ph) {
+        canvas.width = pw
+        canvas.height = ph
+      }
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+    }
+
+    function mapX(u) {
+      return (layout.x0 + u * (layout.x1 - layout.x0)) * window.innerWidth
+    }
+    function mapY(y) {
+      return (layout.cy + (y - 0.5) * layout.yGain) * window.innerHeight
+    }
+
+    function metrics(sample) {
+      const unit = Math.min(window.innerWidth, window.innerHeight)
+      const dh = Math.min(unit * (0.2 + sample.h * 0.16), layout.maxH)
+      const visibleW = dh * (0.2 + sample.w * 0.045)
+      return { dh, visibleW }
+    }
+
+    function draw(t) {
+      const viewW = window.innerWidth
+      const viewH = window.innerHeight
+      ctx.globalCompositeOperation = "source-over"
+      ctx.globalAlpha = 1
+      ctx.fillStyle = "#07080b"
+      ctx.fillRect(0, 0, viewW, viewH)
+
+      const frame = sampleRibbon(ribbon, t, pointer.weight > 0.001 ? pointer : null)
+      live.t = t
+      live.focusU = frame.focusU
+      const samples = frame.samples
+
+      const ordered = samples.slice().sort((a, b) => a.focus - b.focus)
+      for (const sample of ordered) {
+        const x = mapX(sample.u)
+        const y = mapY(sample.y)
+        const { dh, visibleW } = metrics(sample)
+        ctx.globalCompositeOperation = "lighter"
+        stamp(sprites.phosphor, x, y, visibleW * 1.35, dh * 1.05, 0.07 + sample.focus * 0.05)
+        ctx.globalCompositeOperation = "source-over"
+        stamp(sprites.phosphor, x, y, visibleW, dh, 0.78)
+        if (sample.focus > 0.7) {
+          stamp(sprites.amber, x, y, visibleW * 0.92, dh * 0.94, Math.min(0.95, (sample.focus - 0.7) / 0.22))
+        }
+        if (sample.focus > 0.84) {
+          stamp(sprites.core, x, y - dh * 0.18, visibleW * 0.18, dh * 0.22, 0.55)
+        }
+      }
+
+      const stress = samples[frame.stressIndex]
+      if (stress) {
+        ctx.globalCompositeOperation = "source-over"
+        ctx.strokeStyle = "rgba(255, 225, 168, 0.85)"
+        ctx.lineWidth = 1.5
+        const x = mapX(stress.u)
+        const y = mapY(stress.y)
+        const { visibleW } = metrics(stress)
+        const side = stress.u > 0.72 ? -1 : 1
+        const origin = x + side * (visibleW * 0.72)
+        for (let i = 0; i < 3; i++) {
+          const breathe = 0.45 + 0.55 * (0.5 + 0.5 * Math.sin(t * 1.05 + i * 0.9))
+          const length = (10 + i * 9) * breathe
+          const yLine = y - 10 + i * 9
+          ctx.globalAlpha = 0.35 + 0.5 * breathe
+          ctx.beginPath()
+          ctx.moveTo(origin, yLine)
+          ctx.lineTo(origin + side * length, yLine)
+          ctx.stroke()
+        }
+      }
+      ctx.globalAlpha = 1
+    }
+
+    function stamp(sprite, x, y, visibleW, visibleH, alpha) {
+      const scale = visibleH / sprite.contentH
+      const destW = sprite.canvas.width * (visibleW / sprite.contentW)
+      const destH = sprite.canvas.height * scale
+      ctx.globalAlpha = Math.max(0, Math.min(1, alpha))
+      ctx.drawImage(sprite.canvas, x - destW / 2, y - destH / 2, destW, destH)
+    }
+
+    function loop(now) {
+      if (hold != null) return
+      pointer.x += (pointerTarget.x - pointer.x) * 0.08
+      pointer.y += (pointerTarget.y - pointer.y) * 0.08
+      pointer.weight += (pointerTarget.weight - pointer.weight) * 0.06
+      draw((now - start) / 1000)
+      raf = requestAnimationFrame(loop)
+    }
+
+    function screenPointer(event) {
+      const nx = event.clientX / window.innerWidth
+      const ny = event.clientY / window.innerHeight
+      pointerTarget.x = Math.max(0, Math.min(1, (nx - layout.x0) / (layout.x1 - layout.x0)))
+      pointerTarget.y = Math.max(0, Math.min(1, ny))
+      pointerTarget.weight = 1
+    }
+
+    resize()
+    if (hold != null) draw(hold)
+    else raf = requestAnimationFrame(loop)
+
+    window.addEventListener("resize", () => {
+      resize()
+      if (hold != null) draw(hold)
+    })
+    document.addEventListener("visibilitychange", () => {
+      if (hold != null) return
+      if (document.hidden) cancelAnimationFrame(raf)
+      else raf = requestAnimationFrame(loop)
+    })
+    motion.addEventListener("change", (event) => {
+      document.documentElement.dataset.motion = event.matches ? "reduced" : "full"
+      if (Number.isFinite(freeze)) return
+      if (event.matches) {
+        hold = 6.4
+        cancelAnimationFrame(raf)
+        draw(hold)
+      } else {
+        hold = null
+        start = performance.now() - 6400
+        raf = requestAnimationFrame(loop)
+      }
+    })
+    if (finePointer.matches && hold == null) {
+      window.addEventListener("pointermove", screenPointer)
+      document.documentElement.addEventListener("pointerleave", () => {
+        pointerTarget.weight = 0
+      })
+    }
+
+    window.__contxtField = {
+      seed: seed >>> 0,
+      get time() { return live.t },
+      get focusU() { return live.focusU },
+      sample(t, nextPointer) {
+        return sampleRibbon(ribbon, t, nextPointer)
+      },
+      seek(t) {
+        hold = t
+        cancelAnimationFrame(raf)
+        resize()
+        draw(t)
+      },
+      play() {
+        if (motion.matches) return false
+        hold = null
+        start = performance.now()
+        raf = requestAnimationFrame(loop)
+        return true
+      },
+    }
+
+    function bakeSprites() {
+      return {
+        phosphor: bakeCapsule("rgba(214, 255, 248, 1)", "rgba(10, 118, 132, 1)", 8),
+        amber: bakeCapsule("rgba(255, 228, 176, 1)", "rgba(232, 132, 28, 1)", 7),
+        core: bakeCapsule("rgba(255, 255, 255, 0.9)", "rgba(255, 255, 255, 0.2)", 1),
+      }
+    }
+
+    function bakeCapsule(core, edge, blur) {
+      const width = 160
+      const height = 420
+      const contentW = 56
+      const contentH = 300
+      const source = document.createElement("canvas")
+      source.width = width
+      source.height = height
+      const sg = source.getContext("2d")
+      const gradient = sg.createLinearGradient(0, 60, 0, height - 60)
+      gradient.addColorStop(0, core)
+      gradient.addColorStop(0.48, edge)
+      gradient.addColorStop(1, core)
+      sg.fillStyle = gradient
+      sg.beginPath()
+      sg.ellipse(width / 2, height / 2, contentW / 2, contentH / 2, 0, 0, Math.PI * 2)
+      sg.fill()
+      sg.fillStyle = "rgba(255, 255, 255, 0.22)"
+      sg.beginPath()
+      sg.ellipse(width / 2 - 6, height / 2 - 36, 7, 62, 0, 0, Math.PI * 2)
+      sg.fill()
+
+      const pad = 54
+      const canvasOut = document.createElement("canvas")
+      canvasOut.width = width + pad * 2
+      canvasOut.height = height + pad * 2
+      const out = canvasOut.getContext("2d")
+      out.filter = "blur(" + blur + "px)"
+      out.drawImage(source, pad, pad)
+      return { canvas: canvasOut, contentW, contentH }
+    }
+  </script>
 </body>
 </html>

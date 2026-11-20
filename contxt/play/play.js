@@ -247,8 +247,14 @@ function showReady() {
   renderFeed();
   renderTopics(searchEl.value);
   const fromHash = decodeURIComponent(location.hash.replace(/^#/, ""));
+  // Landing CTAs point at these controls. Topic selection must not steal the hash.
+  const entry = fromHash === "btn-mic" || fromHash === "audio" ? fromHash : "";
   const firstPage = pages[0]?.id;
   selectPage(pageById.has(fromHash) ? fromHash : firstPage, false);
+  if (entry) {
+    history.replaceState(null, "", `#${entry}`);
+    document.getElementById(entry)?.scrollIntoView({ block: "center" });
+  }
   processStatus.textContent = `Ready · ${pages.length} cited topics`;
 }
 
