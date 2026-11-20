@@ -1,0 +1,10 @@
+{
+  "bakedAt": "2026-11-20T00:21:39.788Z",
+  "fixture": "samples/debate1992.json",
+  "researcher": "fixture",
+  "researcherStatus": "ok",
+  "researchRequests": 0,
+  "pagesCreated": 57,
+  "uniqueClaims": 127,
+  "clip": "samples/debate1992.clip.json"
+}
