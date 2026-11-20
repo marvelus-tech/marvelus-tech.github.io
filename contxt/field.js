@@ -1,90 +1,60 @@
-// Seeded speech ribbon. Shapes are fixed per seed. Motion is only continuous
-// sines, so the same time and pointer always redraw the same frame.
+// Spectral waveform. Partials are fixed per seed. Motion is continuous
+// phase and amplitude, so the same time and pointer redraw the same frame.
 
 export const DEFAULT_SEED = 0xc077e7
+export const BIN_COUNT = 128
 
-export function createRibbon(seed = DEFAULT_SEED) {
+export function createWave(seed = DEFAULT_SEED) {
   const rand = mulberry32(seed)
-  const filaments = []
-  let cursor = 0
-  let words = 0
-
-  while (cursor < 1 && filaments.length < 22 && words < 8) {
-    const count = 2 + Math.floor(rand() * 3)
-    const lane = (rand() - 0.5) * 0.14
-    for (let i = 0; i < count && cursor < 1 && filaments.length < 22; i++) {
-      const vowel = rand() > 0.55
-      filaments.push({
-        u: cursor,
-        amp: vowel ? 0.78 + rand() * 0.22 : 0.42 + rand() * 0.22,
-        width: vowel ? 0.9 + rand() * 0.4 : 0.55 + rand() * 0.2,
-        phase: rand() * Math.PI * 2,
-        rate: 0.52 + rand() * 0.62,
-        yBias: (rand() - 0.5) * 0.06,
-        lane,
-        vowel,
-        gapAfter: false,
-      })
-      cursor += vowel ? 0.05 + rand() * 0.02 : 0.036 + rand() * 0.014
-    }
-    if (filaments.length) filaments[filaments.length - 1].gapAfter = true
-    cursor += 0.06 + rand() * 0.035
-    words += 1
+  const partials = []
+  for (let i = 0; i < 5; i++) {
+    partials.push({
+      freq: 0.85 + i * 0.55 + rand() * 0.15,
+      speed: 0.55 + rand() * 0.7,
+      rate: 0.18 + rand() * 0.28,
+      phase: rand() * Math.PI * 2,
+      weight: 0.55 + rand() * 0.6,
+    })
   }
-
-  const last = filaments[filaments.length - 1]
-  const span = last ? last.u + 0.04 : 1
-  // Keep a margin so the outer capsules, including their glow, stay on screen.
-  for (const filament of filaments) filament.u = 0.07 + (filament.u / span) * 0.86
-  if (last) last.gapAfter = false
-
-  return { seed: seed >>> 0, filaments }
+  return { seed: seed >>> 0, partials, bins: BIN_COUNT }
 }
 
-// pointer: { x, y, weight } in ribbon space (0 to 1). weight 0 ignores it.
-// options.travel0 / travel1 bound the automatic focus walk.
-export function sampleRibbon(ribbon, t, pointer = null, options = {}) {
-  const travel0 = options.travel0 ?? 0.16
-  const travel1 = options.travel1 ?? 0.84
-  const travel = 0.5 + 0.5 * Math.sin(t * 0.31)
-  const autoU = travel0 + (travel1 - travel0) * travel
-  const weight = pointer && Number.isFinite(pointer.weight) ? clamp01(pointer.weight) : pointer ? 1 : 0
-  const px = pointer && Number.isFinite(pointer.x) ? clamp01(pointer.x) : autoU
+// pointer: { x, y, weight } across the wave (0 to 1). weight 0 ignores it.
+export function sampleWave(wave, t, pointer = null) {
+  const bins = wave.bins
+  const amps = new Array(bins)
+  const signed = new Array(bins)
+  const weight = pointer && Number.isFinite(pointer.weight) ? clamp01(pointer.weight) : 0
+  const px = pointer && Number.isFinite(pointer.x) ? clamp01(pointer.x) : 0.5
   const py = pointer && Number.isFinite(pointer.y) ? clamp01(pointer.y) : 0.5
-  const focusU = autoU + (px - autoU) * weight
-  const pitch = Math.sin(t * 0.47) * 0.07 + (py - 0.5) * 0.1 * weight
+  const breath = 0.82 + 0.18 * Math.sin(t * 0.47)
+  const lift = 1 + weight * (py - 0.5) * 0.18
+  let peak = -1
+  let peakIndex = 0
 
-  let stressIndex = 0
-  let stressScore = -1
-  const samples = ribbon.filaments.map((filament, index) => {
-    const wobble = 0.5 + 0.5 * Math.sin(t * filament.rate + filament.phase)
-    const drift = 0.5 + 0.5 * Math.sin(t * 0.19 + filament.phase * 1.7)
-    const energy = 0.8 + 0.2 * (wobble * 0.72 + drift * 0.28)
-    const du = filament.u - focusU
-    // Floor keeps the whole utterance visible. The peak only marks the claim.
-    const focus = 0.38 + 0.62 * Math.exp(-(du * du) / 0.028)
-    if (focus > stressScore) {
-      stressScore = focus
-      stressIndex = index
+  for (let i = 0; i < bins; i++) {
+    const u = i / (bins - 1)
+    // Two slow partials draw the lobes. The rest only ripple the contour,
+    // so the silhouette stays a waveform instead of averaging flat.
+    const shape = mixPartials(wave.partials.slice(0, 2), u, t, true)
+    const ripple = mixPartials(wave.partials.slice(2), u, t, true)
+    const raw = mixPartials(wave.partials, u, t, false)
+    const edge = 0.78 + 0.22 * Math.sin(u * Math.PI)
+    let mag = (0.12 + 0.88 * shape) * (0.88 + 0.12 * ripple) * edge * breath * lift * (1 - weight * 0.45)
+    if (weight > 0) {
+      const du = u - px
+      mag += weight * Math.exp(-(du * du) / 0.006)
     }
-    const y =
-      0.5 +
-      pitch * Math.sin(filament.u * 4.2 + t * 0.23) +
-      filament.yBias +
-      filament.lane +
-      (wobble - 0.5) * 0.03
-    return {
-      u: filament.u,
-      y,
-      h: filament.amp * energy * (0.62 + 0.5 * focus),
-      w: filament.width * (0.92 + 0.2 * focus),
-      focus,
-      vowel: filament.vowel,
-      gapAfter: filament.gapAfter,
+    mag = clamp01(mag)
+    amps[i] = mag
+    signed[i] = raw * edge * breath
+    if (mag > peak) {
+      peak = mag
+      peakIndex = i
     }
-  })
+  }
 
-  return { samples, focusU, stressIndex, t }
+  return { amps, signed, peakIndex, focusU: peakIndex / (bins - 1), t }
 }
 
 function mulberry32(seed) {
@@ -92,10 +62,22 @@ function mulberry32(seed) {
   return function rand() {
     a |= 0
     a = (a + 0x6d2b79f5) | 0
-    let t = Math.imul(a ^ (a >>> 15), 1 | a)
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+    let value = Math.imul(a ^ (a >>> 15), 1 | a)
+    value = (value + Math.imul(value ^ (value >>> 7), 61 | value)) ^ value
+    return ((value ^ (value >>> 14)) >>> 0) / 4294967296
   }
+}
+
+function mixPartials(partials, u, t, rectified) {
+  let sum = 0
+  let norm = 0
+  for (const partial of partials) {
+    const lfo = 0.72 + 0.28 * Math.sin(t * partial.rate + partial.phase)
+    const osc = Math.sin(u * partial.freq * Math.PI * 2 + t * partial.speed + partial.phase)
+    sum += partial.weight * lfo * (rectified ? Math.abs(osc) : osc)
+    norm += partial.weight
+  }
+  return norm === 0 ? 0 : sum / norm
 }
 
 function clamp01(value) {
