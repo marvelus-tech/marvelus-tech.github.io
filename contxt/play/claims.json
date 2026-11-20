@@ -1,0 +1,2422 @@
+[
+  {
+    "id": "claim-1",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Ross Perot",
+    "startMs": 106704,
+    "endMs": 113690,
+    "text": "I think the principal issue that separates me is that 5.5 million people came together on their own and put me on the ballot.",
+    "topicId": "topic-1",
+    "occurrences": [
+      {
+        "claimId": "claim-1",
+        "startMs": 106704,
+        "endMs": 113690,
+        "text": "I think the principal issue that separates me is that 5.5 million people came together on their own and put me on the ballot.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-2",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Ross Perot",
+    "startMs": 114734,
+    "endMs": 116886,
+    "text": "I was not put on the ballot by either of the two parties.",
+    "topicId": "topic-2",
+    "occurrences": [
+      {
+        "claimId": "claim-2",
+        "startMs": 114734,
+        "endMs": 116886,
+        "text": "I was not put on the ballot by either of the two parties.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-3",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Ross Perot",
+    "startMs": 117304,
+    "endMs": 122748,
+    "text": "I was not put on the ballot by any PAC money, by any foreign lobbyist money, by any special interest money.",
+    "topicId": "topic-3",
+    "occurrences": [
+      {
+        "claimId": "claim-3",
+        "startMs": 117304,
+        "endMs": 122748,
+        "text": "I was not put on the ballot by any PAC money, by any foreign lobbyist money, by any special interest money.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-4",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Ross Perot",
+    "startMs": 123423,
+    "endMs": 125880,
+    "text": "This is a movement that came from the people.",
+    "topicId": "topic-4",
+    "occurrences": [
+      {
+        "claimId": "claim-4",
+        "startMs": 123423,
+        "endMs": 125880,
+        "text": "This is a movement that came from the people.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-5",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Ross Perot",
+    "startMs": 126458,
+    "endMs": 132223,
+    "text": "This is the way the framers of the Constitution intended our government to be, a government that comes from the people.",
+    "topicId": "topic-5",
+    "occurrences": [
+      {
+        "claimId": "claim-5",
+        "startMs": 126458,
+        "endMs": 132223,
+        "text": "This is the way the framers of the Constitution intended our government to be, a government that comes from the people.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-6",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Ross Perot",
+    "startMs": 133283,
+    "endMs": 149905,
+    "text": "Over time, we have developed a government that comes at the people, that comes from the top down, where the people are more or less treated as objects to be programmed during the campaign with commercials and media events and fear messages and personal attacks and things of that nature.",
+    "topicId": "topic-6",
+    "occurrences": [
+      {
+        "claimId": "claim-6",
+        "startMs": 133283,
+        "endMs": 149905,
+        "text": "Over time, we have developed a government that comes at the people, that comes from the top down, where the people are more or less treated as objects to be programmed during the campaign with commercials and media events and fear messages and personal attacks and things of that nature.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-7",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Ross Perot",
+    "startMs": 150949,
+    "endMs": 163427,
+    "text": "The thing that separates my candidacy and makes it unique is that this came from millions of people in 50 states all over this country who wanted a candidate that worked and belonged to nobody but them.",
+    "topicId": "topic-7",
+    "occurrences": [
+      {
+        "claimId": "claim-7",
+        "startMs": 150949,
+        "endMs": 163427,
+        "text": "The thing that separates my candidacy and makes it unique is that this came from millions of people in 50 states all over this country who wanted a candidate that worked and belonged to nobody but them.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-8",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 164342,
+    "endMs": 168992,
+    "text": "I go into this race as their servant, and I belong to them.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-8",
+        "startMs": 164342,
+        "endMs": 168992,
+        "text": "I go into this race as their servant, and I belong to them.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-9",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 169202,
+    "endMs": 170817,
+    "text": "So this comes from the people.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-9",
+        "startMs": 169202,
+        "endMs": 170817,
+        "text": "So this comes from the people.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-10",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 175852,
+    "endMs": 187767,
+    "text": "The most important distinction in this campaign is that I represent real hope for change, a departure from trickle-down economics, a departure from tax-and-spend economics, to invest and grow.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-10",
+        "startMs": 175852,
+        "endMs": 187767,
+        "text": "The most important distinction in this campaign is that I represent real hope for change, a departure from trickle-down economics, a departure from tax-and-spend economics, to invest and grow.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-11",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 188973,
+    "endMs": 192239,
+    "text": "But before I can do that, I must challenge the American people to change.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-11",
+        "startMs": 188973,
+        "endMs": 192239,
+        "text": "But before I can do that, I must challenge the American people to change.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-12",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 195377,
+    "endMs": 198444,
+    "text": "Tonight I say to the president, Mr.",
+    "topicId": "topic-8",
+    "occurrences": [
+      {
+        "claimId": "claim-12",
+        "startMs": 195377,
+        "endMs": 198444,
+        "text": "Tonight I say to the president, Mr.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-13",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 198492,
+    "endMs": 204995,
+    "text": "Bush, for 12 years you've had it your way, you've had your chance, and it didn't work.",
+    "topicId": "topic-9",
+    "occurrences": [
+      {
+        "claimId": "claim-13",
+        "startMs": 198492,
+        "endMs": 204995,
+        "text": "Bush, for 12 years you've had it your way, you've had your chance, and it didn't work.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-14",
+    "type": "promise",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 208752,
+    "endMs": 216460,
+    "text": "I want to bring that change to the American people, but we must all decide first we have the courage to change for hope and a better tomorrow.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-14",
+        "startMs": 208752,
+        "endMs": 216460,
+        "text": "I want to bring that change to the American people, but we must all decide first we have the courage to change for hope and a better tomorrow.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-15",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 220571,
+    "endMs": 224361,
+    "text": "Well, I think one thing that distinguishes is experience.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-15",
+        "startMs": 220571,
+        "endMs": 224361,
+        "text": "Well, I think one thing that distinguishes is experience.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-16",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 225068,
+    "endMs": 226963,
+    "text": "I think we've dramatically changed the world.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-16",
+        "startMs": 225068,
+        "endMs": 226963,
+        "text": "I think we've dramatically changed the world.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-17",
+    "type": "promise",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 227172,
+    "endMs": 231525,
+    "text": "I'll talk about that a little bit later, but the changes are mind-boggling for world peace.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-17",
+        "startMs": 227172,
+        "endMs": 231525,
+        "text": "I'll talk about that a little bit later, but the changes are mind-boggling for world peace.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-18",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 232280,
+    "endMs": 236408,
+    "text": "Kids go to bed at night without the same fear of nuclear war.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-18",
+        "startMs": 232280,
+        "endMs": 236408,
+        "text": "Kids go to bed at night without the same fear of nuclear war.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-19",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 236954,
+    "endMs": 240006,
+    "text": "And change for change's sake isn't enough.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-19",
+        "startMs": 236954,
+        "endMs": 240006,
+        "text": "And change for change's sake isn't enough.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-20",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 240712,
+    "endMs": 243957,
+    "text": "We saw that message in the late '70s, and we heard a lot about change.",
+    "topicId": "topic-10",
+    "occurrences": [
+      {
+        "claimId": "claim-20",
+        "startMs": 240712,
+        "endMs": 243957,
+        "text": "We saw that message in the late '70s, and we heard a lot about change.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-21",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 244005,
+    "endMs": 246655,
+    "text": "The misery index went right through the roof.",
+    "topicId": "topic-11",
+    "occurrences": [
+      {
+        "claimId": "claim-21",
+        "startMs": 244005,
+        "endMs": 246655,
+        "text": "The misery index went right through the roof.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-22",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 247137,
+    "endMs": 250961,
+    "text": "But I— my economic program, I think, is the kind of change we want.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-22",
+        "startMs": 247137,
+        "endMs": 250961,
+        "text": "But I— my economic program, I think, is the kind of change we want.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-23",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 251010,
+    "endMs": 254769,
+    "text": "And the way we're going to get it done is we're going to have a brand-new Congress.",
+    "topicId": "topic-12",
+    "occurrences": [
+      {
+        "claimId": "claim-23",
+        "startMs": 251010,
+        "endMs": 254769,
+        "text": "And the way we're going to get it done is we're going to have a brand-new Congress.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-24",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 255107,
+    "endMs": 257380,
+    "text": "A lot of them are thrown out because of all the scandals.",
+    "topicId": "topic-13",
+    "occurrences": [
+      {
+        "claimId": "claim-24",
+        "startMs": 255107,
+        "endMs": 257380,
+        "text": "A lot of them are thrown out because of all the scandals.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-25",
+    "type": "promise",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 257833,
+    "endMs": 265448,
+    "text": "I'll sit down with them, Democrats and Republicans alike, and work for my agenda for American renewal, which represents real change.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-25",
+        "startMs": 257833,
+        "endMs": 265448,
+        "text": "I'll sit down with them, Democrats and Republicans alike, and work for my agenda for American renewal, which represents real change.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-26",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 265675,
+    "endMs": 269168,
+    "text": "But I'd say if you had to separate out, I think it's experience at this level.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-26",
+        "startMs": 265675,
+        "endMs": 269168,
+        "text": "But I'd say if you had to separate out, I think it's experience at this level.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-27",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 282090,
+    "endMs": 284378,
+    "text": "I believe experience counts, but it's not everything.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-27",
+        "startMs": 282090,
+        "endMs": 284378,
+        "text": "I believe experience counts, but it's not everything.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-28",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 285570,
+    "endMs": 290800,
+    "text": "Values, judgment, and the record that I have amassed in my state also should count for something.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-28",
+        "startMs": 285570,
+        "endMs": 290800,
+        "text": "Values, judgment, and the record that I have amassed in my state also should count for something.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-29",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 291756,
+    "endMs": 294590,
+    "text": "I've worked hard to create good jobs and to educate people.",
+    "topicId": "topic-14",
+    "occurrences": [
+      {
+        "claimId": "claim-29",
+        "startMs": 291756,
+        "endMs": 294590,
+        "text": "I've worked hard to create good jobs and to educate people.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-30",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 295250,
+    "endMs": 299187,
+    "text": "My state now ranks first in the country in job growth this year.",
+    "topicId": "topic-15",
+    "occurrences": [
+      {
+        "claimId": "claim-30",
+        "startMs": 295250,
+        "endMs": 299187,
+        "text": "My state now ranks first in the country in job growth this year.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-31",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 300414,
+    "endMs": 307528,
+    "text": "4th in income growth, 4th in the reduction of poverty, 3rd in overall economic performance according to a major news magazine.",
+    "topicId": "topic-16",
+    "occurrences": [
+      {
+        "claimId": "claim-31",
+        "startMs": 300414,
+        "endMs": 307528,
+        "text": "4th in income growth, 4th in the reduction of poverty, 3rd in overall economic performance according to a major news magazine.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-32",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 308523,
+    "endMs": 311863,
+    "text": "That's because we believe in investing in education and in jobs.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-32",
+        "startMs": 308523,
+        "endMs": 311863,
+        "text": "That's because we believe in investing in education and in jobs.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-33",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 312537,
+    "endMs": 314063,
+    "text": "And we have to change in this country.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-33",
+        "startMs": 312537,
+        "endMs": 314063,
+        "text": "And we have to change in this country.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-34",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 314769,
+    "endMs": 324050,
+    "text": "You know, my wife Hillary gave me a book about a year ago in which the author defined insanity as just doing the same old thing over and over again and expecting a different result.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-34",
+        "startMs": 314769,
+        "endMs": 324050,
+        "text": "You know, my wife Hillary gave me a book about a year ago in which the author defined insanity as just doing the same old thing over and over again and expecting a different result.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-35",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 325142,
+    "endMs": 327325,
+    "text": "We have got to have the courage to change.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-35",
+        "startMs": 325142,
+        "endMs": 327325,
+        "text": "We have got to have the courage to change.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-36",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 329862,
+    "endMs": 334984,
+    "text": "I've gotten a lot of good experience in dealing with ordinary people over the last year and a month.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-36",
+        "startMs": 329862,
+        "endMs": 334984,
+        "text": "I've gotten a lot of good experience in dealing with ordinary people over the last year and a month.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-37",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 335562,
+    "endMs": 342997,
+    "text": "I've touched more people's lives and seen more heartbreak and hope, more pain and more promise than anybody else who's run for president this year.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-37",
+        "startMs": 335562,
+        "endMs": 342997,
+        "text": "I've touched more people's lives and seen more heartbreak and hope, more pain and more promise than anybody else who's run for president this year.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-38",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 343671,
+    "endMs": 346063,
+    "text": "And I think the American people deserve better than they're getting.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-38",
+        "startMs": 343671,
+        "endMs": 346063,
+        "text": "And I think the American people deserve better than they're getting.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-39",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 346641,
+    "endMs": 350238,
+    "text": "We have gone from first to 13th in the world in wages in the last 12 years.",
+    "topicId": "topic-17",
+    "occurrences": [
+      {
+        "claimId": "claim-39",
+        "startMs": 346641,
+        "endMs": 350238,
+        "text": "We have gone from first to 13th in the world in wages in the last 12 years.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-40",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 350640,
+    "endMs": 351667,
+    "text": "Since Mr. Bush and Mr.",
+    "topicId": "topic-18",
+    "occurrences": [
+      {
+        "claimId": "claim-40",
+        "startMs": 350640,
+        "endMs": 351667,
+        "text": "Since Mr. Bush and Mr.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-41",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 352998,
+    "endMs": 355486,
+    "text": "Personal income has dropped while people have worked harder.",
+    "topicId": "topic-19",
+    "occurrences": [
+      {
+        "claimId": "claim-41",
+        "startMs": 352998,
+        "endMs": 355486,
+        "text": "Personal income has dropped while people have worked harder.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-42",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 355871,
+    "endMs": 360268,
+    "text": "In the last 4 years, there have been twice as many bankruptcies as new jobs created.",
+    "topicId": "topic-20",
+    "occurrences": [
+      {
+        "claimId": "claim-42",
+        "startMs": 355871,
+        "endMs": 360268,
+        "text": "In the last 4 years, there have been twice as many bankruptcies as new jobs created.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-43",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 360541,
+    "endMs": 361985,
+    "text": "We need a new approach.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-43",
+        "startMs": 360541,
+        "endMs": 361985,
+        "text": "We need a new approach.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-44",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 362450,
+    "endMs": 364649,
+    "text": "The same old experience is not relevant.",
+    "topicId": "topic-21",
+    "occurrences": [
+      {
+        "claimId": "claim-44",
+        "startMs": 362450,
+        "endMs": 364649,
+        "text": "The same old experience is not relevant.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-45",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 364777,
+    "endMs": 377599,
+    "text": "We're living in a new world after the Cold War, and what works in this new world is not trickle-down, not government for the benefit of the privileged few, not tax and spend, but a commitment to invest in American jobs and American education.",
+    "topicId": "topic-22",
+    "occurrences": [
+      {
+        "claimId": "claim-45",
+        "startMs": 364777,
+        "endMs": 377599,
+        "text": "We're living in a new world after the Cold War, and what works in this new world is not trickle-down, not government for the benefit of the privileged few, not tax and spend, but a commitment to invest in American jobs and American education.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-46",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 377923,
+    "endMs": 381646,
+    "text": "Controlling American health care costs, and bringing the American people together.",
+    "topicId": "topic-23",
+    "occurrences": [
+      {
+        "claimId": "claim-46",
+        "startMs": 377923,
+        "endMs": 381646,
+        "text": "Controlling American health care costs, and bringing the American people together.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-47",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 383346,
+    "endMs": 386179,
+    "text": "And you can have the right kind of experience and the wrong kind of experience.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-47",
+        "startMs": 383346,
+        "endMs": 386179,
+        "text": "And you can have the right kind of experience and the wrong kind of experience.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-48",
+    "type": "prediction",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 386502,
+    "endMs": 391585,
+    "text": "Mine is rooted in the real lives of real people, and it will bring real results if we have the courage to change.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-48",
+        "startMs": 386502,
+        "endMs": 391585,
+        "text": "Mine is rooted in the real lives of real people, and it will bring real results if we have the courage to change.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-49",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 394391,
+    "endMs": 398835,
+    "text": "I just thought of another— another big difference here between me.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-49",
+        "startMs": 394391,
+        "endMs": 398835,
+        "text": "I just thought of another— another big difference here between me.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-50",
+    "type": "promise",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 401894,
+    "endMs": 405327,
+    "text": "Perot feels this way, but I know Governor Clinton did, because I want to accurately quote him.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-50",
+        "startMs": 401894,
+        "endMs": 405327,
+        "text": "Perot feels this way, but I know Governor Clinton did, because I want to accurately quote him.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-51",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 405702,
+    "endMs": 409597,
+    "text": "He thinks— I think he said that the country is coming apart at the seams.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-51",
+        "startMs": 405702,
+        "endMs": 409597,
+        "text": "He thinks— I think he said that the country is coming apart at the seams.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-52",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 410351,
+    "endMs": 417211,
+    "text": "Now, I know that the only way he can win is to make everybody believe the economy is worse than it is.",
+    "topicId": "topic-24",
+    "occurrences": [
+      {
+        "claimId": "claim-52",
+        "startMs": 410351,
+        "endMs": 417211,
+        "text": "Now, I know that the only way he can win is to make everybody believe the economy is worse than it is.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-53",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 417644,
+    "endMs": 420706,
+    "text": "But this country is not coming apart at the seams, for heaven's sakes.",
+    "topicId": "topic-25",
+    "occurrences": [
+      {
+        "claimId": "claim-53",
+        "startMs": 417644,
+        "endMs": 420706,
+        "text": "But this country is not coming apart at the seams, for heaven's sakes.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-54",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 421556,
+    "endMs": 422998,
+    "text": "We're the United States of America.",
+    "topicId": "topic-26",
+    "occurrences": [
+      {
+        "claimId": "claim-54",
+        "startMs": 421556,
+        "endMs": 422998,
+        "text": "We're the United States of America.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-55",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 423175,
+    "endMs": 427872,
+    "text": "We, in spite of the economic problems, we are the most respected economy around the world.",
+    "topicId": "topic-27",
+    "occurrences": [
+      {
+        "claimId": "claim-55",
+        "startMs": 423175,
+        "endMs": 427872,
+        "text": "We, in spite of the economic problems, we are the most respected economy around the world.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-56",
+    "type": "prediction",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 428545,
+    "endMs": 429619,
+    "text": "Many would trade for it.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-56",
+        "startMs": 428545,
+        "endMs": 429619,
+        "text": "Many would trade for it.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-57",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 429667,
+    "endMs": 431991,
+    "text": "We've been caught up in a global slowdown.",
+    "topicId": "topic-28",
+    "occurrences": [
+      {
+        "claimId": "claim-57",
+        "startMs": 429667,
+        "endMs": 431991,
+        "text": "We've been caught up in a global slowdown.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-58",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 432312,
+    "endMs": 434202,
+    "text": "We can do much, much better.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-58",
+        "startMs": 432312,
+        "endMs": 434202,
+        "text": "We can do much, much better.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-59",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 434635,
+    "endMs": 441012,
+    "text": "But we ought not to try to convince the American people that America is a country that's coming apart at the seams.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-59",
+        "startMs": 434635,
+        "endMs": 441012,
+        "text": "But we ought not to try to convince the American people that America is a country that's coming apart at the seams.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-60",
+    "type": "prediction",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 441909,
+    "endMs": 450593,
+    "text": "I would hate to be running for president and think that the only way I could win would be to convince every— everybody how horrible things are.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-60",
+        "startMs": 441909,
+        "endMs": 450593,
+        "text": "I would hate to be running for president and think that the only way I could win would be to convince every— everybody how horrible things are.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-61",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 452644,
+    "endMs": 453910,
+    "text": "And yes, people are hurting.",
+    "topicId": "topic-29",
+    "occurrences": [
+      {
+        "claimId": "claim-61",
+        "startMs": 452644,
+        "endMs": 453910,
+        "text": "And yes, people are hurting.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-62",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 454486,
+    "endMs": 458957,
+    "text": "But I believe that this agenda for American renewal that I have is the answer to do it.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-62",
+        "startMs": 454486,
+        "endMs": 458957,
+        "text": "But I believe that this agenda for American renewal that I have is the answer to do it.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-63",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 459069,
+    "endMs": 460527,
+    "text": "And I believe we can get it done now.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-63",
+        "startMs": 459069,
+        "endMs": 460527,
+        "text": "And I believe we can get it done now.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-64",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 461072,
+    "endMs": 469084,
+    "text": "whereas we didn't in the past, because you're gonna have a whole brand new bunch of people in the Congress that are gonna have to listen to the same American people I'm listening to.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-64",
+        "startMs": 461072,
+        "endMs": 469084,
+        "text": "whereas we didn't in the past, because you're gonna have a whole brand new bunch of people in the Congress that are gonna have to listen to the same American people I'm listening to.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-65",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Ross Perot",
+    "startMs": 473259,
+    "endMs": 476020,
+    "text": "I don't have any experience in running up a $4 trillion debt.",
+    "topicId": "topic-30",
+    "occurrences": [
+      {
+        "claimId": "claim-65",
+        "startMs": 473259,
+        "endMs": 476020,
+        "text": "I don't have any experience in running up a $4 trillion debt.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-66",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Ross Perot",
+    "startMs": 477369,
+    "endMs": 486329,
+    "text": "I don't have any experience in gridlock government where nobody takes responsibility for anything and everybody blames everybody else.",
+    "topicId": "topic-31",
+    "occurrences": [
+      {
+        "claimId": "claim-66",
+        "startMs": 477369,
+        "endMs": 486329,
+        "text": "I don't have any experience in gridlock government where nobody takes responsibility for anything and everybody blames everybody else.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-67",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 486680,
+    "endMs": 497290,
+    "text": "I don't have any experience in creating the worst public school system in the industrialized world, the most violent, crime-ridden society in the industrialized world, but I do have a lot of experience in getting things done.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-67",
+        "startMs": 486680,
+        "endMs": 497290,
+        "text": "I don't have any experience in creating the worst public school system in the industrialized world, the most violent, crime-ridden society in the industrialized world, but I do have a lot of experience in getting things done.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-68",
+    "type": "promise",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 497970,
+    "endMs": 507790,
+    "text": "So if we're at a point in history where we want to stop talking about it and do it, I've got a lot of experience in figuring out how to solve problems, making the solutions work, and then moving on to the next one.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-68",
+        "startMs": 497970,
+        "endMs": 507790,
+        "text": "So if we're at a point in history where we want to stop talking about it and do it, I've got a lot of experience in figuring out how to solve problems, making the solutions work, and then moving on to the next one.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-69",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Ross Perot",
+    "startMs": 507890,
+    "endMs": 511560,
+    "text": "I've got a lot of experience not taking 10 years to solve a 10-minute problem.",
+    "topicId": "topic-32",
+    "occurrences": [
+      {
+        "claimId": "claim-69",
+        "startMs": 507890,
+        "endMs": 511560,
+        "text": "I've got a lot of experience not taking 10 years to solve a 10-minute problem.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-70",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 511830,
+    "endMs": 515024,
+    "text": "So if it's time for action, I think I have experience that counts.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-70",
+        "startMs": 511830,
+        "endMs": 515024,
+        "text": "So if it's time for action, I think I have experience that counts.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-71",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 515495,
+    "endMs": 518855,
+    "text": "If there's more time for gridlock and talk and finger-pointing, I'm the wrong man.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-71",
+        "startMs": 515495,
+        "endMs": 518855,
+        "text": "If there's more time for gridlock and talk and finger-pointing, I'm the wrong man.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-72",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 532179,
+    "endMs": 534479,
+    "text": "I think the American people should be the judge of that.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-72",
+        "startMs": 532179,
+        "endMs": 534479,
+        "text": "I think the American people should be the judge of that.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-73",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 535402,
+    "endMs": 538058,
+    "text": "I think character is a very important question.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-73",
+        "startMs": 535402,
+        "endMs": 538058,
+        "text": "I think character is a very important question.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-74",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 539076,
+    "endMs": 549380,
+    "text": "I said something the other day where I was accused of being like Joe McCarthy because I questioned— I put it this way.",
+    "topicId": "topic-33",
+    "occurrences": [
+      {
+        "claimId": "claim-74",
+        "startMs": 539076,
+        "endMs": 549380,
+        "text": "I said something the other day where I was accused of being like Joe McCarthy because I questioned— I put it this way.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-75",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 549492,
+    "endMs": 558354,
+    "text": "I think it's wrong to demonstrate against your own country or organize demonstrations against your own country in foreign soil.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-75",
+        "startMs": 549492,
+        "endMs": 558354,
+        "text": "I think it's wrong to demonstrate against your own country or organize demonstrations against your own country in foreign soil.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-76",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 558563,
+    "endMs": 559252,
+    "text": "I just think it's wrong.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-76",
+        "startMs": 558563,
+        "endMs": 559252,
+        "text": "I just think it's wrong.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-77",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 560149,
+    "endMs": 563691,
+    "text": "I— then maybe they say, well, it was a youthful indiscretion.",
+    "topicId": "topic-34",
+    "occurrences": [
+      {
+        "claimId": "claim-77",
+        "startMs": 560149,
+        "endMs": 563691,
+        "text": "I— then maybe they say, well, it was a youthful indiscretion.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-78",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 564236,
+    "endMs": 570149,
+    "text": "I was 19 or 20 flying off an aircraft carrier, and that shaped me to be commander-in-chief of the armed forces.",
+    "topicId": "topic-35",
+    "occurrences": [
+      {
+        "claimId": "claim-78",
+        "startMs": 564236,
+        "endMs": 570149,
+        "text": "I was 19 or 20 flying off an aircraft carrier, and that shaped me to be commander-in-chief of the armed forces.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-79",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 570887,
+    "endMs": 577375,
+    "text": "And I'm sorry, but demonstrating— it's not a question of patriotism, it's a question of character and judgment.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-79",
+        "startMs": 570887,
+        "endMs": 577375,
+        "text": "And I'm sorry, but demonstrating— it's not a question of patriotism, it's a question of character and judgment.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-80",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 578274,
+    "endMs": 581101,
+    "text": "They get on me, Bill's gotten on me about \"read my lips.\"",
+    "topicId": "topic-36",
+    "occurrences": [
+      {
+        "claimId": "claim-80",
+        "startMs": 578274,
+        "endMs": 581101,
+        "text": "They get on me, Bill's gotten on me about \"read my lips.\"",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-81",
+    "type": "promise",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 581245,
+    "endMs": 582931,
+    "text": "And when I make a mistake, I'll admit it.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-81",
+        "startMs": 581245,
+        "endMs": 582931,
+        "text": "And when I make a mistake, I'll admit it.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-82",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 583510,
+    "endMs": 586721,
+    "text": "But he has made— not admitted a mistake.",
+    "topicId": "topic-37",
+    "occurrences": [
+      {
+        "claimId": "claim-82",
+        "startMs": 583510,
+        "endMs": 586721,
+        "text": "But he has made— not admitted a mistake.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-83",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 587203,
+    "endMs": 602486,
+    "text": "And I just find it impossible to understand how an American can demonstrate against his own country in a foreign land, organizing demonstrations against it, when young men are held prisoner in Hanoi or kids out of the ghetto were drafted.",
+    "topicId": "topic-38",
+    "occurrences": [
+      {
+        "claimId": "claim-83",
+        "startMs": 587203,
+        "endMs": 602486,
+        "text": "And I just find it impossible to understand how an American can demonstrate against his own country in a foreign land, organizing demonstrations against it, when young men are held prisoner in Hanoi or kids out of the ghetto were drafted.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-84",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 603114,
+    "endMs": 604305,
+    "text": "Some say, well, you're a little old-fashioned.",
+    "topicId": "topic-39",
+    "occurrences": [
+      {
+        "claimId": "claim-84",
+        "startMs": 603114,
+        "endMs": 604305,
+        "text": "Some say, well, you're a little old-fashioned.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-85",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 605202,
+    "endMs": 607875,
+    "text": "Maybe I am, but I just don't think that's right.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-85",
+        "startMs": 605202,
+        "endMs": 607875,
+        "text": "Maybe I am, but I just don't think that's right.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-86",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 608245,
+    "endMs": 613735,
+    "text": "Now, whether it's character or judgment, whatever it is, I have a big difference here on this issue.",
+    "topicId": "topic-40",
+    "occurrences": [
+      {
+        "claimId": "claim-86",
+        "startMs": 608245,
+        "endMs": 613735,
+        "text": "Now, whether it's character or judgment, whatever it is, I have a big difference here on this issue.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-87",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 616778,
+    "endMs": 619515,
+    "text": "But I, I couldn't do that.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-87",
+        "startMs": 616778,
+        "endMs": 619515,
+        "text": "But I, I couldn't do that.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-88",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 620176,
+    "endMs": 622253,
+    "text": "And I don't think most Americans could do that.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-88",
+        "startMs": 620176,
+        "endMs": 622253,
+        "text": "And I don't think most Americans could do that.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-89",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 622832,
+    "endMs": 624461,
+    "text": "And they all say, well, it was a long time ago.",
+    "topicId": "topic-41",
+    "occurrences": [
+      {
+        "claimId": "claim-89",
+        "startMs": 622832,
+        "endMs": 624461,
+        "text": "And they all say, well, it was a long time ago.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-90",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 625520,
+    "endMs": 626985,
+    "text": "Say I made a terrible mistake.",
+    "topicId": "topic-42",
+    "occurrences": [
+      {
+        "claimId": "claim-90",
+        "startMs": 625520,
+        "endMs": 626985,
+        "text": "Say I made a terrible mistake.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-91",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 627666,
+    "endMs": 640229,
+    "text": "How could you be Commander-in-Chief of the Armed Forces and have some kids say, when you have to make a tough decision, as I did in Panama or in Kuwait, and then have some kid jump up and say, \"Well, I'm not gonna go.\"",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-91",
+        "startMs": 627666,
+        "endMs": 640229,
+        "text": "How could you be Commander-in-Chief of the Armed Forces and have some kids say, when you have to make a tough decision, as I did in Panama or in Kuwait, and then have some kid jump up and say, \"Well, I'm not gonna go.\"",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-92",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "George H. W. Bush",
+    "startMs": 640277,
+    "endMs": 646430,
+    "text": "The Commander-in-Chief was organizing demonstrations halfway around the world during another era.",
+    "topicId": "topic-43",
+    "occurrences": [
+      {
+        "claimId": "claim-92",
+        "startMs": 640277,
+        "endMs": 646430,
+        "text": "The Commander-in-Chief was organizing demonstrations halfway around the world during another era.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-93",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 646911,
+    "endMs": 652536,
+    "text": "So there are differences, but that's about the main area where I think we have a difference.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-93",
+        "startMs": 646911,
+        "endMs": 652536,
+        "text": "So there are differences, but that's about the main area where I think we have a difference.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-94",
+    "type": "promise",
+    "checkable": false,
+    "speaker": "George H. W. Bush",
+    "startMs": 652600,
+    "endMs": 656155,
+    "text": "I don't know about We'll talk about that a little with Ross here in a bit.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-94",
+        "startMs": 652600,
+        "endMs": 656155,
+        "text": "I don't know about We'll talk about that a little with Ross here in a bit.",
+        "speaker": "George H. W. Bush"
+      }
+    ]
+  },
+  {
+    "id": "claim-95",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 660808,
+    "endMs": 673466,
+    "text": "I think, uh, American people make their own decisions on character, and at a time when we have work to do and we need action, I think they need to clearly understand the backgrounds of each person.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-95",
+        "startMs": 660808,
+        "endMs": 673466,
+        "text": "I think, uh, American people make their own decisions on character, and at a time when we have work to do and we need action, I think they need to clearly understand the backgrounds of each person.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-96",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 674347,
+    "endMs": 681157,
+    "text": "I think the press can play a huge role in making sure that the backgrounds are clearly presented in an objective way.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-96",
+        "startMs": 674347,
+        "endMs": 681157,
+        "text": "I think the press can play a huge role in making sure that the backgrounds are clearly presented in an objective way.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-97",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 683965,
+    "endMs": 692301,
+    "text": "Certainly anyone in the White House should have the character to be there, but I think it's very important to measure when and where things occurred.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-97",
+        "startMs": 683965,
+        "endMs": 692301,
+        "text": "Certainly anyone in the White House should have the character to be there, but I think it's very important to measure when and where things occurred.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-98",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Ross Perot",
+    "startMs": 699882,
+    "endMs": 708909,
+    "text": "When you're a senior official in the federal government spending billions of dollars of taxpayers' money, and you're a mature individual, and you make a mistake, then that was on our ticket.",
+    "topicId": "topic-44",
+    "occurrences": [
+      {
+        "claimId": "claim-98",
+        "startMs": 699882,
+        "endMs": 708909,
+        "text": "When you're a senior official in the federal government spending billions of dollars of taxpayers' money, and you're a mature individual, and you make a mistake, then that was on our ticket.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-99",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 709680,
+    "endMs": 711576,
+    "text": "If you make it as a young man, time passes.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-99",
+        "startMs": 709680,
+        "endMs": 711576,
+        "text": "If you make it as a young man, time passes.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-100",
+    "type": "prediction",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 712250,
+    "endMs": 725886,
+    "text": "So I would say, just, you know, look at all three of us, decide who you think will do the job, pick that person in November, because believe me, as I've said before, the party's over and it's time for the cleanup crew.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-100",
+        "startMs": 712250,
+        "endMs": 725886,
+        "text": "So I would say, just, you know, look at all three of us, decide who you think will do the job, pick that person in November, because believe me, as I've said before, the party's over and it's time for the cleanup crew.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-101",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Ross Perot",
+    "startMs": 726770,
+    "endMs": 735776,
+    "text": "And we do have to have change, and people who never take responsibility for anything when it happens on their watch and people who are in charge.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-101",
+        "startMs": 726770,
+        "endMs": 735776,
+        "text": "And we do have to have change, and people who never take responsibility for anything when it happens on their watch and people who are in charge.",
+        "speaker": "Ross Perot"
+      }
+    ]
+  },
+  {
+    "id": "claim-102",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 744737,
+    "endMs": 747574,
+    "text": "Ross gave a good answer, but I've got to respond directly to Mr.",
+    "topicId": "topic-45",
+    "occurrences": [
+      {
+        "claimId": "claim-102",
+        "startMs": 744737,
+        "endMs": 747574,
+        "text": "Ross gave a good answer, but I've got to respond directly to Mr.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-103",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 747702,
+    "endMs": 751325,
+    "text": "You have questioned my patriotism.",
+    "topicId": "topic-46",
+    "occurrences": [
+      {
+        "claimId": "claim-103",
+        "startMs": 747702,
+        "endMs": 751325,
+        "text": "You have questioned my patriotism.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-104",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 752047,
+    "endMs": 759629,
+    "text": "You even brought some right-wing congressmen into the White House to plot how to attack me for going to Russia in 1969, 1970.",
+    "topicId": "topic-47",
+    "occurrences": [
+      {
+        "claimId": "claim-104",
+        "startMs": 752047,
+        "endMs": 759629,
+        "text": "You even brought some right-wing congressmen into the White House to plot how to attack me for going to Russia in 1969, 1970.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-105",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 759982,
+    "endMs": 761796,
+    "text": "When over 50,000 other Americans did.",
+    "topicId": "topic-48",
+    "occurrences": [
+      {
+        "claimId": "claim-105",
+        "startMs": 759982,
+        "endMs": 761796,
+        "text": "When over 50,000 other Americans did.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-106",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 762310,
+    "endMs": 764927,
+    "text": "Now, I honor your service in World War II.",
+    "topicId": "topic-49",
+    "occurrences": [
+      {
+        "claimId": "claim-106",
+        "startMs": 762310,
+        "endMs": 764927,
+        "text": "Now, I honor your service in World War II.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-107",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 765264,
+    "endMs": 773886,
+    "text": "I honor Mr. Perot's service in uniform and the service of every man and woman who ever served, including Admiral Crowe, who was your Chairman of the Joint Chiefs and who's supporting me.",
+    "topicId": "topic-50",
+    "occurrences": [
+      {
+        "claimId": "claim-107",
+        "startMs": 765264,
+        "endMs": 773886,
+        "text": "I honor Mr. Perot's service in uniform and the service of every man and woman who ever served, including Admiral Crowe, who was your Chairman of the Joint Chiefs and who's supporting me.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-108",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 775154,
+    "endMs": 782025,
+    "text": "But when Joe McCarthy went around this country attacking people's patriotism, he was wrong.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-108",
+        "startMs": 775154,
+        "endMs": 782025,
+        "text": "But when Joe McCarthy went around this country attacking people's patriotism, he was wrong.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-109",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 782684,
+    "endMs": 787444,
+    "text": "And a senator from Connecticut stood up to him named Prescott Bush.",
+    "topicId": "topic-51",
+    "occurrences": [
+      {
+        "claimId": "claim-109",
+        "startMs": 782684,
+        "endMs": 787444,
+        "text": "And a senator from Connecticut stood up to him named Prescott Bush.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-110",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 787912,
+    "endMs": 790206,
+    "text": "Your father was right to stand up to Joe McCarthy.",
+    "topicId": "topic-52",
+    "occurrences": [
+      {
+        "claimId": "claim-110",
+        "startMs": 787912,
+        "endMs": 790206,
+        "text": "Your father was right to stand up to Joe McCarthy.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-111",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 790594,
+    "endMs": 792435,
+    "text": "You were wrong to attack my patriotism.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-111",
+        "startMs": 790594,
+        "endMs": 792435,
+        "text": "You were wrong to attack my patriotism.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-112",
+    "type": "prediction",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 792972,
+    "endMs": 799103,
+    "text": "I was opposed to the war, but I love my country, and we need a president who will bring this country together, not divide it.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-112",
+        "startMs": 792972,
+        "endMs": 799103,
+        "text": "I was opposed to the war, but I love my country, and we need a president who will bring this country together, not divide it.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-113",
+    "type": "promise",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 800278,
+    "endMs": 801501,
+    "text": "I want to lead a unified country.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-113",
+        "startMs": 800278,
+        "endMs": 801501,
+        "text": "I want to lead a unified country.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-114",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 829536,
+    "endMs": 834631,
+    "text": "The tax increase I have proposed triggers in at family incomes of $200,000 and above.",
+    "topicId": "topic-53",
+    "occurrences": [
+      {
+        "claimId": "claim-114",
+        "startMs": 829536,
+        "endMs": 834631,
+        "text": "The tax increase I have proposed triggers in at family incomes of $200,000 and above.",
+        "speaker": "Bill Clinton"
+      },
+      {
+        "claimId": "claim-118",
+        "startMs": 861113,
+        "endMs": 868681,
+        "text": "My plan, notwithstanding my opponent's ad, my plan triggers in at gross incomes, family incomes of $200,000 and above.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-115",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 835288,
+    "endMs": 839919,
+    "text": "Those are the people who in the 1980s had their incomes go up while their taxes went down.",
+    "topicId": "topic-54",
+    "occurrences": [
+      {
+        "claimId": "claim-115",
+        "startMs": 835288,
+        "endMs": 839919,
+        "text": "Those are the people who in the 1980s had their incomes go up while their taxes went down.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-116",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 840818,
+    "endMs": 853095,
+    "text": "Middle-class people, defined as people with incomes of $52,000 and down, had their incomes go down while their taxes went up in the Reagan-Bush years because of 6 increases in the payroll taxes.",
+    "topicId": "topic-54",
+    "occurrences": [
+      {
+        "claimId": "claim-116",
+        "startMs": 840818,
+        "endMs": 853095,
+        "text": "Middle-class people, defined as people with incomes of $52,000 and down, had their incomes go down while their taxes went up in the Reagan-Bush years because of 6 increases in the payroll taxes.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-117",
+    "type": "prediction",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 853528,
+    "endMs": 856324,
+    "text": "So that is where my income limit would trigger.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-117",
+        "startMs": 853528,
+        "endMs": 856324,
+        "text": "So that is where my income limit would trigger.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-119",
+    "type": "promise",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 869034,
+    "endMs": 877774,
+    "text": "Then we want to give modest middle-class tax relief to restore some fairness, especially to middle-class people with families with incomes of under $60,000.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-119",
+        "startMs": 869034,
+        "endMs": 877774,
+        "text": "Then we want to give modest middle-class tax relief to restore some fairness, especially to middle-class people with families with incomes of under $60,000.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-120",
+    "type": "prediction",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 878416,
+    "endMs": 892747,
+    "text": "In addition to that, the money that I raise from upper-income people and from asking foreign corporations just to pay the same income on their income earned in America that American corporations do will be used to give incentives back to upper-income people.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-120",
+        "startMs": 878416,
+        "endMs": 892747,
+        "text": "In addition to that, the money that I raise from upper-income people and from asking foreign corporations just to pay the same income on their income earned in America that American corporations do will be used to give incentives back to upper-income people.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-121",
+    "type": "promise",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 893213,
+    "endMs": 901215,
+    "text": "I want to give people permanent incentives, an investment tax credit like President Kennedy and the Congress inaugurated in the early '60s to get industry moving again.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-121",
+        "startMs": 893213,
+        "endMs": 901215,
+        "text": "I want to give people permanent incentives, an investment tax credit like President Kennedy and the Congress inaugurated in the early '60s to get industry moving again.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-122",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 902034,
+    "endMs": 909056,
+    "text": "A research and development tax credit, a low-income housing tax credit, a long-term capital gains proposal for new business and business expansions.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-122",
+        "startMs": 902034,
+        "endMs": 909056,
+        "text": "A research and development tax credit, a low-income housing tax credit, a long-term capital gains proposal for new business and business expansions.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-123",
+    "type": "factual",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 909442,
+    "endMs": 911386,
+    "text": "We've got to have no more trickle-down.",
+    "topicId": "topic-55",
+    "occurrences": [
+      {
+        "claimId": "claim-123",
+        "startMs": 909442,
+        "endMs": 911386,
+        "text": "We've got to have no more trickle-down.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-124",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 911450,
+    "endMs": 913989,
+    "text": "We don't need across-the-board tax cuts for the wealthy for nothing.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-124",
+        "startMs": 911450,
+        "endMs": 913989,
+        "text": "We don't need across-the-board tax cuts for the wealthy for nothing.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-125",
+    "type": "opinion",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 914343,
+    "endMs": 918745,
+    "text": "We need to say, here's your tax incentive if you create American jobs the old-fashioned way.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-125",
+        "startMs": 914343,
+        "endMs": 918745,
+        "text": "We need to say, here's your tax incentive if you create American jobs the old-fashioned way.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-126",
+    "type": "promise",
+    "checkable": false,
+    "speaker": "Bill Clinton",
+    "startMs": 919003,
+    "endMs": 922160,
+    "text": "I'd like to create more millionaires than were created under Mr.",
+    "topicId": null,
+    "occurrences": [
+      {
+        "claimId": "claim-126",
+        "startMs": 919003,
+        "endMs": 922160,
+        "text": "I'd like to create more millionaires than were created under Mr.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-127",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 922208,
+    "endMs": 928764,
+    "text": "Bush and Mr. Reagan, but I don't want to have 4 years where we have no growth in the private sector, and that's what's happened in the last 4 years.",
+    "topicId": "topic-56",
+    "occurrences": [
+      {
+        "claimId": "claim-127",
+        "startMs": 922208,
+        "endMs": 928764,
+        "text": "Bush and Mr. Reagan, but I don't want to have 4 years where we have no growth in the private sector, and that's what's happened in the last 4 years.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  },
+  {
+    "id": "claim-128",
+    "type": "statistic",
+    "checkable": true,
+    "speaker": "Bill Clinton",
+    "startMs": 928812,
+    "endMs": 931808,
+    "text": "We're down 35,000 jobs in the private sector.",
+    "topicId": "topic-57",
+    "occurrences": [
+      {
+        "claimId": "claim-128",
+        "startMs": 928812,
+        "endMs": 931808,
+        "text": "We're down 35,000 jobs in the private sector.",
+        "speaker": "Bill Clinton"
+      }
+    ]
+  }
+]

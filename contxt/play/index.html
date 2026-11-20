@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTXT Play | 1992 debate demo</title>
+  <meta name="description" content="Play the 1992 presidential debate clip and watch CONTXT build cited topic pages in sync. Fixture research, no API keys.">
+  <link rel="canonical" href="https://marvelus-tech.github.io/contxt/play/">
+  <link rel="stylesheet" href="play.css">
+</head>
+<body>
+  <header class="top">
+    <a class="back" href="../">CONTXT</a>
+    <p class="title">Play demo</p>
+    <p class="meta" id="meta-strip">Loading…</p>
+  </header>
+
+  <section class="player" aria-label="Audio player">
+    <audio id="audio" controls preload="metadata" src="debate1992.opus">
+      <p>Your browser does not support Opus audio.</p>
+    </audio>
+    <p class="hint">Public-domain clip (~15 min). Scrub or play to reveal pipeline activity.</p>
+  </section>
+
+  <main class="grid">
+    <section class="panel" aria-label="Live pipeline feed">
+      <h2>Pipeline feed</h2>
+      <ul id="feed" class="feed"></ul>
+    </section>
+    <section class="panel" aria-label="Topic pages">
+      <h2>Topic pages</h2>
+      <p class="panel-note">New pages appear as checkable claims land.</p>
+      <div id="topics" class="topics"></div>
+      <p class="deck-link"><a href="deck.html" target="_blank" rel="noopener">Open full deck</a></p>
+    </section>
+  </main>
+
+  <script src="play.js" type="module"></script>
+</body>
+</html>
