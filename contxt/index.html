@@ -346,7 +346,7 @@
     </div>
   </main>
   <script type="module">
-    import { createWave, sampleWave, DEFAULT_SEED } from "./field.js"
+    import { createWave, createFollower, sampleWave, DEFAULT_SEED } from "./field.js"
 
     const canvas = document.getElementById("field")
     const ctx = canvas.getContext("2d", { alpha: true })
@@ -363,6 +363,7 @@
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)")
     const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)")
     const wave = createWave(seed)
+    const follower = createFollower(wave)
     const bands = [
       ["#1e4d8c", 1],
       ["#3c86d8", 0.74],
@@ -408,26 +409,16 @@
     }
 
     function draw(t) {
-      const frame = sampleWave(wave, t, pointer.weight > 0.001 ? pointer : null)
+      const frame = sampleWave(wave, t, pointer.weight > 0.001 ? pointer : null, follower)
       live.t = t
       live.focusU = frame.focusU
       bg.clearRect(0, 0, buffer.width, buffer.height)
+      // Bands share the bin levels. x is frequency, so only the height of each band changes.
       for (const [color, scale] of bands) {
         bg.fillStyle = color
         trace(frame.amps, scale)
         bg.fill()
       }
-      bg.beginPath()
-      const mid = buffer.height * 0.58
-      for (let i = 0; i < frame.signed.length; i++) {
-        const x = (i / (frame.signed.length - 1)) * buffer.width
-        const y = mid - frame.signed[i] * buffer.height * 0.16
-        if (i === 0) bg.moveTo(x, y)
-        else bg.lineTo(x, y)
-      }
-      bg.strokeStyle = "rgba(255, 248, 238, 0.8)"
-      bg.lineWidth = 3
-      bg.stroke()
 
       const viewW = canvas.clientWidth
       const viewH = canvas.clientHeight
