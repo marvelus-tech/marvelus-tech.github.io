@@ -1,10 +1,12 @@
 {
-  "bakedAt": "2026-11-20T00:21:39.788Z",
+  "bakedAt": "2026-11-20T01:39:43.006Z",
   "fixture": "samples/debate1992.json",
   "researcher": "fixture",
   "researcherStatus": "ok",
   "researchRequests": 0,
   "pagesCreated": 57,
   "uniqueClaims": 127,
-  "clip": "samples/debate1992.clip.json"
+  "factsProposed": 127,
+  "clip": "samples/debate1992.clip.json",
+  "ingest": "preloaded"
 }
