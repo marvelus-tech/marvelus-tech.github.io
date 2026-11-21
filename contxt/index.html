@@ -70,12 +70,16 @@
     }
 
     .top {
+      position: relative;
+      z-index: 10;
+      padding: 1rem 6vw;
+      border-bottom: 1px solid var(--line);
+    }
+    .top__bar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 1.5rem;
-      padding: 1.15rem 6vw 1rem;
-      border-bottom: 1px solid var(--line);
+      gap: 1rem;
     }
     .brand {
       font-family: var(--mono);
@@ -84,11 +88,63 @@
       letter-spacing: 0.16em;
       text-decoration: none;
     }
-    .nav {
+    .top__actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .nav-cta {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      font-weight: 650;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.55rem 0.85rem;
+      border: 1px solid var(--line);
+    }
+    .nav-cta:hover {
+      background: var(--ink);
+      color: var(--paper);
+      border-color: var(--ink);
+    }
+    .nav-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin: 0;
+      padding: 0;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .nav-toggle__bars {
+      position: relative;
+      display: block;
+      width: 1.05rem;
+      height: 2px;
+      background: currentColor;
+    }
+    .nav-toggle__bars::before,
+    .nav-toggle__bars::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: currentColor;
+    }
+    .nav-toggle__bars::before { top: -6px; }
+    .nav-toggle__bars::after { top: 6px; }
+    .nav--desktop {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
-      gap: 0.35rem 1.15rem;
+      gap: 0.35rem 1.25rem;
+      margin-top: 0.85rem;
     }
     .nav a {
       font-family: var(--mono);
@@ -98,6 +154,43 @@
       text-decoration: none;
     }
     .nav a:hover { text-decoration: underline; text-underline-offset: 0.3em; }
+    .nav-panel {
+      display: none;
+      border-top: 1px solid var(--line);
+      margin: 0.75rem -6vw 0;
+      padding: 0.75rem 6vw 0.25rem;
+      background: var(--paper);
+    }
+    .nav-panel.is-open { display: block; }
+    .nav--mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.85rem;
+    }
+    .site-footer {
+      margin: 0;
+      padding: 2.5rem 6vw 4rem;
+      border-top: 1px solid var(--line);
+    }
+    .site-footer__nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.35rem;
+    }
+    .site-footer__nav a {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--muted);
+    }
+    .site-footer__nav a:hover { color: var(--ink); }
+    .site-footer__note {
+      margin: 1.1rem 0 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
 
     .hero-shell {
       position: relative;
@@ -305,7 +398,7 @@
       font-weight: 600;
       letter-spacing: -0.02em;
     }
-    .steps p, .try, .next, .index {
+    .steps p, .try, .next {
       margin: 0;
       color: var(--muted);
     }
@@ -327,17 +420,19 @@
       margin-top: 2rem;
     }
     .next strong { color: var(--ink); }
-    .index { margin-top: 2.5rem; font-size: 0.92rem; }
-
+    @media (min-width: 721px) {
+      .nav-panel { display: none !important; }
+      .nav-toggle { display: none !important; }
+      .nav-cta { display: none; }
+      .top__actions { gap: 0; }
+    }
     @media (max-width: 720px) {
-      .top, .story { width: auto; margin-left: 0; }
-      .top {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.7rem;
-        padding: 1rem 1.15rem;
-      }
-      .nav { justify-content: flex-start; }
+      .top, .story, .site-footer { width: auto; margin-left: 0; }
+      .top { padding: 0.85rem 1.15rem; }
+      .nav--desktop { display: none; }
+      .nav-toggle { display: inline-flex; }
+      .nav-panel { margin-left: -1.15rem; margin-right: -1.15rem; padding-left: 1.15rem; padding-right: 1.15rem; }
+      .site-footer { padding: 2rem 1.15rem 3rem; }
       .hero-shell {
         grid-template-columns: 1fr;
         min-height: auto;
@@ -365,15 +460,31 @@
   </style>
 </head>
 <body>
-  <a class="skip" href="#story">Skip to story</a>
+  <a class="skip" href="#how">Skip to content</a>
   <header class="top">
-    <a class="brand" href="#story">CONTXT</a>
-    <nav class="nav" aria-label="CONTXT">
+    <div class="top__bar">
+      <a class="brand" href="./">CONTXT</a>
+      <div class="top__actions">
+        <a class="nav-cta" href="play/">Play</a>
+        <button class="nav-toggle" type="button" id="nav-toggle" aria-expanded="false" aria-controls="nav-panel">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav nav--desktop" aria-label="Primary">
       <a href="#how">How it works</a>
-      <a href="demo/deck.html">Sample deck</a>
-      <a href="https://github.com/marvelus-tech/contxt" rel="noreferrer">GitHub</a>
-      <a href="play/">Play</a>
+      <a href="#today">What to try</a>
+      <a href="play/">Play demo</a>
     </nav>
+    <div class="nav-panel" id="nav-panel" hidden>
+      <nav class="nav nav--mobile" aria-label="Mobile menu">
+        <a href="#how">How it works</a>
+        <a href="#today">What to try</a>
+        <a href="demo/deck.html">Sample deck</a>
+        <a href="https://github.com/marvelus-tech/contxt" rel="noreferrer">GitHub</a>
+      </nav>
+    </div>
   </header>
   <main id="story">
     <section class="hero-shell" aria-labelledby="product">
@@ -385,8 +496,7 @@
         <p class="lede">Transcription becomes claims, research attaches citations, and you browse topic pages instead of a flat transcript.</p>
         <div class="cta-row">
           <a class="btn btn-play" href="play/">Play the debate</a>
-          <a class="quiet" href="play/#btn-mic">Microphone</a>
-          <a class="quiet" href="play/#audio">Debate audio</a>
+          <a class="quiet" href="#today">Other ways to try</a>
         </div>
       </div>
       <div class="hero-stage" id="hero-stage" aria-hidden="true">
@@ -422,21 +532,50 @@
       <section aria-labelledby="today">
         <h2 id="today">What you can try</h2>
         <ul class="try">
-          <li><strong>Play demo.</strong> The 1992 debate, then a cited topic timeline (<a href="play/">/contxt/play/</a>).</li>
-          <li><strong>Sample deck.</strong> A short replay with cited facts (<a href="demo/deck.html">/contxt/demo/deck.html</a>).</li>
-          <li><strong>Your machine.</strong> <code>npm run ci:replay</code> in the repo.</li>
-          <li><strong>Transcription results.</strong> <a href="https://github.com/marvelus-tech/contxt/blob/main/docs/REPORT.md" rel="noreferrer">The 1992 clip report</a>.</li>
+          <li><strong>Play demo.</strong> The 1992 debate with a cited <a href="play/">topic timeline</a>.</li>
+          <li><strong>Sample deck.</strong> A shorter <a href="demo/deck.html">slide-style replay</a> with facts.</li>
+          <li><strong>Your machine.</strong> Clone the repo and run <code>npm run ci:replay</code>.</li>
+          <li><strong>Transcription results.</strong> Read the <a href="https://github.com/marvelus-tech/contxt/blob/main/docs/REPORT.md" rel="noreferrer">1992 clip report</a>.</li>
         </ul>
       </section>
-      <p class="next"><strong>Coming next:</strong> file upload and microphone recording. The debate demo plays a 1992 clip.</p>
-      <p class="index"><a href="/">Project index</a></p>
+      <p class="next"><strong>Coming next:</strong> file upload and microphone recording on the play page.</p>
     </div>
   </main>
+  <footer class="site-footer">
+    <nav class="site-footer__nav" aria-label="Footer">
+      <a href="demo/deck.html">Sample deck</a>
+      <a href="https://github.com/marvelus-tech/contxt" rel="noreferrer">GitHub</a>
+      <a href="https://github.com/marvelus-tech/contxt/blob/main/docs/REPORT.md" rel="noreferrer">1992 report</a>
+    </nav>
+    <p class="site-footer__note">CONTXT turns spoken audio into checkable claims and cited topic pages.</p>
+  </footer>
   <script type="module">
     import { mountHeroSlides } from "./slides.js"
 
     const stage = document.getElementById("hero-stage")
     if (stage) mountHeroSlides(stage)
+
+    const toggle = document.getElementById("nav-toggle")
+    const panel = document.getElementById("nav-panel")
+    if (toggle && panel) {
+      const mqDesktop = window.matchMedia("(min-width: 721px)")
+      const setOpen = (open) => {
+        toggle.setAttribute("aria-expanded", open ? "true" : "false")
+        toggle.querySelector(".sr-only").textContent = open ? "Close menu" : "Open menu"
+        panel.hidden = !open
+        panel.classList.toggle("is-open", open)
+      }
+      toggle.addEventListener("click", () => setOpen(panel.hidden))
+      panel.addEventListener("click", (event) => {
+        if (event.target instanceof HTMLAnchorElement) setOpen(false)
+      })
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !panel.hidden) setOpen(false)
+      })
+      mqDesktop.addEventListener("change", () => {
+        if (mqDesktop.matches) setOpen(false)
+      })
+    }
   </script>
 </body>
 </html>
