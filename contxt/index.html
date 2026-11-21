@@ -22,6 +22,7 @@
       --line: rgba(28, 25, 21, 0.14);
       --sans: "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", system-ui, sans-serif;
       --mono: "Cascadia Mono", "Segoe UI Mono", ui-monospace, "Liberation Mono", monospace;
+      --slide-blur-far: 6px;
     }
 
     * { box-sizing: border-box; }
@@ -98,10 +99,19 @@
     }
     .nav a:hover { text-decoration: underline; text-underline-offset: 0.3em; }
 
-    .hero {
-      width: min(40rem, calc(100% - 12vw));
-      margin: 0;
-      padding: 8vh 0 2vh 6vw;
+    .hero-shell {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 42%) minmax(0, 1fr);
+      align-items: center;
+      gap: 0 2rem;
+      min-height: min(85vh, 52rem);
+      padding: 6vh 6vw 4vh;
+    }
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+      max-width: 40rem;
     }
     .kicker {
       margin: 0 0 1.1rem;
@@ -162,28 +172,87 @@
       text-underline-offset: 0.28em;
     }
 
-    .wave {
+    .hero-stage {
       position: relative;
-      height: 46vh;
-      min-height: 280px;
-      margin-top: 2vh;
-    }
-    .wave-label {
-      position: absolute;
       z-index: 1;
-      top: 0.25rem;
-      left: 6vw;
+      min-height: min(72vh, 36rem);
+      perspective: 1200px;
+      overflow: hidden;
+      mask-image: linear-gradient(105deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
+    }
+  .hero-stage__label {
+      position: absolute;
+      top: 0.35rem;
+      right: 0;
       margin: 0;
       font-family: var(--mono);
       font-size: 0.68rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--muted);
+      z-index: 3;
     }
-    #field {
+    .hero-track {
+      position: absolute;
+      inset: 0;
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+    .context-slide {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: min(12.5rem, 38vw);
+      margin: -7.5rem 0 0 -6.25rem;
+      transform-style: preserve-3d;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+    .context-slide__frame {
+      background: var(--slide-fill, var(--paper));
+      border: 1px solid var(--line);
+      padding: 0.85rem 0.9rem 0.95rem;
+      box-shadow: 0 18px 42px rgba(28, 25, 21, 0.07);
+    }
+    .context-slide.is-focus .context-slide__frame {
+      border-color: rgba(28, 25, 21, 0.28);
+      box-shadow: 0 22px 48px rgba(28, 25, 21, 0.12);
+    }
+    .context-slide__label {
+      margin: 0 0 0.55rem;
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .context-slide__title {
+      margin: 0;
+      font-family: var(--sans);
+      font-size: 1.05rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .context-slide__line {
+      margin: 0.45rem 0 0.65rem;
+      font-size: 0.82rem;
+      line-height: 1.35;
+      color: var(--muted);
+    }
+    .context-slide__cites {
+      display: flex;
+      flex-direction: column;
+      gap: 0.28rem;
+    }
+    .context-slide__cite {
       display: block;
-      width: 100%;
-      height: 100%;
+      height: 3px;
+      border-radius: 1px;
+      background: rgba(28, 25, 21, 0.08);
+    }
+    .context-slide__cite.is-on {
+      background: rgba(28, 25, 21, 0.22);
     }
 
     .story {
@@ -251,8 +320,8 @@
     .next strong { color: var(--ink); }
     .index { margin-top: 2.5rem; font-size: 0.92rem; }
 
-      @media (max-width: 720px) {
-      .top, .hero, .story { width: auto; margin-left: 0; }
+    @media (max-width: 720px) {
+      .top, .story { width: auto; margin-left: 0; }
       .top {
         flex-direction: column;
         align-items: flex-start;
@@ -260,9 +329,18 @@
         padding: 1rem 1.15rem;
       }
       .nav { justify-content: flex-start; }
-      .hero { padding: 8vh 1.15rem 1.5rem; }
-      .wave { height: 34vh; min-height: 200px; }
-      .wave-label { left: 1.15rem; }
+      .hero-shell {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 8vh 1.15rem 2vh;
+        gap: 1.5rem 0;
+      }
+      .hero-stage {
+        min-height: 42vh;
+        perspective: 900px;
+        mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+      }
+      .hero-stage__label { right: 1.15rem; }
       .story { padding: 0 1.15rem 12vh; }
       .steps { grid-template-columns: 1fr; gap: 1.25rem; }
       h1 { font-size: clamp(3.4rem, 18vw, 4.8rem); }
@@ -272,7 +350,7 @@
       html { scroll-behavior: auto; }
     }
     @media (prefers-contrast: more) {
-      .lede, .steps p, .try, .next, .kicker, .wave-label, h2 { color: var(--ink); }
+      .lede, .steps p, .try, .next, .kicker, .hero-stage__label, h2 { color: var(--ink); }
       .top, .steps li, .try li { border-color: var(--ink); }
     }
   </style>
@@ -289,21 +367,22 @@
     </nav>
   </header>
   <main id="story">
-    <section class="hero" aria-labelledby="product">
-      <p class="sr-only">A spectral waveform below animates like speech. The text is the product.</p>
-      <p class="kicker">Spoken audio</p>
-      <h1 id="product">CONTXT</h1>
-      <p class="promise">Live context for spoken content.</p>
-      <p class="lede">Transcription becomes claims, research attaches citations, and you browse topic pages instead of a flat transcript.</p>
-      <div class="cta-row">
-        <a class="btn btn-play" href="play/">Play the debate</a>
-        <a class="quiet" href="play/#btn-mic">Microphone</a>
-        <a class="quiet" href="play/#audio">Debate audio</a>
+    <section class="hero-shell" aria-labelledby="product">
+      <div class="hero-copy">
+        <p class="sr-only">Floating topic cards beside the headline illustrate graphical context from speech. The text is the product.</p>
+        <p class="kicker">Spoken audio</p>
+        <h1 id="product">CONTXT</h1>
+        <p class="promise">Live context for spoken content.</p>
+        <p class="lede">Transcription becomes claims, research attaches citations, and you browse topic pages instead of a flat transcript.</p>
+        <div class="cta-row">
+          <a class="btn btn-play" href="play/">Play the debate</a>
+          <a class="quiet" href="play/#btn-mic">Microphone</a>
+          <a class="quiet" href="play/#audio">Debate audio</a>
+        </div>
       </div>
-    </section>
-    <section class="wave" aria-hidden="true">
-      <p class="wave-label">Signal</p>
-      <canvas id="field"></canvas>
+      <div class="hero-stage" id="hero-stage" aria-hidden="true">
+        <p class="hero-stage__label">Context</p>
+      </div>
     </section>
     <div class="story">
       <section aria-labelledby="how">
@@ -345,156 +424,10 @@
     </div>
   </main>
   <script type="module">
-    import { createWave, createFollower, sampleWave, DEFAULT_SEED } from "./field.js"
+    import { mountHeroSlides } from "./slides.js"
 
-    const canvas = document.getElementById("field")
-    const ctx = canvas.getContext("2d", { alpha: true })
-    const buffer = document.createElement("canvas")
-    buffer.width = 720
-    buffer.height = 280
-    const bg = buffer.getContext("2d")
-    const params = new URLSearchParams(location.search)
-    const seedParam = params.get("seed")
-    const parsedSeed = seedParam == null || seedParam === "" ? DEFAULT_SEED : Number(seedParam)
-    const seed = Number.isFinite(parsedSeed) ? parsedSeed : DEFAULT_SEED
-    const tParam = params.get("t")
-    const freeze = tParam == null || tParam === "" ? null : Number(tParam)
-    const motion = window.matchMedia("(prefers-reduced-motion: reduce)")
-    const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)")
-    const wave = createWave(seed)
-    const follower = createFollower(wave)
-    const bands = [
-      ["#1e4d8c", 1],
-      ["#3c86d8", 0.74],
-      ["#f2c84e", 0.52],
-      ["#ef7c34", 0.34],
-      ["#e44588", 0.28],
-    ]
-
-    let hold = Number.isFinite(freeze) ? freeze : motion.matches ? 6.4 : null
-    const live = { t: 0, focusU: 0 }
-    let raf = 0
-    let start = performance.now()
-    const pointer = { x: 0.5, y: 0.5, weight: 0 }
-    const pointerTarget = { x: 0.5, y: 0.5, weight: 0 }
-
-    document.documentElement.dataset.motion = motion.matches ? "reduced" : "full"
-
-    function resize() {
-      const rect = canvas.getBoundingClientRect()
-      const dpr = Math.min(window.devicePixelRatio || 1, 1.25)
-      const pw = Math.max(1, Math.round(rect.width * dpr))
-      const ph = Math.max(1, Math.round(rect.height * dpr))
-      if (canvas.width !== pw || canvas.height !== ph) {
-        canvas.width = pw
-        canvas.height = ph
-      }
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
-    }
-
-    function trace(values, scale) {
-      const width = buffer.width
-      const height = buffer.height
-      const base = height * 0.98
-      bg.beginPath()
-      bg.moveTo(0, base)
-      for (let i = 0; i < values.length; i++) {
-        const x = (i / (values.length - 1)) * width
-        const y = base - values[i] * scale * height * 0.9
-        bg.lineTo(x, y)
-      }
-      bg.lineTo(width, base)
-      bg.closePath()
-    }
-
-    function draw(t) {
-      const frame = sampleWave(wave, t, pointer.weight > 0.001 ? pointer : null, follower)
-      live.t = t
-      live.focusU = frame.focusU
-      bg.clearRect(0, 0, buffer.width, buffer.height)
-      // Bands share the bin levels. x is frequency, so only the height of each band changes.
-      for (const [color, scale] of bands) {
-        bg.fillStyle = color
-        trace(frame.amps, scale)
-        bg.fill()
-      }
-
-      const viewW = canvas.clientWidth
-      const viewH = canvas.clientHeight
-      ctx.clearRect(0, 0, viewW, viewH)
-      ctx.save()
-      ctx.filter = "blur(" + Math.max(10, Math.round(viewW * 0.008)) + "px)"
-      ctx.drawImage(buffer, -24, 0, viewW + 48, viewH)
-      ctx.restore()
-    }
-
-    function loop(now) {
-      if (hold != null) return
-      pointer.x += (pointerTarget.x - pointer.x) * 0.08
-      pointer.y += (pointerTarget.y - pointer.y) * 0.08
-      pointer.weight += (pointerTarget.weight - pointer.weight) * 0.06
-      draw((now - start) / 1000)
-      raf = requestAnimationFrame(loop)
-    }
-
-    resize()
-    if (hold != null) draw(hold)
-    else raf = requestAnimationFrame(loop)
-
-    window.addEventListener("resize", () => {
-      resize()
-      if (hold != null) draw(hold)
-    })
-    document.addEventListener("visibilitychange", () => {
-      if (hold != null) return
-      if (document.hidden) cancelAnimationFrame(raf)
-      else raf = requestAnimationFrame(loop)
-    })
-    motion.addEventListener("change", (event) => {
-      document.documentElement.dataset.motion = event.matches ? "reduced" : "full"
-      if (Number.isFinite(freeze)) return
-      if (event.matches) {
-        hold = 6.4
-        cancelAnimationFrame(raf)
-        draw(hold)
-      } else {
-        hold = null
-        start = performance.now() - 6400
-        raf = requestAnimationFrame(loop)
-      }
-    })
-    if (finePointer.matches && hold == null) {
-      window.addEventListener("pointermove", (event) => {
-        pointerTarget.x = Math.max(0, Math.min(1, event.clientX / window.innerWidth))
-        pointerTarget.y = Math.max(0, Math.min(1, event.clientY / window.innerHeight))
-        pointerTarget.weight = 1
-      })
-      document.documentElement.addEventListener("pointerleave", () => {
-        pointerTarget.weight = 0
-      })
-    }
-
-    window.__contxtField = {
-      seed: seed >>> 0,
-      get time() { return live.t },
-      get focusU() { return live.focusU },
-      sample(t, nextPointer) {
-        return sampleWave(wave, t, nextPointer)
-      },
-      seek(t) {
-        hold = t
-        cancelAnimationFrame(raf)
-        resize()
-        draw(t)
-      },
-      play() {
-        if (motion.matches) return false
-        hold = null
-        start = performance.now()
-        raf = requestAnimationFrame(loop)
-        return true
-      },
-    }
+    const stage = document.getElementById("hero-stage")
+    if (stage) mountHeroSlides(stage)
   </script>
 </body>
 </html>
