@@ -429,17 +429,36 @@
       .nav-panel { margin-left: -1.15rem; margin-right: -1.15rem; padding-left: 1.15rem; padding-right: 1.15rem; }
       .site-footer { padding: 2rem 1.15rem 3rem; }
       .hero-shell {
+        display: grid;
         grid-template-columns: 1fr;
+        grid-template-areas:
+          "lead"
+          "stage"
+          "after";
         min-height: auto;
-        padding: 8vh 1.15rem 2vh;
-        gap: 1.5rem 0;
+        padding: max(12px, 2.5dvh) 1.15rem 1.5rem;
+        gap: 1rem 0;
+        align-items: stretch;
       }
+      .hero-copy { display: contents; }
+      .hero-copy__lead { grid-area: lead; }
+      .hero-stage { grid-area: stage; }
+      .hero-copy__after { grid-area: after; }
+      .hero-shell .kicker { margin-bottom: 0.55rem; }
+      .hero-shell .promise { margin-top: 0.65rem; }
+      .hero-shell .lede {
+        margin-top: 0.35rem;
+        font-size: 0.98rem;
+      }
+      .hero-shell .cta-row { margin-top: 1.1rem; }
       .hero-stage {
-        min-height: 42vh;
+        min-height: min(48dvh, 24rem);
       }
       .wave-hero__shell {
-        min-height: 36vh;
+        min-height: min(44dvh, 21rem);
         max-width: none;
+        aspect-ratio: 5 / 3;
+        max-height: min(48dvh, 22rem);
       }
       .wave-hero__side {
         position: static;
@@ -457,7 +476,11 @@
       }
       .story { padding: 0 1.15rem 12vh; }
       .steps { grid-template-columns: 1fr; gap: 1.25rem; }
-      h1 { font-size: clamp(3.4rem, 18vw, 4.8rem); }
+      .hero-shell h1 { font-size: clamp(2.35rem, 11vw, 3rem); }
+      .hero-shell .promise {
+        font-size: clamp(1.2rem, 4.5vw, 1.45rem);
+        max-width: 22ch;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -500,14 +523,18 @@
   <main id="story">
     <section class="hero-shell" aria-labelledby="product">
       <div class="hero-copy">
-        <p class="sr-only">A symmetric waveform beside the headline reveals debate-era photographs between vertical bars. The text is the product.</p>
-        <p class="kicker">Spoken audio</p>
-        <h1 id="product">CNTXT</h1>
-        <p class="promise">Live context for spoken content.</p>
-        <p class="lede">Transcription becomes claims, research attaches citations, and you browse topic pages instead of a flat transcript.</p>
-        <div class="cta-row">
-          <a class="btn btn-play" href="play/">Play the debate</a>
-          <a class="quiet" href="#today">Other ways to try</a>
+        <div class="hero-copy__lead">
+          <p class="sr-only">A symmetric waveform beside the headline reveals debate-era photographs between vertical bars. The text is the product.</p>
+          <p class="kicker">Spoken audio</p>
+          <h1 id="product">CNTXT</h1>
+          <p class="promise">Live context for spoken content.</p>
+        </div>
+        <div class="hero-copy__after">
+          <p class="lede">Transcription becomes claims, research attaches citations, and you browse topic pages instead of a flat transcript.</p>
+          <div class="cta-row">
+            <a class="btn btn-play" href="play/">Play the debate</a>
+            <a class="quiet" href="#today">Other ways to try</a>
+          </div>
         </div>
       </div>
       <div class="hero-stage" id="hero-stage" aria-hidden="true"></div>

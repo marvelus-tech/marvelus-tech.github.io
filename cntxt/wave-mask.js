@@ -29,7 +29,9 @@ export const HERO_FRAMES = [
   },
 ]
 
-const BAR_COUNT = 72
+function barCountForWidth(px) {
+  return px < 420 ? 48 : 72
+}
 const CROSSFADE_MS = 5200
 const PAPER = "#f7f4ee"
 const INK = "rgba(28, 25, 21, 0.92)"
@@ -94,6 +96,7 @@ export function mountWaveHero(root, options = {}) {
   let width = 0
   let height = 0
   let dpr = 1
+  let barCount = barCountForWidth(window.innerWidth)
 
   if (topicLabel) topicLabel.textContent = HERO_FRAMES[0].topic
 
@@ -101,6 +104,7 @@ export function mountWaveHero(root, options = {}) {
     const rect = shell.getBoundingClientRect()
     width = Math.max(1, Math.floor(rect.width))
     height = Math.max(1, Math.floor(rect.height))
+    barCount = barCountForWidth(width)
     dpr = Math.min(2, window.devicePixelRatio || 1)
     canvas.width = Math.floor(width * dpr)
     canvas.height = Math.floor(height * dpr)
@@ -198,7 +202,7 @@ export function mountWaveHero(root, options = {}) {
   }
 
   function ampsForTime(t) {
-    const subset = subsampleAmps(wave, follower, t, BAR_COUNT)
+    const subset = subsampleAmps(wave, follower, t, barCount)
     return subset
   }
 
@@ -226,7 +230,7 @@ export function mountWaveHero(root, options = {}) {
 
     ctx.fillStyle = PAPER
     ctx.fillRect(0, 0, width, height)
-    drawSymmetricBars(ctx, amps, width, height, BAR_COUNT, {
+    drawSymmetricBars(ctx, amps, width, height, barCount, {
       imageA: imgA,
       imageB: reduced ? null : imgB,
       blend: reduced ? 0 : blend,
