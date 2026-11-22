@@ -14,15 +14,11 @@
   <meta name="twitter:title" content="CNTXT">
   <meta name="twitter:description" content="Spoken audio to cited topic pages. Open the 1992 debate demo.">
   <meta name="theme-color" content="#f7f4ee">
+  <link rel="stylesheet" href="shared.css">
   <style>
     :root {
-      --paper: #f7f4ee;
-      --ink: #1c1915;
-      --muted: #4e4942;
-      --line: rgba(28, 25, 21, 0.14);
-      --sans: "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", system-ui, sans-serif;
-      --mono: "Cascadia Mono", "Segoe UI Mono", ui-monospace, "Liberation Mono", monospace;
       --slide-blur-far: 6px;
+      --cntxt-gutter: clamp(1.15rem, 6vw, 2rem);
     }
 
     * { box-sizing: border-box; }
@@ -166,30 +162,6 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 0.85rem;
-    }
-    .site-footer {
-      margin: 0;
-      padding: 2.5rem 6vw 4rem;
-      border-top: 1px solid var(--line);
-    }
-    .site-footer__nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem 1.35rem;
-    }
-    .site-footer__nav a {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: var(--muted);
-    }
-    .site-footer__nav a:hover { color: var(--ink); }
-    .site-footer__note {
-      margin: 1.1rem 0 0;
-      font-size: 0.88rem;
-      color: var(--muted);
     }
 
     .hero-shell {
@@ -380,12 +352,11 @@
       .top__actions { gap: 0; }
     }
     @media (max-width: 720px) {
-      .top, .story, .site-footer { width: auto; margin-left: 0; }
+      .top, .story { width: auto; margin-left: 0; }
       .top { padding: 0.85rem 1.15rem; }
       .nav--desktop { display: none; }
       .nav-toggle { display: inline-flex; }
       .nav-panel { margin-left: -1.15rem; margin-right: -1.15rem; padding-left: 1.15rem; padding-right: 1.15rem; }
-      .site-footer { padding: 2rem 1.15rem 3rem; }
       .hero-shell {
         display: grid;
         grid-template-columns: 1fr;
@@ -441,7 +412,7 @@
     }
   </style>
 </head>
-<body>
+<body class="cntxt-shell">
   <a class="skip" href="#how">Skip to content</a>
   <header class="top">
     <div class="top__bar">
@@ -525,13 +496,19 @@
       <p class="next"><strong>Coming next:</strong> file upload and microphone recording on the play page.</p>
     </div>
   </main>
-  <footer class="site-footer">
-    <nav class="site-footer__nav" aria-label="Footer">
-      <a href="demo/deck.html">Sample deck</a>
-      <a href="https://github.com/marvelus-tech/contxt" rel="noreferrer">GitHub</a>
-      <a href="https://github.com/marvelus-tech/contxt/blob/main/docs/REPORT.md" rel="noreferrer">1992 report</a>
-    </nav>
-    <p class="site-footer__note">CNTXT turns spoken audio into checkable claims and cited topic pages.</p>
+  <footer class="cntxt-foot">
+    <div class="cntxt-foot__inner">
+      <nav aria-label="Footer">
+        <ul class="cntxt-foot__nav">
+          <li><a href="sessions/">Sessions</a></li>
+          <li><a href="sessions/1992-debate/">Demo</a></li>
+          <li><a href="demo/deck.html">Sample deck</a></li>
+          <li><a href="https://github.com/marvelus-tech/contxt" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://github.com/marvelus-tech/contxt/blob/main/docs/REPORT.md" rel="noreferrer">1992 report</a></li>
+        </ul>
+      </nav>
+      <p class="cntxt-foot__note">CNTXT turns spoken audio into checkable claims and cited topic pages.</p>
+    </div>
   </footer>
   <script type="module">
     import { mountWaveHero } from "./wave-mask.js"

@@ -10,9 +10,11 @@
   <link rel="stylesheet" href="../../shared.css">
   <style>
     .live {
-      width: min(42rem, calc(100% - 2.5rem));
+      width: 100%;
+      max-width: var(--cntxt-measure);
       margin: 0 auto;
-      padding: 1.5rem 0 3rem;
+      padding: 1.5rem var(--cntxt-gutter) 3rem;
+      box-sizing: border-box;
     }
     h1 { font-size: clamp(1.4rem, 3.5vw, 1.85rem); font-weight: 700; letter-spacing: -0.02em; }
     .lede { margin-top: 0.5rem; color: var(--muted); }
@@ -32,14 +34,19 @@
     .meter span { display: block; height: 100%; width: 0%; background: var(--ink); transition: width 0.08s linear; }
   </style>
 </head>
-<body>
+<body class="cntxt-shell">
   <header class="cntxt-top">
-    <a class="cntxt-brand" href="../../">CNTXT</a>
-    <div class="cntxt-top__actions">
-      <a class="cntxt-link" href="../">Sessions</a>
+    <div class="cntxt-top__inner">
+      <a class="cntxt-brand" href="../../">CNTXT</a>
+      <nav aria-label="Record">
+        <ul class="cntxt-top__nav">
+          <li><a class="cntxt-link" href="../../">Home</a></li>
+          <li><a class="cntxt-link" href="../">Sessions</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
-  <main class="live">
+  <main class="cntxt-main live">
     <h1 id="session-live-title">Live session</h1>
     <p class="lede">Speak when ready. Finished sentences feed the live pipeline when a speech token is connected.</p>
     <div class="mic-panel">
@@ -55,7 +62,16 @@
     </div>
   </main>
   <footer class="cntxt-foot">
-    <p><a href="../">Back to sessions</a></p>
+    <div class="cntxt-foot__inner">
+      <nav aria-label="Footer">
+        <ul class="cntxt-foot__nav">
+          <li><a href="../../">Home</a></li>
+          <li><a href="../">Sessions</a></li>
+          <li><a href="../1992-debate/">Demo</a></li>
+          <li><a href="https://github.com/marvelus-tech/contxt" rel="noreferrer">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
   <script type="module">
     const params = new URLSearchParams(location.search);

@@ -10,9 +10,11 @@
   <link rel="stylesheet" href="../shared.css">
   <style>
     .hub {
-      width: min(42rem, calc(100% - 2.5rem));
+      width: 100%;
+      max-width: var(--cntxt-measure);
       margin: 0 auto;
-      padding: 2rem 0 4rem;
+      padding: 2rem var(--cntxt-gutter) 4rem;
+      box-sizing: border-box;
     }
     h1 {
       font-size: clamp(1.75rem, 4vw, 2.25rem);
@@ -98,16 +100,22 @@
     }
   </style>
 </head>
-<body>
+<body class="cntxt-shell">
   <a class="skip" href="#sessions">Skip to sessions</a>
   <header class="cntxt-top">
-    <a class="cntxt-brand" href="../">CNTXT</a>
-    <div class="cntxt-top__actions">
-      <a class="cntxt-link" href="../">Home</a>
+    <div class="cntxt-top__inner">
+      <a class="cntxt-brand" href="../">CNTXT</a>
+      <nav aria-label="Sessions">
+        <ul class="cntxt-top__nav">
+          <li><a class="cntxt-link" href="../">Home</a></li>
+          <li><a class="cntxt-link" href="./1992-debate/">Demo</a></li>
+          <li><a class="cntxt-link" href="./" aria-current="page">Sessions</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main class="hub">
+  <main class="cntxt-main hub">
     <h1>Sessions</h1>
     <p class="lede">Name a session, record or upload audio, and CNTXT turns it into cited topic pages you can browse like a presentation.</p>
 
@@ -124,20 +132,28 @@
       <p class="toast" id="record-toast" hidden role="status"></p>
     </section>
 
-  </main>
-
-  <section class="hub" id="sessions" aria-labelledby="list-heading" style="padding-top:0">
+    <section class="hub" id="sessions" aria-labelledby="list-heading" style="padding-top:0;padding-bottom:2rem">
     <ul class="session-list">
       <li>
         <h2 id="list-heading">Your sessions</h2>
         <ul id="session-list" style="list-style:none;padding:0"></ul>
       </li>
     </ul>
-  </section>
+    </section>
+  </main>
 
   <footer class="cntxt-foot">
-    <p>Demo session uses a public-domain 1992 debate clip.</p>
-    <p><a href="../">CNTXT home</a> · <a href="/">MarvelUs</a></p>
+    <div class="cntxt-foot__inner">
+      <nav aria-label="Footer">
+        <ul class="cntxt-foot__nav">
+          <li><a href="../">Home</a></li>
+          <li><a href="./">Sessions</a></li>
+          <li><a href="./1992-debate/">Demo</a></li>
+          <li><a href="https://github.com/marvelus-tech/contxt" rel="noreferrer">GitHub</a></li>
+        </ul>
+      </nav>
+      <p class="cntxt-foot__note">Demo session uses a public-domain 1992 debate clip.</p>
+    </div>
   </footer>
 
   <script type="module">
