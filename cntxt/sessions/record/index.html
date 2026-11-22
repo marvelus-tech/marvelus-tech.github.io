@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNTXT | Live session</title>
+  <meta name="description" content="Record a live CNTXT session. Finished sentences become cited topics while you speak.">
+  <link rel="canonical" href="https://marvelus-tech.github.io/cntxt/sessions/record/">
+  <meta name="theme-color" content="#f7f4ee">
+  <link rel="stylesheet" href="../../shared.css">
+  <style>
+    .live {
+      width: min(42rem, calc(100% - 2.5rem));
+      margin: 0 auto;
+      padding: 1.5rem 0 3rem;
+    }
+    h1 { font-size: clamp(1.4rem, 3.5vw, 1.85rem); font-weight: 700; letter-spacing: -0.02em; }
+    .lede { margin-top: 0.5rem; color: var(--muted); }
+    .mic-panel { margin-top: 1.25rem; padding: 1rem; border: 1px solid var(--line); background: var(--card); }
+    .mic-button {
+      font: inherit; font-weight: 650; width: 100%;
+      min-height: 3rem; border: none; background: var(--ink); color: var(--paper); cursor: pointer;
+    }
+    .mic-button[aria-pressed="true"] { background: #2a251f; }
+    .mic-status, .partial { margin-top: 0.65rem; font-size: 0.92rem; color: var(--muted); }
+    .transcript { margin: 0.75rem 0 0; padding-left: 1.1rem; max-height: 40vh; overflow-y: auto; }
+    .heard-heading {
+      font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin-top: 1rem;
+    }
+    .meter { height: 4px; background: var(--line); margin-top: 0.5rem; }
+    .meter span { display: block; height: 100%; width: 0%; background: var(--ink); transition: width 0.08s linear; }
+  </style>
+</head>
+<body>
+  <header class="cntxt-top">
+    <a class="cntxt-brand" href="../../">CNTXT</a>
+    <div class="cntxt-top__actions">
+      <a class="cntxt-link" href="../">Sessions</a>
+    </div>
+  </header>
+  <main class="live">
+    <h1 id="session-live-title">Live session</h1>
+    <p class="lede">Speak when ready. Finished sentences feed the live pipeline when a speech token is connected.</p>
+    <div class="mic-panel">
+      <button type="button" id="btn-mic" class="mic-button" aria-pressed="false">
+        <span id="mic-label">Start recording</span>
+      </button>
+      <div class="meter" aria-hidden="true"><span id="mic-meter"></span></div>
+      <p id="mic-status" class="mic-status" role="status">Checking speech token…</p>
+      <p id="partial" class="partial">Waiting for speech.</p>
+      <p id="heard-live" class="sr-only" aria-live="polite"></p>
+      <h2 class="heard-heading">Heard</h2>
+      <ol id="transcript" class="transcript"></ol>
+    </div>
+  </main>
+  <footer class="cntxt-foot">
+    <p><a href="../">Back to sessions</a></p>
+  </footer>
+  <script type="module">
+    const params = new URLSearchParams(location.search);
+    const name = params.get("name")?.trim();
+    if (name) {
+      document.getElementById("session-live-title").textContent = name;
+      document.title = `CNTXT | ${name}`;
+    }
+    const config = await fetch("./mic-config.json").then((r) => r.json()).catch(() => ({ tokenUrl: "" }));
+    if (!config.tokenUrl) {
+      document.getElementById("mic-status").textContent =
+        "Live speech is not connected on GitHub Pages yet. Deploy the mic Worker and set tokenUrl in sessions/record/mic-config.json (see contxt docs/DEPLOY-MIC.md).";
+      document.getElementById("btn-mic").disabled = true;
+    } else {
+      await import("./record.js");
+    }
+  </script>
+</body>
+</html>

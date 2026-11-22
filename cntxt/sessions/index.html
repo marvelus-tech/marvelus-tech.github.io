@@ -117,8 +117,10 @@
       <input id="session-name" type="text" name="sessionName" placeholder="e.g. Team standup, Nov 22" autocomplete="off" required>
       <div class="new-session__actions">
         <button type="button" class="btn-primary" id="btn-record">Record</button>
+        <button type="button" class="btn-secondary" id="btn-upload">Upload audio</button>
         <a class="btn-secondary" href="./1992-debate/" style="display:inline-flex;align-items:center;text-decoration:none">Open demo</a>
       </div>
+      <input type="file" id="upload-input" class="sr-only" accept="audio/*,.opus,.wav,.mp3,.m4a,.webm">
       <p class="toast" id="record-toast" hidden role="status"></p>
     </section>
 
@@ -139,8 +141,8 @@
   </footer>
 
   <script type="module">
-    const RECORD_MSG =
-      "Recording and saving sessions need storage and sign-in (coming soon). Use the demo session to explore cited topics today.";
+    const UPLOAD_MSG =
+      "To publish an uploaded recording as a session, run contxt bake:session on your machine (see marvelus-tech/contxt README). Hosted upload is coming with session storage.";
 
     document.getElementById("btn-record").addEventListener("click", () => {
       const name = document.getElementById("session-name").value.trim();
@@ -151,8 +153,27 @@
         document.getElementById("session-name").focus();
         return;
       }
+      location.href = `./record/?name=${encodeURIComponent(name)}`;
+    });
+
+    document.getElementById("btn-upload").addEventListener("click", () => {
+      const name = document.getElementById("session-name").value.trim();
+      const toast = document.getElementById("record-toast");
+      if (!name) {
+        toast.hidden = false;
+        toast.textContent = "Name your session before uploading.";
+        return;
+      }
+      document.getElementById("upload-input").click();
+    });
+
+    document.getElementById("upload-input").addEventListener("change", (event) => {
+      const file = event.target.files?.[0];
+      const toast = document.getElementById("record-toast");
+      if (!file) return;
       toast.hidden = false;
-      toast.textContent = RECORD_MSG;
+      toast.textContent = `${UPLOAD_MSG} Selected: ${file.name}.`;
+      event.target.value = "";
     });
 
     const listEl = document.getElementById("session-list");
