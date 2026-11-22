@@ -63,24 +63,11 @@ export function mountWaveHero(root, options = {}) {
   caption.className = "wave-hero__caption"
   caption.textContent = HERO_FRAMES[0].caption
 
-  const side = document.createElement("aside")
-  side.className = "wave-hero__side"
-  side.setAttribute("aria-hidden", "true")
-  side.innerHTML = `
-    <p class="wave-hero__tag wave-hero__tag--rec"><span>REC</span><span class="wave-hero__dot" aria-hidden="true"></span></p>
-    <canvas class="wave-hero__mini" width="48" height="120"></canvas>
-    <p class="wave-hero__tag wave-hero__tag--topic"><span>TOPIC</span><span class="wave-hero__topic-label"></span></p>
-  `
-  const topicLabel = side.querySelector(".wave-hero__topic-label")
-  const miniCanvas = /** @type {HTMLCanvasElement} */ (side.querySelector(".wave-hero__mini"))
-
   root.appendChild(shell)
   root.appendChild(caption)
-  root.appendChild(side)
 
   const ctx = canvas.getContext("2d", { alpha: false })
-  const miniCtx = miniCanvas.getContext("2d", { alpha: false })
-  if (!ctx || !miniCtx) return () => {}
+  if (!ctx) return () => {}
 
   const wave = createWave(DEFAULT_SEED ^ 0x9e37)
   const follower = createFollower(wave)
@@ -97,8 +84,6 @@ export function mountWaveHero(root, options = {}) {
   let height = 0
   let dpr = 1
   let barCount = barCountForWidth(window.innerWidth)
-
-  if (topicLabel) topicLabel.textContent = HERO_FRAMES[0].topic
 
   const onResize = () => {
     const rect = shell.getBoundingClientRect()
@@ -217,7 +202,6 @@ export function mountWaveHero(root, options = {}) {
         lastCrossfade = nowMs
         blend = 0
         caption.textContent = HERO_FRAMES[nextFrameIndex].caption
-        if (topicLabel) topicLabel.textContent = HERO_FRAMES[nextFrameIndex].topic
       } else {
         const phase = (nowMs - lastCrossfade) / CROSSFADE_MS
         blend = Math.min(1, Math.max(0, (phase - 0.55) / 0.35))
@@ -237,8 +221,6 @@ export function mountWaveHero(root, options = {}) {
       gap: width < 420 ? 2 : 3,
     })
 
-    const miniAmps = amps.filter((_, i) => i % 6 === 0).slice(0, 16)
-    drawMini(miniCtx, miniAmps, 48, 120)
   }
 
   function loop(now) {
@@ -273,31 +255,4 @@ export function mountWaveHero(root, options = {}) {
     cancelAnimationFrame(raf)
     ro.disconnect()
   }
-}
-
-/**
- * @param {CanvasRenderingContext2D} c
- * @param {number[]} amps
- * @param {number} w
- * @param {number} h
- */
-function drawMini(c, amps, w, h) {
-  c.fillStyle = PAPER
-  c.fillRect(0, 0, w, h)
-  const count = amps.length
-  const gap = 2
-  const barW = (w - gap * (count - 1)) / count
-  const cy = h / 2
-  const maxHalf = h * 0.44
-  c.fillStyle = "rgba(28, 25, 21, 0.35)"
-  for (let i = 0; i < count; i++) {
-    const x = i * (barW + gap)
-    const half = Math.max(1.5, (amps[i] ?? 0) * maxHalf)
-    c.fillRect(x, cy - half, barW, half * 2)
-  }
-  c.strokeStyle = "rgba(28, 25, 21, 0.12)"
-  c.beginPath()
-  c.moveTo(0, cy)
-  c.lineTo(w, cy)
-  c.stroke()
 }

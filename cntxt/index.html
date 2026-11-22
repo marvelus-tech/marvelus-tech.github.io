@@ -270,8 +270,9 @@
       z-index: 1;
       min-height: min(72vh, 36rem);
       overflow: hidden;
-      border: 1px solid var(--line);
-      background: var(--paper);
+      margin: 0;
+      border: none;
+      background: transparent;
     }
     .wave-hero {
       position: relative;
@@ -281,15 +282,14 @@
       justify-content: center;
       min-height: inherit;
       height: 100%;
-      padding: 0.75rem 0.5rem 0.35rem;
+      padding: 0;
     }
     .wave-hero__shell {
       position: relative;
       flex: 1 1 auto;
       min-height: min(58vh, 28rem);
-      margin: 0 auto;
       width: 100%;
-      max-width: 36rem;
+      max-width: none;
     }
     .wave-hero__canvas {
       position: absolute;
@@ -299,8 +299,8 @@
       height: 100%;
     }
     .wave-hero__caption {
-      margin: 0.65rem 0 0;
-      padding: 0 0.35rem;
+      margin: 0.5rem 0 0;
+      padding: 0;
       font-family: var(--mono);
       font-size: 0.68rem;
       letter-spacing: 0.14em;
@@ -308,48 +308,6 @@
       text-align: center;
       color: var(--muted);
       transition: opacity 0.4s ease;
-    }
-    .wave-hero__side {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 0.55rem;
-      padding-right: 0.15rem;
-      pointer-events: none;
-    }
-    .wave-hero__tag {
-      display: flex;
-      align-items: center;
-      gap: 0.45rem;
-      margin: 0;
-      font-family: var(--mono);
-      font-size: 0.62rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .wave-hero__dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #b33a3a;
-      animation: wave-rec-pulse 1.4s ease-in-out infinite;
-    }
-    @keyframes wave-rec-pulse {
-      0%, 100% { opacity: 0.35; }
-      50% { opacity: 1; }
-    }
-    .wave-hero__topic-label {
-      font-weight: 650;
-      color: var(--ink);
-    }
-    .wave-hero__mini {
-      display: block;
-      border: 1px solid var(--line);
     }
 
     .story {
@@ -452,27 +410,18 @@
       }
       .hero-shell .cta-row { margin-top: 1.1rem; }
       .hero-stage {
+        width: calc(100% + 2.3rem);
+        margin-left: -1.15rem;
+        margin-right: -1.15rem;
         min-height: min(48dvh, 24rem);
       }
       .wave-hero__shell {
         min-height: min(44dvh, 21rem);
-        max-width: none;
         aspect-ratio: 5 / 3;
         max-height: min(48dvh, 22rem);
       }
-      .wave-hero__side {
-        position: static;
-        transform: none;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin-top: 0.35rem;
-        padding: 0 0.15rem;
-      }
-      .wave-hero__mini {
-        width: 40px;
-        height: 64px;
+      .wave-hero__caption {
+        padding: 0 1.15rem;
       }
       .story { padding: 0 1.15rem 12vh; }
       .steps { grid-template-columns: 1fr; gap: 1.25rem; }
@@ -485,7 +434,6 @@
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
-      .wave-hero__dot { animation: none; opacity: 0.65; }
     }
     @media (prefers-contrast: more) {
       .lede, .steps p, .try, .next, .kicker, .hero-stage__label, h2 { color: var(--ink); }
