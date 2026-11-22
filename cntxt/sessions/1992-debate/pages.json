@@ -1,0 +1,1766 @@
+[
+  {
+    "id": "page-topic-1",
+    "topicId": "topic-1",
+    "title": "Think Principal Issue",
+    "currentClaim": "I think the principal issue that separates me is that 5.5 million people came together on their own and put me on the ballot.",
+    "currentSpeaker": "Ross Perot",
+    "claimIds": [
+      "claim-1"
+    ],
+    "claims": [
+      {
+        "id": "claim-1",
+        "text": "I think the principal issue that separates me is that 5.5 million people came together on their own and put me on the ballot.",
+        "startMs": 106704,
+        "speaker": "Ross Perot"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The FEC explains how candidates qualify and report campaign funds.",
+        "sourceUrl": "https://www.fec.gov/introduction-campaign-finance/how-to-become-a-candidate/"
+      },
+      {
+        "text": "Perot ran in 1992 as an independent after a nationwide petition drive.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      }
+    ],
+    "createdAtMs": 113690,
+    "updatedAtMs": 113690
+  },
+  {
+    "id": "page-topic-2",
+    "topicId": "topic-2",
+    "title": "Not Put Ballot",
+    "currentClaim": "I was not put on the ballot by either of the two parties.",
+    "currentSpeaker": "Ross Perot",
+    "claimIds": [
+      "claim-2"
+    ],
+    "claims": [
+      {
+        "id": "claim-2",
+        "text": "I was not put on the ballot by either of the two parties.",
+        "startMs": 114734,
+        "speaker": "Ross Perot"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The FEC explains how candidates qualify and report campaign funds.",
+        "sourceUrl": "https://www.fec.gov/introduction-campaign-finance/how-to-become-a-candidate/"
+      },
+      {
+        "text": "Perot ran in 1992 as an independent after a nationwide petition drive.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      }
+    ],
+    "createdAtMs": 116886,
+    "updatedAtMs": 116886
+  },
+  {
+    "id": "page-topic-3",
+    "topicId": "topic-3",
+    "title": "Not Put Ballot",
+    "currentClaim": "I was not put on the ballot by any PAC money, by any foreign lobbyist money, by any special interest money.",
+    "currentSpeaker": "Ross Perot",
+    "claimIds": [
+      "claim-3"
+    ],
+    "claims": [
+      {
+        "id": "claim-3",
+        "text": "I was not put on the ballot by any PAC money, by any foreign lobbyist money, by any special interest money.",
+        "startMs": 117304,
+        "speaker": "Ross Perot"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The Soviet Union dissolved in December 1991, months before this debate.",
+        "sourceUrl": "https://history.state.gov/milestones/1989-1992/collapse-soviet-union"
+      },
+      {
+        "text": "Bush argued that ending the Cold War reduced the fear of nuclear conflict.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      }
+    ],
+    "createdAtMs": 122748,
+    "updatedAtMs": 122748
+  },
+  {
+    "id": "page-topic-4",
+    "topicId": "topic-4",
+    "title": "This Movement That",
+    "currentClaim": "This is a movement that came from the people.",
+    "currentSpeaker": "Ross Perot",
+    "claimIds": [
+      "claim-4"
+    ],
+    "claims": [
+      {
+        "id": "claim-4",
+        "text": "This is a movement that came from the people.",
+        "startMs": 123423,
+        "speaker": "Ross Perot"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 125880,
+    "updatedAtMs": 125880
+  },
+  {
+    "id": "page-topic-5",
+    "topicId": "topic-5",
+    "title": "This Way Framers",
+    "currentClaim": "This is the way the framers of the Constitution intended our government to be, a government that comes from the people.",
+    "currentSpeaker": "Ross Perot",
+    "claimIds": [
+      "claim-5"
+    ],
+    "claims": [
+      {
+        "id": "claim-5",
+        "text": "This is the way the framers of the Constitution intended our government to be, a government that comes from the people.",
+        "startMs": 126458,
+        "speaker": "Ross Perot"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The National Archives holds the U.S. Constitution and founding documents.",
+        "sourceUrl": "https://www.archives.gov/founding-docs/constitution"
+      }
+    ],
+    "createdAtMs": 132223,
+    "updatedAtMs": 132223
+  },
+  {
+    "id": "page-topic-6",
+    "topicId": "topic-6",
+    "title": "Over Time Have",
+    "currentClaim": "Over time, we have developed a government that comes at the people, that comes from the top down, where the people are more or less treated as objects to be programmed during the campaign with commercials and media events and fear messages and personal attacks and things of that nature.",
+    "currentSpeaker": "Ross Perot",
+    "claimIds": [
+      "claim-6"
+    ],
+    "claims": [
+      {
+        "id": "claim-6",
+        "text": "Over time, we have developed a government that comes at the people, that comes from the top down, where the people are more or less treated as objects to be programmed during the campaign with commercials and media events and fear messages and personal attacks and things of that nature.",
+        "startMs": 133283,
+        "speaker": "Ross Perot"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 149905,
+    "updatedAtMs": 149905
+  },
+  {
+    "id": "page-topic-7",
+    "topicId": "topic-7",
+    "title": "Thing That Separates",
+    "currentClaim": "The thing that separates my candidacy and makes it unique is that this came from millions of people in 50 states all over this country who wanted a candidate that worked and belonged to nobody but them.",
+    "currentSpeaker": "Ross Perot",
+    "claimIds": [
+      "claim-7"
+    ],
+    "claims": [
+      {
+        "id": "claim-7",
+        "text": "The thing that separates my candidacy and makes it unique is that this came from millions of people in 50 states all over this country who wanted a candidate that worked and belonged to nobody but them.",
+        "startMs": 150949,
+        "speaker": "Ross Perot"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The FEC explains how candidates qualify and report campaign funds.",
+        "sourceUrl": "https://www.fec.gov/introduction-campaign-finance/how-to-become-a-candidate/"
+      },
+      {
+        "text": "Perot ran in 1992 as an independent after a nationwide petition drive.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      }
+    ],
+    "createdAtMs": 163427,
+    "updatedAtMs": 163427
+  },
+  {
+    "id": "page-topic-8",
+    "topicId": "topic-8",
+    "title": "Tonight Say President",
+    "currentClaim": "Tonight I say to the president, Mr.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-12"
+    ],
+    "claims": [
+      {
+        "id": "claim-12",
+        "text": "Tonight I say to the president, Mr.",
+        "startMs": 195377,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 198444,
+    "updatedAtMs": 198444
+  },
+  {
+    "id": "page-topic-9",
+    "topicId": "topic-9",
+    "title": "Bush Years You",
+    "currentClaim": "Bush, for 12 years you've had it your way, you've had your chance, and it didn't work.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-13"
+    ],
+    "claims": [
+      {
+        "id": "claim-13",
+        "text": "Bush, for 12 years you've had it your way, you've had your chance, and it didn't work.",
+        "startMs": 198492,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 204995,
+    "updatedAtMs": 204995
+  },
+  {
+    "id": "page-topic-10",
+    "topicId": "topic-10",
+    "title": "Saw That Message",
+    "currentClaim": "We saw that message in the late '70s, and we heard a lot about change.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-20"
+    ],
+    "claims": [
+      {
+        "id": "claim-20",
+        "text": "We saw that message in the late '70s, and we heard a lot about change.",
+        "startMs": 240712,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 243957,
+    "updatedAtMs": 243957
+  },
+  {
+    "id": "page-topic-11",
+    "topicId": "topic-11",
+    "title": "Misery Index Went",
+    "currentClaim": "The misery index went right through the roof.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-21"
+    ],
+    "claims": [
+      {
+        "id": "claim-21",
+        "text": "The misery index went right through the roof.",
+        "startMs": 244005,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The misery index is the sum of the unemployment rate and the inflation rate.",
+        "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE"
+      },
+      {
+        "text": "CPI-U is the standard BLS inflation series used in that calculation.",
+        "sourceUrl": "https://www.bls.gov/cpi/"
+      }
+    ],
+    "createdAtMs": 246655,
+    "updatedAtMs": 246655
+  },
+  {
+    "id": "page-topic-12",
+    "topicId": "topic-12",
+    "title": "Way Going Get",
+    "currentClaim": "And the way we're going to get it done is we're going to have a brand-new Congress.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-23"
+    ],
+    "claims": [
+      {
+        "id": "claim-23",
+        "text": "And the way we're going to get it done is we're going to have a brand-new Congress.",
+        "startMs": 251010,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 254769,
+    "updatedAtMs": 254769
+  },
+  {
+    "id": "page-topic-13",
+    "topicId": "topic-13",
+    "title": "Lot Them Thrown",
+    "currentClaim": "A lot of them are thrown out because of all the scandals.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-24"
+    ],
+    "claims": [
+      {
+        "id": "claim-24",
+        "text": "A lot of them are thrown out because of all the scandals.",
+        "startMs": 255107,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 257380,
+    "updatedAtMs": 257380
+  },
+  {
+    "id": "page-topic-14",
+    "topicId": "topic-14",
+    "title": "Worked Hard Create",
+    "currentClaim": "I've worked hard to create good jobs and to educate people.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-29"
+    ],
+    "claims": [
+      {
+        "id": "claim-29",
+        "text": "I've worked hard to create good jobs and to educate people.",
+        "startMs": 291756,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The U.S. unemployment rate peaked near 7.8 percent in June 1992.",
+        "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE"
+      },
+      {
+        "text": "BLS publishes national and state employment and wage statistics.",
+        "sourceUrl": "https://www.bls.gov/data/"
+      },
+      {
+        "text": "Census Bureau poverty and income tables cover the early 1990s.",
+        "sourceUrl": "https://www.census.gov/topics/income-poverty/poverty.html"
+      }
+    ],
+    "createdAtMs": 294590,
+    "updatedAtMs": 294590
+  },
+  {
+    "id": "page-topic-15",
+    "topicId": "topic-15",
+    "title": "State Now Ranks",
+    "currentClaim": "My state now ranks first in the country in job growth this year.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-30"
+    ],
+    "claims": [
+      {
+        "id": "claim-30",
+        "text": "My state now ranks first in the country in job growth this year.",
+        "startMs": 295250,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The U.S. unemployment rate peaked near 7.8 percent in June 1992.",
+        "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE"
+      },
+      {
+        "text": "BLS publishes national and state employment and wage statistics.",
+        "sourceUrl": "https://www.bls.gov/data/"
+      },
+      {
+        "text": "Census Bureau poverty and income tables cover the early 1990s.",
+        "sourceUrl": "https://www.census.gov/topics/income-poverty/poverty.html"
+      }
+    ],
+    "createdAtMs": 299187,
+    "updatedAtMs": 299187
+  },
+  {
+    "id": "page-topic-16",
+    "topicId": "topic-16",
+    "title": "4th Income Growth",
+    "currentClaim": "4th in income growth, 4th in the reduction of poverty, 3rd in overall economic performance according to a major news magazine.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-31"
+    ],
+    "claims": [
+      {
+        "id": "claim-31",
+        "text": "4th in income growth, 4th in the reduction of poverty, 3rd in overall economic performance according to a major news magazine.",
+        "startMs": 300414,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The U.S. unemployment rate peaked near 7.8 percent in June 1992.",
+        "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE"
+      },
+      {
+        "text": "BLS publishes national and state employment and wage statistics.",
+        "sourceUrl": "https://www.bls.gov/data/"
+      },
+      {
+        "text": "Census Bureau poverty and income tables cover the early 1990s.",
+        "sourceUrl": "https://www.census.gov/topics/income-poverty/poverty.html"
+      }
+    ],
+    "createdAtMs": 307528,
+    "updatedAtMs": 307528
+  },
+  {
+    "id": "page-topic-17",
+    "topicId": "topic-17",
+    "title": "Have Gone From",
+    "currentClaim": "We have gone from first to 13th in the world in wages in the last 12 years.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-39"
+    ],
+    "claims": [
+      {
+        "id": "claim-39",
+        "text": "We have gone from first to 13th in the world in wages in the last 12 years.",
+        "startMs": 346641,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The U.S. unemployment rate peaked near 7.8 percent in June 1992.",
+        "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE"
+      },
+      {
+        "text": "BLS publishes national and state employment and wage statistics.",
+        "sourceUrl": "https://www.bls.gov/data/"
+      },
+      {
+        "text": "Census Bureau poverty and income tables cover the early 1990s.",
+        "sourceUrl": "https://www.census.gov/topics/income-poverty/poverty.html"
+      }
+    ],
+    "createdAtMs": 350238,
+    "updatedAtMs": 350238
+  },
+  {
+    "id": "page-topic-18",
+    "topicId": "topic-18",
+    "title": "Since Bush",
+    "currentClaim": "Since Mr. Bush and Mr.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-40"
+    ],
+    "claims": [
+      {
+        "id": "claim-40",
+        "text": "Since Mr. Bush and Mr.",
+        "startMs": 350640,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 351667,
+    "updatedAtMs": 351667
+  },
+  {
+    "id": "page-topic-19",
+    "topicId": "topic-19",
+    "title": "Personal Income Has",
+    "currentClaim": "Personal income has dropped while people have worked harder.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-41"
+    ],
+    "claims": [
+      {
+        "id": "claim-41",
+        "text": "Personal income has dropped while people have worked harder.",
+        "startMs": 352998,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 355486,
+    "updatedAtMs": 355486
+  },
+  {
+    "id": "page-topic-20",
+    "topicId": "topic-20",
+    "title": "Last Years There",
+    "currentClaim": "In the last 4 years, there have been twice as many bankruptcies as new jobs created.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-42"
+    ],
+    "claims": [
+      {
+        "id": "claim-42",
+        "text": "In the last 4 years, there have been twice as many bankruptcies as new jobs created.",
+        "startMs": 355871,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The U.S. unemployment rate peaked near 7.8 percent in June 1992.",
+        "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE"
+      },
+      {
+        "text": "BLS publishes national and state employment and wage statistics.",
+        "sourceUrl": "https://www.bls.gov/data/"
+      },
+      {
+        "text": "Census Bureau poverty and income tables cover the early 1990s.",
+        "sourceUrl": "https://www.census.gov/topics/income-poverty/poverty.html"
+      }
+    ],
+    "createdAtMs": 360268,
+    "updatedAtMs": 360268
+  },
+  {
+    "id": "page-topic-21",
+    "topicId": "topic-21",
+    "title": "Same Old Experience",
+    "currentClaim": "The same old experience is not relevant.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-44"
+    ],
+    "claims": [
+      {
+        "id": "claim-44",
+        "text": "The same old experience is not relevant.",
+        "startMs": 362450,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 364649,
+    "updatedAtMs": 364649
+  },
+  {
+    "id": "page-topic-22",
+    "topicId": "topic-22",
+    "title": "Living New World",
+    "currentClaim": "We're living in a new world after the Cold War, and what works in this new world is not trickle-down, not government for the benefit of the privileged few, not tax and spend, but a commitment to invest in American jobs and American education.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-45"
+    ],
+    "claims": [
+      {
+        "id": "claim-45",
+        "text": "We're living in a new world after the Cold War, and what works in this new world is not trickle-down, not government for the benefit of the privileged few, not tax and spend, but a commitment to invest in American jobs and American education.",
+        "startMs": 364777,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The U.S. unemployment rate peaked near 7.8 percent in June 1992.",
+        "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE"
+      },
+      {
+        "text": "BLS publishes national and state employment and wage statistics.",
+        "sourceUrl": "https://www.bls.gov/data/"
+      },
+      {
+        "text": "Census Bureau poverty and income tables cover the early 1990s.",
+        "sourceUrl": "https://www.census.gov/topics/income-poverty/poverty.html"
+      }
+    ],
+    "createdAtMs": 377599,
+    "updatedAtMs": 377599
+  },
+  {
+    "id": "page-topic-23",
+    "topicId": "topic-23",
+    "title": "Controlling American Health",
+    "currentClaim": "Controlling American health care costs, and bringing the American people together.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-46"
+    ],
+    "claims": [
+      {
+        "id": "claim-46",
+        "text": "Controlling American health care costs, and bringing the American people together.",
+        "startMs": 377923,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "CMS National Health Expenditure data track U.S. health spending over time.",
+        "sourceUrl": "https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data"
+      },
+      {
+        "text": "Health costs were a major 1992 campaign topic across the three candidates.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      }
+    ],
+    "createdAtMs": 381646,
+    "updatedAtMs": 381646
+  },
+  {
+    "id": "page-topic-24",
+    "topicId": "topic-24",
+    "title": "Now Know That",
+    "currentClaim": "Now, I know that the only way he can win is to make everybody believe the economy is worse than it is.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-52"
+    ],
+    "claims": [
+      {
+        "id": "claim-52",
+        "text": "Now, I know that the only way he can win is to make everybody believe the economy is worse than it is.",
+        "startMs": 410351,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 417211,
+    "updatedAtMs": 417211
+  },
+  {
+    "id": "page-topic-25",
+    "topicId": "topic-25",
+    "title": "But This Country",
+    "currentClaim": "But this country is not coming apart at the seams, for heaven's sakes.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-53"
+    ],
+    "claims": [
+      {
+        "id": "claim-53",
+        "text": "But this country is not coming apart at the seams, for heaven's sakes.",
+        "startMs": 417644,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 420706,
+    "updatedAtMs": 420706
+  },
+  {
+    "id": "page-topic-26",
+    "topicId": "topic-26",
+    "title": "United States America",
+    "currentClaim": "We're the United States of America.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-54"
+    ],
+    "claims": [
+      {
+        "id": "claim-54",
+        "text": "We're the United States of America.",
+        "startMs": 421556,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 422998,
+    "updatedAtMs": 422998
+  },
+  {
+    "id": "page-topic-27",
+    "topicId": "topic-27",
+    "title": "Spite Economic Problems",
+    "currentClaim": "We, in spite of the economic problems, we are the most respected economy around the world.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-55"
+    ],
+    "claims": [
+      {
+        "id": "claim-55",
+        "text": "We, in spite of the economic problems, we are the most respected economy around the world.",
+        "startMs": 423175,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 427872,
+    "updatedAtMs": 427872
+  },
+  {
+    "id": "page-topic-28",
+    "topicId": "topic-28",
+    "title": "Been Caught Global",
+    "currentClaim": "We've been caught up in a global slowdown.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-57"
+    ],
+    "claims": [
+      {
+        "id": "claim-57",
+        "text": "We've been caught up in a global slowdown.",
+        "startMs": 429667,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 431991,
+    "updatedAtMs": 431991
+  },
+  {
+    "id": "page-topic-29",
+    "topicId": "topic-29",
+    "title": "Yes People Hurting",
+    "currentClaim": "And yes, people are hurting.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-61"
+    ],
+    "claims": [
+      {
+        "id": "claim-61",
+        "text": "And yes, people are hurting.",
+        "startMs": 452644,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 453910,
+    "updatedAtMs": 453910
+  },
+  {
+    "id": "page-topic-30",
+    "topicId": "topic-30",
+    "title": "Don Have Any",
+    "currentClaim": "I don't have any experience in running up a $4 trillion debt.",
+    "currentSpeaker": "Ross Perot",
+    "claimIds": [
+      "claim-65"
+    ],
+    "claims": [
+      {
+        "id": "claim-65",
+        "text": "I don't have any experience in running up a $4 trillion debt.",
+        "startMs": 473259,
+        "speaker": "Ross Perot"
+      }
+    ],
+    "facts": [
+      {
+        "text": "Gross federal debt was about $4 trillion during 1992.",
+        "sourceUrl": "https://fred.stlouisfed.org/series/GFDEBTN"
+      },
+      {
+        "text": "Treasury publishes historical debt to the penny and related fiscal series.",
+        "sourceUrl": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny"
+      },
+      {
+        "text": "Ross Perot raised the debt as a central 1992 debate issue.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      }
+    ],
+    "createdAtMs": 476020,
+    "updatedAtMs": 476020
+  },
+  {
+    "id": "page-topic-31",
+    "topicId": "topic-31",
+    "title": "Don Have Any",
+    "currentClaim": "I don't have any experience in gridlock government where nobody takes responsibility for anything and everybody blames everybody else.",
+    "currentSpeaker": "Ross Perot",
+    "claimIds": [
+      "claim-66"
+    ],
+    "claims": [
+      {
+        "id": "claim-66",
+        "text": "I don't have any experience in gridlock government where nobody takes responsibility for anything and everybody blames everybody else.",
+        "startMs": 477369,
+        "speaker": "Ross Perot"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 486329,
+    "updatedAtMs": 486329
+  },
+  {
+    "id": "page-topic-32",
+    "topicId": "topic-32",
+    "title": "Got Lot Experience",
+    "currentClaim": "I've got a lot of experience not taking 10 years to solve a 10-minute problem.",
+    "currentSpeaker": "Ross Perot",
+    "claimIds": [
+      "claim-69"
+    ],
+    "claims": [
+      {
+        "id": "claim-69",
+        "text": "I've got a lot of experience not taking 10 years to solve a 10-minute problem.",
+        "startMs": 507890,
+        "speaker": "Ross Perot"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 511560,
+    "updatedAtMs": 511560
+  },
+  {
+    "id": "page-topic-33",
+    "topicId": "topic-33",
+    "title": "Said Something Other",
+    "currentClaim": "I said something the other day where I was accused of being like Joe McCarthy because I questioned— I put it this way.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-74"
+    ],
+    "claims": [
+      {
+        "id": "claim-74",
+        "text": "I said something the other day where I was accused of being like Joe McCarthy because I questioned— I put it this way.",
+        "startMs": 539076,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 549380,
+    "updatedAtMs": 549380
+  },
+  {
+    "id": "page-topic-34",
+    "topicId": "topic-34",
+    "title": "Then Maybe They",
+    "currentClaim": "I— then maybe they say, well, it was a youthful indiscretion.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-77"
+    ],
+    "claims": [
+      {
+        "id": "claim-77",
+        "text": "I— then maybe they say, well, it was a youthful indiscretion.",
+        "startMs": 560149,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 563691,
+    "updatedAtMs": 563691
+  },
+  {
+    "id": "page-topic-35",
+    "topicId": "topic-35",
+    "title": "Flying Off Aircraft",
+    "currentClaim": "I was 19 or 20 flying off an aircraft carrier, and that shaped me to be commander-in-chief of the armed forces.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-78"
+    ],
+    "claims": [
+      {
+        "id": "claim-78",
+        "text": "I was 19 or 20 flying off an aircraft carrier, and that shaped me to be commander-in-chief of the armed forces.",
+        "startMs": 564236,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 570149,
+    "updatedAtMs": 570149
+  },
+  {
+    "id": "page-topic-36",
+    "topicId": "topic-36",
+    "title": "They Get Bill",
+    "currentClaim": "They get on me, Bill's gotten on me about \"read my lips.\"",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-80"
+    ],
+    "claims": [
+      {
+        "id": "claim-80",
+        "text": "They get on me, Bill's gotten on me about \"read my lips.\"",
+        "startMs": 578274,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 581101,
+    "updatedAtMs": 581101
+  },
+  {
+    "id": "page-topic-37",
+    "topicId": "topic-37",
+    "title": "But Has Made",
+    "currentClaim": "But he has made— not admitted a mistake.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-82"
+    ],
+    "claims": [
+      {
+        "id": "claim-82",
+        "text": "But he has made— not admitted a mistake.",
+        "startMs": 583510,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 586721,
+    "updatedAtMs": 586721
+  },
+  {
+    "id": "page-topic-38",
+    "topicId": "topic-38",
+    "title": "Just Find Impossible",
+    "currentClaim": "And I just find it impossible to understand how an American can demonstrate against his own country in a foreign land, organizing demonstrations against it, when young men are held prisoner in Hanoi or kids out of the ghetto were drafted.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-83"
+    ],
+    "claims": [
+      {
+        "id": "claim-83",
+        "text": "And I just find it impossible to understand how an American can demonstrate against his own country in a foreign land, organizing demonstrations against it, when young men are held prisoner in Hanoi or kids out of the ghetto were drafted.",
+        "startMs": 587203,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The Soviet Union dissolved in December 1991, months before this debate.",
+        "sourceUrl": "https://history.state.gov/milestones/1989-1992/collapse-soviet-union"
+      },
+      {
+        "text": "Bush argued that ending the Cold War reduced the fear of nuclear conflict.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      }
+    ],
+    "createdAtMs": 602486,
+    "updatedAtMs": 602486
+  },
+  {
+    "id": "page-topic-39",
+    "topicId": "topic-39",
+    "title": "Some Say Well",
+    "currentClaim": "Some say, well, you're a little old-fashioned.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-84"
+    ],
+    "claims": [
+      {
+        "id": "claim-84",
+        "text": "Some say, well, you're a little old-fashioned.",
+        "startMs": 603114,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 604305,
+    "updatedAtMs": 604305
+  },
+  {
+    "id": "page-topic-40",
+    "topicId": "topic-40",
+    "title": "Now Whether Character",
+    "currentClaim": "Now, whether it's character or judgment, whatever it is, I have a big difference here on this issue.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-86"
+    ],
+    "claims": [
+      {
+        "id": "claim-86",
+        "text": "Now, whether it's character or judgment, whatever it is, I have a big difference here on this issue.",
+        "startMs": 608245,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 613735,
+    "updatedAtMs": 613735
+  },
+  {
+    "id": "page-topic-41",
+    "topicId": "topic-41",
+    "title": "They All Say",
+    "currentClaim": "And they all say, well, it was a long time ago.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-89"
+    ],
+    "claims": [
+      {
+        "id": "claim-89",
+        "text": "And they all say, well, it was a long time ago.",
+        "startMs": 622832,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 624461,
+    "updatedAtMs": 624461
+  },
+  {
+    "id": "page-topic-42",
+    "topicId": "topic-42",
+    "title": "Say Made Terrible",
+    "currentClaim": "Say I made a terrible mistake.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-90"
+    ],
+    "claims": [
+      {
+        "id": "claim-90",
+        "text": "Say I made a terrible mistake.",
+        "startMs": 625520,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 626985,
+    "updatedAtMs": 626985
+  },
+  {
+    "id": "page-topic-43",
+    "topicId": "topic-43",
+    "title": "Commander Chief Organizing",
+    "currentClaim": "The Commander-in-Chief was organizing demonstrations halfway around the world during another era.",
+    "currentSpeaker": "George H. W. Bush",
+    "claimIds": [
+      "claim-92"
+    ],
+    "claims": [
+      {
+        "id": "claim-92",
+        "text": "The Commander-in-Chief was organizing demonstrations halfway around the world during another era.",
+        "startMs": 640277,
+        "speaker": "George H. W. Bush"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 646430,
+    "updatedAtMs": 646430
+  },
+  {
+    "id": "page-topic-44",
+    "topicId": "topic-44",
+    "title": "When You Senior",
+    "currentClaim": "When you're a senior official in the federal government spending billions of dollars of taxpayers' money, and you're a mature individual, and you make a mistake, then that was on our ticket.",
+    "currentSpeaker": "Ross Perot",
+    "claimIds": [
+      "claim-98"
+    ],
+    "claims": [
+      {
+        "id": "claim-98",
+        "text": "When you're a senior official in the federal government spending billions of dollars of taxpayers' money, and you're a mature individual, and you make a mistake, then that was on our ticket.",
+        "startMs": 699882,
+        "speaker": "Ross Perot"
+      }
+    ],
+    "facts": [
+      {
+        "text": "Federal individual income and payroll tax rules are documented in IRS Statistics of Income.",
+        "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-historical-table-23"
+      },
+      {
+        "text": "The Tax Policy Center summarizes major 1980s and 1990s tax acts.",
+        "sourceUrl": "https://www.taxpolicycenter.org/statistics"
+      },
+      {
+        "text": "Clinton's 1992 economic plan discussed upper-income tax rates and middle-class relief.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      }
+    ],
+    "createdAtMs": 708909,
+    "updatedAtMs": 708909
+  },
+  {
+    "id": "page-topic-45",
+    "topicId": "topic-45",
+    "title": "Ross Gave Good",
+    "currentClaim": "Ross gave a good answer, but I've got to respond directly to Mr.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-102"
+    ],
+    "claims": [
+      {
+        "id": "claim-102",
+        "text": "Ross gave a good answer, but I've got to respond directly to Mr.",
+        "startMs": 744737,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 747574,
+    "updatedAtMs": 747574
+  },
+  {
+    "id": "page-topic-46",
+    "topicId": "topic-46",
+    "title": "You Have Questioned",
+    "currentClaim": "You have questioned my patriotism.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-103"
+    ],
+    "claims": [
+      {
+        "id": "claim-103",
+        "text": "You have questioned my patriotism.",
+        "startMs": 747702,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 751325,
+    "updatedAtMs": 751325
+  },
+  {
+    "id": "page-topic-47",
+    "topicId": "topic-47",
+    "title": "You Even Brought",
+    "currentClaim": "You even brought some right-wing congressmen into the White House to plot how to attack me for going to Russia in 1969, 1970.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-104"
+    ],
+    "claims": [
+      {
+        "id": "claim-104",
+        "text": "You even brought some right-wing congressmen into the White House to plot how to attack me for going to Russia in 1969, 1970.",
+        "startMs": 752047,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 759629,
+    "updatedAtMs": 759629
+  },
+  {
+    "id": "page-topic-48",
+    "topicId": "topic-48",
+    "title": "When Over 000",
+    "currentClaim": "When over 50,000 other Americans did.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-105"
+    ],
+    "claims": [
+      {
+        "id": "claim-105",
+        "text": "When over 50,000 other Americans did.",
+        "startMs": 759982,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 761796,
+    "updatedAtMs": 761796
+  },
+  {
+    "id": "page-topic-49",
+    "topicId": "topic-49",
+    "title": "Now Honor Your",
+    "currentClaim": "Now, I honor your service in World War II.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-106"
+    ],
+    "claims": [
+      {
+        "id": "claim-106",
+        "text": "Now, I honor your service in World War II.",
+        "startMs": 762310,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 764927,
+    "updatedAtMs": 764927
+  },
+  {
+    "id": "page-topic-50",
+    "topicId": "topic-50",
+    "title": "Honor Perot Service",
+    "currentClaim": "I honor Mr. Perot's service in uniform and the service of every man and woman who ever served, including Admiral Crowe, who was your Chairman of the Joint Chiefs and who's supporting me.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-107"
+    ],
+    "claims": [
+      {
+        "id": "claim-107",
+        "text": "I honor Mr. Perot's service in uniform and the service of every man and woman who ever served, including Admiral Crowe, who was your Chairman of the Joint Chiefs and who's supporting me.",
+        "startMs": 765264,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 773886,
+    "updatedAtMs": 773886
+  },
+  {
+    "id": "page-topic-51",
+    "topicId": "topic-51",
+    "title": "Senator From Connecticut",
+    "currentClaim": "And a senator from Connecticut stood up to him named Prescott Bush.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-109"
+    ],
+    "claims": [
+      {
+        "id": "claim-109",
+        "text": "And a senator from Connecticut stood up to him named Prescott Bush.",
+        "startMs": 782684,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 787444,
+    "updatedAtMs": 787444
+  },
+  {
+    "id": "page-topic-52",
+    "topicId": "topic-52",
+    "title": "Your Father Right",
+    "currentClaim": "Your father was right to stand up to Joe McCarthy.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-110"
+    ],
+    "claims": [
+      {
+        "id": "claim-110",
+        "text": "Your father was right to stand up to Joe McCarthy.",
+        "startMs": 787912,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 790206,
+    "updatedAtMs": 790206
+  },
+  {
+    "id": "page-topic-53",
+    "topicId": "topic-53",
+    "title": "Tax Increase Have",
+    "currentClaim": "My plan, notwithstanding my opponent's ad, my plan triggers in at gross incomes, family incomes of $200,000 and above.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-114",
+      "claim-118"
+    ],
+    "claims": [
+      {
+        "id": "claim-114",
+        "text": "The tax increase I have proposed triggers in at family incomes of $200,000 and above.",
+        "startMs": 829536,
+        "speaker": "Bill Clinton"
+      },
+      {
+        "id": "claim-118",
+        "text": "My plan, notwithstanding my opponent's ad, my plan triggers in at gross incomes, family incomes of $200,000 and above.",
+        "startMs": 861113,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "Federal individual income and payroll tax rules are documented in IRS Statistics of Income.",
+        "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-historical-table-23"
+      },
+      {
+        "text": "The Tax Policy Center summarizes major 1980s and 1990s tax acts.",
+        "sourceUrl": "https://www.taxpolicycenter.org/statistics"
+      },
+      {
+        "text": "Clinton's 1992 economic plan discussed upper-income tax rates and middle-class relief.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      }
+    ],
+    "createdAtMs": 834631,
+    "updatedAtMs": 868681
+  },
+  {
+    "id": "page-topic-54",
+    "topicId": "topic-54",
+    "title": "Those People Who",
+    "currentClaim": "Middle-class people, defined as people with incomes of $52,000 and down, had their incomes go down while their taxes went up in the Reagan-Bush years because of 6 increases in the payroll taxes.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-115",
+      "claim-116"
+    ],
+    "claims": [
+      {
+        "id": "claim-115",
+        "text": "Those are the people who in the 1980s had their incomes go up while their taxes went down.",
+        "startMs": 835288,
+        "speaker": "Bill Clinton"
+      },
+      {
+        "id": "claim-116",
+        "text": "Middle-class people, defined as people with incomes of $52,000 and down, had their incomes go down while their taxes went up in the Reagan-Bush years because of 6 increases in the payroll taxes.",
+        "startMs": 840818,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "Federal individual income and payroll tax rules are documented in IRS Statistics of Income.",
+        "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-historical-table-23"
+      },
+      {
+        "text": "The Tax Policy Center summarizes major 1980s and 1990s tax acts.",
+        "sourceUrl": "https://www.taxpolicycenter.org/statistics"
+      },
+      {
+        "text": "Clinton's 1992 economic plan discussed upper-income tax rates and middle-class relief.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      }
+    ],
+    "createdAtMs": 839919,
+    "updatedAtMs": 853095
+  },
+  {
+    "id": "page-topic-55",
+    "topicId": "topic-55",
+    "title": "Got Have More",
+    "currentClaim": "We've got to have no more trickle-down.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-123"
+    ],
+    "claims": [
+      {
+        "id": "claim-123",
+        "text": "We've got to have no more trickle-down.",
+        "startMs": 909442,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 911386,
+    "updatedAtMs": 911386
+  },
+  {
+    "id": "page-topic-56",
+    "topicId": "topic-56",
+    "title": "Bush Reagan But",
+    "currentClaim": "Bush and Mr. Reagan, but I don't want to have 4 years where we have no growth in the private sector, and that's what's happened in the last 4 years.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-127"
+    ],
+    "claims": [
+      {
+        "id": "claim-127",
+        "text": "Bush and Mr. Reagan, but I don't want to have 4 years where we have no growth in the private sector, and that's what's happened in the last 4 years.",
+        "startMs": 922208,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "This claim was spoken in the opening of the 11 Oct 1992 presidential debate in St. Louis.",
+        "sourceUrl": "https://www.debates.org/voter-education/debate-transcripts/october-11-1992-first-half-debate-transcript/"
+      },
+      {
+        "text": "The source recording is public domain, from the George H. W. Bush Presidential Library via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Debate_with_George_H._W._Bush,_Bill_Clinton_and_Ross_Perot_11_October_1992.webm"
+      }
+    ],
+    "createdAtMs": 928764,
+    "updatedAtMs": 928764
+  },
+  {
+    "id": "page-topic-57",
+    "topicId": "topic-57",
+    "title": "Down 000 Jobs",
+    "currentClaim": "We're down 35,000 jobs in the private sector.",
+    "currentSpeaker": "Bill Clinton",
+    "claimIds": [
+      "claim-128"
+    ],
+    "claims": [
+      {
+        "id": "claim-128",
+        "text": "We're down 35,000 jobs in the private sector.",
+        "startMs": 928812,
+        "speaker": "Bill Clinton"
+      }
+    ],
+    "facts": [
+      {
+        "text": "The U.S. unemployment rate peaked near 7.8 percent in June 1992.",
+        "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE"
+      },
+      {
+        "text": "BLS publishes national and state employment and wage statistics.",
+        "sourceUrl": "https://www.bls.gov/data/"
+      },
+      {
+        "text": "Census Bureau poverty and income tables cover the early 1990s.",
+        "sourceUrl": "https://www.census.gov/topics/income-poverty/poverty.html"
+      }
+    ],
+    "createdAtMs": 931808,
+    "updatedAtMs": 931808
+  }
+]
