@@ -1,0 +1,491 @@
+{
+  "runId": "play-demo",
+  "ingestionMode": "replay",
+  "transcriber": "fixture",
+  "transcriberStatus": "ok",
+  "researcher": "fixture",
+  "researcherStatus": "ok",
+  "researchRequests": 0,
+  "researchCacheHits": 0,
+  "speed": 1000,
+  "chunkMs": 1500,
+  "durationMs": 934884,
+  "pagesCreated": 57,
+  "pagesUpdated": 2,
+  "duplicatesMerged": 1,
+  "factsProposed": 127,
+  "factsDroppedForNoSource": 0,
+  "factsOnPagesCitedPercent": 100,
+  "latencyByStageMs": {
+    "transcriber": {
+      "count": 624,
+      "totalMs": 6.314,
+      "averageMs": 0.01,
+      "maxMs": 0.593
+    },
+    "claimExtractor": {
+      "count": 625,
+      "totalMs": 81.892,
+      "averageMs": 0.131,
+      "maxMs": 7.862
+    },
+    "topicGrouper": {
+      "count": 58,
+      "totalMs": 12.028,
+      "averageMs": 0.207,
+      "maxMs": 3.432
+    },
+    "researcher": {
+      "count": 58,
+      "totalMs": 25.034,
+      "averageMs": 0.432,
+      "maxMs": 16.394
+    },
+    "pageBuilder": {
+      "count": 59,
+      "totalMs": 1.507,
+      "averageMs": 0.026,
+      "maxMs": 0.326
+    }
+  },
+  "claimToPageSeconds": [
+    {
+      "claimId": "claim-1",
+      "pageId": "page-topic-1",
+      "action": "created",
+      "seconds": 0.001872,
+      "speaker": "Ross Perot"
+    },
+    {
+      "claimId": "claim-2",
+      "pageId": "page-topic-2",
+      "action": "created",
+      "seconds": 0.000658,
+      "speaker": "Ross Perot"
+    },
+    {
+      "claimId": "claim-3",
+      "pageId": "page-topic-3",
+      "action": "created",
+      "seconds": 0.003801,
+      "speaker": "Ross Perot"
+    },
+    {
+      "claimId": "claim-4",
+      "pageId": "page-topic-4",
+      "action": "created",
+      "seconds": 0.000369,
+      "speaker": "Ross Perot"
+    },
+    {
+      "claimId": "claim-5",
+      "pageId": "page-topic-5",
+      "action": "created",
+      "seconds": 0.000325,
+      "speaker": "Ross Perot"
+    },
+    {
+      "claimId": "claim-6",
+      "pageId": "page-topic-6",
+      "action": "created",
+      "seconds": 0.000542,
+      "speaker": "Ross Perot"
+    },
+    {
+      "claimId": "claim-7",
+      "pageId": "page-topic-7",
+      "action": "created",
+      "seconds": 0.000464,
+      "speaker": "Ross Perot"
+    },
+    {
+      "claimId": "claim-12",
+      "pageId": "page-topic-8",
+      "action": "created",
+      "seconds": 0.016687,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-13",
+      "pageId": "page-topic-9",
+      "action": "created",
+      "seconds": 0.000501,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-20",
+      "pageId": "page-topic-10",
+      "action": "created",
+      "seconds": 0.001012,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-21",
+      "pageId": "page-topic-11",
+      "action": "created",
+      "seconds": 0.00027,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-23",
+      "pageId": "page-topic-12",
+      "action": "created",
+      "seconds": 0.000393,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-24",
+      "pageId": "page-topic-13",
+      "action": "created",
+      "seconds": 0.0003,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-29",
+      "pageId": "page-topic-14",
+      "action": "created",
+      "seconds": 0.000373,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-30",
+      "pageId": "page-topic-15",
+      "action": "created",
+      "seconds": 0.000321,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-31",
+      "pageId": "page-topic-16",
+      "action": "created",
+      "seconds": 0.000391,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-39",
+      "pageId": "page-topic-17",
+      "action": "created",
+      "seconds": 0.000392,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-40",
+      "pageId": "page-topic-18",
+      "action": "created",
+      "seconds": 0.000319,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-41",
+      "pageId": "page-topic-19",
+      "action": "created",
+      "seconds": 0.000333,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-42",
+      "pageId": "page-topic-20",
+      "action": "created",
+      "seconds": 0.00131,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-44",
+      "pageId": "page-topic-21",
+      "action": "created",
+      "seconds": 0.000376,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-45",
+      "pageId": "page-topic-22",
+      "action": "created",
+      "seconds": 0.000575,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-46",
+      "pageId": "page-topic-23",
+      "action": "created",
+      "seconds": 0.000455,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-52",
+      "pageId": "page-topic-24",
+      "action": "created",
+      "seconds": 0.00051,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-53",
+      "pageId": "page-topic-25",
+      "action": "created",
+      "seconds": 0.000607,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-54",
+      "pageId": "page-topic-26",
+      "action": "created",
+      "seconds": 0.000452,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-55",
+      "pageId": "page-topic-27",
+      "action": "created",
+      "seconds": 0.000372,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-57",
+      "pageId": "page-topic-28",
+      "action": "created",
+      "seconds": 0.000366,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-61",
+      "pageId": "page-topic-29",
+      "action": "created",
+      "seconds": 0.000369,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-65",
+      "pageId": "page-topic-30",
+      "action": "created",
+      "seconds": 0.000603,
+      "speaker": "Ross Perot"
+    },
+    {
+      "claimId": "claim-66",
+      "pageId": "page-topic-31",
+      "action": "created",
+      "seconds": 0.000534,
+      "speaker": "Ross Perot"
+    },
+    {
+      "claimId": "claim-69",
+      "pageId": "page-topic-32",
+      "action": "created",
+      "seconds": 0.000593,
+      "speaker": "Ross Perot"
+    },
+    {
+      "claimId": "claim-74",
+      "pageId": "page-topic-33",
+      "action": "created",
+      "seconds": 0.000693,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-77",
+      "pageId": "page-topic-34",
+      "action": "created",
+      "seconds": 0.000528,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-78",
+      "pageId": "page-topic-35",
+      "action": "created",
+      "seconds": 0.000578,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-80",
+      "pageId": "page-topic-36",
+      "action": "created",
+      "seconds": 0.000616,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-82",
+      "pageId": "page-topic-37",
+      "action": "created",
+      "seconds": 0.000433,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-83",
+      "pageId": "page-topic-38",
+      "action": "created",
+      "seconds": 0.000852,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-84",
+      "pageId": "page-topic-39",
+      "action": "created",
+      "seconds": 0.000486,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-86",
+      "pageId": "page-topic-40",
+      "action": "created",
+      "seconds": 0.001158,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-89",
+      "pageId": "page-topic-41",
+      "action": "created",
+      "seconds": 0.000474,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-90",
+      "pageId": "page-topic-42",
+      "action": "created",
+      "seconds": 0.000443,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-92",
+      "pageId": "page-topic-43",
+      "action": "created",
+      "seconds": 0.000639,
+      "speaker": "George H. W. Bush"
+    },
+    {
+      "claimId": "claim-98",
+      "pageId": "page-topic-44",
+      "action": "created",
+      "seconds": 0.001004,
+      "speaker": "Ross Perot"
+    },
+    {
+      "claimId": "claim-102",
+      "pageId": "page-topic-45",
+      "action": "created",
+      "seconds": 0.000869,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-103",
+      "pageId": "page-topic-46",
+      "action": "created",
+      "seconds": 0.000659,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-104",
+      "pageId": "page-topic-47",
+      "action": "created",
+      "seconds": 0.000794,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-105",
+      "pageId": "page-topic-48",
+      "action": "created",
+      "seconds": 0.000735,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-106",
+      "pageId": "page-topic-49",
+      "action": "created",
+      "seconds": 0.000636,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-107",
+      "pageId": "page-topic-50",
+      "action": "created",
+      "seconds": 0.001416,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-109",
+      "pageId": "page-topic-51",
+      "action": "created",
+      "seconds": 0.000552,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-110",
+      "pageId": "page-topic-52",
+      "action": "created",
+      "seconds": 0.000444,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-114",
+      "pageId": "page-topic-53",
+      "action": "created",
+      "seconds": 0.000774,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-115",
+      "pageId": "page-topic-54",
+      "action": "created",
+      "seconds": 0.000641,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-116",
+      "pageId": "page-topic-54",
+      "action": "updated",
+      "seconds": 0.001255,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-118",
+      "pageId": "page-topic-53",
+      "action": "updated",
+      "seconds": 0.00058,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-123",
+      "pageId": "page-topic-55",
+      "action": "created",
+      "seconds": 0.000726,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-127",
+      "pageId": "page-topic-56",
+      "action": "created",
+      "seconds": 0.001062,
+      "speaker": "Bill Clinton"
+    },
+    {
+      "claimId": "claim-128",
+      "pageId": "page-topic-57",
+      "action": "created",
+      "seconds": 0.000642,
+      "speaker": "Bill Clinton"
+    }
+  ],
+  "claimStats": {
+    "sentences": 181,
+    "dropped": {
+      "procedural": 30,
+      "greeting": 1,
+      "question": 5,
+      "filler": 17
+    },
+    "claimsExtracted": 128,
+    "uniqueClaims": 127,
+    "repeatsMerged": 1,
+    "checkableUnique": 58,
+    "uniqueByType": {
+      "statistic": 17,
+      "factual": 41,
+      "opinion": 51,
+      "promise": 11,
+      "prediction": 7
+    }
+  },
+  "claimsBySpeaker": {
+    "Ross Perot": 23,
+    "Bill Clinton": 54,
+    "George H. W. Bush": 51
+  }
+}

@@ -1,0 +1,6309 @@
+[
+  {
+    "atMs": 0.177,
+    "mediaMs": 0,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 1"
+  },
+  {
+    "atMs": 6.765,
+    "mediaMs": 1500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 2"
+  },
+  {
+    "atMs": 6.822,
+    "mediaMs": 3000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 3"
+  },
+  {
+    "atMs": 6.846,
+    "mediaMs": 4500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 4"
+  },
+  {
+    "atMs": 6.867,
+    "mediaMs": 6000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 5"
+  },
+  {
+    "atMs": 7.724,
+    "mediaMs": 7500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 6"
+  },
+  {
+    "atMs": 9.127,
+    "mediaMs": 9000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 7"
+  },
+  {
+    "atMs": 10.364,
+    "mediaMs": 10500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 8"
+  },
+  {
+    "atMs": 14.515,
+    "mediaMs": 12000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 9"
+  },
+  {
+    "atMs": 14.575,
+    "mediaMs": 13500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 10"
+  },
+  {
+    "atMs": 17.107,
+    "mediaMs": 15000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 11"
+  },
+  {
+    "atMs": 17.167,
+    "mediaMs": 16500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 12"
+  },
+  {
+    "atMs": 18.567,
+    "mediaMs": 18000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 13"
+  },
+  {
+    "atMs": 19.819,
+    "mediaMs": 19500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 14"
+  },
+  {
+    "atMs": 20.978,
+    "mediaMs": 21000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 15"
+  },
+  {
+    "atMs": 22.342,
+    "mediaMs": 22500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 16"
+  },
+  {
+    "atMs": 23.823,
+    "mediaMs": 24000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 17"
+  },
+  {
+    "atMs": 25.085,
+    "mediaMs": 25500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 18"
+  },
+  {
+    "atMs": 26.801,
+    "mediaMs": 27000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 19"
+  },
+  {
+    "atMs": 28.165,
+    "mediaMs": 28500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 20"
+  },
+  {
+    "atMs": 29.779,
+    "mediaMs": 30000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 21"
+  },
+  {
+    "atMs": 31.04,
+    "mediaMs": 31500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 22"
+  },
+  {
+    "atMs": 33.176,
+    "mediaMs": 33000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 23"
+  },
+  {
+    "atMs": 36.383,
+    "mediaMs": 34500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 24"
+  },
+  {
+    "atMs": 36.572,
+    "mediaMs": 36000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 25"
+  },
+  {
+    "atMs": 37.722,
+    "mediaMs": 37500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 26"
+  },
+  {
+    "atMs": 38.878,
+    "mediaMs": 39000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 27"
+  },
+  {
+    "atMs": 40.254,
+    "mediaMs": 40500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 28"
+  },
+  {
+    "atMs": 41.438,
+    "mediaMs": 42000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 29"
+  },
+  {
+    "atMs": 43.589,
+    "mediaMs": 43500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 30"
+  },
+  {
+    "atMs": 44.721,
+    "mediaMs": 45000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 31"
+  },
+  {
+    "atMs": 46.045,
+    "mediaMs": 46500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 32"
+  },
+  {
+    "atMs": 48.705,
+    "mediaMs": 48000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 33"
+  },
+  {
+    "atMs": 50.053,
+    "mediaMs": 49500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 34"
+  },
+  {
+    "atMs": 51.185,
+    "mediaMs": 51000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 35"
+  },
+  {
+    "atMs": 52.327,
+    "mediaMs": 52500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 36"
+  },
+  {
+    "atMs": 53.476,
+    "mediaMs": 54000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 37"
+  },
+  {
+    "atMs": 55.639,
+    "mediaMs": 55500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 38"
+  },
+  {
+    "atMs": 57.753,
+    "mediaMs": 57000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 39"
+  },
+  {
+    "atMs": 58.913,
+    "mediaMs": 58500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 40"
+  },
+  {
+    "atMs": 59.489,
+    "mediaMs": 60000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 41"
+  },
+  {
+    "atMs": 62.238,
+    "mediaMs": 61500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 42"
+  },
+  {
+    "atMs": 63.643,
+    "mediaMs": 63000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 43"
+  },
+  {
+    "atMs": 64.989,
+    "mediaMs": 64500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 44"
+  },
+  {
+    "atMs": 66.138,
+    "mediaMs": 66000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 45"
+  },
+  {
+    "atMs": 67.567,
+    "mediaMs": 67500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 46"
+  },
+  {
+    "atMs": 68.705,
+    "mediaMs": 69000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 47"
+  },
+  {
+    "atMs": 69.852,
+    "mediaMs": 70500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 48"
+  },
+  {
+    "atMs": 82.804,
+    "mediaMs": 72000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 49"
+  },
+  {
+    "atMs": 83.007,
+    "mediaMs": 73500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 50"
+  },
+  {
+    "atMs": 83.486,
+    "mediaMs": 75000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 51"
+  },
+  {
+    "atMs": 83.498,
+    "mediaMs": 76500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 52"
+  },
+  {
+    "atMs": 83.505,
+    "mediaMs": 78000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 53"
+  },
+  {
+    "atMs": 83.512,
+    "mediaMs": 79500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 54"
+  },
+  {
+    "atMs": 83.52,
+    "mediaMs": 81000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 55"
+  },
+  {
+    "atMs": 83.527,
+    "mediaMs": 82500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 56"
+  },
+  {
+    "atMs": 85.697,
+    "mediaMs": 84000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 57"
+  },
+  {
+    "atMs": 85.86,
+    "mediaMs": 85500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 58"
+  },
+  {
+    "atMs": 88.766,
+    "mediaMs": 87000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 59"
+  },
+  {
+    "atMs": 88.969,
+    "mediaMs": 88500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 60"
+  },
+  {
+    "atMs": 90.709,
+    "mediaMs": 90000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 61"
+  },
+  {
+    "atMs": 92.194,
+    "mediaMs": 91500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 62"
+  },
+  {
+    "atMs": 93.462,
+    "mediaMs": 93000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 63"
+  },
+  {
+    "atMs": 94.707,
+    "mediaMs": 94500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 64"
+  },
+  {
+    "atMs": 96.187,
+    "mediaMs": 96000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 65"
+  },
+  {
+    "atMs": 97.34,
+    "mediaMs": 97500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 66"
+  },
+  {
+    "atMs": 98.886,
+    "mediaMs": 99000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 67"
+  },
+  {
+    "atMs": 100.381,
+    "mediaMs": 100500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 68"
+  },
+  {
+    "atMs": 101.552,
+    "mediaMs": 102000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 69"
+  },
+  {
+    "atMs": 104.32,
+    "mediaMs": 103500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 70"
+  },
+  {
+    "atMs": 105.478,
+    "mediaMs": 105000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 71"
+  },
+  {
+    "atMs": 106.745,
+    "mediaMs": 106500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 72"
+  },
+  {
+    "atMs": 111.288,
+    "mediaMs": 113690,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Think Principal Issue",
+    "refId": "topic-1",
+    "speaker": "Ross Perot",
+    "claim": "I think the principal issue that separates me is that 5.5 million people came together on their own and put me on the ballot."
+  },
+  {
+    "atMs": 112.28,
+    "mediaMs": 113690,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Think Principal Issue",
+    "refId": "page-topic-1",
+    "latencyMs": 1.871580999999992,
+    "speaker": "Ross Perot",
+    "claim": "I think the principal issue that separates me is that 5.5 million people came together on their own and put me on the ballot."
+  },
+  {
+    "atMs": 112.295,
+    "mediaMs": 108000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 73"
+  },
+  {
+    "atMs": 112.309,
+    "mediaMs": 109500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 74"
+  },
+  {
+    "atMs": 112.318,
+    "mediaMs": 111000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 75"
+  },
+  {
+    "atMs": 116.393,
+    "mediaMs": 112500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 76"
+  },
+  {
+    "atMs": 116.426,
+    "mediaMs": 114000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 77"
+  },
+  {
+    "atMs": 119.922,
+    "mediaMs": 116886,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Not Put Ballot",
+    "refId": "topic-2",
+    "speaker": "Ross Perot",
+    "claim": "I was not put on the ballot by either of the two parties."
+  },
+  {
+    "atMs": 120.095,
+    "mediaMs": 116886,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Not Put Ballot",
+    "refId": "page-topic-2",
+    "latencyMs": 0.6578649999999868,
+    "speaker": "Ross Perot",
+    "claim": "I was not put on the ballot by either of the two parties."
+  },
+  {
+    "atMs": 120.102,
+    "mediaMs": 115500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 78"
+  },
+  {
+    "atMs": 120.113,
+    "mediaMs": 117000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 79"
+  },
+  {
+    "atMs": 124.722,
+    "mediaMs": 122748,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Not Put Ballot",
+    "refId": "topic-3",
+    "speaker": "Ross Perot",
+    "claim": "I was not put on the ballot by any PAC money, by any foreign lobbyist money, by any special interest money."
+  },
+  {
+    "atMs": 124.893,
+    "mediaMs": 122748,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Not Put Ballot",
+    "refId": "page-topic-3",
+    "latencyMs": 3.8007160000000226,
+    "speaker": "Ross Perot",
+    "claim": "I was not put on the ballot by any PAC money, by any foreign lobbyist money, by any special interest money."
+  },
+  {
+    "atMs": 124.9,
+    "mediaMs": 118500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 80"
+  },
+  {
+    "atMs": 124.912,
+    "mediaMs": 120000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 81"
+  },
+  {
+    "atMs": 124.919,
+    "mediaMs": 121500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 82"
+  },
+  {
+    "atMs": 124.926,
+    "mediaMs": 123000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 83"
+  },
+  {
+    "atMs": 125.354,
+    "mediaMs": 125880,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "This Movement That",
+    "refId": "topic-4",
+    "speaker": "Ross Perot",
+    "claim": "This is a movement that came from the people."
+  },
+  {
+    "atMs": 125.483,
+    "mediaMs": 125880,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created This Movement That",
+    "refId": "page-topic-4",
+    "latencyMs": 0.36870700000000056,
+    "speaker": "Ross Perot",
+    "claim": "This is a movement that came from the people."
+  },
+  {
+    "atMs": 125.487,
+    "mediaMs": 124500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 84"
+  },
+  {
+    "atMs": 133.249,
+    "mediaMs": 126000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 85"
+  },
+  {
+    "atMs": 133.7,
+    "mediaMs": 132223,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "This Way Framers",
+    "refId": "topic-5",
+    "speaker": "Ross Perot",
+    "claim": "This is the way the framers of the Constitution intended our government to be, a government that comes from the people."
+  },
+  {
+    "atMs": 133.838,
+    "mediaMs": 132223,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created This Way Framers",
+    "refId": "page-topic-5",
+    "latencyMs": 0.32450499999998783,
+    "speaker": "Ross Perot",
+    "claim": "This is the way the framers of the Constitution intended our government to be, a government that comes from the people."
+  },
+  {
+    "atMs": 133.842,
+    "mediaMs": 127500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 86"
+  },
+  {
+    "atMs": 133.851,
+    "mediaMs": 129000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 87"
+  },
+  {
+    "atMs": 133.856,
+    "mediaMs": 130500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 88"
+  },
+  {
+    "atMs": 133.86,
+    "mediaMs": 132000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 89"
+  },
+  {
+    "atMs": 134.387,
+    "mediaMs": 149905,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Over Time Have",
+    "refId": "topic-6",
+    "speaker": "Ross Perot",
+    "claim": "Over time, we have developed a government that comes at the people, that comes from the top down, where the people are more or less treated as objects to be programmed during the campaign with commercials and media events and fear messages and personal attacks and things of that nature."
+  },
+  {
+    "atMs": 134.655,
+    "mediaMs": 149905,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Over Time Have",
+    "refId": "page-topic-6",
+    "latencyMs": 0.5417139999999847,
+    "speaker": "Ross Perot",
+    "claim": "Over time, we have developed a government that comes at the people, that comes from the top down, where the people are more or less treated as objects to be programmed during the campaign with commercials and media events and fear messages and personal attacks and things of that nature."
+  },
+  {
+    "atMs": 134.661,
+    "mediaMs": 133500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 90"
+  },
+  {
+    "atMs": 136.022,
+    "mediaMs": 135000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 91"
+  },
+  {
+    "atMs": 137.189,
+    "mediaMs": 136500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 92"
+  },
+  {
+    "atMs": 138.454,
+    "mediaMs": 138000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 93"
+  },
+  {
+    "atMs": 139.663,
+    "mediaMs": 139500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 94"
+  },
+  {
+    "atMs": 140.81,
+    "mediaMs": 141000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 95"
+  },
+  {
+    "atMs": 141.99,
+    "mediaMs": 142500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 96"
+  },
+  {
+    "atMs": 144.16,
+    "mediaMs": 144000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 97"
+  },
+  {
+    "atMs": 146.629,
+    "mediaMs": 145500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 98"
+  },
+  {
+    "atMs": 148.269,
+    "mediaMs": 147000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 99"
+  },
+  {
+    "atMs": 150.12,
+    "mediaMs": 148500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 100"
+  },
+  {
+    "atMs": 150.145,
+    "mediaMs": 150000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 101"
+  },
+  {
+    "atMs": 150.894,
+    "mediaMs": 163427,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Thing That Separates",
+    "refId": "topic-7",
+    "speaker": "Ross Perot",
+    "claim": "The thing that separates my candidacy and makes it unique is that this came from millions of people in 50 states all over this country who wanted a candidate that worked and belonged to nobody but them."
+  },
+  {
+    "atMs": 151.081,
+    "mediaMs": 163427,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Thing That Separates",
+    "refId": "page-topic-7",
+    "latencyMs": 0.4641610000000185,
+    "speaker": "Ross Perot",
+    "claim": "The thing that separates my candidacy and makes it unique is that this came from millions of people in 50 states all over this country who wanted a candidate that worked and belonged to nobody but them."
+  },
+  {
+    "atMs": 152.763,
+    "mediaMs": 151500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 102"
+  },
+  {
+    "atMs": 153.898,
+    "mediaMs": 153000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 103"
+  },
+  {
+    "atMs": 155.03,
+    "mediaMs": 154500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 104"
+  },
+  {
+    "atMs": 156.188,
+    "mediaMs": 156000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 105"
+  },
+  {
+    "atMs": 157.307,
+    "mediaMs": 157500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 106"
+  },
+  {
+    "atMs": 158.439,
+    "mediaMs": 159000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 107"
+  },
+  {
+    "atMs": 160.551,
+    "mediaMs": 160500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 108"
+  },
+  {
+    "atMs": 161.727,
+    "mediaMs": 162000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 109"
+  },
+  {
+    "atMs": 162.852,
+    "mediaMs": 163500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 110"
+  },
+  {
+    "atMs": 163.556,
+    "mediaMs": 168992,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-8",
+    "speaker": "Ross Perot",
+    "claim": "I go into this race as their servant, and I belong to them."
+  },
+  {
+    "atMs": 164.712,
+    "mediaMs": 165000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 111"
+  },
+  {
+    "atMs": 166.042,
+    "mediaMs": 166500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 112"
+  },
+  {
+    "atMs": 167.274,
+    "mediaMs": 168000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 113"
+  },
+  {
+    "atMs": 198.723,
+    "mediaMs": 170817,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-9",
+    "speaker": "Ross Perot",
+    "claim": "So this comes from the people."
+  },
+  {
+    "atMs": 198.809,
+    "mediaMs": 169500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 114"
+  },
+  {
+    "atMs": 198.842,
+    "mediaMs": 171000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 115"
+  },
+  {
+    "atMs": 198.851,
+    "mediaMs": 172500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 116"
+  },
+  {
+    "atMs": 199.088,
+    "mediaMs": 174000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 117"
+  },
+  {
+    "atMs": 199.095,
+    "mediaMs": 175500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 118"
+  },
+  {
+    "atMs": 199.937,
+    "mediaMs": 187767,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-10",
+    "speaker": "Bill Clinton",
+    "claim": "The most important distinction in this campaign is that I represent real hope for change, a departure from trickle-down economics, a departure from tax-and-spend economics, to invest and grow."
+  },
+  {
+    "atMs": 199.973,
+    "mediaMs": 177000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 119"
+  },
+  {
+    "atMs": 200.02,
+    "mediaMs": 178500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 120"
+  },
+  {
+    "atMs": 200.033,
+    "mediaMs": 180000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 121"
+  },
+  {
+    "atMs": 200.043,
+    "mediaMs": 181500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 122"
+  },
+  {
+    "atMs": 200.054,
+    "mediaMs": 183000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 123"
+  },
+  {
+    "atMs": 200.064,
+    "mediaMs": 184500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 124"
+  },
+  {
+    "atMs": 200.079,
+    "mediaMs": 186000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 125"
+  },
+  {
+    "atMs": 200.097,
+    "mediaMs": 187500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 126"
+  },
+  {
+    "atMs": 200.611,
+    "mediaMs": 192239,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-11",
+    "speaker": "Bill Clinton",
+    "claim": "But before I can do that, I must challenge the American people to change."
+  },
+  {
+    "atMs": 200.618,
+    "mediaMs": 189000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 127"
+  },
+  {
+    "atMs": 200.629,
+    "mediaMs": 190500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 128"
+  },
+  {
+    "atMs": 200.639,
+    "mediaMs": 192000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 129"
+  },
+  {
+    "atMs": 200.761,
+    "mediaMs": 193500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 130"
+  },
+  {
+    "atMs": 200.802,
+    "mediaMs": 195000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 131"
+  },
+  {
+    "atMs": 201.179,
+    "mediaMs": 198444,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Tonight Say President",
+    "refId": "topic-8",
+    "speaker": "Bill Clinton",
+    "claim": "Tonight I say to the president, Mr."
+  },
+  {
+    "atMs": 217.713,
+    "mediaMs": 198444,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Tonight Say President",
+    "refId": "page-topic-8",
+    "latencyMs": 16.687274000000002,
+    "speaker": "Bill Clinton",
+    "claim": "Tonight I say to the president, Mr."
+  },
+  {
+    "atMs": 217.897,
+    "mediaMs": 196500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 132"
+  },
+  {
+    "atMs": 217.937,
+    "mediaMs": 198000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 133"
+  },
+  {
+    "atMs": 218.528,
+    "mediaMs": 204995,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Bush Years You",
+    "refId": "topic-9",
+    "speaker": "Bill Clinton",
+    "claim": "Bush, for 12 years you've had it your way, you've had your chance, and it didn't work."
+  },
+  {
+    "atMs": 218.776,
+    "mediaMs": 204995,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Bush Years You",
+    "refId": "page-topic-9",
+    "latencyMs": 0.50069400000001,
+    "speaker": "Bill Clinton",
+    "claim": "Bush, for 12 years you've had it your way, you've had your chance, and it didn't work."
+  },
+  {
+    "atMs": 218.782,
+    "mediaMs": 199500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 134"
+  },
+  {
+    "atMs": 218.795,
+    "mediaMs": 201000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 135"
+  },
+  {
+    "atMs": 218.805,
+    "mediaMs": 202500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 136"
+  },
+  {
+    "atMs": 218.814,
+    "mediaMs": 204000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 137"
+  },
+  {
+    "atMs": 218.823,
+    "mediaMs": 205500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 138"
+  },
+  {
+    "atMs": 218.925,
+    "mediaMs": 207000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 139"
+  },
+  {
+    "atMs": 218.936,
+    "mediaMs": 208500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 140"
+  },
+  {
+    "atMs": 219.315,
+    "mediaMs": 216460,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "promise",
+    "refId": "claim-14",
+    "speaker": "Bill Clinton",
+    "claim": "I want to bring that change to the American people, but we must all decide first we have the courage to change for hope and a better tomorrow."
+  },
+  {
+    "atMs": 219.321,
+    "mediaMs": 210000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 141"
+  },
+  {
+    "atMs": 219.337,
+    "mediaMs": 211500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 142"
+  },
+  {
+    "atMs": 219.347,
+    "mediaMs": 213000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 143"
+  },
+  {
+    "atMs": 219.356,
+    "mediaMs": 214500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 144"
+  },
+  {
+    "atMs": 219.367,
+    "mediaMs": 216000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 145"
+  },
+  {
+    "atMs": 219.379,
+    "mediaMs": 217500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 146"
+  },
+  {
+    "atMs": 219.446,
+    "mediaMs": 219000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 147"
+  },
+  {
+    "atMs": 220.714,
+    "mediaMs": 220500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 148"
+  },
+  {
+    "atMs": 221.412,
+    "mediaMs": 224361,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-15",
+    "speaker": "George H. W. Bush",
+    "claim": "Well, I think one thing that distinguishes is experience."
+  },
+  {
+    "atMs": 223.642,
+    "mediaMs": 222000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 149"
+  },
+  {
+    "atMs": 223.671,
+    "mediaMs": 223500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 150"
+  },
+  {
+    "atMs": 224.809,
+    "mediaMs": 225000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 151"
+  },
+  {
+    "atMs": 225.074,
+    "mediaMs": 226963,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-16",
+    "speaker": "George H. W. Bush",
+    "claim": "I think we've dramatically changed the world."
+  },
+  {
+    "atMs": 226.227,
+    "mediaMs": 226500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 152"
+  },
+  {
+    "atMs": 226.546,
+    "mediaMs": 231525,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "promise",
+    "refId": "claim-17",
+    "speaker": "George H. W. Bush",
+    "claim": "I'll talk about that a little bit later, but the changes are mind-boggling for world peace."
+  },
+  {
+    "atMs": 227.686,
+    "mediaMs": 228000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 153"
+  },
+  {
+    "atMs": 228.838,
+    "mediaMs": 229500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 154"
+  },
+  {
+    "atMs": 231.014,
+    "mediaMs": 231000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 155"
+  },
+  {
+    "atMs": 231.369,
+    "mediaMs": 236408,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-18",
+    "speaker": "George H. W. Bush",
+    "claim": "Kids go to bed at night without the same fear of nuclear war."
+  },
+  {
+    "atMs": 232.505,
+    "mediaMs": 232500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 156"
+  },
+  {
+    "atMs": 233.687,
+    "mediaMs": 234000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 157"
+  },
+  {
+    "atMs": 234.857,
+    "mediaMs": 235500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 158"
+  },
+  {
+    "atMs": 235.208,
+    "mediaMs": 240006,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-19",
+    "speaker": "George H. W. Bush",
+    "claim": "And change for change's sake isn't enough."
+  },
+  {
+    "atMs": 236.483,
+    "mediaMs": 237000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 159"
+  },
+  {
+    "atMs": 238.824,
+    "mediaMs": 238500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 160"
+  },
+  {
+    "atMs": 239.995,
+    "mediaMs": 240000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 161"
+  },
+  {
+    "atMs": 240.461,
+    "mediaMs": 243957,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Saw That Message",
+    "refId": "topic-10",
+    "speaker": "George H. W. Bush",
+    "claim": "We saw that message in the late '70s, and we heard a lot about change."
+  },
+  {
+    "atMs": 241.245,
+    "mediaMs": 243957,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Saw That Message",
+    "refId": "page-topic-10",
+    "latencyMs": 1.0120860000000107,
+    "speaker": "George H. W. Bush",
+    "claim": "We saw that message in the late '70s, and we heard a lot about change."
+  },
+  {
+    "atMs": 242.399,
+    "mediaMs": 241500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 162"
+  },
+  {
+    "atMs": 243.603,
+    "mediaMs": 243000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 163"
+  },
+  {
+    "atMs": 243.958,
+    "mediaMs": 246655,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Misery Index Went",
+    "refId": "topic-11",
+    "speaker": "George H. W. Bush",
+    "claim": "The misery index went right through the roof."
+  },
+  {
+    "atMs": 244.099,
+    "mediaMs": 246655,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Misery Index Went",
+    "refId": "page-topic-11",
+    "latencyMs": 0.2702770000000214,
+    "speaker": "George H. W. Bush",
+    "claim": "The misery index went right through the roof."
+  },
+  {
+    "atMs": 245.255,
+    "mediaMs": 244500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 164"
+  },
+  {
+    "atMs": 246.563,
+    "mediaMs": 246000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 165"
+  },
+  {
+    "atMs": 254.651,
+    "mediaMs": 250961,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-22",
+    "speaker": "George H. W. Bush",
+    "claim": "But I— my economic program, I think, is the kind of change we want."
+  },
+  {
+    "atMs": 254.662,
+    "mediaMs": 247500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 166"
+  },
+  {
+    "atMs": 254.674,
+    "mediaMs": 249000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 167"
+  },
+  {
+    "atMs": 254.682,
+    "mediaMs": 250500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 168"
+  },
+  {
+    "atMs": 255.116,
+    "mediaMs": 254769,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Way Going Get",
+    "refId": "topic-12",
+    "speaker": "George H. W. Bush",
+    "claim": "And the way we're going to get it done is we're going to have a brand-new Congress."
+  },
+  {
+    "atMs": 255.269,
+    "mediaMs": 254769,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Way Going Get",
+    "refId": "page-topic-12",
+    "latencyMs": 0.3928269999999543,
+    "speaker": "George H. W. Bush",
+    "claim": "And the way we're going to get it done is we're going to have a brand-new Congress."
+  },
+  {
+    "atMs": 255.275,
+    "mediaMs": 252000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 169"
+  },
+  {
+    "atMs": 255.285,
+    "mediaMs": 253500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 170"
+  },
+  {
+    "atMs": 255.295,
+    "mediaMs": 255000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 171"
+  },
+  {
+    "atMs": 255.64,
+    "mediaMs": 257380,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Lot Them Thrown",
+    "refId": "topic-13",
+    "speaker": "George H. W. Bush",
+    "claim": "A lot of them are thrown out because of all the scandals."
+  },
+  {
+    "atMs": 255.738,
+    "mediaMs": 257380,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Lot Them Thrown",
+    "refId": "page-topic-13",
+    "latencyMs": 0.2997609999999895,
+    "speaker": "George H. W. Bush",
+    "claim": "A lot of them are thrown out because of all the scandals."
+  },
+  {
+    "atMs": 257.671,
+    "mediaMs": 256500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 172"
+  },
+  {
+    "atMs": 258.299,
+    "mediaMs": 265448,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "promise",
+    "refId": "claim-25",
+    "speaker": "George H. W. Bush",
+    "claim": "I'll sit down with them, Democrats and Republicans alike, and work for my agenda for American renewal, which represents real change."
+  },
+  {
+    "atMs": 258.323,
+    "mediaMs": 258000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 173"
+  },
+  {
+    "atMs": 259.513,
+    "mediaMs": 259500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 174"
+  },
+  {
+    "atMs": 260.717,
+    "mediaMs": 261000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 175"
+  },
+  {
+    "atMs": 261.882,
+    "mediaMs": 262500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 176"
+  },
+  {
+    "atMs": 264.09,
+    "mediaMs": 264000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 177"
+  },
+  {
+    "atMs": 265.235,
+    "mediaMs": 265500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 178"
+  },
+  {
+    "atMs": 265.652,
+    "mediaMs": 269168,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-26",
+    "speaker": "George H. W. Bush",
+    "claim": "But I'd say if you had to separate out, I think it's experience at this level."
+  },
+  {
+    "atMs": 267.076,
+    "mediaMs": 267000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 179"
+  },
+  {
+    "atMs": 268.229,
+    "mediaMs": 268500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 180"
+  },
+  {
+    "atMs": 269.392,
+    "mediaMs": 270000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 181"
+  },
+  {
+    "atMs": 270.859,
+    "mediaMs": 271500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 182"
+  },
+  {
+    "atMs": 273.193,
+    "mediaMs": 273000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 183"
+  },
+  {
+    "atMs": 274.331,
+    "mediaMs": 274500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 184"
+  },
+  {
+    "atMs": 275.737,
+    "mediaMs": 276000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 185"
+  },
+  {
+    "atMs": 277.131,
+    "mediaMs": 277500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 186"
+  },
+  {
+    "atMs": 278.359,
+    "mediaMs": 279000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 187"
+  },
+  {
+    "atMs": 280.539,
+    "mediaMs": 280500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 188"
+  },
+  {
+    "atMs": 281.687,
+    "mediaMs": 282000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 189"
+  },
+  {
+    "atMs": 282.113,
+    "mediaMs": 284378,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-27",
+    "speaker": "Bill Clinton",
+    "claim": "I believe experience counts, but it's not everything."
+  },
+  {
+    "atMs": 282.737,
+    "mediaMs": 283500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 190"
+  },
+  {
+    "atMs": 284.516,
+    "mediaMs": 285000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 191"
+  },
+  {
+    "atMs": 284.977,
+    "mediaMs": 290800,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-28",
+    "speaker": "Bill Clinton",
+    "claim": "Values, judgment, and the record that I have amassed in my state also should count for something."
+  },
+  {
+    "atMs": 286.274,
+    "mediaMs": 286500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 192"
+  },
+  {
+    "atMs": 288.385,
+    "mediaMs": 288000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 193"
+  },
+  {
+    "atMs": 289.563,
+    "mediaMs": 289500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 194"
+  },
+  {
+    "atMs": 290.861,
+    "mediaMs": 291000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 195"
+  },
+  {
+    "atMs": 291.289,
+    "mediaMs": 294590,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Worked Hard Create",
+    "refId": "topic-14",
+    "speaker": "Bill Clinton",
+    "claim": "I've worked hard to create good jobs and to educate people."
+  },
+  {
+    "atMs": 291.438,
+    "mediaMs": 294590,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Worked Hard Create",
+    "refId": "page-topic-14",
+    "latencyMs": 0.37347900000003165,
+    "speaker": "Bill Clinton",
+    "claim": "I've worked hard to create good jobs and to educate people."
+  },
+  {
+    "atMs": 292.554,
+    "mediaMs": 292500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 196"
+  },
+  {
+    "atMs": 293.657,
+    "mediaMs": 294000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 197"
+  },
+  {
+    "atMs": 294.09,
+    "mediaMs": 299187,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "State Now Ranks",
+    "refId": "topic-15",
+    "speaker": "Bill Clinton",
+    "claim": "My state now ranks first in the country in job growth this year."
+  },
+  {
+    "atMs": 294.174,
+    "mediaMs": 299187,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created State Now Ranks",
+    "refId": "page-topic-15",
+    "latencyMs": 0.3206779999999867,
+    "speaker": "Bill Clinton",
+    "claim": "My state now ranks first in the country in job growth this year."
+  },
+  {
+    "atMs": 296.446,
+    "mediaMs": 295500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 198"
+  },
+  {
+    "atMs": 299.02,
+    "mediaMs": 297000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 199"
+  },
+  {
+    "atMs": 299.03,
+    "mediaMs": 298500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 200"
+  },
+  {
+    "atMs": 300.183,
+    "mediaMs": 300000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 201"
+  },
+  {
+    "atMs": 300.724,
+    "mediaMs": 307528,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "4th Income Growth",
+    "refId": "topic-16",
+    "speaker": "Bill Clinton",
+    "claim": "4th in income growth, 4th in the reduction of poverty, 3rd in overall economic performance according to a major news magazine."
+  },
+  {
+    "atMs": 300.822,
+    "mediaMs": 307528,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created 4th Income Growth",
+    "refId": "page-topic-16",
+    "latencyMs": 0.3908459999999536,
+    "speaker": "Bill Clinton",
+    "claim": "4th in income growth, 4th in the reduction of poverty, 3rd in overall economic performance according to a major news magazine."
+  },
+  {
+    "atMs": 301.971,
+    "mediaMs": 301500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 202"
+  },
+  {
+    "atMs": 303.102,
+    "mediaMs": 303000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 203"
+  },
+  {
+    "atMs": 304.281,
+    "mediaMs": 304500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 204"
+  },
+  {
+    "atMs": 305.471,
+    "mediaMs": 306000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 205"
+  },
+  {
+    "atMs": 307.644,
+    "mediaMs": 307500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 206"
+  },
+  {
+    "atMs": 307.963,
+    "mediaMs": 311863,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-32",
+    "speaker": "Bill Clinton",
+    "claim": "That's because we believe in investing in education and in jobs."
+  },
+  {
+    "atMs": 309.104,
+    "mediaMs": 309000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 207"
+  },
+  {
+    "atMs": 310.597,
+    "mediaMs": 310500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 208"
+  },
+  {
+    "atMs": 311.923,
+    "mediaMs": 312000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 209"
+  },
+  {
+    "atMs": 312.219,
+    "mediaMs": 314063,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-33",
+    "speaker": "Bill Clinton",
+    "claim": "And we have to change in this country."
+  },
+  {
+    "atMs": 313.529,
+    "mediaMs": 313500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 210"
+  },
+  {
+    "atMs": 314.057,
+    "mediaMs": 324050,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-34",
+    "speaker": "Bill Clinton",
+    "claim": "You know, my wife Hillary gave me a book about a year ago in which the author defined insanity as just doing the same old thing over and over again and expecting a different result."
+  },
+  {
+    "atMs": 315.214,
+    "mediaMs": 315000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 211"
+  },
+  {
+    "atMs": 316.346,
+    "mediaMs": 316500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 212"
+  },
+  {
+    "atMs": 317.549,
+    "mediaMs": 318000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 213"
+  },
+  {
+    "atMs": 319.701,
+    "mediaMs": 319500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 214"
+  },
+  {
+    "atMs": 320.953,
+    "mediaMs": 321000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 215"
+  },
+  {
+    "atMs": 322.158,
+    "mediaMs": 322500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 216"
+  },
+  {
+    "atMs": 323.315,
+    "mediaMs": 324000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 217"
+  },
+  {
+    "atMs": 323.626,
+    "mediaMs": 327325,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-35",
+    "speaker": "Bill Clinton",
+    "claim": "We have got to have the courage to change."
+  },
+  {
+    "atMs": 324.766,
+    "mediaMs": 325500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 218"
+  },
+  {
+    "atMs": 327.253,
+    "mediaMs": 327000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 219"
+  },
+  {
+    "atMs": 328.686,
+    "mediaMs": 328500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 220"
+  },
+  {
+    "atMs": 329.105,
+    "mediaMs": 334984,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-36",
+    "speaker": "Bill Clinton",
+    "claim": "I've gotten a lot of good experience in dealing with ordinary people over the last year and a month."
+  },
+  {
+    "atMs": 330.273,
+    "mediaMs": 330000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 221"
+  },
+  {
+    "atMs": 331.453,
+    "mediaMs": 331500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 222"
+  },
+  {
+    "atMs": 332.953,
+    "mediaMs": 333000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 223"
+  },
+  {
+    "atMs": 334.104,
+    "mediaMs": 334500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 224"
+  },
+  {
+    "atMs": 334.879,
+    "mediaMs": 342997,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-37",
+    "speaker": "Bill Clinton",
+    "claim": "I've touched more people's lives and seen more heartbreak and hope, more pain and more promise than anybody else who's run for president this year."
+  },
+  {
+    "atMs": 335.422,
+    "mediaMs": 336000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 225"
+  },
+  {
+    "atMs": 338.006,
+    "mediaMs": 337500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 226"
+  },
+  {
+    "atMs": 340.131,
+    "mediaMs": 339000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 227"
+  },
+  {
+    "atMs": 341.451,
+    "mediaMs": 340500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 228"
+  },
+  {
+    "atMs": 342.62,
+    "mediaMs": 342000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 229"
+  },
+  {
+    "atMs": 343.845,
+    "mediaMs": 343500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 230"
+  },
+  {
+    "atMs": 344.198,
+    "mediaMs": 346063,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-38",
+    "speaker": "Bill Clinton",
+    "claim": "And I think the American people deserve better than they're getting."
+  },
+  {
+    "atMs": 345.355,
+    "mediaMs": 345000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 231"
+  },
+  {
+    "atMs": 346.521,
+    "mediaMs": 346500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 232"
+  },
+  {
+    "atMs": 347.031,
+    "mediaMs": 350238,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Have Gone From",
+    "refId": "topic-17",
+    "speaker": "Bill Clinton",
+    "claim": "We have gone from first to 13th in the world in wages in the last 12 years."
+  },
+  {
+    "atMs": 347.148,
+    "mediaMs": 350238,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Have Gone From",
+    "refId": "page-topic-17",
+    "latencyMs": 0.39151599999996733,
+    "speaker": "Bill Clinton",
+    "claim": "We have gone from first to 13th in the world in wages in the last 12 years."
+  },
+  {
+    "atMs": 348.334,
+    "mediaMs": 348000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 233"
+  },
+  {
+    "atMs": 349.484,
+    "mediaMs": 349500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 234"
+  },
+  {
+    "atMs": 349.873,
+    "mediaMs": 351667,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Since Bush",
+    "refId": "topic-18",
+    "speaker": "Bill Clinton",
+    "claim": "Since Mr. Bush and Mr."
+  },
+  {
+    "atMs": 349.993,
+    "mediaMs": 351667,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Since Bush",
+    "refId": "page-topic-18",
+    "latencyMs": 0.3189519999999675,
+    "speaker": "Bill Clinton",
+    "claim": "Since Mr. Bush and Mr."
+  },
+  {
+    "atMs": 351.145,
+    "mediaMs": 351000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 235"
+  },
+  {
+    "atMs": 352.708,
+    "mediaMs": 352500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 236"
+  },
+  {
+    "atMs": 353.08,
+    "mediaMs": 355486,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Personal Income Has",
+    "refId": "topic-19",
+    "speaker": "Bill Clinton",
+    "claim": "Personal income has dropped while people have worked harder."
+  },
+  {
+    "atMs": 353.213,
+    "mediaMs": 355486,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Personal Income Has",
+    "refId": "page-topic-19",
+    "latencyMs": 0.33292600000004313,
+    "speaker": "Bill Clinton",
+    "claim": "Personal income has dropped while people have worked harder."
+  },
+  {
+    "atMs": 354.401,
+    "mediaMs": 354000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 237"
+  },
+  {
+    "atMs": 355.61,
+    "mediaMs": 355500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 238"
+  },
+  {
+    "atMs": 356.128,
+    "mediaMs": 360268,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Last Years There",
+    "refId": "topic-20",
+    "speaker": "Bill Clinton",
+    "claim": "In the last 4 years, there have been twice as many bankruptcies as new jobs created."
+  },
+  {
+    "atMs": 357.123,
+    "mediaMs": 360268,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Last Years There",
+    "refId": "page-topic-20",
+    "latencyMs": 1.3095559999999864,
+    "speaker": "Bill Clinton",
+    "claim": "In the last 4 years, there have been twice as many bankruptcies as new jobs created."
+  },
+  {
+    "atMs": 357.131,
+    "mediaMs": 357000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 239"
+  },
+  {
+    "atMs": 358.294,
+    "mediaMs": 358500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 240"
+  },
+  {
+    "atMs": 359.448,
+    "mediaMs": 360000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 241"
+  },
+  {
+    "atMs": 359.729,
+    "mediaMs": 361985,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-43",
+    "speaker": "Bill Clinton",
+    "claim": "We need a new approach."
+  },
+  {
+    "atMs": 360.918,
+    "mediaMs": 361500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 242"
+  },
+  {
+    "atMs": 361.292,
+    "mediaMs": 364649,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Same Old Experience",
+    "refId": "topic-21",
+    "speaker": "Bill Clinton",
+    "claim": "The same old experience is not relevant."
+  },
+  {
+    "atMs": 361.452,
+    "mediaMs": 364649,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Same Old Experience",
+    "refId": "page-topic-21",
+    "latencyMs": 0.37630699999999706,
+    "speaker": "Bill Clinton",
+    "claim": "The same old experience is not relevant."
+  },
+  {
+    "atMs": 362.623,
+    "mediaMs": 363000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 243"
+  },
+  {
+    "atMs": 363.798,
+    "mediaMs": 364500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 244"
+  },
+  {
+    "atMs": 364.636,
+    "mediaMs": 377599,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Living New World",
+    "refId": "topic-22",
+    "speaker": "Bill Clinton",
+    "claim": "We're living in a new world after the Cold War, and what works in this new world is not trickle-down, not government for the benefit of the privileged few, not tax and spend, but a commitment to invest in American jobs and American education."
+  },
+  {
+    "atMs": 365.071,
+    "mediaMs": 377599,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Living New World",
+    "refId": "page-topic-22",
+    "latencyMs": 0.5754970000000412,
+    "speaker": "Bill Clinton",
+    "claim": "We're living in a new world after the Cold War, and what works in this new world is not trickle-down, not government for the benefit of the privileged few, not tax and spend, but a commitment to invest in American jobs and American education."
+  },
+  {
+    "atMs": 365.732,
+    "mediaMs": 366000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 245"
+  },
+  {
+    "atMs": 366.935,
+    "mediaMs": 367500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 246"
+  },
+  {
+    "atMs": 369.104,
+    "mediaMs": 369000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 247"
+  },
+  {
+    "atMs": 370.27,
+    "mediaMs": 370500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 248"
+  },
+  {
+    "atMs": 371.476,
+    "mediaMs": 372000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 249"
+  },
+  {
+    "atMs": 373.648,
+    "mediaMs": 373500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 250"
+  },
+  {
+    "atMs": 374.792,
+    "mediaMs": 375000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 251"
+  },
+  {
+    "atMs": 375.972,
+    "mediaMs": 376500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 252"
+  },
+  {
+    "atMs": 376.745,
+    "mediaMs": 381646,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Controlling American Health",
+    "refId": "topic-23",
+    "speaker": "Bill Clinton",
+    "claim": "Controlling American health care costs, and bringing the American people together."
+  },
+  {
+    "atMs": 376.857,
+    "mediaMs": 381646,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Controlling American Health",
+    "refId": "page-topic-23",
+    "latencyMs": 0.45546200000001136,
+    "speaker": "Bill Clinton",
+    "claim": "Controlling American health care costs, and bringing the American people together."
+  },
+  {
+    "atMs": 378.05,
+    "mediaMs": 378000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 253"
+  },
+  {
+    "atMs": 379.224,
+    "mediaMs": 379500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 254"
+  },
+  {
+    "atMs": 380.346,
+    "mediaMs": 381000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 255"
+  },
+  {
+    "atMs": 382.669,
+    "mediaMs": 382500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 256"
+  },
+  {
+    "atMs": 382.948,
+    "mediaMs": 386179,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-47",
+    "speaker": "Bill Clinton",
+    "claim": "And you can have the right kind of experience and the wrong kind of experience."
+  },
+  {
+    "atMs": 384.161,
+    "mediaMs": 384000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 257"
+  },
+  {
+    "atMs": 384.341,
+    "mediaMs": 385500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 258"
+  },
+  {
+    "atMs": 384.902,
+    "mediaMs": 391585,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "prediction",
+    "refId": "claim-48",
+    "speaker": "Bill Clinton",
+    "claim": "Mine is rooted in the real lives of real people, and it will bring real results if we have the courage to change."
+  },
+  {
+    "atMs": 387.039,
+    "mediaMs": 387000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 259"
+  },
+  {
+    "atMs": 388.204,
+    "mediaMs": 388500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 260"
+  },
+  {
+    "atMs": 388.293,
+    "mediaMs": 390000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 261"
+  },
+  {
+    "atMs": 391.562,
+    "mediaMs": 391500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 262"
+  },
+  {
+    "atMs": 392.865,
+    "mediaMs": 393000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 263"
+  },
+  {
+    "atMs": 393.884,
+    "mediaMs": 398835,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-49",
+    "speaker": "George H. W. Bush",
+    "claim": "I just thought of another— another big difference here between me."
+  },
+  {
+    "atMs": 395.064,
+    "mediaMs": 394500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 264"
+  },
+  {
+    "atMs": 396.225,
+    "mediaMs": 396000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 265"
+  },
+  {
+    "atMs": 397.485,
+    "mediaMs": 397500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 266"
+  },
+  {
+    "atMs": 398.801,
+    "mediaMs": 399000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 267"
+  },
+  {
+    "atMs": 399.97,
+    "mediaMs": 400500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 268"
+  },
+  {
+    "atMs": 400.4,
+    "mediaMs": 405327,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "promise",
+    "refId": "claim-50",
+    "speaker": "George H. W. Bush",
+    "claim": "Perot feels this way, but I know Governor Clinton did, because I want to accurately quote him."
+  },
+  {
+    "atMs": 401.57,
+    "mediaMs": 402000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 269"
+  },
+  {
+    "atMs": 404.376,
+    "mediaMs": 403500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 270"
+  },
+  {
+    "atMs": 406.21,
+    "mediaMs": 405000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 271"
+  },
+  {
+    "atMs": 406.783,
+    "mediaMs": 409597,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-51",
+    "speaker": "George H. W. Bush",
+    "claim": "He thinks— I think he said that the country is coming apart at the seams."
+  },
+  {
+    "atMs": 406.793,
+    "mediaMs": 406500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 272"
+  },
+  {
+    "atMs": 408.659,
+    "mediaMs": 408000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 273"
+  },
+  {
+    "atMs": 409.791,
+    "mediaMs": 409500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 274"
+  },
+  {
+    "atMs": 410.34,
+    "mediaMs": 417211,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Now Know That",
+    "refId": "topic-24",
+    "speaker": "George H. W. Bush",
+    "claim": "Now, I know that the only way he can win is to make everybody believe the economy is worse than it is."
+  },
+  {
+    "atMs": 410.514,
+    "mediaMs": 417211,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Now Know That",
+    "refId": "page-topic-24",
+    "latencyMs": 0.5104380000000219,
+    "speaker": "George H. W. Bush",
+    "claim": "Now, I know that the only way he can win is to make everybody believe the economy is worse than it is."
+  },
+  {
+    "atMs": 411.727,
+    "mediaMs": 411000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 275"
+  },
+  {
+    "atMs": 412.895,
+    "mediaMs": 412500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 276"
+  },
+  {
+    "atMs": 414.167,
+    "mediaMs": 414000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 277"
+  },
+  {
+    "atMs": 415.321,
+    "mediaMs": 415500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 278"
+  },
+  {
+    "atMs": 416.453,
+    "mediaMs": 417000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 279"
+  },
+  {
+    "atMs": 417.706,
+    "mediaMs": 420706,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "But This Country",
+    "refId": "topic-25",
+    "speaker": "George H. W. Bush",
+    "claim": "But this country is not coming apart at the seams, for heaven's sakes."
+  },
+  {
+    "atMs": 417.914,
+    "mediaMs": 420706,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created But This Country",
+    "refId": "page-topic-25",
+    "latencyMs": 0.6073169999999664,
+    "speaker": "George H. W. Bush",
+    "claim": "But this country is not coming apart at the seams, for heaven's sakes."
+  },
+  {
+    "atMs": 418.458,
+    "mediaMs": 418500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 280"
+  },
+  {
+    "atMs": 419.79,
+    "mediaMs": 420000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 281"
+  },
+  {
+    "atMs": 420.953,
+    "mediaMs": 421500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 282"
+  },
+  {
+    "atMs": 421.449,
+    "mediaMs": 422998,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "United States America",
+    "refId": "topic-26",
+    "speaker": "George H. W. Bush",
+    "claim": "We're the United States of America."
+  },
+  {
+    "atMs": 421.581,
+    "mediaMs": 422998,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created United States America",
+    "refId": "page-topic-26",
+    "latencyMs": 0.4515290000000505,
+    "speaker": "George H. W. Bush",
+    "claim": "We're the United States of America."
+  },
+  {
+    "atMs": 422.749,
+    "mediaMs": 423000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 283"
+  },
+  {
+    "atMs": 423.208,
+    "mediaMs": 427872,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Spite Economic Problems",
+    "refId": "topic-27",
+    "speaker": "George H. W. Bush",
+    "claim": "We, in spite of the economic problems, we are the most respected economy around the world."
+  },
+  {
+    "atMs": 423.337,
+    "mediaMs": 427872,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Spite Economic Problems",
+    "refId": "page-topic-27",
+    "latencyMs": 0.37249199999996563,
+    "speaker": "George H. W. Bush",
+    "claim": "We, in spite of the economic problems, we are the most respected economy around the world."
+  },
+  {
+    "atMs": 424.638,
+    "mediaMs": 424500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 284"
+  },
+  {
+    "atMs": 425.789,
+    "mediaMs": 426000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 285"
+  },
+  {
+    "atMs": 426.962,
+    "mediaMs": 427500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 286"
+  },
+  {
+    "atMs": 427.232,
+    "mediaMs": 429619,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "prediction",
+    "refId": "claim-56",
+    "speaker": "George H. W. Bush",
+    "claim": "Many would trade for it."
+  },
+  {
+    "atMs": 428.464,
+    "mediaMs": 429000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 287"
+  },
+  {
+    "atMs": 428.859,
+    "mediaMs": 431991,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Been Caught Global",
+    "refId": "topic-28",
+    "speaker": "George H. W. Bush",
+    "claim": "We've been caught up in a global slowdown."
+  },
+  {
+    "atMs": 428.982,
+    "mediaMs": 431991,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Been Caught Global",
+    "refId": "page-topic-28",
+    "latencyMs": 0.36575300000004063,
+    "speaker": "George H. W. Bush",
+    "claim": "We've been caught up in a global slowdown."
+  },
+  {
+    "atMs": 430.124,
+    "mediaMs": 430500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 288"
+  },
+  {
+    "atMs": 431.275,
+    "mediaMs": 432000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 289"
+  },
+  {
+    "atMs": 432.439,
+    "mediaMs": 434202,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-58",
+    "speaker": "George H. W. Bush",
+    "claim": "We can do much, much better."
+  },
+  {
+    "atMs": 433.641,
+    "mediaMs": 433500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 290"
+  },
+  {
+    "atMs": 433.932,
+    "mediaMs": 441012,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-59",
+    "speaker": "George H. W. Bush",
+    "claim": "But we ought not to try to convince the American people that America is a country that's coming apart at the seams."
+  },
+  {
+    "atMs": 435.082,
+    "mediaMs": 435000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 291"
+  },
+  {
+    "atMs": 436.219,
+    "mediaMs": 436500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 292"
+  },
+  {
+    "atMs": 437.391,
+    "mediaMs": 438000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 293"
+  },
+  {
+    "atMs": 439.537,
+    "mediaMs": 439500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 294"
+  },
+  {
+    "atMs": 440.686,
+    "mediaMs": 441000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 295"
+  },
+  {
+    "atMs": 441.17,
+    "mediaMs": 450593,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "prediction",
+    "refId": "claim-60",
+    "speaker": "George H. W. Bush",
+    "claim": "I would hate to be running for president and think that the only way I could win would be to convince every— everybody how horrible things are."
+  },
+  {
+    "atMs": 442.351,
+    "mediaMs": 442500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 296"
+  },
+  {
+    "atMs": 443.549,
+    "mediaMs": 444000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 297"
+  },
+  {
+    "atMs": 445.73,
+    "mediaMs": 445500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 298"
+  },
+  {
+    "atMs": 446.897,
+    "mediaMs": 447000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 299"
+  },
+  {
+    "atMs": 448.056,
+    "mediaMs": 448500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 300"
+  },
+  {
+    "atMs": 450.226,
+    "mediaMs": 450000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 301"
+  },
+  {
+    "atMs": 451.501,
+    "mediaMs": 451500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 302"
+  },
+  {
+    "atMs": 451.882,
+    "mediaMs": 453910,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Yes People Hurting",
+    "refId": "topic-29",
+    "speaker": "George H. W. Bush",
+    "claim": "And yes, people are hurting."
+  },
+  {
+    "atMs": 452.017,
+    "mediaMs": 453910,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Yes People Hurting",
+    "refId": "page-topic-29",
+    "latencyMs": 0.368865000000028,
+    "speaker": "George H. W. Bush",
+    "claim": "And yes, people are hurting."
+  },
+  {
+    "atMs": 453.178,
+    "mediaMs": 453000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 303"
+  },
+  {
+    "atMs": 453.599,
+    "mediaMs": 458957,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-62",
+    "speaker": "George H. W. Bush",
+    "claim": "But I believe that this agenda for American renewal that I have is the answer to do it."
+  },
+  {
+    "atMs": 455.23,
+    "mediaMs": 454500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 304"
+  },
+  {
+    "atMs": 456.543,
+    "mediaMs": 456000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 305"
+  },
+  {
+    "atMs": 458.983,
+    "mediaMs": 457500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 306"
+  },
+  {
+    "atMs": 460.323,
+    "mediaMs": 459000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 307"
+  },
+  {
+    "atMs": 460.65,
+    "mediaMs": 460527,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-63",
+    "speaker": "George H. W. Bush",
+    "claim": "And I believe we can get it done now."
+  },
+  {
+    "atMs": 460.658,
+    "mediaMs": 460500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 308"
+  },
+  {
+    "atMs": 461.097,
+    "mediaMs": 469084,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-64",
+    "speaker": "George H. W. Bush",
+    "claim": "whereas we didn't in the past, because you're gonna have a whole brand new bunch of people in the Congress that are gonna have to listen to the same American people I'm listening to."
+  },
+  {
+    "atMs": 462.246,
+    "mediaMs": 462000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 309"
+  },
+  {
+    "atMs": 466.015,
+    "mediaMs": 463500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 310"
+  },
+  {
+    "atMs": 466.041,
+    "mediaMs": 465000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 311"
+  },
+  {
+    "atMs": 467.187,
+    "mediaMs": 466500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 312"
+  },
+  {
+    "atMs": 468.368,
+    "mediaMs": 468000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 313"
+  },
+  {
+    "atMs": 471.567,
+    "mediaMs": 469500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 314"
+  },
+  {
+    "atMs": 471.928,
+    "mediaMs": 471000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 315"
+  },
+  {
+    "atMs": 473.393,
+    "mediaMs": 472500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 316"
+  },
+  {
+    "atMs": 479.96,
+    "mediaMs": 476020,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Don Have Any",
+    "refId": "topic-30",
+    "speaker": "Ross Perot",
+    "claim": "I don't have any experience in running up a $4 trillion debt."
+  },
+  {
+    "atMs": 480.112,
+    "mediaMs": 476020,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Don Have Any",
+    "refId": "page-topic-30",
+    "latencyMs": 0.6029529999999568,
+    "speaker": "Ross Perot",
+    "claim": "I don't have any experience in running up a $4 trillion debt."
+  },
+  {
+    "atMs": 480.12,
+    "mediaMs": 474000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 317"
+  },
+  {
+    "atMs": 480.134,
+    "mediaMs": 475500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 318"
+  },
+  {
+    "atMs": 480.144,
+    "mediaMs": 477000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 319"
+  },
+  {
+    "atMs": 480.798,
+    "mediaMs": 486329,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Don Have Any",
+    "refId": "topic-31",
+    "speaker": "Ross Perot",
+    "claim": "I don't have any experience in gridlock government where nobody takes responsibility for anything and everybody blames everybody else."
+  },
+  {
+    "atMs": 480.93,
+    "mediaMs": 486329,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Don Have Any",
+    "refId": "page-topic-31",
+    "latencyMs": 0.534336000000053,
+    "speaker": "Ross Perot",
+    "claim": "I don't have any experience in gridlock government where nobody takes responsibility for anything and everybody blames everybody else."
+  },
+  {
+    "atMs": 480.934,
+    "mediaMs": 478500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 320"
+  },
+  {
+    "atMs": 480.947,
+    "mediaMs": 480000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 321"
+  },
+  {
+    "atMs": 482.111,
+    "mediaMs": 481500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 322"
+  },
+  {
+    "atMs": 483.248,
+    "mediaMs": 483000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 323"
+  },
+  {
+    "atMs": 484.411,
+    "mediaMs": 484500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 324"
+  },
+  {
+    "atMs": 485.561,
+    "mediaMs": 486000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 325"
+  },
+  {
+    "atMs": 486.246,
+    "mediaMs": 497290,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-67",
+    "speaker": "Ross Perot",
+    "claim": "I don't have any experience in creating the worst public school system in the industrialized world, the most violent, crime-ridden society in the industrialized world, but I do have a lot of experience in getting things done."
+  },
+  {
+    "atMs": 489.992,
+    "mediaMs": 487500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 326"
+  },
+  {
+    "atMs": 490.015,
+    "mediaMs": 489000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 327"
+  },
+  {
+    "atMs": 491.143,
+    "mediaMs": 490500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 328"
+  },
+  {
+    "atMs": 492.386,
+    "mediaMs": 492000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 329"
+  },
+  {
+    "atMs": 493.613,
+    "mediaMs": 493500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 330"
+  },
+  {
+    "atMs": 495.065,
+    "mediaMs": 495000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 331"
+  },
+  {
+    "atMs": 497.555,
+    "mediaMs": 496500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 332"
+  },
+  {
+    "atMs": 498.711,
+    "mediaMs": 507790,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "promise",
+    "refId": "claim-68",
+    "speaker": "Ross Perot",
+    "claim": "So if we're at a point in history where we want to stop talking about it and do it, I've got a lot of experience in figuring out how to solve problems, making the solutions work, and then moving on to the next one."
+  },
+  {
+    "atMs": 498.726,
+    "mediaMs": 498000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 333"
+  },
+  {
+    "atMs": 499.518,
+    "mediaMs": 499500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 334"
+  },
+  {
+    "atMs": 501.278,
+    "mediaMs": 501000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 335"
+  },
+  {
+    "atMs": 502.426,
+    "mediaMs": 502500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 336"
+  },
+  {
+    "atMs": 503.598,
+    "mediaMs": 504000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 337"
+  },
+  {
+    "atMs": 504.777,
+    "mediaMs": 505500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 338"
+  },
+  {
+    "atMs": 506.974,
+    "mediaMs": 507000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 339"
+  },
+  {
+    "atMs": 507.699,
+    "mediaMs": 511560,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Got Lot Experience",
+    "refId": "topic-32",
+    "speaker": "Ross Perot",
+    "claim": "I've got a lot of experience not taking 10 years to solve a 10-minute problem."
+  },
+  {
+    "atMs": 507.877,
+    "mediaMs": 511560,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Got Lot Experience",
+    "refId": "page-topic-32",
+    "latencyMs": 0.5931789999999637,
+    "speaker": "Ross Perot",
+    "claim": "I've got a lot of experience not taking 10 years to solve a 10-minute problem."
+  },
+  {
+    "atMs": 510.1,
+    "mediaMs": 508500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 340"
+  },
+  {
+    "atMs": 510.128,
+    "mediaMs": 510000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 341"
+  },
+  {
+    "atMs": 511.281,
+    "mediaMs": 511500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 342"
+  },
+  {
+    "atMs": 511.782,
+    "mediaMs": 515024,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-70",
+    "speaker": "Ross Perot",
+    "claim": "So if it's time for action, I think I have experience that counts."
+  },
+  {
+    "atMs": 512.907,
+    "mediaMs": 513000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 343"
+  },
+  {
+    "atMs": 514.104,
+    "mediaMs": 514500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 344"
+  },
+  {
+    "atMs": 515.401,
+    "mediaMs": 518855,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-71",
+    "speaker": "Ross Perot",
+    "claim": "If there's more time for gridlock and talk and finger-pointing, I'm the wrong man."
+  },
+  {
+    "atMs": 516.558,
+    "mediaMs": 516000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 345"
+  },
+  {
+    "atMs": 517.68,
+    "mediaMs": 517500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 346"
+  },
+  {
+    "atMs": 518.802,
+    "mediaMs": 519000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 347"
+  },
+  {
+    "atMs": 520.02,
+    "mediaMs": 520500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 348"
+  },
+  {
+    "atMs": 520.32,
+    "mediaMs": 522000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 349"
+  },
+  {
+    "atMs": 523.485,
+    "mediaMs": 523500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 350"
+  },
+  {
+    "atMs": 524.936,
+    "mediaMs": 525000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 351"
+  },
+  {
+    "atMs": 526.123,
+    "mediaMs": 526500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 352"
+  },
+  {
+    "atMs": 527.368,
+    "mediaMs": 528000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 353"
+  },
+  {
+    "atMs": 529.558,
+    "mediaMs": 529500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 354"
+  },
+  {
+    "atMs": 530.82,
+    "mediaMs": 531000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 355"
+  },
+  {
+    "atMs": 531.253,
+    "mediaMs": 534479,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-72",
+    "speaker": "George H. W. Bush",
+    "claim": "I think the American people should be the judge of that."
+  },
+  {
+    "atMs": 532.408,
+    "mediaMs": 532500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 356"
+  },
+  {
+    "atMs": 533.574,
+    "mediaMs": 534000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 357"
+  },
+  {
+    "atMs": 533.963,
+    "mediaMs": 538058,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-73",
+    "speaker": "George H. W. Bush",
+    "claim": "I think character is a very important question."
+  },
+  {
+    "atMs": 535.821,
+    "mediaMs": 535500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 358"
+  },
+  {
+    "atMs": 536.979,
+    "mediaMs": 537000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 359"
+  },
+  {
+    "atMs": 538.159,
+    "mediaMs": 538500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 360"
+  },
+  {
+    "atMs": 538.987,
+    "mediaMs": 549380,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Said Something Other",
+    "refId": "topic-33",
+    "speaker": "George H. W. Bush",
+    "claim": "I said something the other day where I was accused of being like Joe McCarthy because I questioned— I put it this way."
+  },
+  {
+    "atMs": 539.181,
+    "mediaMs": 549380,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Said Something Other",
+    "refId": "page-topic-33",
+    "latencyMs": 0.6931149999999207,
+    "speaker": "George H. W. Bush",
+    "claim": "I said something the other day where I was accused of being like Joe McCarthy because I questioned— I put it this way."
+  },
+  {
+    "atMs": 540.338,
+    "mediaMs": 540000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 361"
+  },
+  {
+    "atMs": 541.495,
+    "mediaMs": 541500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 362"
+  },
+  {
+    "atMs": 542.663,
+    "mediaMs": 543000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 363"
+  },
+  {
+    "atMs": 543.827,
+    "mediaMs": 544500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 364"
+  },
+  {
+    "atMs": 546.006,
+    "mediaMs": 546000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 365"
+  },
+  {
+    "atMs": 547.146,
+    "mediaMs": 547500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 366"
+  },
+  {
+    "atMs": 548.331,
+    "mediaMs": 549000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 367"
+  },
+  {
+    "atMs": 549.132,
+    "mediaMs": 558354,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-75",
+    "speaker": "George H. W. Bush",
+    "claim": "I think it's wrong to demonstrate against your own country or organize demonstrations against your own country in foreign soil."
+  },
+  {
+    "atMs": 549.76,
+    "mediaMs": 550500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 368"
+  },
+  {
+    "atMs": 551.959,
+    "mediaMs": 552000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 369"
+  },
+  {
+    "atMs": 553.142,
+    "mediaMs": 553500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 370"
+  },
+  {
+    "atMs": 554.906,
+    "mediaMs": 555000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 371"
+  },
+  {
+    "atMs": 556.064,
+    "mediaMs": 556500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 372"
+  },
+  {
+    "atMs": 558.24,
+    "mediaMs": 558000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 373"
+  },
+  {
+    "atMs": 558.629,
+    "mediaMs": 559252,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-76",
+    "speaker": "George H. W. Bush",
+    "claim": "I just think it's wrong."
+  },
+  {
+    "atMs": 562.825,
+    "mediaMs": 559500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 374"
+  },
+  {
+    "atMs": 566.781,
+    "mediaMs": 563691,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Then Maybe They",
+    "refId": "topic-34",
+    "speaker": "George H. W. Bush",
+    "claim": "I— then maybe they say, well, it was a youthful indiscretion."
+  },
+  {
+    "atMs": 566.942,
+    "mediaMs": 563691,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Then Maybe They",
+    "refId": "page-topic-34",
+    "latencyMs": 0.5284319999999525,
+    "speaker": "George H. W. Bush",
+    "claim": "I— then maybe they say, well, it was a youthful indiscretion."
+  },
+  {
+    "atMs": 566.947,
+    "mediaMs": 561000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 375"
+  },
+  {
+    "atMs": 566.958,
+    "mediaMs": 562500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 376"
+  },
+  {
+    "atMs": 566.966,
+    "mediaMs": 564000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 377"
+  },
+  {
+    "atMs": 572.194,
+    "mediaMs": 570149,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Flying Off Aircraft",
+    "refId": "topic-35",
+    "speaker": "George H. W. Bush",
+    "claim": "I was 19 or 20 flying off an aircraft carrier, and that shaped me to be commander-in-chief of the armed forces."
+  },
+  {
+    "atMs": 572.365,
+    "mediaMs": 570149,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Flying Off Aircraft",
+    "refId": "page-topic-35",
+    "latencyMs": 0.5778549999999996,
+    "speaker": "George H. W. Bush",
+    "claim": "I was 19 or 20 flying off an aircraft carrier, and that shaped me to be commander-in-chief of the armed forces."
+  },
+  {
+    "atMs": 572.37,
+    "mediaMs": 565500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 378"
+  },
+  {
+    "atMs": 572.382,
+    "mediaMs": 567000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 379"
+  },
+  {
+    "atMs": 572.391,
+    "mediaMs": 568500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 380"
+  },
+  {
+    "atMs": 572.399,
+    "mediaMs": 570000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 381"
+  },
+  {
+    "atMs": 573.056,
+    "mediaMs": 577375,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-79",
+    "speaker": "George H. W. Bush",
+    "claim": "And I'm sorry, but demonstrating— it's not a question of patriotism, it's a question of character and judgment."
+  },
+  {
+    "atMs": 573.07,
+    "mediaMs": 571500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 382"
+  },
+  {
+    "atMs": 576.785,
+    "mediaMs": 573000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 383"
+  },
+  {
+    "atMs": 576.812,
+    "mediaMs": 574500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 384"
+  },
+  {
+    "atMs": 576.821,
+    "mediaMs": 576000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 385"
+  },
+  {
+    "atMs": 577.954,
+    "mediaMs": 577500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 386"
+  },
+  {
+    "atMs": 578.656,
+    "mediaMs": 581101,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "They Get Bill",
+    "refId": "topic-36",
+    "speaker": "George H. W. Bush",
+    "claim": "They get on me, Bill's gotten on me about \"read my lips.\""
+  },
+  {
+    "atMs": 578.795,
+    "mediaMs": 581101,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created They Get Bill",
+    "refId": "page-topic-36",
+    "latencyMs": 0.6163780000000543,
+    "speaker": "George H. W. Bush",
+    "claim": "They get on me, Bill's gotten on me about \"read my lips.\""
+  },
+  {
+    "atMs": 579.94,
+    "mediaMs": 579000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 387"
+  },
+  {
+    "atMs": 581.153,
+    "mediaMs": 580500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 388"
+  },
+  {
+    "atMs": 581.607,
+    "mediaMs": 582931,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "promise",
+    "refId": "claim-81",
+    "speaker": "George H. W. Bush",
+    "claim": "And when I make a mistake, I'll admit it."
+  },
+  {
+    "atMs": 583.075,
+    "mediaMs": 582000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 389"
+  },
+  {
+    "atMs": 585.722,
+    "mediaMs": 583500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 390"
+  },
+  {
+    "atMs": 586.233,
+    "mediaMs": 586721,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "But Has Made",
+    "refId": "topic-37",
+    "speaker": "George H. W. Bush",
+    "claim": "But he has made— not admitted a mistake."
+  },
+  {
+    "atMs": 586.36,
+    "mediaMs": 586721,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created But Has Made",
+    "refId": "page-topic-37",
+    "latencyMs": 0.4334569999999758,
+    "speaker": "George H. W. Bush",
+    "claim": "But he has made— not admitted a mistake."
+  },
+  {
+    "atMs": 586.366,
+    "mediaMs": 585000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 391"
+  },
+  {
+    "atMs": 599.442,
+    "mediaMs": 586500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 392"
+  },
+  {
+    "atMs": 600.607,
+    "mediaMs": 602486,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Just Find Impossible",
+    "refId": "topic-38",
+    "speaker": "George H. W. Bush",
+    "claim": "And I just find it impossible to understand how an American can demonstrate against his own country in a foreign land, organizing demonstrations against it, when young men are held prisoner in Hanoi or kids out of the ghetto were drafted."
+  },
+  {
+    "atMs": 600.775,
+    "mediaMs": 602486,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Just Find Impossible",
+    "refId": "page-topic-38",
+    "latencyMs": 0.8518149999999878,
+    "speaker": "George H. W. Bush",
+    "claim": "And I just find it impossible to understand how an American can demonstrate against his own country in a foreign land, organizing demonstrations against it, when young men are held prisoner in Hanoi or kids out of the ghetto were drafted."
+  },
+  {
+    "atMs": 600.782,
+    "mediaMs": 588000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 393"
+  },
+  {
+    "atMs": 600.795,
+    "mediaMs": 589500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 394"
+  },
+  {
+    "atMs": 600.803,
+    "mediaMs": 591000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 395"
+  },
+  {
+    "atMs": 600.811,
+    "mediaMs": 592500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 396"
+  },
+  {
+    "atMs": 600.818,
+    "mediaMs": 594000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 397"
+  },
+  {
+    "atMs": 600.826,
+    "mediaMs": 595500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 398"
+  },
+  {
+    "atMs": 600.834,
+    "mediaMs": 597000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 399"
+  },
+  {
+    "atMs": 600.842,
+    "mediaMs": 598500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 400"
+  },
+  {
+    "atMs": 600.849,
+    "mediaMs": 600000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 401"
+  },
+  {
+    "atMs": 602.018,
+    "mediaMs": 601500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 402"
+  },
+  {
+    "atMs": 604.026,
+    "mediaMs": 603000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 403"
+  },
+  {
+    "atMs": 604.71,
+    "mediaMs": 604305,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Some Say Well",
+    "refId": "topic-39",
+    "speaker": "George H. W. Bush",
+    "claim": "Some say, well, you're a little old-fashioned."
+  },
+  {
+    "atMs": 604.844,
+    "mediaMs": 604305,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Some Say Well",
+    "refId": "page-topic-39",
+    "latencyMs": 0.4860249999999269,
+    "speaker": "George H. W. Bush",
+    "claim": "Some say, well, you're a little old-fashioned."
+  },
+  {
+    "atMs": 604.849,
+    "mediaMs": 604500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 404"
+  },
+  {
+    "atMs": 606.121,
+    "mediaMs": 607875,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-85",
+    "speaker": "George H. W. Bush",
+    "claim": "Maybe I am, but I just don't think that's right."
+  },
+  {
+    "atMs": 606.139,
+    "mediaMs": 606000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 405"
+  },
+  {
+    "atMs": 607.471,
+    "mediaMs": 607500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 406"
+  },
+  {
+    "atMs": 608.736,
+    "mediaMs": 613735,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Now Whether Character",
+    "refId": "topic-40",
+    "speaker": "George H. W. Bush",
+    "claim": "Now, whether it's character or judgment, whatever it is, I have a big difference here on this issue."
+  },
+  {
+    "atMs": 608.895,
+    "mediaMs": 613735,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Now Whether Character",
+    "refId": "page-topic-40",
+    "latencyMs": 1.1575949999999011,
+    "speaker": "George H. W. Bush",
+    "claim": "Now, whether it's character or judgment, whatever it is, I have a big difference here on this issue."
+  },
+  {
+    "atMs": 610.047,
+    "mediaMs": 609000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 407"
+  },
+  {
+    "atMs": 611.282,
+    "mediaMs": 610500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 408"
+  },
+  {
+    "atMs": 614.822,
+    "mediaMs": 612000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 409"
+  },
+  {
+    "atMs": 614.844,
+    "mediaMs": 613500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 410"
+  },
+  {
+    "atMs": 616.107,
+    "mediaMs": 615000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 411"
+  },
+  {
+    "atMs": 617.231,
+    "mediaMs": 616500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 412"
+  },
+  {
+    "atMs": 617.576,
+    "mediaMs": 619515,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-87",
+    "speaker": "George H. W. Bush",
+    "claim": "But I, I couldn't do that."
+  },
+  {
+    "atMs": 618.894,
+    "mediaMs": 618000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 413"
+  },
+  {
+    "atMs": 620.096,
+    "mediaMs": 619500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 414"
+  },
+  {
+    "atMs": 620.508,
+    "mediaMs": 622253,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-88",
+    "speaker": "George H. W. Bush",
+    "claim": "And I don't think most Americans could do that."
+  },
+  {
+    "atMs": 621.635,
+    "mediaMs": 621000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 415"
+  },
+  {
+    "atMs": 622.816,
+    "mediaMs": 622500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 416"
+  },
+  {
+    "atMs": 623.336,
+    "mediaMs": 624461,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "They All Say",
+    "refId": "topic-41",
+    "speaker": "George H. W. Bush",
+    "claim": "And they all say, well, it was a long time ago."
+  },
+  {
+    "atMs": 623.475,
+    "mediaMs": 624461,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created They All Say",
+    "refId": "page-topic-41",
+    "latencyMs": 0.47390600000005634,
+    "speaker": "George H. W. Bush",
+    "claim": "And they all say, well, it was a long time ago."
+  },
+  {
+    "atMs": 624.656,
+    "mediaMs": 624000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 417"
+  },
+  {
+    "atMs": 626.025,
+    "mediaMs": 625500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 418"
+  },
+  {
+    "atMs": 626.591,
+    "mediaMs": 626985,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Say Made Terrible",
+    "refId": "topic-42",
+    "speaker": "George H. W. Bush",
+    "claim": "Say I made a terrible mistake."
+  },
+  {
+    "atMs": 626.716,
+    "mediaMs": 626985,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Say Made Terrible",
+    "refId": "page-topic-42",
+    "latencyMs": 0.4434720000000425,
+    "speaker": "George H. W. Bush",
+    "claim": "Say I made a terrible mistake."
+  },
+  {
+    "atMs": 627.942,
+    "mediaMs": 627000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 419"
+  },
+  {
+    "atMs": 629.771,
+    "mediaMs": 640229,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-91",
+    "speaker": "George H. W. Bush",
+    "claim": "How could you be Commander-in-Chief of the Armed Forces and have some kids say, when you have to make a tough decision, as I did in Panama or in Kuwait, and then have some kid jump up and say, \"Well, I'm not gonna go.\""
+  },
+  {
+    "atMs": 629.784,
+    "mediaMs": 628500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 420"
+  },
+  {
+    "atMs": 630.954,
+    "mediaMs": 630000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 421"
+  },
+  {
+    "atMs": 632.306,
+    "mediaMs": 631500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 422"
+  },
+  {
+    "atMs": 633.6,
+    "mediaMs": 633000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 423"
+  },
+  {
+    "atMs": 634.788,
+    "mediaMs": 634500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 424"
+  },
+  {
+    "atMs": 635.957,
+    "mediaMs": 636000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 425"
+  },
+  {
+    "atMs": 637.091,
+    "mediaMs": 637500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 426"
+  },
+  {
+    "atMs": 639.237,
+    "mediaMs": 639000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 427"
+  },
+  {
+    "atMs": 639.979,
+    "mediaMs": 646430,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Commander Chief Organizing",
+    "refId": "topic-43",
+    "speaker": "George H. W. Bush",
+    "claim": "The Commander-in-Chief was organizing demonstrations halfway around the world during another era."
+  },
+  {
+    "atMs": 640.132,
+    "mediaMs": 646430,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Commander Chief Organizing",
+    "refId": "page-topic-43",
+    "latencyMs": 0.6392240000000129,
+    "speaker": "George H. W. Bush",
+    "claim": "The Commander-in-Chief was organizing demonstrations halfway around the world during another era."
+  },
+  {
+    "atMs": 641.308,
+    "mediaMs": 640500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 428"
+  },
+  {
+    "atMs": 642.856,
+    "mediaMs": 642000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 429"
+  },
+  {
+    "atMs": 644.009,
+    "mediaMs": 643500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 430"
+  },
+  {
+    "atMs": 645.211,
+    "mediaMs": 645000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 431"
+  },
+  {
+    "atMs": 646.363,
+    "mediaMs": 646500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 432"
+  },
+  {
+    "atMs": 646.9,
+    "mediaMs": 652536,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-93",
+    "speaker": "George H. W. Bush",
+    "claim": "So there are differences, but that's about the main area where I think we have a difference."
+  },
+  {
+    "atMs": 647.353,
+    "mediaMs": 648000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 433"
+  },
+  {
+    "atMs": 649.587,
+    "mediaMs": 649500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 434"
+  },
+  {
+    "atMs": 650.759,
+    "mediaMs": 651000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 435"
+  },
+  {
+    "atMs": 651.929,
+    "mediaMs": 652500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 436"
+  },
+  {
+    "atMs": 652.435,
+    "mediaMs": 656155,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "promise",
+    "refId": "claim-94",
+    "speaker": "George H. W. Bush",
+    "claim": "I don't know about We'll talk about that a little with Ross here in a bit."
+  },
+  {
+    "atMs": 653.593,
+    "mediaMs": 654000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 437"
+  },
+  {
+    "atMs": 654.721,
+    "mediaMs": 655500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 438"
+  },
+  {
+    "atMs": 656.86,
+    "mediaMs": 657000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 439"
+  },
+  {
+    "atMs": 658.16,
+    "mediaMs": 658500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 440"
+  },
+  {
+    "atMs": 659.37,
+    "mediaMs": 660000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 441"
+  },
+  {
+    "atMs": 660.109,
+    "mediaMs": 673466,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-95",
+    "speaker": "Ross Perot",
+    "claim": "I think, uh, American people make their own decisions on character, and at a time when we have work to do and we need action, I think they need to clearly understand the backgrounds of each person."
+  },
+  {
+    "atMs": 661.285,
+    "mediaMs": 661500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 442"
+  },
+  {
+    "atMs": 662.472,
+    "mediaMs": 663000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 443"
+  },
+  {
+    "atMs": 665.21,
+    "mediaMs": 664500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 444"
+  },
+  {
+    "atMs": 665.515,
+    "mediaMs": 666000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 445"
+  },
+  {
+    "atMs": 667.693,
+    "mediaMs": 667500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 446"
+  },
+  {
+    "atMs": 668.852,
+    "mediaMs": 669000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 447"
+  },
+  {
+    "atMs": 670.033,
+    "mediaMs": 670500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 448"
+  },
+  {
+    "atMs": 672.229,
+    "mediaMs": 672000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 449"
+  },
+  {
+    "atMs": 673.41,
+    "mediaMs": 673500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 450"
+  },
+  {
+    "atMs": 674.047,
+    "mediaMs": 681157,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-96",
+    "speaker": "Ross Perot",
+    "claim": "I think the press can play a huge role in making sure that the backgrounds are clearly presented in an objective way."
+  },
+  {
+    "atMs": 675.477,
+    "mediaMs": 675000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 451"
+  },
+  {
+    "atMs": 676.661,
+    "mediaMs": 676500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 452"
+  },
+  {
+    "atMs": 677.84,
+    "mediaMs": 678000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 453"
+  },
+  {
+    "atMs": 679.008,
+    "mediaMs": 679500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 454"
+  },
+  {
+    "atMs": 681.235,
+    "mediaMs": 681000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 455"
+  },
+  {
+    "atMs": 682.66,
+    "mediaMs": 682500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 456"
+  },
+  {
+    "atMs": 683.33,
+    "mediaMs": 692301,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-97",
+    "speaker": "Ross Perot",
+    "claim": "Certainly anyone in the White House should have the character to be there, but I think it's very important to measure when and where things occurred."
+  },
+  {
+    "atMs": 684.513,
+    "mediaMs": 684000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 457"
+  },
+  {
+    "atMs": 685.656,
+    "mediaMs": 685500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 458"
+  },
+  {
+    "atMs": 686.806,
+    "mediaMs": 687000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 459"
+  },
+  {
+    "atMs": 687.969,
+    "mediaMs": 688500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 460"
+  },
+  {
+    "atMs": 690.16,
+    "mediaMs": 690000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 461"
+  },
+  {
+    "atMs": 691.508,
+    "mediaMs": 691500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 462"
+  },
+  {
+    "atMs": 692.924,
+    "mediaMs": 693000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 463"
+  },
+  {
+    "atMs": 694.16,
+    "mediaMs": 694500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 464"
+  },
+  {
+    "atMs": 695.331,
+    "mediaMs": 696000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 465"
+  },
+  {
+    "atMs": 697.506,
+    "mediaMs": 697500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 466"
+  },
+  {
+    "atMs": 698.686,
+    "mediaMs": 699000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 467"
+  },
+  {
+    "atMs": 699.896,
+    "mediaMs": 708909,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "When You Senior",
+    "refId": "topic-44",
+    "speaker": "Ross Perot",
+    "claim": "When you're a senior official in the federal government spending billions of dollars of taxpayers' money, and you're a mature individual, and you make a mistake, then that was on our ticket."
+  },
+  {
+    "atMs": 700.068,
+    "mediaMs": 708909,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created When You Senior",
+    "refId": "page-topic-44",
+    "latencyMs": 1.0038339999999835,
+    "speaker": "Ross Perot",
+    "claim": "When you're a senior official in the federal government spending billions of dollars of taxpayers' money, and you're a mature individual, and you make a mistake, then that was on our ticket."
+  },
+  {
+    "atMs": 700.79,
+    "mediaMs": 700500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 468"
+  },
+  {
+    "atMs": 702.021,
+    "mediaMs": 702000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 469"
+  },
+  {
+    "atMs": 703.196,
+    "mediaMs": 703500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 470"
+  },
+  {
+    "atMs": 704.375,
+    "mediaMs": 705000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 471"
+  },
+  {
+    "atMs": 706.554,
+    "mediaMs": 706500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 472"
+  },
+  {
+    "atMs": 707.735,
+    "mediaMs": 708000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 473"
+  },
+  {
+    "atMs": 709.007,
+    "mediaMs": 709500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 474"
+  },
+  {
+    "atMs": 709.701,
+    "mediaMs": 711576,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-99",
+    "speaker": "Ross Perot",
+    "claim": "If you make it as a young man, time passes."
+  },
+  {
+    "atMs": 710.878,
+    "mediaMs": 711000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 475"
+  },
+  {
+    "atMs": 711.917,
+    "mediaMs": 725886,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "prediction",
+    "refId": "claim-100",
+    "speaker": "Ross Perot",
+    "claim": "So I would say, just, you know, look at all three of us, decide who you think will do the job, pick that person in November, because believe me, as I've said before, the party's over and it's time for the cleanup crew."
+  },
+  {
+    "atMs": 713.098,
+    "mediaMs": 712500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 476"
+  },
+  {
+    "atMs": 714.248,
+    "mediaMs": 714000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 477"
+  },
+  {
+    "atMs": 715.425,
+    "mediaMs": 715500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 478"
+  },
+  {
+    "atMs": 716.616,
+    "mediaMs": 717000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 479"
+  },
+  {
+    "atMs": 717.783,
+    "mediaMs": 718500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 480"
+  },
+  {
+    "atMs": 720.367,
+    "mediaMs": 720000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 481"
+  },
+  {
+    "atMs": 721.539,
+    "mediaMs": 721500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 482"
+  },
+  {
+    "atMs": 722.699,
+    "mediaMs": 723000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 483"
+  },
+  {
+    "atMs": 723.876,
+    "mediaMs": 724500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 484"
+  },
+  {
+    "atMs": 726.054,
+    "mediaMs": 726000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 485"
+  },
+  {
+    "atMs": 726.771,
+    "mediaMs": 735776,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-101",
+    "speaker": "Ross Perot",
+    "claim": "And we do have to have change, and people who never take responsibility for anything when it happens on their watch and people who are in charge."
+  },
+  {
+    "atMs": 727.939,
+    "mediaMs": 727500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 486"
+  },
+  {
+    "atMs": 729.116,
+    "mediaMs": 729000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 487"
+  },
+  {
+    "atMs": 730.291,
+    "mediaMs": 730500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 488"
+  },
+  {
+    "atMs": 731.483,
+    "mediaMs": 732000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 489"
+  },
+  {
+    "atMs": 733.656,
+    "mediaMs": 733500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 490"
+  },
+  {
+    "atMs": 734.826,
+    "mediaMs": 735000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 491"
+  },
+  {
+    "atMs": 736.001,
+    "mediaMs": 736500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 492"
+  },
+  {
+    "atMs": 737.486,
+    "mediaMs": 738000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 493"
+  },
+  {
+    "atMs": 738.779,
+    "mediaMs": 739500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 494"
+  },
+  {
+    "atMs": 741.062,
+    "mediaMs": 741000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 495"
+  },
+  {
+    "atMs": 741.271,
+    "mediaMs": 742500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 496"
+  },
+  {
+    "atMs": 743.586,
+    "mediaMs": 744000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 497"
+  },
+  {
+    "atMs": 744.416,
+    "mediaMs": 747574,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Ross Gave Good",
+    "refId": "topic-45",
+    "speaker": "Bill Clinton",
+    "claim": "Ross gave a good answer, but I've got to respond directly to Mr."
+  },
+  {
+    "atMs": 744.695,
+    "mediaMs": 747574,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Ross Gave Good",
+    "refId": "page-topic-45",
+    "latencyMs": 0.8685799999999517,
+    "speaker": "Bill Clinton",
+    "claim": "Ross gave a good answer, but I've got to respond directly to Mr."
+  },
+  {
+    "atMs": 746.049,
+    "mediaMs": 745500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 498"
+  },
+  {
+    "atMs": 747.286,
+    "mediaMs": 747000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 499"
+  },
+  {
+    "atMs": 748.151,
+    "mediaMs": 751325,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "You Have Questioned",
+    "refId": "topic-46",
+    "speaker": "Bill Clinton",
+    "claim": "You have questioned my patriotism."
+  },
+  {
+    "atMs": 748.401,
+    "mediaMs": 751325,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created You Have Questioned",
+    "refId": "page-topic-46",
+    "latencyMs": 0.658582000000024,
+    "speaker": "Bill Clinton",
+    "claim": "You have questioned my patriotism."
+  },
+  {
+    "atMs": 750.32,
+    "mediaMs": 748500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 500"
+  },
+  {
+    "atMs": 750.358,
+    "mediaMs": 750000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 501"
+  },
+  {
+    "atMs": 751.501,
+    "mediaMs": 751500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 502"
+  },
+  {
+    "atMs": 752.419,
+    "mediaMs": 759629,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "You Even Brought",
+    "refId": "topic-47",
+    "speaker": "Bill Clinton",
+    "claim": "You even brought some right-wing congressmen into the White House to plot how to attack me for going to Russia in 1969, 1970."
+  },
+  {
+    "atMs": 752.579,
+    "mediaMs": 759629,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created You Even Brought",
+    "refId": "page-topic-47",
+    "latencyMs": 0.7935749999999189,
+    "speaker": "Bill Clinton",
+    "claim": "You even brought some right-wing congressmen into the White House to plot how to attack me for going to Russia in 1969, 1970."
+  },
+  {
+    "atMs": 753.734,
+    "mediaMs": 753000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 503"
+  },
+  {
+    "atMs": 754.916,
+    "mediaMs": 754500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 504"
+  },
+  {
+    "atMs": 756.12,
+    "mediaMs": 756000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 505"
+  },
+  {
+    "atMs": 757.449,
+    "mediaMs": 757500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 506"
+  },
+  {
+    "atMs": 758.714,
+    "mediaMs": 759000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 507"
+  },
+  {
+    "atMs": 759.587,
+    "mediaMs": 761796,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "When Over 000",
+    "refId": "topic-48",
+    "speaker": "Bill Clinton",
+    "claim": "When over 50,000 other Americans did."
+  },
+  {
+    "atMs": 759.855,
+    "mediaMs": 761796,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created When Over 000",
+    "refId": "page-topic-48",
+    "latencyMs": 0.7350490000000036,
+    "speaker": "Bill Clinton",
+    "claim": "When over 50,000 other Americans did."
+  },
+  {
+    "atMs": 761.034,
+    "mediaMs": 760500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 508"
+  },
+  {
+    "atMs": 762.247,
+    "mediaMs": 762000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 509"
+  },
+  {
+    "atMs": 763.038,
+    "mediaMs": 764927,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Now Honor Your",
+    "refId": "topic-49",
+    "speaker": "Bill Clinton",
+    "claim": "Now, I honor your service in World War II."
+  },
+  {
+    "atMs": 763.169,
+    "mediaMs": 764927,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Now Honor Your",
+    "refId": "page-topic-49",
+    "latencyMs": 0.6362259999999651,
+    "speaker": "Bill Clinton",
+    "claim": "Now, I honor your service in World War II."
+  },
+  {
+    "atMs": 764.378,
+    "mediaMs": 763500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 510"
+  },
+  {
+    "atMs": 765.535,
+    "mediaMs": 765000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 511"
+  },
+  {
+    "atMs": 767.097,
+    "mediaMs": 773886,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Honor Perot Service",
+    "refId": "topic-50",
+    "speaker": "Bill Clinton",
+    "claim": "I honor Mr. Perot's service in uniform and the service of every man and woman who ever served, including Admiral Crowe, who was your Chairman of the Joint Chiefs and who's supporting me."
+  },
+  {
+    "atMs": 767.272,
+    "mediaMs": 773886,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Honor Perot Service",
+    "refId": "page-topic-50",
+    "latencyMs": 1.4155909999999494,
+    "speaker": "Bill Clinton",
+    "claim": "I honor Mr. Perot's service in uniform and the service of every man and woman who ever served, including Admiral Crowe, who was your Chairman of the Joint Chiefs and who's supporting me."
+  },
+  {
+    "atMs": 767.278,
+    "mediaMs": 766500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 512"
+  },
+  {
+    "atMs": 768.807,
+    "mediaMs": 768000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 513"
+  },
+  {
+    "atMs": 769.973,
+    "mediaMs": 769500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 514"
+  },
+  {
+    "atMs": 771.129,
+    "mediaMs": 771000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 515"
+  },
+  {
+    "atMs": 772.294,
+    "mediaMs": 772500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 516"
+  },
+  {
+    "atMs": 773.728,
+    "mediaMs": 774000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 517"
+  },
+  {
+    "atMs": 774.523,
+    "mediaMs": 782025,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-108",
+    "speaker": "Bill Clinton",
+    "claim": "But when Joe McCarthy went around this country attacking people's patriotism, he was wrong."
+  },
+  {
+    "atMs": 775.689,
+    "mediaMs": 775500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 518"
+  },
+  {
+    "atMs": 776.848,
+    "mediaMs": 777000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 519"
+  },
+  {
+    "atMs": 778.006,
+    "mediaMs": 778500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 520"
+  },
+  {
+    "atMs": 780.168,
+    "mediaMs": 780000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 521"
+  },
+  {
+    "atMs": 781.382,
+    "mediaMs": 781500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 522"
+  },
+  {
+    "atMs": 782.031,
+    "mediaMs": 787444,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Senator From Connecticut",
+    "refId": "topic-51",
+    "speaker": "Bill Clinton",
+    "claim": "And a senator from Connecticut stood up to him named Prescott Bush."
+  },
+  {
+    "atMs": 782.159,
+    "mediaMs": 787444,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Senator From Connecticut",
+    "refId": "page-topic-51",
+    "latencyMs": 0.551845999999955,
+    "speaker": "Bill Clinton",
+    "claim": "And a senator from Connecticut stood up to him named Prescott Bush."
+  },
+  {
+    "atMs": 783.317,
+    "mediaMs": 783000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 523"
+  },
+  {
+    "atMs": 784.461,
+    "mediaMs": 784500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 524"
+  },
+  {
+    "atMs": 785.627,
+    "mediaMs": 786000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 525"
+  },
+  {
+    "atMs": 786.791,
+    "mediaMs": 787500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 526"
+  },
+  {
+    "atMs": 787.3,
+    "mediaMs": 790206,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Your Father Right",
+    "refId": "topic-52",
+    "speaker": "Bill Clinton",
+    "claim": "Your father was right to stand up to Joe McCarthy."
+  },
+  {
+    "atMs": 787.412,
+    "mediaMs": 790206,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Your Father Right",
+    "refId": "page-topic-52",
+    "latencyMs": 0.4440819999999803,
+    "speaker": "Bill Clinton",
+    "claim": "Your father was right to stand up to Joe McCarthy."
+  },
+  {
+    "atMs": 788.561,
+    "mediaMs": 789000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 527"
+  },
+  {
+    "atMs": 790.724,
+    "mediaMs": 790500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 528"
+  },
+  {
+    "atMs": 791.091,
+    "mediaMs": 792435,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-111",
+    "speaker": "Bill Clinton",
+    "claim": "You were wrong to attack my patriotism."
+  },
+  {
+    "atMs": 792.234,
+    "mediaMs": 792000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 529"
+  },
+  {
+    "atMs": 792.737,
+    "mediaMs": 799103,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "prediction",
+    "refId": "claim-112",
+    "speaker": "Bill Clinton",
+    "claim": "I was opposed to the war, but I love my country, and we need a president who will bring this country together, not divide it."
+  },
+  {
+    "atMs": 794.108,
+    "mediaMs": 793500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 530"
+  },
+  {
+    "atMs": 795.268,
+    "mediaMs": 795000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 531"
+  },
+  {
+    "atMs": 796.408,
+    "mediaMs": 796500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 532"
+  },
+  {
+    "atMs": 797.556,
+    "mediaMs": 798000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 533"
+  },
+  {
+    "atMs": 799.497,
+    "mediaMs": 799500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 534"
+  },
+  {
+    "atMs": 799.83,
+    "mediaMs": 801501,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "promise",
+    "refId": "claim-113",
+    "speaker": "Bill Clinton",
+    "claim": "I want to lead a unified country."
+  },
+  {
+    "atMs": 801.302,
+    "mediaMs": 801000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 535"
+  },
+  {
+    "atMs": 802.493,
+    "mediaMs": 802500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 536"
+  },
+  {
+    "atMs": 803.646,
+    "mediaMs": 804000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 537"
+  },
+  {
+    "atMs": 804.937,
+    "mediaMs": 805500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 538"
+  },
+  {
+    "atMs": 807.097,
+    "mediaMs": 807000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 539"
+  },
+  {
+    "atMs": 808.316,
+    "mediaMs": 808500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 540"
+  },
+  {
+    "atMs": 809.494,
+    "mediaMs": 810000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 541"
+  },
+  {
+    "atMs": 810.758,
+    "mediaMs": 811500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 542"
+  },
+  {
+    "atMs": 813.928,
+    "mediaMs": 813000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 543"
+  },
+  {
+    "atMs": 815.29,
+    "mediaMs": 814500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 544"
+  },
+  {
+    "atMs": 816.409,
+    "mediaMs": 816000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 545"
+  },
+  {
+    "atMs": 817.546,
+    "mediaMs": 817500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 546"
+  },
+  {
+    "atMs": 818.713,
+    "mediaMs": 819000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 547"
+  },
+  {
+    "atMs": 819.869,
+    "mediaMs": 820500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 548"
+  },
+  {
+    "atMs": 822.031,
+    "mediaMs": 822000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 549"
+  },
+  {
+    "atMs": 823.234,
+    "mediaMs": 823500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 550"
+  },
+  {
+    "atMs": 824.707,
+    "mediaMs": 825000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 551"
+  },
+  {
+    "atMs": 826.134,
+    "mediaMs": 826500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 552"
+  },
+  {
+    "atMs": 827.297,
+    "mediaMs": 828000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 553"
+  },
+  {
+    "atMs": 829.449,
+    "mediaMs": 829500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 554"
+  },
+  {
+    "atMs": 830.526,
+    "mediaMs": 834631,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Tax Increase Have",
+    "refId": "topic-53",
+    "speaker": "Bill Clinton",
+    "claim": "The tax increase I have proposed triggers in at family incomes of $200,000 and above."
+  },
+  {
+    "atMs": 830.645,
+    "mediaMs": 834631,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Tax Increase Have",
+    "refId": "page-topic-53",
+    "latencyMs": 0.7735440000000153,
+    "speaker": "Bill Clinton",
+    "claim": "The tax increase I have proposed triggers in at family incomes of $200,000 and above."
+  },
+  {
+    "atMs": 832.018,
+    "mediaMs": 831000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 555"
+  },
+  {
+    "atMs": 833.165,
+    "mediaMs": 832500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 556"
+  },
+  {
+    "atMs": 834.312,
+    "mediaMs": 834000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 557"
+  },
+  {
+    "atMs": 835,
+    "mediaMs": 839919,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Those People Who",
+    "refId": "topic-54",
+    "speaker": "Bill Clinton",
+    "claim": "Those are the people who in the 1980s had their incomes go up while their taxes went down."
+  },
+  {
+    "atMs": 835.122,
+    "mediaMs": 839919,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Those People Who",
+    "refId": "page-topic-54",
+    "latencyMs": 0.6409810000000107,
+    "speaker": "Bill Clinton",
+    "claim": "Those are the people who in the 1980s had their incomes go up while their taxes went down."
+  },
+  {
+    "atMs": 836.301,
+    "mediaMs": 835500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 558"
+  },
+  {
+    "atMs": 837.477,
+    "mediaMs": 837000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 559"
+  },
+  {
+    "atMs": 838.62,
+    "mediaMs": 838500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 560"
+  },
+  {
+    "atMs": 839.761,
+    "mediaMs": 840000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 561"
+  },
+  {
+    "atMs": 840.871,
+    "mediaMs": 853095,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Those People Who",
+    "refId": "topic-54",
+    "speaker": "Bill Clinton",
+    "claim": "Middle-class people, defined as people with incomes of $52,000 and down, had their incomes go down while their taxes went up in the Reagan-Bush years because of 6 increases in the payroll taxes."
+  },
+  {
+    "atMs": 841.312,
+    "mediaMs": 853095,
+    "stage": "pageBuilder",
+    "type": "page-updated",
+    "detail": "Updated Those People Who",
+    "refId": "page-topic-54",
+    "latencyMs": 1.2547909999999547,
+    "speaker": "Bill Clinton",
+    "claim": "Middle-class people, defined as people with incomes of $52,000 and down, had their incomes go down while their taxes went up in the Reagan-Bush years because of 6 increases in the payroll taxes."
+  },
+  {
+    "atMs": 842.901,
+    "mediaMs": 841500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 562"
+  },
+  {
+    "atMs": 844.047,
+    "mediaMs": 843000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 563"
+  },
+  {
+    "atMs": 845.197,
+    "mediaMs": 844500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 564"
+  },
+  {
+    "atMs": 846.358,
+    "mediaMs": 846000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 565"
+  },
+  {
+    "atMs": 847.507,
+    "mediaMs": 847500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 566"
+  },
+  {
+    "atMs": 848.763,
+    "mediaMs": 849000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 567"
+  },
+  {
+    "atMs": 849.948,
+    "mediaMs": 850500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 568"
+  },
+  {
+    "atMs": 852.126,
+    "mediaMs": 852000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 569"
+  },
+  {
+    "atMs": 853.295,
+    "mediaMs": 853500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 570"
+  },
+  {
+    "atMs": 853.765,
+    "mediaMs": 856324,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "prediction",
+    "refId": "claim-117",
+    "speaker": "Bill Clinton",
+    "claim": "So that is where my income limit would trigger."
+  },
+  {
+    "atMs": 854.94,
+    "mediaMs": 855000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 571"
+  },
+  {
+    "atMs": 856.177,
+    "mediaMs": 856500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 572"
+  },
+  {
+    "atMs": 857.525,
+    "mediaMs": 858000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 573"
+  },
+  {
+    "atMs": 859.72,
+    "mediaMs": 859500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 574"
+  },
+  {
+    "atMs": 860.894,
+    "mediaMs": 861000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 575"
+  },
+  {
+    "atMs": 861.662,
+    "mediaMs": 868681,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Tax Increase Have",
+    "refId": "topic-53",
+    "speaker": "Bill Clinton",
+    "claim": "My plan, notwithstanding my opponent's ad, my plan triggers in at gross incomes, family incomes of $200,000 and above."
+  },
+  {
+    "atMs": 861.669,
+    "mediaMs": 868681,
+    "stage": "dedupe",
+    "type": "duplicate-merged",
+    "detail": "My plan, notwithstanding my opponent's ad, my plan triggers in at gross incomes, family incomes of $200,000 and above.",
+    "refId": "page-topic-53",
+    "speaker": "Bill Clinton",
+    "claim": "My plan, notwithstanding my opponent's ad, my plan triggers in at gross incomes, family incomes of $200,000 and above."
+  },
+  {
+    "atMs": 861.701,
+    "mediaMs": 868681,
+    "stage": "pageBuilder",
+    "type": "page-updated",
+    "detail": "Updated Tax Increase Have",
+    "refId": "page-topic-53",
+    "latencyMs": 0.5798610000000508,
+    "speaker": "Bill Clinton",
+    "claim": "My plan, notwithstanding my opponent's ad, my plan triggers in at gross incomes, family incomes of $200,000 and above."
+  },
+  {
+    "atMs": 862.838,
+    "mediaMs": 862500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 576"
+  },
+  {
+    "atMs": 863.998,
+    "mediaMs": 864000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 577"
+  },
+  {
+    "atMs": 865.173,
+    "mediaMs": 865500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 578"
+  },
+  {
+    "atMs": 866.382,
+    "mediaMs": 867000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 579"
+  },
+  {
+    "atMs": 868.538,
+    "mediaMs": 868500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 580"
+  },
+  {
+    "atMs": 869.189,
+    "mediaMs": 877774,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "promise",
+    "refId": "claim-119",
+    "speaker": "Bill Clinton",
+    "claim": "Then we want to give modest middle-class tax relief to restore some fairness, especially to middle-class people with families with incomes of under $60,000."
+  },
+  {
+    "atMs": 870.392,
+    "mediaMs": 870000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 581"
+  },
+  {
+    "atMs": 871.566,
+    "mediaMs": 871500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 582"
+  },
+  {
+    "atMs": 872.742,
+    "mediaMs": 873000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 583"
+  },
+  {
+    "atMs": 873.929,
+    "mediaMs": 874500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 584"
+  },
+  {
+    "atMs": 876.14,
+    "mediaMs": 876000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 585"
+  },
+  {
+    "atMs": 877.321,
+    "mediaMs": 877500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 586"
+  },
+  {
+    "atMs": 878.267,
+    "mediaMs": 892747,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "prediction",
+    "refId": "claim-120",
+    "speaker": "Bill Clinton",
+    "claim": "In addition to that, the money that I raise from upper-income people and from asking foreign corporations just to pay the same income on their income earned in America that American corporations do will be used to give incentives back to upper-income people."
+  },
+  {
+    "atMs": 880.102,
+    "mediaMs": 879000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 587"
+  },
+  {
+    "atMs": 881.261,
+    "mediaMs": 880500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 588"
+  },
+  {
+    "atMs": 882.465,
+    "mediaMs": 882000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 589"
+  },
+  {
+    "atMs": 883.61,
+    "mediaMs": 883500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 590"
+  },
+  {
+    "atMs": 884.772,
+    "mediaMs": 885000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 591"
+  },
+  {
+    "atMs": 885.936,
+    "mediaMs": 886500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 592"
+  },
+  {
+    "atMs": 888.096,
+    "mediaMs": 888000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 593"
+  },
+  {
+    "atMs": 889.246,
+    "mediaMs": 889500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 594"
+  },
+  {
+    "atMs": 890.416,
+    "mediaMs": 891000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 595"
+  },
+  {
+    "atMs": 892.581,
+    "mediaMs": 892500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 596"
+  },
+  {
+    "atMs": 893.212,
+    "mediaMs": 901215,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "promise",
+    "refId": "claim-121",
+    "speaker": "Bill Clinton",
+    "claim": "I want to give people permanent incentives, an investment tax credit like President Kennedy and the Congress inaugurated in the early '60s to get industry moving again."
+  },
+  {
+    "atMs": 894.362,
+    "mediaMs": 894000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 597"
+  },
+  {
+    "atMs": 895.506,
+    "mediaMs": 895500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 598"
+  },
+  {
+    "atMs": 896.659,
+    "mediaMs": 897000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 599"
+  },
+  {
+    "atMs": 897.815,
+    "mediaMs": 898500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 600"
+  },
+  {
+    "atMs": 899.984,
+    "mediaMs": 900000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 601"
+  },
+  {
+    "atMs": 901.256,
+    "mediaMs": 901500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 602"
+  },
+  {
+    "atMs": 902.083,
+    "mediaMs": 909056,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-122",
+    "speaker": "Bill Clinton",
+    "claim": "A research and development tax credit, a low-income housing tax credit, a long-term capital gains proposal for new business and business expansions."
+  },
+  {
+    "atMs": 903.228,
+    "mediaMs": 903000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 603"
+  },
+  {
+    "atMs": 903.263,
+    "mediaMs": 904500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 604"
+  },
+  {
+    "atMs": 905.395,
+    "mediaMs": 906000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 605"
+  },
+  {
+    "atMs": 907.599,
+    "mediaMs": 907500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 606"
+  },
+  {
+    "atMs": 908.77,
+    "mediaMs": 909000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 607"
+  },
+  {
+    "atMs": 909.55,
+    "mediaMs": 911386,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Got Have More",
+    "refId": "topic-55",
+    "speaker": "Bill Clinton",
+    "claim": "We've got to have no more trickle-down."
+  },
+  {
+    "atMs": 909.691,
+    "mediaMs": 911386,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Got Have More",
+    "refId": "page-topic-55",
+    "latencyMs": 0.7261290000000145,
+    "speaker": "Bill Clinton",
+    "claim": "We've got to have no more trickle-down."
+  },
+  {
+    "atMs": 910.845,
+    "mediaMs": 910500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 608"
+  },
+  {
+    "atMs": 911.529,
+    "mediaMs": 913989,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-124",
+    "speaker": "Bill Clinton",
+    "claim": "We don't need across-the-board tax cuts for the wealthy for nothing."
+  },
+  {
+    "atMs": 913.082,
+    "mediaMs": 912000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 609"
+  },
+  {
+    "atMs": 914.256,
+    "mediaMs": 913500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 610"
+  },
+  {
+    "atMs": 914.904,
+    "mediaMs": 918745,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "opinion",
+    "refId": "claim-125",
+    "speaker": "Bill Clinton",
+    "claim": "We need to say, here's your tax incentive if you create American jobs the old-fashioned way."
+  },
+  {
+    "atMs": 916.043,
+    "mediaMs": 915000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 611"
+  },
+  {
+    "atMs": 917.206,
+    "mediaMs": 916500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 612"
+  },
+  {
+    "atMs": 918.379,
+    "mediaMs": 918000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 613"
+  },
+  {
+    "atMs": 918.969,
+    "mediaMs": 922160,
+    "stage": "claimExtractor",
+    "type": "claim-not-checkable",
+    "detail": "promise",
+    "refId": "claim-126",
+    "speaker": "Bill Clinton",
+    "claim": "I'd like to create more millionaires than were created under Mr."
+  },
+  {
+    "atMs": 920.113,
+    "mediaMs": 919500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 614"
+  },
+  {
+    "atMs": 921.28,
+    "mediaMs": 921000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 615"
+  },
+  {
+    "atMs": 922.452,
+    "mediaMs": 928764,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Bush Reagan But",
+    "refId": "topic-56",
+    "speaker": "Bill Clinton",
+    "claim": "Bush and Mr. Reagan, but I don't want to have 4 years where we have no growth in the private sector, and that's what's happened in the last 4 years."
+  },
+  {
+    "atMs": 922.619,
+    "mediaMs": 928764,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Bush Reagan But",
+    "refId": "page-topic-56",
+    "latencyMs": 1.0616349999999102,
+    "speaker": "Bill Clinton",
+    "claim": "Bush and Mr. Reagan, but I don't want to have 4 years where we have no growth in the private sector, and that's what's happened in the last 4 years."
+  },
+  {
+    "atMs": 922.624,
+    "mediaMs": 922500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 616"
+  },
+  {
+    "atMs": 923.809,
+    "mediaMs": 924000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 617"
+  },
+  {
+    "atMs": 924.926,
+    "mediaMs": 925500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 618"
+  },
+  {
+    "atMs": 927.063,
+    "mediaMs": 927000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 619"
+  },
+  {
+    "atMs": 928.219,
+    "mediaMs": 928500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 620"
+  },
+  {
+    "atMs": 928.959,
+    "mediaMs": 931808,
+    "stage": "topicGrouper",
+    "type": "topic-grouped",
+    "detail": "Down 000 Jobs",
+    "refId": "topic-57",
+    "speaker": "Bill Clinton",
+    "claim": "We're down 35,000 jobs in the private sector."
+  },
+  {
+    "atMs": 929.051,
+    "mediaMs": 931808,
+    "stage": "pageBuilder",
+    "type": "page-created",
+    "detail": "Created Down 000 Jobs",
+    "refId": "page-topic-57",
+    "latencyMs": 0.6422800000000279,
+    "speaker": "Bill Clinton",
+    "claim": "We're down 35,000 jobs in the private sector."
+  },
+  {
+    "atMs": 929.386,
+    "mediaMs": 930000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 621"
+  },
+  {
+    "atMs": 931.559,
+    "mediaMs": 931500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 622"
+  },
+  {
+    "atMs": 932.801,
+    "mediaMs": 933000,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 623"
+  },
+  {
+    "atMs": 933.922,
+    "mediaMs": 934500,
+    "stage": "harness",
+    "type": "chunk",
+    "detail": "Chunk 624"
+  }
+]
