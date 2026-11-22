@@ -173,7 +173,7 @@ function selectPage(pageId, seekAudio) {
     <h4>Cited facts</h4>
     <ul class="facts">${facts || "<li>No cited facts on this page.</li>"}</ul>
     ${claims ? `<h4>Claims on this topic</h4><ul>${claims}</ul>` : ""}
-    <p class="panel-note"><a href="/contxt/play/deck.html#${encodeURIComponent(page.id)}">Open in deck</a></p>
+    <p class="panel-note"><a href="/cntxt/play/deck.html#${encodeURIComponent(page.id)}">Open in deck</a></p>
   `;
   for (const node of feedNodes) {
     node.classList.toggle("hot", node.dataset.refId === pageId);
