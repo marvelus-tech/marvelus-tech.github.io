@@ -269,92 +269,87 @@
       position: relative;
       z-index: 1;
       min-height: min(72vh, 36rem);
-      perspective: 1200px;
       overflow: hidden;
-      mask-image: linear-gradient(105deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
+      border: 1px solid var(--line);
+      background: var(--paper);
     }
-    .hero-stage.is-line-paused {
-      opacity: 0.92;
+    .wave-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      min-height: inherit;
+      height: 100%;
+      padding: 0.75rem 0.5rem 0.35rem;
     }
-    .hero-stage__label {
-      position: absolute;
-      top: 0.35rem;
-      right: 0;
-      margin: 0;
-      font-family: var(--mono);
-      font-size: 0.68rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--muted);
-      z-index: 3;
+    .wave-hero__shell {
+      position: relative;
+      flex: 1 1 auto;
+      min-height: min(58vh, 28rem);
+      margin: 0 auto;
+      width: 100%;
+      max-width: 36rem;
     }
-    .hero-track {
+    .wave-hero__canvas {
       position: absolute;
       inset: 0;
-      transform-style: preserve-3d;
-      will-change: transform;
+      display: block;
+      width: 100%;
+      height: 100%;
     }
-    .context-slide {
+    .wave-hero__caption {
+      margin: 0.65rem 0 0;
+      padding: 0 0.35rem;
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--muted);
+      transition: opacity 0.4s ease;
+    }
+    .wave-hero__side {
       position: absolute;
-      left: 50%;
       top: 50%;
-      width: min(12.5rem, 38vw);
-      margin: -7.5rem 0 0 -6.25rem;
-      transform-style: preserve-3d;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.55rem;
+      padding-right: 0.15rem;
       pointer-events: none;
-      transition: opacity 0.2s ease;
     }
-    @media (hover: hover) and (pointer: fine) {
-      .hero-stage.has-fine-pointer .context-slide {
-        pointer-events: auto;
-        cursor: default;
-      }
-    }
-    .context-slide__frame {
-      background: var(--slide-fill, var(--paper));
-      border: 1px solid var(--line);
-      padding: 0.85rem 0.9rem 0.95rem;
-      box-shadow: 0 18px 42px rgba(28, 25, 21, 0.07);
-    }
-    .context-slide.is-protrude .context-slide__frame {
-      border-color: rgba(28, 25, 21, 0.28);
-      box-shadow: 0 22px 48px rgba(28, 25, 21, 0.12);
-    }
-    .context-slide__label {
-      margin: 0 0 0.55rem;
+    .wave-hero__tag {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin: 0;
       font-family: var(--mono);
       font-size: 0.62rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--muted);
     }
-    .context-slide__title {
-      margin: 0;
-      font-family: var(--sans);
-      font-size: 1.05rem;
+    .wave-hero__dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #b33a3a;
+      animation: wave-rec-pulse 1.4s ease-in-out infinite;
+    }
+    @keyframes wave-rec-pulse {
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 1; }
+    }
+    .wave-hero__topic-label {
       font-weight: 650;
-      letter-spacing: -0.02em;
-      line-height: 1.15;
+      color: var(--ink);
     }
-    .context-slide__line {
-      margin: 0.45rem 0 0.65rem;
-      font-size: 0.82rem;
-      line-height: 1.35;
-      color: var(--muted);
-    }
-    .context-slide__cites {
-      display: flex;
-      flex-direction: column;
-      gap: 0.28rem;
-    }
-    .context-slide__cite {
+    .wave-hero__mini {
       display: block;
-      height: 3px;
-      border-radius: 1px;
-      background: rgba(28, 25, 21, 0.08);
-    }
-    .context-slide__cite.is-on {
-      background: rgba(28, 25, 21, 0.22);
+      border: 1px solid var(--line);
     }
 
     .story {
@@ -441,10 +436,25 @@
       }
       .hero-stage {
         min-height: 42vh;
-        perspective: 900px;
-        mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
       }
-      .hero-stage__label { right: 1.15rem; }
+      .wave-hero__shell {
+        min-height: 36vh;
+        max-width: none;
+      }
+      .wave-hero__side {
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 0.35rem;
+        padding: 0 0.15rem;
+      }
+      .wave-hero__mini {
+        width: 40px;
+        height: 64px;
+      }
       .story { padding: 0 1.15rem 12vh; }
       .steps { grid-template-columns: 1fr; gap: 1.25rem; }
       h1 { font-size: clamp(3.4rem, 18vw, 4.8rem); }
@@ -452,6 +462,7 @@
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
+      .wave-hero__dot { animation: none; opacity: 0.65; }
     }
     @media (prefers-contrast: more) {
       .lede, .steps p, .try, .next, .kicker, .hero-stage__label, h2 { color: var(--ink); }
@@ -489,7 +500,7 @@
   <main id="story">
     <section class="hero-shell" aria-labelledby="product">
       <div class="hero-copy">
-        <p class="sr-only">Floating topic cards beside the headline illustrate graphical context from speech. The text is the product.</p>
+        <p class="sr-only">A symmetric waveform beside the headline reveals debate-era photographs between vertical bars. The text is the product.</p>
         <p class="kicker">Spoken audio</p>
         <h1 id="product">CNTXT</h1>
         <p class="promise">Live context for spoken content.</p>
@@ -499,9 +510,7 @@
           <a class="quiet" href="#today">Other ways to try</a>
         </div>
       </div>
-      <div class="hero-stage" id="hero-stage" aria-hidden="true">
-        <p class="hero-stage__label">Context</p>
-      </div>
+      <div class="hero-stage" id="hero-stage" aria-hidden="true"></div>
     </section>
     <div class="story">
       <section aria-labelledby="how">
@@ -550,10 +559,10 @@
     <p class="site-footer__note">CNTXT turns spoken audio into checkable claims and cited topic pages.</p>
   </footer>
   <script type="module">
-    import { mountHeroSlides } from "./slides.js"
+    import { mountWaveHero } from "./wave-mask.js"
 
     const stage = document.getElementById("hero-stage")
-    if (stage) mountHeroSlides(stage)
+    if (stage) mountWaveHero(stage)
 
     const toggle = document.getElementById("nav-toggle")
     const panel = document.getElementById("nav-panel")
