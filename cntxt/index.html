@@ -159,9 +159,23 @@
     }
     .nav-panel.is-open { display: block; }
     .nav--mobile {
+      display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      gap: 0.85rem;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      width: 100%;
+      margin: 0;
+      gap: 0;
+    }
+    .nav--mobile a {
+      display: block;
+      padding: 0.85rem 0;
+      min-height: 2.75rem;
+      line-height: 1.35;
+      border-bottom: 1px solid var(--line);
+    }
+    .nav--mobile a:last-child {
+      border-bottom: none;
     }
 
     .hero-shell {
@@ -323,28 +337,10 @@
       font-weight: 600;
       letter-spacing: -0.02em;
     }
-    .steps p, .try, .next {
+    .steps p {
       margin: 0;
       color: var(--muted);
     }
-    .try { padding: 0; list-style: none; max-width: 40rem; }
-    .try li {
-      margin: 0;
-      padding: 0.75rem 0;
-      border-top: 1px solid var(--line);
-    }
-    .try li:last-child { border-bottom: 1px solid var(--line); }
-    .try strong { color: var(--ink); font-weight: 650; }
-    code {
-      font-family: var(--mono);
-      font-size: 0.86em;
-      color: var(--ink);
-    }
-    .next {
-      max-width: 40rem;
-      margin-top: 2rem;
-    }
-    .next strong { color: var(--ink); }
     @media (min-width: 721px) {
       .nav-panel { display: none !important; }
       .nav-toggle { display: none !important; }
@@ -407,8 +403,8 @@
       html { scroll-behavior: auto; }
     }
     @media (prefers-contrast: more) {
-      .lede, .steps p, .try, .next, .kicker, .hero-stage__label, h2 { color: var(--ink); }
-      .top, .steps li, .try li { border-color: var(--ink); }
+      .lede, .steps p, .kicker, .hero-stage__label, h2 { color: var(--ink); }
+      .top, .steps li, .nav--mobile a { border-color: var(--ink); }
     }
   </style>
 </head>
@@ -427,13 +423,12 @@
     </div>
     <nav class="nav nav--desktop" aria-label="Primary">
       <a href="#how">How it works</a>
-      <a href="#today">What to try</a>
       <a href="sessions/">Sessions</a>
     </nav>
     <div class="nav-panel" id="nav-panel" hidden>
       <nav class="nav nav--mobile" aria-label="Mobile menu">
         <a href="#how">How it works</a>
-        <a href="#today">What to try</a>
+        <a href="sessions/">Sessions</a>
         <a href="demo/deck.html">Sample deck</a>
         <a href="https://github.com/marvelus-tech/contxt" rel="noreferrer">GitHub</a>
       </nav>
@@ -452,7 +447,6 @@
           <p class="lede">Transcription becomes claims, research attaches citations, and you browse topic pages instead of a flat transcript.</p>
           <div class="cta-row">
             <a class="btn btn-play" href="sessions/">Try it</a>
-            <a class="quiet" href="#today">Other ways to try</a>
           </div>
         </div>
       </div>
@@ -484,16 +478,6 @@
           </li>
         </ol>
       </section>
-      <section aria-labelledby="today">
-        <h2 id="today">What you can try</h2>
-        <ul class="try">
-          <li><strong>Demo session.</strong> The 1992 debate with cited <a href="sessions/1992-debate/">topic pages</a>.</li>
-          <li><strong>Sample deck.</strong> A shorter <a href="demo/deck.html">slide-style replay</a> with facts.</li>
-          <li><strong>Your machine.</strong> Clone the repo and run <code>npm run ci:replay</code>.</li>
-          <li><strong>Transcription results.</strong> Read the <a href="https://github.com/marvelus-tech/contxt/blob/main/docs/REPORT.md" rel="noreferrer">1992 clip report</a>.</li>
-        </ul>
-      </section>
-      <p class="next"><strong>Coming next:</strong> file upload and microphone recording on the play page.</p>
     </div>
   </main>
   <footer class="cntxt-foot">
