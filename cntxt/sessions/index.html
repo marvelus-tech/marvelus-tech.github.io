@@ -117,7 +117,7 @@
 
   <main class="cntxt-main hub">
     <h1>Sessions</h1>
-    <p class="lede">Open the demo, name a session, and explore cited topic pages. Record live when speech is connected; upload is baked locally until hosted ingest ships.</p>
+    <p class="lede" id="hub-lede">Open the demo, name a session, and explore cited topic pages. Record live when speech is connected; upload is baked locally until hosted ingest ships.</p>
 
     <section class="new-session" aria-labelledby="new-heading">
       <h2 id="new-heading" class="sr-only">New session</h2>
@@ -157,6 +157,18 @@
   </footer>
 
   <script type="module">
+    const hubLede = document.getElementById("hub-lede");
+    try {
+      const micCfg = await fetch("./record/mic-config.json", { cache: "no-store" }).then((r) => r.json());
+      const connected = typeof micCfg.tokenUrl === "string" && micCfg.tokenUrl.trim().length > 0;
+      if (connected) {
+        hubLede.textContent =
+          "Open the demo, name a session, and record live with cited insights on the web. Upload is still baked locally until hosted ingest ships.";
+      }
+    } catch {
+      /* keep default lede */
+    }
+
     const UPLOAD_MSG =
       "To publish an uploaded recording as a session, run contxt bake:session on your machine (see marvelus-tech/contxt README). Hosted upload is coming with session storage.";
 
