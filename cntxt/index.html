@@ -65,44 +65,15 @@
       border: 0;
     }
 
-    .top {
-      position: relative;
-      z-index: 10;
-      padding: 1rem 6vw;
-      border-bottom: 1px solid var(--line);
-    }
-    .top__bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-    .brand {
-      font-family: var(--mono);
-      font-size: 0.78rem;
-      font-weight: 650;
-      letter-spacing: 0.16em;
-      text-decoration: none;
-    }
-    .top__actions {
+    .landing-top { position: sticky; }
+    .landing-top__actions {
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      margin-left: auto;
     }
-    .nav-cta {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      font-weight: 650;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 0.55rem 0.85rem;
-      border: 1px solid var(--line);
-    }
-    .nav-cta:hover {
-      background: var(--ink);
-      color: var(--paper);
-      border-color: var(--ink);
+    .landing-top__desktop {
+      display: none;
     }
     .nav-toggle {
       display: none;
@@ -135,34 +106,36 @@
     }
     .nav-toggle__bars::before { top: -6px; }
     .nav-toggle__bars::after { top: 6px; }
-    .nav--desktop {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 0.35rem 1.25rem;
-      margin-top: 0.85rem;
+    .landing-nav-panel {
+      display: none;
+      border-top: 1px solid var(--line);
+      padding: 0.35rem var(--cntxt-gutter) 0.5rem;
+      background: var(--paper);
     }
-    .nav a {
+    .landing-nav-panel.is-open { display: block; }
+    .landing-nav-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      width: 100%;
+      margin: 0;
+      gap: 0;
+    }
+    .landing-nav-mobile a {
+      display: block;
       font-family: var(--mono);
       font-size: 0.72rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       text-decoration: none;
+      padding: 0.85rem 0;
+      min-height: 2.75rem;
+      line-height: 1.35;
+      border-bottom: 1px solid var(--line);
     }
-    .nav a:hover { text-decoration: underline; text-underline-offset: 0.3em; }
-    .nav-panel {
-      display: none;
-      border-top: 1px solid var(--line);
-      margin: 0.75rem -6vw 0;
-      padding: 0.75rem 6vw 0.25rem;
-      background: var(--paper);
-    }
-    .nav-panel.is-open { display: block; }
-    .nav--mobile {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.85rem;
-    }
+    .landing-nav-mobile a:last-child { border-bottom: none; }
+    .landing-nav-mobile a:hover { text-decoration: underline; text-underline-offset: 0.3em; }
 
     .hero-shell {
       position: relative;
@@ -283,9 +256,11 @@
     }
 
     .story {
-      width: min(68rem, calc(100% - 12vw));
-      margin: 0 0 8vh 6vw;
-      padding-top: 2vh;
+      width: 100%;
+      max-width: var(--cntxt-content-max);
+      margin: 0 auto 8vh;
+      padding: 2vh var(--cntxt-gutter) 0;
+      box-sizing: border-box;
     }
     section { margin-top: 3.5rem; }
     h2 {
@@ -323,38 +298,18 @@
       font-weight: 600;
       letter-spacing: -0.02em;
     }
-    .steps p, .try, .next {
+    .steps p {
       margin: 0;
       color: var(--muted);
     }
-    .try { padding: 0; list-style: none; max-width: 40rem; }
-    .try li {
-      margin: 0;
-      padding: 0.75rem 0;
-      border-top: 1px solid var(--line);
-    }
-    .try li:last-child { border-bottom: 1px solid var(--line); }
-    .try strong { color: var(--ink); font-weight: 650; }
-    code {
-      font-family: var(--mono);
-      font-size: 0.86em;
-      color: var(--ink);
-    }
-    .next {
-      max-width: 40rem;
-      margin-top: 2rem;
-    }
-    .next strong { color: var(--ink); }
     @media (min-width: 721px) {
-      .nav-panel { display: none !important; }
+      .landing-nav-panel { display: none !important; }
       .nav-toggle { display: none !important; }
-      .nav-cta { display: none; }
-      .top__actions { gap: 0; }
+      .landing-top__desktop { display: block; }
+      .landing-top__actions .cntxt-link--cta { display: none; }
     }
     @media (max-width: 720px) {
-      .top, .story { width: auto; margin-left: 0; }
-      .top { padding: 0.85rem 1.15rem; }
-      .nav--desktop { display: none; }
+      .story { width: auto; margin-left: 0; }
       .nav-toggle { display: inline-flex; }
       .nav-panel { margin-left: -1.15rem; margin-right: -1.15rem; padding-left: 1.15rem; padding-right: 1.15rem; }
       .hero-shell {
@@ -407,33 +362,35 @@
       html { scroll-behavior: auto; }
     }
     @media (prefers-contrast: more) {
-      .lede, .steps p, .try, .next, .kicker, .hero-stage__label, h2 { color: var(--ink); }
-      .top, .steps li, .try li { border-color: var(--ink); }
+      .lede, .steps p, .kicker, .hero-stage__label, h2 { color: var(--ink); }
+      .cntxt-top, .steps li, .landing-nav-mobile a { border-color: var(--ink); }
     }
   </style>
 </head>
 <body class="cntxt-shell">
   <a class="skip" href="#how">Skip to content</a>
-  <header class="top">
-    <div class="top__bar">
-      <a class="brand" href="./">CNTXT</a>
-      <div class="top__actions">
-        <a class="nav-cta" href="sessions/">Sessions</a>
+  <header class="cntxt-top landing-top">
+    <div class="cntxt-top__inner">
+      <a class="cntxt-brand" href="./">CNTXT</a>
+      <div class="landing-top__actions">
+        <a class="cntxt-link cntxt-link--cta" href="sessions/">Sessions</a>
         <button class="nav-toggle" type="button" id="nav-toggle" aria-expanded="false" aria-controls="nav-panel">
           <span class="sr-only">Open menu</span>
           <span class="nav-toggle__bars" aria-hidden="true"></span>
         </button>
       </div>
+      <nav class="landing-top__desktop" aria-label="Primary">
+        <ul class="cntxt-top__nav">
+          <li><a class="cntxt-link" href="#how">How it works</a></li>
+          <li><a class="cntxt-link" href="sessions/">Sessions</a></li>
+          <li><a class="cntxt-link" href="demo/deck.html">Sample deck</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="nav nav--desktop" aria-label="Primary">
-      <a href="#how">How it works</a>
-      <a href="#today">What to try</a>
-      <a href="sessions/">Sessions</a>
-    </nav>
-    <div class="nav-panel" id="nav-panel" hidden>
-      <nav class="nav nav--mobile" aria-label="Mobile menu">
+    <div class="landing-nav-panel" id="nav-panel" hidden>
+      <nav class="landing-nav-mobile" aria-label="Mobile menu">
         <a href="#how">How it works</a>
-        <a href="#today">What to try</a>
+        <a href="sessions/">Sessions</a>
         <a href="demo/deck.html">Sample deck</a>
         <a href="https://github.com/marvelus-tech/contxt" rel="noreferrer">GitHub</a>
       </nav>
@@ -452,7 +409,6 @@
           <p class="lede">Transcription becomes claims, research attaches citations, and you browse topic pages instead of a flat transcript.</p>
           <div class="cta-row">
             <a class="btn btn-play" href="sessions/">Try it</a>
-            <a class="quiet" href="#today">Other ways to try</a>
           </div>
         </div>
       </div>
@@ -484,16 +440,6 @@
           </li>
         </ol>
       </section>
-      <section aria-labelledby="today">
-        <h2 id="today">What you can try</h2>
-        <ul class="try">
-          <li><strong>Demo session.</strong> The 1992 debate with cited <a href="sessions/1992-debate/">topic pages</a>.</li>
-          <li><strong>Sample deck.</strong> A shorter <a href="demo/deck.html">slide-style replay</a> with facts.</li>
-          <li><strong>Your machine.</strong> Clone the repo and run <code>npm run ci:replay</code>.</li>
-          <li><strong>Transcription results.</strong> Read the <a href="https://github.com/marvelus-tech/contxt/blob/main/docs/REPORT.md" rel="noreferrer">1992 clip report</a>.</li>
-        </ul>
-      </section>
-      <p class="next"><strong>Coming next:</strong> file upload and microphone recording on the play page.</p>
     </div>
   </main>
   <footer class="cntxt-foot">

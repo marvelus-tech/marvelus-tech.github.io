@@ -24,7 +24,9 @@
       min-height: 3rem; border: none; background: var(--ink); color: var(--paper); cursor: pointer;
     }
     .mic-button[aria-pressed="true"] { background: #2a251f; }
-    .mic-status, .partial { margin-top: 0.65rem; font-size: 0.92rem; color: var(--muted); }
+    .mic-status, .partial { margin-top: 0.65rem; font-size: 0.92rem; color: var(--muted); line-height: 1.45; }
+    .partial code { font-family: var(--mono); font-size: 0.86em; color: var(--ink); }
+    .partial a { text-decoration: underline; text-underline-offset: 0.2em; }
     .transcript { margin: 0.75rem 0 0; padding-left: 1.1rem; max-height: 40vh; overflow-y: auto; }
     .heard-heading {
       font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.12em;
@@ -48,13 +50,14 @@
   </header>
   <main class="cntxt-main live">
     <h1 id="session-live-title">Live session</h1>
-    <p class="lede">Speak when ready. Finished sentences feed the live pipeline when a speech token is connected.</p>
+    <p class="lede">Finished sentences become claims and topics as you speak. On GitHub Pages, live speech needs a deployed mic Worker; until then, explore the demo session or bake audio locally.</p>
     <div class="mic-panel">
       <button type="button" id="btn-mic" class="mic-button" aria-pressed="false">
         <span id="mic-label">Start recording</span>
       </button>
       <div class="meter" aria-hidden="true"><span id="mic-meter"></span></div>
       <p id="mic-status" class="mic-status" role="status">Checking speech token…</p>
+      <p id="mic-hint" class="partial" hidden></p>
       <p id="partial" class="partial">Waiting for speech.</p>
       <p id="heard-live" class="sr-only" aria-live="polite"></p>
       <h2 class="heard-heading">Heard</h2>
@@ -82,9 +85,14 @@
     }
     const config = await fetch("./mic-config.json").then((r) => r.json()).catch(() => ({ tokenUrl: "" }));
     if (!config.tokenUrl) {
-      document.getElementById("mic-status").textContent =
-        "Live speech is not connected on GitHub Pages yet. Deploy the mic Worker and set tokenUrl in sessions/record/mic-config.json (see contxt docs/DEPLOY-MIC.md).";
+      const status = document.getElementById("mic-status");
+      const hint = document.getElementById("mic-hint");
+      status.textContent = "Live speech is not connected on this site yet.";
+      hint.hidden = false;
+      hint.innerHTML =
+        "To enable the mic: deploy the CNTXT speech Worker, set <code>tokenUrl</code> in <code>sessions/record/mic-config.json</code>, and republish. Until then, open the <a href=\"../1992-debate/\">1992 debate demo</a> or run <code>npm run bake:session</code> locally. See <a href=\"https://github.com/marvelus-tech/contxt/blob/main/docs/DEPLOY-MIC.md\" rel=\"noreferrer\">DEPLOY-MIC.md</a>.";
       document.getElementById("btn-mic").disabled = true;
+      document.getElementById("partial").textContent = "Mic unavailable without a speech token.";
     } else {
       await import("./record.js");
     }
